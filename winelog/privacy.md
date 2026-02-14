@@ -1,38 +1,32 @@
 # Privacy Policy
 
-**mkideabox, Co. Ltd**
+**mkideabox, Co. Ltd** respects users' privacy.
 
-## 1. Information We Collect
+## 1. Information Collected
 
-This app uses Google AdMob services and may collect the following information:
+This app uses Google AdMob services and may collect the following information for personalized ads:
 
 - Advertising ID
-- Approximate location via IP address
-- App usage patterns
-- Tracking cookies
+- Approximate location (via IP address)
+- App usage data (ad views, clicks, usage patterns)
+- Cookies and trackers
 
-## 2. How We Use Information
+## 2. Purpose of Use
 
-The collected information is used for:
+The collected information is used to provide personalized ads, measure ad performance, and improve services.
 
-- Delivering personalized advertisements
-- Measuring ad performance
-- Improving our services
+## 3. Sharing with Third Parties
 
-## 3. Information Sharing
+This app may share data with Google and its partner ad networks.
 
-Collected information may be shared with Google and affiliated advertising networks.
+## 4. User Rights
 
-## 4. Your Rights
+Users may opt out or limit personalized ads via app or device settings.
 
-You can restrict or disable personalized advertising through the app or device settings.
+## 5. Contact
 
-## 5. Contact Us
-
-For inquiries regarding privacy, please contact us at:
-
-**Email:** support@mkideabox.com
+**Email:** mkideabox@gmail.com
 
 ---
 
-*This privacy policy was created for Google Play registration and may be updated as needed.*
+*This policy is provided for Google Play registration purposes and may be updated as necessary.*
