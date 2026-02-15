@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개인정보 처리방침 - SCCAssist</title>
+  <style>
+    body { font-size: 1.1rem; line-height: 1.6; margin: 0 1rem; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.25rem; margin-top: 1.5em; }
+    p, ul, li { font-size: 1rem; }
+    ul { padding-left: 1.2rem; }
+    li { margin-bottom: 0.5em; }
+    .subtitle { color: #666; font-size: 0.9rem; margin-top: -0.5em; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #181818; color: #eee; }
+      a { color: #85b7ff; }
+      .subtitle { color: #aaa; }
+    }
+  </style>
+</head>
+<body>
+<h1>개인정보 처리방침</h1>
+<p class="subtitle">SCCAssist (차선유지보조 모니터)</p>
+
+<h2>제1조 (수집 항목)</h2>
+<ul>
+  <li>기기 식별자 (익명화된 Device ID)</li>
+  <li>카메라 영상 (실시간 처리 후 저장하지 않음)</li>
+  <li>HUD 샘플 이미지 (선택, 사용자 동의 시에만 수집)</li>
+</ul>
+
+<h2>제2조 (수집 목적)</h2>
+<ul>
+  <li>차량 HUD 상태 모니터링 및 알림 제공</li>
+  <li>AI 모델 학습 개선 (샘플 업로드 동의 시)</li>
+  <li>앱 기능 개선 및 오류 분석</li>
+</ul>
+
+<h2>제3조 (보유 기간)</h2>
+<ul>
+  <li>카메라 영상: 실시간 처리 후 즉시 삭제 (저장하지 않음)</li>
+  <li>샘플 이미지: 모델 학습 완료 후 90일 내 삭제</li>
+  <li>기기 식별자: 앱 삭제 시까지</li>
+</ul>
+
+<h2>제4조 (제3자 제공)</h2>
+<p>본 앱은 법령을 제외하고는 개인정보를 제3자에게 제공하지 않습니다.</p>
+
+<h2>제5조 (개인정보 처리 위탁)</h2>
+<ul>
+  <li>
+    위탁 업무 내용: 데이터베이스 호스팅 및 모델 저장소<br>
+    수탁자: Supabase Inc. (미국)<br>
+    연락처: <a href="https://supabase.com/contact" target="_blank">supabase.com/contact</a>
+  </li>
+</ul>
+
+<h2>제6조 (카메라 사용 안내)</h2>
+<ul>
+  <li>본 앱은 차량 HUD 상태를 실시간 모니터링하기 위해 카메라를 사용합니다.</li>
+  <li>카메라 영상은 기기 내에서만 처리되며 외부로 전송되지 않습니다.</li>
+  <li>단, 샘플 업로드를 동의한 경우에만 익명화된 HUD 이미지가 서버에 전송될 수 있습니다.</li>
+</ul>
+
+<h2>제7조 (이용자의 권리)</h2>
+<p>이용자는 언제든지 열람, 정정, 삭제를 요청할 수 있으며 앱 설정 또는 이메일로 신청 가능합니다.</p>
+
+<h2>제8조 (보안 조치)</h2>
+<p>HTTPS 통신, Supabase RLS로 안전하게 데이터를 보호합니다.</p>
+
+<h2>제9조 (개인정보 보호책임자)</h2>
+<p>장미 / 이메일: mkideabox@mkideabox.com</p>
+</body>
+</html>
