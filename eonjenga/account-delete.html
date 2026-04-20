@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>계정 삭제 안내 - 언젠가</title>
+  <style>
+    body { font-size: 1.1rem; line-height: 1.6; margin: 0 1rem; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.25rem; margin-top: 1.5em; }
+    p, ul, ol, li { font-size: 1rem; }
+    ul, ol { padding-left: 1.2rem; }
+    li { margin-bottom: 0.5em; }
+    .subtitle { color: #666; font-size: 0.9rem; margin-top: -0.5em; }
+    .info { background: #e7f3ff; border: 1px solid #2196F3; padding: 1rem; border-radius: 8px; margin: 1rem 0; }
+    .contact { background: #f3f0ea; border: 1px solid #c9a24e; padding: 1rem; border-radius: 8px; margin: 1rem 0; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #181818; color: #eee; }
+      a { color: #f5c87a; }
+      .subtitle { color: #aaa; }
+      .info { background: #1a2a3a; border-color: #2196F3; }
+      .contact { background: #2a2218; border-color: #c9a24e; }
+    }
+  </style>
+</head>
+<body>
+<h1>데이터 삭제 안내</h1>
+<p class="subtitle">언젠가 (Eonjenga)</p>
+
+<div class="info">
+  <p><strong>언젠가</strong> 앱은 <strong>회원가입·로그인 없이</strong> 동작합니다. 별도의 "계정"이 존재하지 않으므로 일반적인 의미의 "계정 삭제" 절차는 없습니다. 대신 아래 경로로 모든 관련 데이터를 즉시 또는 수동으로 삭제할 수 있습니다.</p>
+</div>
+
+<h2>1. 기기 로컬 데이터 삭제</h2>
+<p>작성한 여행 일기, 좋아요/위시리스트, 마지막 선택 목적지 등 모든 사용자 데이터는 이용자 기기의 로컬 저장소에만 보관됩니다. 두 가지 방법으로 즉시 전량 삭제할 수 있습니다.</p>
+
+<h3>방법 A — 앱 삭제 (권장)</h3>
+<ol>
+  <li>기기 홈 화면 또는 설정에서 <strong>언젠가</strong> 앱을 삭제합니다.</li>
+  <li>운영체제가 앱 데이터/캐시를 전량 제거하며, 일기·위시리스트·로컬 설정이 즉시 삭제됩니다.</li>
+  <li>회사 서버에는 로컬 데이터의 백업이 존재하지 않으므로 추가 절차가 필요 없습니다.</li>
+</ol>
+
+<h3>방법 B — 앱 내 초기화 (향후 제공)</h3>
+<p>앱 설정에서 <em>"모든 기록 지우기"</em> 메뉴를 통해 일기/위시리스트 일괄 삭제 기능을 제공할 예정입니다 (v1.0.0 업데이트 예정).</p>
+
+<h2>2. 서버에 저장된 데이터 삭제</h2>
+<p>서버(Supabase)에 저장되는 데이터는 다음으로 한정됩니다.</p>
+<ul>
+  <li>이용자가 직접 보낸 <strong>큐레이션 정보 오류 신고 본문</strong></li>
+  <li>신고 시각</li>
+  <li>앱 설치 시 생성된 <strong>익명 디바이스 ID</strong> (개인식별 불가)</li>
+</ul>
+
+<p>위 데이터의 삭제를 원하시면 아래 연락처로 요청해주세요.</p>
+
+<div class="contact">
+  <h2>📧 데이터 삭제 요청</h2>
+  <p>이메일: <a href="mailto:mkideabox@gmail.com?subject=[언젠가] 데이터 삭제 요청">mkideabox@gmail.com</a></p>
+  <p>요청 접수 시 운영자가 admin 모니터링 뷰에서 해당 디바이스 ID 기반 기록을 수동 삭제합니다.</p>
+  <p>제목에 "언젠가 데이터 삭제 요청"을 명시하면 처리가 빨라집니다.</p>
+  <ul>
+    <li>본인 확인은 별도로 요구하지 않습니다 (익명 ID 기반).</li>
+    <li>처리 소요: 영업일 기준 7일 이내</li>
+  </ul>
+</div>
+
+<h2>3. 삭제 후 복구 여부</h2>
+<ul>
+  <li>앱 삭제 후 재설치하여도 이전 데이터는 복구되지 않습니다 (클라우드 백업 없음).</li>
+  <li>서버에서 삭제된 오류 신고 데이터는 복구되지 않습니다.</li>
+</ul>
+
+<h2>참고</h2>
+<ul>
+  <li><a href="./privacy.html">개인정보 처리방침</a></li>
+  <li>문의: <a href="mailto:mkideabox@gmail.com">mkideabox@gmail.com</a></li>
+</ul>
+
+</body>
+</html>
