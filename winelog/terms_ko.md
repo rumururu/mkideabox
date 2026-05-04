@@ -39,7 +39,7 @@
 
 ## 제7조 (문의)
 
-**Email:** support@mkideabox.com
+**Email:** mkideabox@gmail.com
 
 ---
 

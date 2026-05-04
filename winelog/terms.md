@@ -39,7 +39,7 @@ The Company may modify these terms as necessary. Modified terms take effect upon
 
 ## Article 7 (Contact)
 
-**Email:** support@mkideabox.com
+**Email:** mkideabox@gmail.com
 
 ---
 
