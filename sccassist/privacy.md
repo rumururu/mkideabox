@@ -44,4 +44,4 @@ HTTPS 통신, Supabase RLS로 안전하게 데이터를 보호합니다.
 
 ## 제9조 (개인정보 보호책임자)
 
-장미 / mkideabox@mkideabox.com
+hyung-woo park / mkideabox@gmail.com / +82-10-4732-7825

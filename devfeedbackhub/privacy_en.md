@@ -34,7 +34,7 @@ Users may request access, correction, or deletion of their information at any ti
 Personal information is protected through HTTPS communication and Supabase RLS.
 
 ## Article 8 (Privacy Officer)
-Jangmi / Email: mkideabox@mkideabox.com
+hyung-woo park / Email: mkideabox@gmail.com / Phone: +82-10-4732-7825
 
 ## Article 9 (Advertising Identifiers and Third-Party Information Collection)
 - Google AdMob may collect advertising IDs and device information.

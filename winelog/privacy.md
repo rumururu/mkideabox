@@ -23,9 +23,13 @@ This app may share data with Google and its partner ad networks.
 
 Users may opt out or limit personalized ads via app or device settings.
 
-## 5. Contact
+## 5. Privacy Officer and Contact
+
+**Privacy Officer:** hyung-woo park
 
 **Email:** mkideabox@gmail.com
+
+**Phone:** +82-10-4732-7825
 
 ---
 

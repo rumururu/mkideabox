@@ -75,8 +75,9 @@ The App uses cookies and advertising identifiers (ADID/IDFA) to provide personal
 
 The App has designated a person responsible for personal information protection. If you have any questions regarding personal information, please contact us:
 
-- Data Protection Officer: Rose
+- Data Protection Officer: hyung-woo park
 - Email: mkideabox@gmail.com
+- Phone: +82-10-4732-7825
 
 ## 10. Changes to Privacy Policy
 

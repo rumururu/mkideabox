@@ -44,4 +44,4 @@ Data is securely protected through HTTPS communication and Supabase RLS.
 
 ## Article 9 (Privacy Officer)
 
-Jangmi / mkideabox@mkideabox.com
+hyung-woo park / Email: mkideabox@gmail.com / Phone: +82-10-4732-7825
