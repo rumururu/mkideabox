@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개인정보 처리방침 - Transparent Floating Keyboard</title>
+  <style>
+    body { font-size: 1.1rem; line-height: 1.6; margin: 0 1rem; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.25rem; margin-top: 1.5em; }
+    p, ul, li, td, th { font-size: 1rem; }
+    ul { padding-left: 1.2rem; }
+    li { margin-bottom: 0.5em; }
+    .subtitle { color: #666; font-size: 0.9rem; margin-top: -0.5em; }
+    .callout { border-left: 4px solid #3d6be5; padding: 0.6em 1em; background: #f4f6ff; margin: 1em 0; }
+    table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+    th, td { border: 1px solid #ddd; padding: 0.5em; text-align: left; }
+    hr { border: none; border-top: 1px solid #ddd; margin: 2em 0; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #181818; color: #eee; }
+      a { color: #85b7ff; }
+      .subtitle { color: #aaa; }
+      .callout { background: #1e2233; }
+      th, td { border-color: #444; }
+    }
+  </style>
+</head>
+<body>
+<h1>개인정보 처리방침</h1>
+<p class="subtitle">Transparent Floating Keyboard (투명 플로팅 키보드) · 최종 수정일 2026-07-26</p>
+
+<div class="callout">
+  <strong>요약:</strong> 이 앱은 <strong>인터넷 권한 자체가 없습니다.</strong>
+  여러분이 입력한 글자를 수집하거나 저장하거나 어디로도 보내지 않습니다.
+  광고·분석 SDK도 없습니다.
+</div>
+
+<h2>제1조 (수집하지 않는 것)</h2>
+<ul>
+  <li><strong>입력한 텍스트</strong> — 키보드로 친 내용을 저장하거나 전송하지 않습니다. 앱에 그런 코드가 없습니다.</li>
+  <li><strong>개인 식별 정보</strong> — 이름, 이메일, 전화번호, 계정을 요구하지 않습니다. 회원가입이 없습니다.</li>
+  <li><strong>기기 식별자</strong> — 광고 ID를 포함해 어떤 식별자도 수집하지 않습니다.</li>
+  <li><strong>위치 · 연락처 · 사진 · 파일</strong> — 해당 권한을 선언하지 않습니다.</li>
+  <li><strong>사용 통계 · 크래시 로그</strong> — 분석 도구를 넣지 않았습니다.</li>
+</ul>
+
+<h2>제2조 (앱이 선언하는 권한)</h2>
+<table>
+  <tr><th>권한</th><th>용도</th><th>필수 여부</th></tr>
+  <tr><td>마이크(RECORD_AUDIO)</td><td>음성 입력 기능. 사용자가 🎤 버튼을 누를 때만 동작합니다.</td><td>선택 (거부해도 나머지 기능 정상)</td></tr>
+  <tr><td>결제(com.android.vending.BILLING)</td><td>프리미엄 1회 구매. 결제는 Google Play가 처리합니다.</td><td>선택</td></tr>
+</table>
+<p>인터넷 권한은 <strong>선언하지 않습니다.</strong> 앱이 스스로 네트워크 통신을 할 수 없습니다.</p>
+
+<h2>제3조 (기기 안에만 저장되는 것)</h2>
+<ul>
+  <li><strong>키보드 외형 설정</strong> — 투명도, 위치, 크기, 사용 언어. 기기 백업에 포함될 수 있습니다.</li>
+  <li><strong>최근 사용 이모지</strong> — 최대 32개.</li>
+  <li><strong>클립보드 기록</strong> — 프리미엄 사용 중일 때만, 최대 20개. 아래 제4조 참조.</li>
+</ul>
+<p>모두 앱 내부 저장소에만 있으며, 앱을 삭제하면 함께 지워집니다.</p>
+
+<h2>제4조 (클립보드 기록 · 프리미엄)</h2>
+<ul>
+  <li>프리미엄을 구매하고 키보드가 활성화되어 있는 동안 복사한 텍스트를 최대 20개까지 기기 안에 보관합니다.</li>
+  <li>프리미엄이 아니면 <strong>아예 수집하지 않습니다.</strong></li>
+  <li>목록에서 항목을 길게 눌러 개별 삭제하거나, ‘전체 지우기’로 한 번에 삭제할 수 있습니다.</li>
+  <li>민감할 수 있는 정보이므로 <strong>안드로이드 자동 백업과 기기 이전 대상에서 제외</strong>했습니다. 다른 기기나 클라우드로 옮겨가지 않습니다.</li>
+</ul>
+
+<h2>제5조 (음성 입력 · 프리미엄)</h2>
+<ul>
+  <li>이 앱은 마이크를 직접 열지 않습니다. <strong>기기에 설치된 시스템 음성 인식 서비스</strong>에 인식을 위임하고, 결과로 받은 <strong>문자열만</strong> 입력창에 넣습니다.</li>
+  <li>앱은 오디오를 저장하지 않습니다. 오디오 버퍼 콜백은 아무 동작도 하지 않도록 비워 두었습니다.</li>
+  <li>가능한 기기에서는 <strong>기기 내(on-device) 인식을 우선</strong> 사용합니다. 이 경우 음성이 기기를 떠나지 않으며, 키보드에 “듣는 중… (기기 내 처리)”로 표시됩니다.</li>
+  <li>기기 내 인식을 쓸 수 없으면 시스템 기본 인식 서비스로 넘어갑니다. <strong>그 서비스(예: Google 음성 인식)가 자체적으로 음성을 서버로 보낼 수 있으며, 그 처리는 해당 제공자의 개인정보처리방침을 따릅니다.</strong> 이 앱이 통제하는 범위가 아닙니다.</li>
+  <li>음성 입력은 사용자가 🎤 버튼을 누를 때만 시작됩니다. 상시 대기하거나 몰래 녹음하지 않습니다.</li>
+</ul>
+
+<h2>제6조 (결제)</h2>
+<p>프리미엄은 Google Play를 통한 1회 결제입니다. 카드번호 등 결제 정보는 Google Play가 처리하며 이 앱은 접근할 수 없습니다.
+앱이 저장하는 것은 “구매함/구매 안 함” 여부 하나뿐이고, 실행할 때마다 Google Play에 실제 보유 상태를 다시 확인합니다.</p>
+
+<h2>제7조 (제3자 제공 및 국외 이전)</h2>
+<p>이 앱은 어떤 데이터도 제3자에게 제공하지 않으며, 국외로 이전하지 않습니다.
+유일한 예외는 제5조의 시스템 음성 인식 서비스이며, 이는 사용자가 음성 입력을 실행할 때 운영체제 구성요소로 전달되는 것입니다.</p>
+
+<h2>제8조 (아동)</h2>
+<p>이 앱은 만 13세 미만 아동을 대상으로 하지 않으며, 아동으로부터 고의로 개인정보를 수집하지 않습니다.</p>
+
+<h2>제9조 (이용자 권리)</h2>
+<ul>
+  <li>클립보드 기록·최근 이모지는 앱 안에서 언제든 삭제할 수 있습니다.</li>
+  <li>마이크 권한은 시스템 설정에서 언제든 철회할 수 있습니다.</li>
+  <li>앱을 삭제하면 기기에 저장된 모든 데이터가 함께 삭제됩니다.</li>
+  <li>이 앱은 계정을 만들지 않으므로 별도의 계정 삭제 절차가 없습니다.</li>
+</ul>
+
+<h2>제10조 (문의)</h2>
+<p>이메일: <a href="mailto:mkideabox@gmail.com">mkideabox@gmail.com</a></p>
+
+<hr>
+<p class="subtitle">이 방침이 변경되면 이 페이지에 게시하며, 중요한 변경은 앱 업데이트 시 안내합니다.</p>
+</body>
+</html>
