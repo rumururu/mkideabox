@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개인정보 처리방침 - 초과이익 계산기</title>
+  <style>
+    body { font-size: 1.1rem; line-height: 1.6; margin: 0 1rem 3rem; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.25rem; margin-top: 1.5em; }
+    table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+    th, td { border: 1px solid #8884; padding: .5em; text-align: left; font-size: .95rem; }
+    .note { border-left: 4px solid #3B5BDB; padding: .6em 1em; background: #3B5BDB14; }
+    @media (prefers-color-scheme: dark) { body { background: #181818; color: #eee; } }
+  </style>
+</head>
+<body>
+  <h1>개인정보 처리방침</h1>
+  <p><strong>초과이익 계산기</strong> (이하 &ldquo;앱&rdquo;)의 개인정보 처리방침입니다.<br>
+     최종 업데이트: 2026년 8월 31일</p>
+
+  <div class="note">
+    <p>이 앱은 <strong>계정도 로그인도 없습니다.</strong> 사용자가 입력한 급여 정보는
+    기기 안에서만 암호화되어 저장되며, <strong>어떤 경우에도 서버로 전송되지 않습니다.</strong></p>
+  </div>
+
+  <h2>1. 수집하는 개인정보</h2>
+  <p><strong>없습니다.</strong> 앱 개발자는 사용자의 개인정보를 일절 수집하지 않습니다.
+     회원가입, 로그인, 이메일 수집, 기기 식별자 수집, 광고 식별자 수집이 모두 없습니다.</p>
+
+  <h2>2. 기기에만 저장되는 정보</h2>
+  <p>아래 정보는 사용자가 직접 입력하며, 사용자의 기기에만 저장됩니다.</p>
+  <table>
+    <tr><th>항목</th><th>저장 위치</th><th>목적</th></tr>
+    <tr><td>연봉, 월 기본급</td><td>기기 암호화 저장소<br>(iOS Keychain / Android EncryptedSharedPreferences)</td><td>성과급 추정액 계산</td></tr>
+    <tr><td>소속 회사·조직 선택값</td><td>기기 암호화 저장소</td><td>배분 방식 결정</td></tr>
+    <tr><td>예측 기록, 적립 이력, 설정</td><td>기기 내 로컬 데이터베이스</td><td>앱 기능 제공</td></tr>
+  </table>
+  <p>앱을 삭제하면 위 정보는 기기에서 함께 삭제됩니다. 앱 내
+     <em>설정 &gt; 소속 · 급여 &gt; 저장된 급여 정보 삭제</em> 에서 개별 삭제도 가능합니다.</p>
+
+  <h2>3. 네트워크 통신</h2>
+  <p>앱은 성과급 추정에 쓰이는 <strong>공개 파라미터 파일(JSON) 하나</strong>를 내려받습니다.
+     이 요청에는 인증 정보나 개인 식별 정보가 포함되지 않으며, 모든 사용자가 동일한 파일을 받습니다.
+     서버는 누가 앱을 사용하는지 알지 못합니다.</p>
+  <ul>
+    <li>전송하는 것: 파일 요청 (인증 없음)</li>
+    <li>전송하지 않는 것: 연봉, 기본급, 소속, 계산 결과, 예측 기록, 기기 식별자, 광고 ID</li>
+  </ul>
+  <p>앱 내 <em>설정 &gt; 서버로 전송되는 데이터</em> 화면에서 전체 목록을 직접 확인할 수 있습니다.</p>
+
+  <h2>4. 제3자 제공 및 위탁</h2>
+  <p>수집하는 개인정보가 없으므로 제3자에게 제공하거나 처리를 위탁하는 개인정보도 없습니다.
+     광고 SDK, 분석 SDK, 추적 도구를 사용하지 않습니다.</p>
+
+  <h2>5. 계정 삭제</h2>
+  <p>앱에 계정 개념이 없어 삭제할 서버 측 계정이나 데이터가 존재하지 않습니다.
+     기기에서 앱을 삭제하면 모든 정보가 함께 사라집니다.</p>
+
+  <h2>6. 아동의 개인정보</h2>
+  <p>앱은 만 14세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 수집하지 않습니다.</p>
+
+  <h2>7. 면책 고지</h2>
+  <p>이 앱은 공개된 기업 실적 공시와 언론 보도를 바탕으로 성과급 규모를 <strong>추정</strong>하는
+     비공식 도구입니다. 특정 기업과 제휴하거나 후원받지 않으며, 어떤 기업의 공식 서비스도 아닙니다.
+     산정 방식 일부는 공개되지 않아 보도된 금액에서 역산한 추정치이며, 실제 지급액과 다를 수 있습니다.</p>
+
+  <h2>8. 방침 변경</h2>
+  <p>내용이 변경되면 이 페이지에서 공지합니다.</p>
+
+  <h2>9. 문의</h2>
+  <p>rumururu@gmail.com</p>
+</body>
+</html>
