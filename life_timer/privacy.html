@@ -17,10 +17,10 @@
 <body>
   <h1>개인정보 처리방침</h1>
   <p><strong>인생 타이머</strong> (이하 &ldquo;앱&rdquo;)의 개인정보 처리방침입니다.<br>
-     최종 업데이트: 2026년 8월 31일</p>
+     최종 업데이트: 2026년 9월 1일</p>
 
   <div class="note">
-    <p>이 앱은 <strong>인터넷 권한 자체가 없습니다.</strong>
+    <p>이 앱은 <strong>인터넷 통신 권한(INTERNET)이 없습니다.</strong>
     사용자가 입력한 연봉과 자산 정보는 기기 밖으로 나가는 경로가 존재하지 않습니다.</p>
     <p>계정도 로그인도 없고, 광고도 결제도 없습니다.</p>
   </div>
@@ -30,6 +30,21 @@
   <p>회원가입, 로그인, 이메일 수집, 광고 식별자 수집, 사용 통계 수집이 모두 없습니다.
      앱은 안드로이드 <code>INTERNET</code> 권한을 선언하지 않으므로,
      기술적으로 어떤 데이터도 외부로 전송할 수 없습니다.</p>
+
+  <h3>앱이 사용하는 권한</h3>
+  <table>
+    <tr><th>권한</th><th>쓰임</th></tr>
+    <tr><td><code>USE_BIOMETRIC</code><br><code>USE_FINGERPRINT</code></td>
+        <td>앱 잠금(선택 기능)의 지문·얼굴 인증</td></tr>
+    <tr><td><code>ACCESS_NETWORK_STATE</code></td>
+        <td>사용하는 라이브러리가 자동으로 포함하는 권한입니다.
+            연결 상태를 <em>조회</em>할 수 있을 뿐 통신은 할 수 없습니다</td></tr>
+    <tr><td><code>FOREGROUND_SERVICE</code><br><code>WAKE_LOCK</code><br>
+            <code>RECEIVE_BOOT_COMPLETED</code></td>
+        <td>홈 화면 위젯 갱신에 쓰이는 시스템 권한</td></tr>
+  </table>
+  <p><strong>인터넷 통신 권한(<code>INTERNET</code>)은 포함되어 있지 않습니다.</strong>
+     위 권한들만으로는 데이터를 외부로 보낼 수 없습니다.</p>
 
   <h2>2. 기기에만 저장되는 정보</h2>
   <p>아래 정보는 사용자가 직접 입력하며, 사용자의 기기에만 저장됩니다.
