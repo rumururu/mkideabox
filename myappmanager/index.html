@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="My App Manager — 앱 수익과 백엔드 현황을 한곳에서. Revenue records stay on your device. Review app revenue and backend status with your own service accounts.">
+  <title>My App Manager — 내 앱 장부 · Your app revenue ledger</title>
+  <style>
+    :root{--ink:#172c24;--muted:#53645c;--green:#0b654c;--paper:#f7f8f3;--line:#d6dfd7;--soft:#e9f1e9;--white:#fff;--radius:24px}
+    *{box-sizing:border-box}html{scroll-padding-top:24px}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.75;word-break:keep-all;overflow-wrap:anywhere}
+    a{color:var(--green);text-underline-offset:.22em}a:hover{text-decoration-thickness:2px}a:focus-visible{outline:3px solid #a34b00;outline-offset:5px;border-radius:3px}
+    .skip{position:absolute;left:16px;top:-100px;background:var(--white);padding:12px;z-index:10}.skip:focus{top:12px}
+    .wrap{width:min(1120px,calc(100% - 48px));margin-inline:auto}.top{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-block:26px;border-bottom:1px solid var(--line)}
+    .brand{font-weight:800;font-size:1.2rem;letter-spacing:-.035em;color:var(--ink);text-decoration:none}.top nav{display:flex;gap:8px;flex-wrap:wrap}.top nav a{padding:8px 12px;font-weight:650;font-size:.95rem}
+    .hero{padding-block:64px 48px}.eyebrow{color:var(--green);font-weight:750;letter-spacing:.12em;font-size:.76rem;text-transform:uppercase;margin:0 0 18px}
+    h1{font-size:clamp(2rem,5vw,3.9rem);line-height:1.22;letter-spacing:-.055em;margin:0;max-width:950px;text-wrap:balance}h1 span{display:block;margin-top:14px;font-size:.54em;line-height:1.4;letter-spacing:-.025em;font-weight:550}
+    .intro{max-width:780px;color:var(--muted);font-size:1.05rem;margin-top:24px}.intro p{margin-block:8px}.privacy{background:var(--green);color:white;padding:clamp(24px,4vw,40px);border-radius:var(--radius);margin-top:32px}
+    .privacy h2{font-size:clamp(1.45rem,3.4vw,2.35rem);line-height:1.45;letter-spacing:-.04em;margin:0;max-width:940px}.privacy .en{font-size:clamp(1.1rem,2.1vw,1.5rem);line-height:1.5;font-weight:600;margin-top:16px}.privacy p{margin:20px 0 0;color:#eff7ef;max-width:920px}.privacy a{color:white}
+    .section{padding-block:36px 48px}.section-head{display:flex;justify-content:space-between;align-items:baseline;gap:24px;margin-bottom:22px}.section-head h2{margin:0;font-size:1.7rem;line-height:1.4;letter-spacing:-.035em}.section-head p{margin:0;color:var(--muted);font-size:.9rem}
+    .screens{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}.screens figure{margin:0;min-width:0}.screens img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:18px;background:white;box-shadow:0 8px 24px #173d2410}.screens figcaption{padding:12px 2px;font-size:.95rem;font-weight:650}.screens figcaption span{display:block;font-size:.82rem;color:var(--muted);font-weight:500}
+    .language-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}.language-panel{min-width:0}.language-panel>h2{font-size:1.85rem;letter-spacing:-.035em;line-height:1.35;margin:0 0 20px}.locale-badge{display:inline-block;color:var(--green);font-size:.78rem;font-weight:750;border:1px solid #acc4b1;border-radius:999px;padding:2px 10px;margin-bottom:12px}
+    .card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:20px}.card h3{font-size:1.2rem;margin:0 0 12px;line-height:1.4}.card p{margin:12px 0}.card ul{padding-inline-start:20px;margin:12px 0 0}.card li{margin-bottom:8px}.card.pro{background:var(--soft);border-color:#bdcfbf}.tag{display:inline-block;margin-bottom:16px;font-size:.78rem;font-weight:750;color:var(--green);letter-spacing:.1em}.plan{font-size:1.2rem;font-weight:750}.small{font-size:.88rem;color:var(--muted)}.legal-links{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:16px}.legal-links a{padding-block:6px}
+    .support{border-top:1px solid var(--line);padding:40px 0 32px}.support h2{font-size:1.45rem;margin:0 0 12px}.support p{margin:8px 0}.support .email{display:inline-block;padding-block:10px;font-weight:750}footer{padding:22px 0 40px;color:var(--muted);font-size:.84rem;border-top:1px solid var(--line)}
+    @media(max-width:800px){.screens{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 16px}.language-grid{grid-template-columns:1fr;gap:36px}.hero{padding-top:44px}.section-head{display:block}.section-head p{margin-top:8px}}
+    @media(max-width:440px){.wrap{width:calc(100% - 32px)}.top{align-items:flex-start;gap:12px;flex-direction:column;padding-block:20px}.top nav{gap:4px}.top nav a{padding:6px 10px 6px 0}.card{padding:22px}.screens{gap:18px 12px}.screens img{border-radius:12px}.screens figcaption{font-size:.84rem}.screens figcaption span{font-size:.75rem}.hero{padding-top:32px}.privacy{padding:24px}}
+    @media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}@media print{body{background:white}.skip{display:none}.wrap{width:100%}.card,.privacy{break-inside:avoid}.privacy{border:2px solid var(--green);color:var(--ink);background:white}.privacy p,.privacy a{color:var(--ink)}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">본문으로 건너뛰기 / <span lang="en">Skip to content</span></a>
+  <header class="top wrap">
+    <a class="brand" href="#main" lang="en">My App Manager</a>
+    <nav aria-label="페이지 언어 / Page language">
+      <a href="#ko" lang="ko" hreflang="ko">한국어</a>
+      <a href="#en" lang="en" hreflang="en">English</a>
+      <a href="#support">문의 / <span lang="en">Support</span></a>
+    </nav>
+  </header>
+  <main id="main" class="wrap" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow" lang="en">Your apps. Your revenue. Your device.</p>
+      <h1 id="hero-title">흩어진 앱 수익을 한 장부로.<span lang="en">Your app revenue, together in one ledger.</span></h1>
+      <div class="intro">
+        <p>내 서비스 계정을 연결해 앱 수익과 백엔드 현황을 함께 확인하세요. 여러 앱을 운영하는 개발자를 위한 My App Manager입니다.</p>
+        <p lang="en">Connect your own service accounts to review app revenue and backend status together. My App Manager is built for developers managing multiple apps.</p>
+      </div>
+      <aside class="privacy" aria-labelledby="privacy-promise">
+        <h2 id="privacy-promise">수익 정보는 온라인에 저장되지 않으며 모든 수익 기록은 이 기기에만 저장됩니다.</h2>
+        <p class="en" lang="en">Revenue information is not stored online. All revenue records are stored only on this device.</p>
+        <p>앱은 연결한 서비스 API에 기기에서 직접 요청해 수익을 조회합니다. 조회한 수익과 일별 장부를 MK Idea Box 또는 별도의 온라인 서버에 업로드하거나 저장하지 않습니다.</p>
+        <p lang="en">The app requests revenue directly from your connected service APIs on your device. Retrieved revenue and daily ledgers are not uploaded to or stored on an MK Idea Box server or a separate online server.</p>
+        <p>광고·구독 구매에 필요한 데이터 처리는 <a href="privacy.html">개인정보 처리방침</a>에서 확인하세요.<br><span lang="en">See our <a href="privacy_en.html" hreflang="en">privacy policy</a> for data processing needed for ads and subscription purchases.</span></p>
+      </aside>
+    </section>
+
+    <section class="section" aria-labelledby="screens-title">
+      <div class="section-head">
+        <h2 id="screens-title">앱 화면 <span lang="en">/ Inside the app</span></h2>
+        <p>영어 화면 예시 · <span lang="en">Example screens in English</span></p>
+      </div>
+      <div class="screens">
+        <figure><img src="assets/overview_en.jpg" width="857" height="1490" alt="My App Manager overview showing active users, total users, downloads, reviews and each app's share." lang="en" loading="lazy" decoding="async"><figcaption>주요 지표<span lang="en">Your app metrics</span></figcaption></figure>
+        <figure><img src="assets/revenue_en.jpg" width="857" height="1490" alt="Revenue screen with a 30-day total, ad revenue, subscription revenue and one-time sales." lang="en" loading="lazy" decoding="async"><figcaption>일별 수익 장부<span lang="en">Revenue and its sources</span></figcaption></figure>
+        <figure><img src="assets/backends_en.jpg" width="857" height="1490" alt="Backend overview with Supabase and custom backend connections and their checking status." lang="en" loading="lazy" decoding="async"><figcaption>백엔드 현황<span lang="en">Backend status</span></figcaption></figure>
+        <figure><img src="assets/apps_en.jpg" width="857" height="1490" alt="Registered app list showing revenue summaries, connection indicators and setup reminders." lang="en" loading="lazy" decoding="async"><figcaption>앱과 연결 관리<span lang="en">Apps and connections</span></figcaption></figure>
+      </div>
+    </section>
+
+    <div class="language-grid section">
+      <section id="ko" class="language-panel" lang="ko" aria-labelledby="ko-title" tabindex="-1">
+        <span class="locale-badge">한국어</span>
+        <h2 id="ko-title">내 앱 운영을 한곳에서</h2>
+        <div class="card">
+          <h3>기본 조회는 무료</h3>
+          <p>계정과 필요한 권한을 연결하면 지원되는 데이터를 확인할 수 있습니다. 무료 이용에는 광고가 표시됩니다.</p>
+          <ul>
+            <li>AdMob, RevenueCat, Google Play, App Store Connect의 지원되는 수익 보고서 조회</li>
+            <li>일별 수익 기록, 기간별 합계, 원래 통화와 참고용 환산 금액 표시</li>
+            <li>앱 프로필과 서비스 계정 연결 관리</li>
+            <li>Supabase 상태와 API에서 제공하는 사용량 지표, 등록한 백엔드의 현황 확인</li>
+            <li>한국어·영어를 포함한 12개 언어와 앱 내 언어 선택</li>
+          </ul>
+          <p class="small">서비스마다 계정·API 키·권한이 필요합니다. 데이터 범위와 갱신 시점은 서비스에 따라 다르며, 환산 금액은 최종 정산 금액이 아닙니다.</p>
+        </div>
+        <div class="card pro">
+          <span class="tag" lang="en">MY APP MANAGER PRO</span>
+          <h3>광고 없이, 설정과 백엔드까지</h3>
+          <p class="plan">월간 또는 연간 구독</p>
+          <ul>
+            <li>앱의 모든 광고 제거</li>
+            <li>설정의 암호화 로컬 백업과 복원</li>
+            <li>주기적인 백엔드 확인과 문제 발생 시 기기 알림</li>
+          </ul>
+          <p>가격과 통화는 앱 및 스토어 구매 화면에서 확인할 수 있습니다. 구독은 선택한 기간마다 자동 갱신되며, Apple 또는 Google 계정의 구독 설정에서 관리·취소할 수 있습니다. 앱에서 기존 구매를 복원할 수 있습니다.</p>
+          <p class="small">알림에는 권한과 네트워크가 필요합니다. 백그라운드 실행은 운영체제의 제한을 받으므로 즉각적인 장애 감지·알림을 보장하지 않습니다. 백업 파일은 직접 저장 위치와 암호를 정해 보관합니다.</p>
+        </div>
+        <div class="card">
+          <h3>광고 한 편, 2시간 광고 없이</h3>
+          <p>보상형 광고의 시청 조건을 완료하면 그때부터 2시간 동안 모든 광고가 제거됩니다. 광고를 제공할 수 없거나 시청 완료가 확인되지 않으면 보상이 지급되지 않을 수 있습니다.</p>
+          <p>이 보상은 광고 제거만 제공합니다. Pro 구독의 설정 백업이나 주기적 백엔드 알림 기능은 포함되지 않습니다.</p>
+          <div class="legal-links"><a href="privacy.html">개인정보 처리방침</a><a href="terms.html">이용 약관</a></div>
+        </div>
+      </section>
+
+      <section id="en" class="language-panel" lang="en" aria-labelledby="en-title" tabindex="-1">
+        <span class="locale-badge">English</span>
+        <h2 id="en-title">Your app operations, together</h2>
+        <div class="card">
+          <h3>Basic viewing is free</h3>
+          <p>Connect your accounts with the required permissions to view supported data. Free use includes ads.</p>
+          <ul>
+            <li>Supported revenue reports from AdMob, RevenueCat, Google Play and App Store Connect</li>
+            <li>Daily revenue records, period totals, original currencies and estimated conversions</li>
+            <li>App profiles and service account connections</li>
+            <li>Supabase status, usage metrics available through its APIs and the status of registered backends</li>
+            <li>12 languages, including Korean and English, with an in-app language selector</li>
+          </ul>
+          <p class="small">Service accounts, API keys and permissions are required. Data coverage and update timing vary by service. Converted amounts are estimates, not final settlement amounts.</p>
+        </div>
+        <div class="card pro">
+          <span class="tag">MY APP MANAGER PRO</span>
+          <h3>No ads. Backups and backend alerts.</h3>
+          <p class="plan">Monthly or annual subscription</p>
+          <ul>
+            <li>Remove all ads in the app</li>
+            <li>Encrypted local settings backup and restore</li>
+            <li>Periodic backend checks with on-device issue notifications</li>
+          </ul>
+          <p>See the app and store purchase screen for your price and currency. Subscriptions renew automatically for the selected period. Manage or cancel in your Apple or Google account subscription settings, and restore existing purchases in the app.</p>
+          <p class="small">Notifications require permission and network access. Operating system limits affect background tasks, so immediate incident detection or delivery is not guaranteed. You choose where to save your backup file and set its password.</p>
+        </div>
+        <div class="card">
+          <h3>One rewarded ad. Two hours without ads.</h3>
+          <p>Complete the viewing conditions for a rewarded ad to remove all ads for 2 hours from completion. A reward may not be granted if an ad is unavailable or completion cannot be confirmed.</p>
+          <p>This reward removes ads only. It does not include Pro settings backups or periodic backend notification features.</p>
+          <div class="legal-links"><a href="privacy_en.html" hreflang="en">Privacy policy</a><a href="terms_en.html" hreflang="en">Terms of use</a></div>
+        </div>
+      </section>
+    </div>
+
+    <section class="support" id="support" aria-labelledby="support-title">
+      <h2 id="support-title">문의 및 지원 <span lang="en">/ Contact and support</span></h2>
+      <p>My App Manager는 MK Idea Box에서 제공합니다. 사용 방법이나 연결 문제는 이메일로 문의해 주세요.</p>
+      <p lang="en">My App Manager is provided by MK Idea Box. Email us for help using the app or troubleshooting service connections.</p>
+      <a class="email" href="mailto:mkideabox@gmail.com">mkideabox@gmail.com</a>
+      <p class="small">문의 시 API 키·비밀번호·개인키는 보내지 마세요. <span lang="en">Please do not include API keys, passwords or private keys in support messages.</span></p>
+      <div class="legal-links"><a href="privacy.html" lang="ko">개인정보 처리방침</a><a href="privacy_en.html" lang="en" hreflang="en">Privacy policy</a><a href="terms.html" lang="ko">이용 약관</a><a href="terms_en.html" lang="en" hreflang="en">Terms of use</a></div>
+    </section>
+  </main>
+  <footer class="wrap"><span lang="en">© 2026 MK Idea Box · My App Manager</span></footer>
+</body>
+</html>
