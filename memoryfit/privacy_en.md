@@ -130,9 +130,15 @@ MemoryFit supports offline study. In offline mode, study data is processed on de
 
 Usage analytics events recorded while offline may remain temporarily on your device and be sent after connectivity returns.
 
-## 10. Your Rights
+## 10. Your Rights and Account Deletion
 
-You may request access, correction, deletion, restriction of processing, or withdrawal of consent at any time through app settings or by email.
+To request deletion of your MemoryFit account in the app, open Settings, select “Delete account,” and confirm. Anonymous accounts can also be deleted in the app. Analytics records described in section 4 and records held by external payment providers may remain after account deletion.
+
+If you cannot use the app or prefer to request deletion outside the app, email [mkideabox@gmail.com](mailto:mkideabox@gmail.com?subject=MemoryFit%20account%20deletion) with the subject “MemoryFit account deletion.” Include your sign-in email or information that lets us identify your account. We will verify your identity before processing the request. Do not send passwords or verification codes.
+
+### Request data deletion while keeping your account
+
+You may request access, correction, deletion, restriction of processing, or withdrawal of consent without deleting your entire account. Email [mkideabox@gmail.com](mailto:mkideabox@gmail.com?subject=MemoryFit%20data%20deletion) with the subject “MemoryFit data deletion,” the data you want deleted, and information that lets us identify your account. This also applies to usage analytics deletion requests. See section 4 for retention details and records that may remain after account deletion.
 
 ## 11. Security
 
