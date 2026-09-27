@@ -22,7 +22,7 @@
 <body>
 <h1>Privacy Policy</h1>
 <p class="subtitle">MemoryFit (FSRS-based memory training app)</p>
-<p class="subtitle">Last updated: May 6, 2026</p>
+<p class="subtitle">Last updated: September 27, 2026</p>
 
 <h2>1. Information We Collect</h2>
 <ul>
@@ -34,6 +34,7 @@
   <li>Voice input, only when you use spoken answer features.</li>
   <li>For AI features: content you enter or import, text extracted from PDFs, web pages, or videos, generation options, image prompts, and technical logs needed to process requests.</li>
   <li>Purchase and credit usage records, such as product IDs, transaction identifiers, and credit usage history.</li>
+  <li>Usage analytics: an account identifier (including an automatically created anonymous account), event types for app opens, deep links, deck installation or publication, sharing, review prompt display, and study session starts, completions, or explicit abandonment; identifiers for study sessions, decks, shared decks, and templates; card counts; study scope, installation source, deck category, and publication credit price; device event time and server receipt time. Analytics events do not include card front or back content.</li>
 </ul>
 
 <h2>2. How We Use Information</h2>
@@ -45,7 +46,10 @@
   <li>To provide learning statistics and progress tracking.</li>
   <li>To process credit purchases, credit usage, refunds, and abuse prevention.</li>
   <li>To improve app functionality, analyze errors, maintain security, and prevent misuse.</li>
+  <li>To analyze app usage and the flow of study session starts, completions, and explicit abandonment linked to an account identifier. A start without an outcome event does not by itself prove that a user abandoned the session.</li>
 </ul>
+
+<p>Usage analytics events are temporarily stored on your device when an account identifier is available. The app may create an anonymous account even if you do not sign in with email or a social provider, so analytics events may be linked to that account. Events recorded without an account identifier are not saved, and events saved for one account are not assigned to a later account. The app attempts to send events to Supabase in a batch when a certain number have accumulated or the app moves to the background. Failed transfers are retried. When the device storage limit is reached, the oldest records are removed first.</p>
 
 <h2>3. AI Features and Third-Party AI Processing</h2>
 <ul>
@@ -68,6 +72,7 @@
   <li>AI request data: processed to provide the feature and may be retained in service logs under relevant provider terms and policies for security, abuse prevention, operations, and legal obligations.</li>
   <li>Purchase and credit records: may be retained as needed for transaction verification, refunds, accounting, and dispute handling.</li>
   <li>Device identifiers: retained until app deletion or your deletion request.</li>
+  <li>Usage analytics: events stored on the server have no configured fixed retention period or automatic expiration. When you delete your account, the link between the events and your account identifier is removed, but event types, additional information, and timestamps remain. Unsent analytics records temporarily stored on your device are also not separately removed by the account deletion process. You can request deletion of analytics information using the contact details below.</li>
 </ul>
 
 <h2>5. Third-Party Sharing</h2>
@@ -88,7 +93,7 @@
 <h2>6. Service Providers and International Processing</h2>
 <ul>
   <li>
-    Supabase Inc. (United States): database hosting, authentication, and server-side functions.<br>
+    Supabase Inc. (United States): database hosting, authentication, server-side functions, and storage and processing of usage analytics events linked to an account identifier.<br>
     Contact: <a href="https://supabase.com/contact" target="_blank" rel="noopener noreferrer">supabase.com/contact</a>
   </li>
   <li>
@@ -114,6 +119,7 @@
 
 <h2>9. Offline Use</h2>
 <p>MemoryFit supports offline study. In offline mode, study data is processed on device except for features that require a network connection, such as AI generation, backup, and purchase validation.</p>
+<p>Usage analytics events recorded while offline may remain temporarily on your device and be sent after connectivity returns.</p>
 
 <h2>10. Your Rights</h2>
 <p>You may request access, correction, deletion, restriction of processing, or withdrawal of consent at any time through app settings or by email.</p>
@@ -128,6 +134,7 @@
 
 <h2>13. Changes</h2>
 <ul>
+  <li>September 27, 2026: Added details about account-linked usage analytics, including anonymous accounts, batch transfer, retention, and records that may remain after account deletion.</li>
   <li>May 6, 2026: Added details about AI features, third-party AI processing, credit purchase processing, retention, and logs.</li>
 </ul>
 </body>
