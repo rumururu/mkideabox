@@ -26,7 +26,7 @@
 
 <h2>1. Information We Collect</h2>
 <ul>
-  <li>Device identifiers, such as anonymized device IDs.</li>
+  <li>Device or app identifiers, such as an app installation identifier used for error reporting. Additional device identifier processing by payment services may depend on their configuration.</li>
   <li>Account information, such as email address and login provider identifier, when you sign in.</li>
   <li>Study data, including decks, card content, review records, and learning statistics.</li>
   <li>Contacts information, such as names and phone numbers, only when you choose to create a contacts deck.</li>
@@ -34,6 +34,7 @@
   <li>Voice input, only when you use spoken answer features.</li>
   <li>For AI features: content you enter or import, text extracted from PDFs, web pages, or videos, generation options, image prompts, and technical logs needed to process requests.</li>
   <li>Purchase and credit usage records, such as product IDs, transaction identifiers, and credit usage history.</li>
+  <li>Crash and diagnostic information, such as error details and time, app version, device model, and operating system. App versions with error reporting enabled may send this information to Sentry.</li>
   <li>Usage analytics: an account identifier (including an automatically created anonymous account), event types for app opens, deep links, deck installation or publication, sharing, review prompt display, and study session starts, completions, or explicit abandonment; identifiers for study sessions, decks, shared decks, and templates; card counts; study scope, installation source, deck category, and publication credit price; device event time and server receipt time. Analytics events do not include card front or back content.</li>
 </ul>
 
@@ -46,6 +47,7 @@
   <li>To provide learning statistics and progress tracking.</li>
   <li>To process credit purchases, credit usage, refunds, and abuse prevention.</li>
   <li>To improve app functionality, analyze errors, maintain security, and prevent misuse.</li>
+  <li>To improve app stability using crash and diagnostic information.</li>
   <li>To analyze app usage and the flow of study session starts, completions, and explicit abandonment linked to an account identifier. A start without an outcome event does not by itself prove that a user abandoned the session.</li>
 </ul>
 
@@ -71,7 +73,7 @@
   <li>Camera images and voice input: processed to provide the selected feature. They are not sent to third-party AI providers unless you separately enter or send them through an AI feature.</li>
   <li>AI request data: processed to provide the feature and may be retained in service logs under relevant provider terms and policies for security, abuse prevention, operations, and legal obligations.</li>
   <li>Purchase and credit records: may be retained as needed for transaction verification, refunds, accounting, and dispute handling.</li>
-  <li>Device identifiers: retained until app deletion or your deletion request.</li>
+  <li>Device or app identifiers and crash or diagnostic information: may be processed as needed to provide features and analyze errors. Retention by external services follows their policies; we do not promise a fixed retention period.</li>
   <li>Usage analytics: events stored on the server have no configured fixed retention period or automatic expiration. When you delete your account, the link between the events and your account identifier is removed, but event types, additional information, and timestamps remain. Unsent analytics records temporarily stored on your device are also not separately removed by the account deletion process. You can request deletion of analytics information using the contact details below.</li>
 </ul>
 
@@ -83,8 +85,8 @@
     Purpose: automatic study card generation and educational image generation.
   </li>
   <li>
-    <strong>Apple In-App Purchase / RevenueCat</strong>, when processing and validating credit purchases.<br>
-    Data shared: purchased product ID, transaction identifier, and information needed for purchase validation.<br>
+    <strong>Google Play Billing / Apple In-App Purchase / RevenueCat</strong>, when processing and validating credit purchases.<br>
+    Data shared: purchased product ID, transaction identifier, app user identifier, and information needed for purchase validation.<br>
     Purpose: payment processing, purchase restoration, credit fulfillment, and refund handling.
   </li>
 </ul>
@@ -96,6 +98,8 @@
     Supabase Inc. (United States): database hosting, authentication, server-side functions, and storage and processing of usage analytics events linked to an account identifier.<br>
     Contact: <a href="https://supabase.com/contact" target="_blank" rel="noopener noreferrer">supabase.com/contact</a>
   </li>
+  <li>RevenueCat: processes purchase and subscription status, purchase validation, and restoration, including purchase history, transaction information, and app user identifiers. Device identifier processing depends on service configuration.</li>
+  <li>Sentry: in app versions with error reporting enabled, processes an app installation identifier, crash and error logs, and app or device diagnostic information. Filters are applied to reduce transmission of sensitive content such as card text. Processing of connection IP addresses may depend on service settings.</li>
   <li>
     Google Gemini API / Google LLC or related Google affiliates: AI request processing.<br>
     Data processed: AI feature content, generation options, image prompts, and technical logs.<br>

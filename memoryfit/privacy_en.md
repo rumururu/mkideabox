@@ -6,7 +6,7 @@ Last updated: September 27, 2026
 
 ## 1. Information We Collect
 
-- Device identifiers, such as anonymized device IDs.
+- Device or app identifiers, such as an app installation identifier used for error reporting. Additional device identifier processing by payment services may depend on their configuration.
 
 - Account information, such as email address and login provider identifier, when you sign in.
 
@@ -21,6 +21,8 @@ Last updated: September 27, 2026
 - For AI features: content you enter or import, text extracted from PDFs, web pages, or videos, generation options, image prompts, and technical logs needed to process requests.
 
 - Purchase and credit usage records, such as product IDs, transaction identifiers, and credit usage history.
+
+- Crash and diagnostic information, such as error details and time, app version, device model, and operating system. App versions with error reporting enabled may send this information to Sentry.
 
 - Usage analytics: an account identifier (including an automatically created anonymous account), event types for app opens, deep links, deck installation or publication, sharing, review prompt display, and study session starts, completions, or explicit abandonment; identifiers for study sessions, decks, shared decks, and templates; card counts; study scope, installation source, deck category, and publication credit price; device event time and server receipt time. Analytics events do not include card front or back content.
 
@@ -39,6 +41,8 @@ Last updated: September 27, 2026
 - To process credit purchases, credit usage, refunds, and abuse prevention.
 
 - To improve app functionality, analyze errors, maintain security, and prevent misuse.
+
+- To improve app stability using crash and diagnostic information.
 
 - To analyze app usage and the flow of study session starts, completions, and explicit abandonment linked to an account identifier. A start without an outcome event does not by itself prove that a user abandoned the session.
 
@@ -76,7 +80,7 @@ Usage analytics events are temporarily stored on your device when an account ide
 
 - Purchase and credit records: may be retained as needed for transaction verification, refunds, accounting, and dispute handling.
 
-- Device identifiers: retained until app deletion or your deletion request.
+- Device or app identifiers and crash or diagnostic information: may be processed as needed to provide features and analyze errors. Retention by external services follows their policies; we do not promise a fixed retention period.
 
 - Usage analytics: events stored on the server have no configured fixed retention period or automatic expiration. When you delete your account, the link between the events and your account identifier is removed, but event types, additional information, and timestamps remain. Unsent analytics records temporarily stored on your device are also not separately removed by the account deletion process. You can request deletion of analytics information using the contact details below.
 
@@ -88,9 +92,9 @@ Data shared: user-entered or imported study content, extracted text from PDFs, w
 
 Purpose: automatic study card generation and educational image generation.
 
-- Apple In-App Purchase / RevenueCat, when processing and validating credit purchases.  
+- Google Play Billing / Apple In-App Purchase / RevenueCat, when processing and validating credit purchases.  
 
-Data shared: purchased product ID, transaction identifier, and information needed for purchase validation.  
+Data shared: purchased product ID, transaction identifier, app user identifier, and information needed for purchase validation.  
 
 Purpose: payment processing, purchase restoration, credit fulfillment, and refund handling.
 
@@ -101,6 +105,10 @@ Except as described above or as required by law, MemoryFit does not provide pers
 - Supabase Inc. (United States): database hosting, authentication, server-side functions, and storage and processing of usage analytics events linked to an account identifier.  
 
 Contact: [supabase.com/contact](https://supabase.com/contact)
+
+- RevenueCat: processes purchase and subscription status, purchase validation, and restoration, including purchase history, transaction information, and app user identifiers. Device identifier processing depends on service configuration.
+
+- Sentry: in app versions with error reporting enabled, processes an app installation identifier, crash and error logs, and app or device diagnostic information. Filters are applied to reduce transmission of sensitive content such as card text. Processing of connection IP addresses may depend on service settings.
 
 - Google Gemini API / Google LLC or related Google affiliates: AI request processing.  
 
