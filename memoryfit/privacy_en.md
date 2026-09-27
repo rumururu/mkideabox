@@ -154,7 +154,7 @@ You may request access, correction, deletion, restriction of processing, or with
 
 ## 11. Security
 
-MemoryFit applies reasonable technical and organizational safeguards, including HTTPS, Supabase Row Level Security, authentication-based access controls, and device storage protection.
+MemoryFit applies reasonable technical and organizational safeguards, including HTTPS for communication with MemoryFit servers, Supabase Row Level Security, authentication-based access controls, and device storage protection. Network processing by the device speech recognition service depends on its provider and device settings.
 
 ## 12. Privacy Officer
 
