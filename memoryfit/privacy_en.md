@@ -6,7 +6,7 @@ Last updated: September 27, 2026
 
 ## 1. Information We Collect
 
-- Device or app identifiers, such as an app installation identifier used for error reporting. Additional device identifier processing by payment services may depend on their configuration.
+- Device or app identifiers, such as an app installation identifier used for error reporting. On iOS, RevenueCat processes the identifier for vendor (IDFV). Android device identifier processing is being verified separately.
 
 - Account information, such as email address and login provider identifier, when you sign in.
 
@@ -96,7 +96,7 @@ Purpose: automatic study card generation and educational image generation.
 
 - Google Play Billing / Apple In-App Purchase / RevenueCat, when processing and validating credit purchases.  
 
-Data shared: purchased product ID, transaction identifier, app user identifier, and information needed for purchase validation.  
+Data shared: purchased product ID, transaction identifier, app user identifier, and information needed for purchase validation. On iOS, RevenueCat requests include the identifier for vendor (IDFV) and app user identifier.  
 
 Purpose: payment processing, purchase restoration, credit fulfillment, and refund handling.
 
@@ -108,7 +108,7 @@ Except as described above or as required by law, MemoryFit does not provide pers
 
 Contact: [supabase.com/contact](https://supabase.com/contact)
 
-- RevenueCat: processes purchase and subscription status, purchase validation, and restoration, including purchase history, transaction information, and app user identifiers. Device identifier processing depends on service configuration.
+- RevenueCat: processes purchase and subscription status, purchase validation, and restoration, including purchase history, transaction information, and app user identifiers. On iOS, purchase-related requests transmit the identifier for vendor (IDFV) alongside the app user identifier. Android device identifier processing is being verified separately.
 
 - Sentry: in app versions with error reporting enabled, processes an app installation identifier, crash and error logs, and app or device diagnostic information. Filters are applied to reduce transmission of sensitive content such as card text. Processing of connection IP addresses may depend on service settings.
 
