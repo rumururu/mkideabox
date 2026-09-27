@@ -16,7 +16,7 @@ Last updated: September 27, 2026
 
 - Camera images or user-selected images, only when you choose to create image cards.
 
-- Voice input, only when you use spoken answer features.
+- Voice input, only when you use spoken answer features. The device's speech recognition service processes speech and may use the network depending on the device and its settings.
 
 - For AI features: content you enter or import, text extracted from PDFs, web pages, or videos, generation options, image prompts, and technical logs needed to process requests.
 
@@ -74,7 +74,9 @@ Usage analytics events are temporarily stored on your device when an account ide
 
 - Contacts information: processed on device and not sent to MemoryFit servers.
 
-- Camera images and voice input: processed to provide the selected feature. They are not sent to third-party AI providers unless you separately enter or send them through an AI feature.
+- Camera images: processed for the selected feature and not sent to Google Gemini API unless you separately enter or send them through an AI feature.
+
+- Spoken answers: the device's speech recognition service converts speech to text and may transmit audio off the device depending on its settings. MemoryFit servers do not receive the audio recording itself. Retention by the recognition provider follows that provider's policies.
 
 - AI request data: processed to provide the feature and may be retained in service logs under relevant provider terms and policies for security, abuse prevention, operations, and legal obligations.
 
@@ -110,6 +112,8 @@ Contact: [supabase.com/contact](https://supabase.com/contact)
 
 - Sentry: in app versions with error reporting enabled, processes an app installation identifier, crash and error logs, and app or device diagnostic information. Filters are applied to reduce transmission of sensitive content such as card text. Processing of connection IP addresses may depend on service settings.
 
+- Device speech recognition provider: converts speech to text when you choose a spoken answer. The provider varies by device and operating system settings and may process speech over the network.
+
 - Google Gemini API / Google LLC or related Google affiliates: AI request processing.  
 
 Data processed: AI feature content, generation options, image prompts, and technical logs.  
@@ -130,11 +134,11 @@ Related policy: [Gemini API Data Logging and Sharing](https://ai.google.dev/gemi
 
 - Microphone: used for spoken answers and text-to-speech related features.
 
-- Captured images and voice input are generally processed on device. They are not sent to third-party AI providers unless you separately enter or send them through an AI feature.
+- Captured images are not sent to Google Gemini API unless you separately enter or send them through an AI feature. Spoken answers are processed by the device's speech recognition service, which may send audio over the network depending on the device and settings.
 
 ## 9. Offline Use
 
-MemoryFit supports offline study. In offline mode, study data is processed on device except for features that require a network connection, such as AI generation, backup, and purchase validation.
+MemoryFit supports offline study. AI generation, backup, purchase validation, and speech recognition on some devices or settings may require a network connection.
 
 Usage analytics events recorded while offline may remain temporarily on your device and be sent after connectivity returns.
 

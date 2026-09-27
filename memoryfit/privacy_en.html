@@ -31,7 +31,7 @@
   <li>Study data, including decks, card content, review records, and learning statistics.</li>
   <li>Contacts information, such as names and phone numbers, only when you choose to create a contacts deck.</li>
   <li>Camera images or user-selected images, only when you choose to create image cards.</li>
-  <li>Voice input, only when you use spoken answer features.</li>
+  <li>Voice input, only when you use spoken answer features. The device's speech recognition service processes speech and may use the network depending on the device and its settings.</li>
   <li>For AI features: content you enter or import, text extracted from PDFs, web pages, or videos, generation options, image prompts, and technical logs needed to process requests.</li>
   <li>Purchase and credit usage records, such as product IDs, transaction identifiers, and credit usage history.</li>
   <li>Crash and diagnostic information, such as error details and time, app version, device model, and operating system. App versions with error reporting enabled may send this information to Sentry.</li>
@@ -70,7 +70,8 @@
 <ul>
   <li>Study data: retained until app deletion, account deletion, or your deletion request.</li>
   <li>Contacts information: processed on device and not sent to MemoryFit servers.</li>
-  <li>Camera images and voice input: processed to provide the selected feature. They are not sent to third-party AI providers unless you separately enter or send them through an AI feature.</li>
+  <li>Camera images: processed for the selected feature and not sent to Google Gemini API unless you separately enter or send them through an AI feature.</li>
+  <li>Spoken answers: the device's speech recognition service converts speech to text and may transmit audio off the device depending on its settings. MemoryFit servers do not receive the audio recording itself. Retention by the recognition provider follows that provider's policies.</li>
   <li>AI request data: processed to provide the feature and may be retained in service logs under relevant provider terms and policies for security, abuse prevention, operations, and legal obligations.</li>
   <li>Purchase and credit records: may be retained as needed for transaction verification, refunds, accounting, and dispute handling.</li>
   <li>Device or app identifiers and crash or diagnostic information: may be processed as needed to provide features and analyze errors. Retention by external services follows their policies; we do not promise a fixed retention period.</li>
@@ -100,6 +101,7 @@
   </li>
   <li>RevenueCat: processes purchase and subscription status, purchase validation, and restoration, including purchase history, transaction information, and app user identifiers. Device identifier processing depends on service configuration.</li>
   <li>Sentry: in app versions with error reporting enabled, processes an app installation identifier, crash and error logs, and app or device diagnostic information. Filters are applied to reduce transmission of sensitive content such as card text. Processing of connection IP addresses may depend on service settings.</li>
+  <li>Device speech recognition provider: converts speech to text when you choose a spoken answer. The provider varies by device and operating system settings and may process speech over the network.</li>
   <li>
     Google Gemini API / Google LLC or related Google affiliates: AI request processing.<br>
     Data processed: AI feature content, generation options, image prompts, and technical logs.<br>
@@ -118,11 +120,11 @@
 <ul>
   <li>Camera: used to create image cards.</li>
   <li>Microphone: used for spoken answers and text-to-speech related features.</li>
-  <li>Captured images and voice input are generally processed on device. They are not sent to third-party AI providers unless you separately enter or send them through an AI feature.</li>
+  <li>Captured images are not sent to Google Gemini API unless you separately enter or send them through an AI feature. Spoken answers are processed by the device's speech recognition service, which may send audio over the network depending on the device and settings.</li>
 </ul>
 
 <h2>9. Offline Use</h2>
-<p>MemoryFit supports offline study. In offline mode, study data is processed on device except for features that require a network connection, such as AI generation, backup, and purchase validation.</p>
+<p>MemoryFit supports offline study. AI generation, backup, purchase validation, and speech recognition on some devices or settings may require a network connection.</p>
 <p>Usage analytics events recorded while offline may remain temporarily on your device and be sent after connectivity returns.</p>
 
 <h2 id="account-deletion">10. Your Rights and Account Deletion</h2>
