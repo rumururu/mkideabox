@@ -10,7 +10,7 @@ These Terms govern the rights, obligations, and responsibilities between users a
 - "Company" refers to mkideabox Inc., which operates this App.
 
 ## Article 3 (Service Description)
-The App provides user registration, test/feedback exchange request registration and participation, trust score management, and notification features.
+The App provides user registration, test/feedback exchange request registration and participation, trust score management, and notification features. The iOS app offers feedback exchanges only for iOS apps already published on the App Store. Prerelease testing exchanges are available only on Android. The current version does not offer exchanges between different operating systems.
 
 ## Article 4 (Terms of Use)
 Users must register with their email and nickname. Duplicate registrations for the same request type are not permitted.
@@ -31,3 +31,10 @@ These Terms are governed by the laws of the Republic of Korea. Users are subject
 - The App may include Google AdMob advertisements, which may redirect to third-party sites.
 - Google may collect information such as advertising IDs during this process.
 - For more information about advertising, please refer to [Google's Privacy Policy](https://policies.google.com/privacy?hl=en).
+
+## Article 10 (Community Safety and Account Restrictions)
+
+- Objectionable content, pornography, harassment, hate speech, fraud, spam, threats, and unauthorized disclosure of another person's personal information are prohibited. The service does not tolerate objectionable content or abusive users.
+- Users can report content and block its author using the controls in the App. Blocking immediately hides that author's content from the blocking user's feed.
+- Reports and blocks are sent to the operator for review. Within 24 hours of receipt, the Company reviews reports, removes violating content, and restricts or terminates the offending user's access to the service.
+- Report reasons and related content are processed for review and abuse prevention under the Privacy Policy. Questions and appeals can be sent to mkideabox@gmail.com.

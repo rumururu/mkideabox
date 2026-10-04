@@ -52,3 +52,10 @@ You can change ad personalization settings in your device settings:
 2. Tester information is anonymized (Tester A, B, etc.) before being provided to developers.
 3. Testers receive an additional credit bonus (+10) upon completing Analytics-enabled tests.
 4. Upon account deletion, device identifiers are anonymized, and existing analytics data is used for statistical purposes only.
+
+## Article 12 (Content Reports and User Blocking)
+
+- When a user reports content or blocks another user, we store identifiers for the reporting/blocking user and the target user, the reason and description, related content identifiers and text, submission time, and moderation records.
+- We use this information to review reports, act on violating content and abusive users, hide blocked content, and prevent abuse. Operators can access the information needed for review; the reporter's identity is not published to other users.
+- Administrator notifications contain a report identifier and action deadline, but do not include the reported text or the reporter's identity. Storage and notifications use the processors described in Article 5.
+- Requests to access, correct, or delete this information, and related questions, can be submitted through the App or to mkideabox@gmail.com.
