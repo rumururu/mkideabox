@@ -47,7 +47,7 @@
 <p class="meta">
   투명 플로팅 키보드 (Floating Keyboard) &middot; <code>com.mkideabox.tfkeyboard</code><br>
   개발자 mkideabox &middot; 문의 <a href="mailto:mkideabox@gmail.com">mkideabox@gmail.com</a><br>
-  시행일 / Effective date: 2026-09-19
+  시행일 / Effective date: 2026-10-09
 </p>
 
 <nav><a href="#ko">한국어</a><a href="#en">English</a></nav>
@@ -56,7 +56,8 @@
 
 <h2>1. 요약</h2>
 <p class="lead">
-  이 앱은 <strong>사용자의 개인정보를 수집하지 않고, 외부로 전송하지 않습니다.</strong>
+  이 앱은 기본 상태에서 <strong>사용자의 개인정보를 수집하지 않고, 외부로 전송하지 않습니다.</strong>
+  직접 켜야 하는 &lsquo;AI 교정&rsquo;을 쓸 때만 Google ML Kit 이 진단 정보(입력한 글 제외)를 Google 로 보냅니다(5-1항).
   앱 코드에는 네트워크 통신 기능이 없고, 광고 SDK 와 분석 SDK 도 포함되어 있지 않습니다.
   다만 Google Play 결제 라이브러리가 <code>INTERNET</code> 과 <code>ACCESS_NETWORK_STATE</code> 권한을 함께
   가져옵니다(프리미엄 결제 처리에 필요). 이 권한은 결제 라이브러리만 사용하며,
@@ -67,7 +68,7 @@
 <h2>2. 입력한 내용에 대하여</h2>
 <p>이 앱은 입력기(IME)입니다. 다른 앱에 글자를 넣기 위해 여러분이 누른 키를 처리하지만,</p>
 <ul>
-  <li>입력한 글자를 <strong>개발자를 포함한 누구에게도 전송하지 않습니다.</strong> 앱에 네트워크 권한이 없습니다.</li>
+  <li>입력한 글자를 <strong>개발자를 포함한 누구에게도 전송하지 않습니다.</strong> AI 교정을 쓸 때도 글은 기기 안에서 처리됩니다(5-1항).</li>
   <li>입력한 <strong>문장을 저장하지 않습니다.</strong> 단어 자동완성이 켜져 있으면(기본 켜짐) 공백 &middot; 엔터 &middot; 구두점으로 끝난
       <strong>단어와 그 사용 횟수만</strong> 자판 언어별로 기기 안 앱 전용 저장소에 남깁니다. 문장, 단어의 순서, 입력 시각,
       어느 앱에서 쳤는지는 남기지 않습니다.</li>
@@ -101,7 +102,7 @@
   <li>클립보드 기록은 <strong>프리미엄을 구매한 경우에만</strong> 동작합니다. 무료 상태에서는 복사한 내용이 전혀 저장되지 않습니다.</li>
   <li>안드로이드는 <strong>현재 선택된 기본 입력기에만</strong> 클립보드 읽기를 허용합니다. 이 앱이 기본 입력기가 아닐 때는 클립보드에 접근할 수 없습니다.</li>
   <li>저장되는 것은 텍스트뿐이며, 저장 위치는 3항의 앱 전용 저장소입니다.</li>
-  <li>클립보드 기록은 <strong>외부로 전송되지 않습니다.</strong> 앱에 네트워크 권한이 없습니다.</li>
+  <li>클립보드 기록은 <strong>외부로 전송되지 않습니다.</strong></li>
   <li>키보드 툴바의 <code>📋</code> 화면에서 항목을 길게 눌러 개별 삭제할 수 있습니다.</li>
 </ul>
 
@@ -120,6 +121,16 @@
   <strong>해당 엔진 제공자의 개인정보처리방침이 적용되며, 이 앱은 그 처리 방식을 제어하지 않습니다.</strong>
   기기의 음성 인식 엔진은 <em>설정 &gt; 시스템 &gt; 언어 및 입력 &gt; 음성 인식</em> 등에서 확인 &middot; 변경할 수 있습니다.
 </p>
+
+<h2>5-1. AI 교정 (선택 기능, 기본 꺼짐)</h2>
+<ul>
+  <li>설정에서 <strong>직접 켜야</strong> 동작하는 선택 기능이며(기본 꺼짐), 기기 내장 AI(Gemini Nano)가 있는 기기에서만 쓸 수 있습니다.</li>
+  <li>키보드의 ✨ 를 누르면 커서 앞 글(최대 약 600자)을 기기 내장 AI 로 교정해 결과를 보여 주고, [적용]을 누를 때만 바꿉니다.</li>
+  <li>교정할 글은 <strong>기기 안에서</strong> 처리됩니다. 이 앱은 그 글을 저장하거나 전송하지 않으며, Google ML Kit 문서도 입력·추론·결과가 기기 안에서 처리된다고 밝힙니다.</li>
+  <li>다만 이 기능에 쓰이는 Google ML Kit 은 동작할 때 <strong>진단·사용 통계용 정보</strong>를 Google 로 보냅니다: 기기 제조사·모델·OS 버전, 앱 패키지명·버전, 설치별 식별자, 처리 시간 같은 성능 지표, 입력·결과의 길이, 기능 버전·이벤트·오류 코드, 설정한 언어. <strong>입력한 글의 내용은 이 목록에 없습니다.</strong> 전송은 HTTPS 로 암호화되며, Google 은 이 정보를 제3자에게 넘기지 않는다고 밝힙니다(<a href="https://developers.google.com/ml-kit/android-data-disclosure">ML Kit 데이터 공개</a>). 개발자가 이 정보를 받는 경로는 없습니다.</li>
+  <li>AI 교정을 켜지 않으면 ML Kit 은 동작하지 않고 위 정보도 보내지 않습니다. 설정에서 언제든 끌 수 있습니다.</li>
+  <li>기기 내장 AI 이용에는 <a href="https://developers.google.com/ml-kit/terms">ML Kit 약관</a>과 Google 의 개인정보처리방침이 적용됩니다.</li>
+</ul>
 
 <h2>6. 결제</h2>
 <ul>
@@ -140,12 +151,15 @@
 
 <h2>8. 제3자 제공 &middot; 위탁 &middot; 국외 이전</h2>
 <p>
-  이 앱은 수집하는 개인정보가 없으므로 <strong>제3자에게 제공하거나 처리를 위탁하는 항목이 없고,
+  기본 상태에서 이 앱은 수집하는 개인정보가 없으므로 <strong>제3자에게 제공하거나 처리를 위탁하는 항목이 없고,
   국외로 이전하는 항목도 없습니다.</strong> 앱에는 광고 네트워크, 분석 도구, 크래시 리포터, 추적
   SDK 가 포함되어 있지 않습니다.
 </p>
 <p>
-  다만 5항(음성 인식 엔진)과 6항(Google Play 결제)은 여러분과 해당 제공자 사이의 별개 관계이며,
+  <strong>예외 — AI 교정(5-1항)을 켠 경우</strong>: Google ML Kit 이 5-1항의 진단 정보를 국외로 보냅니다. 이전받는 자: Google LLC / 국가: 미국 / 항목: 5-1항 목록(입력한 글 제외) / 시기·방법: 기능이 동작할 때 인터넷(HTTPS)으로 / 목적: ML Kit 진단·사용 통계 / 보유 기간: Google 방침에 따름 / 거부 방법: AI 교정을 켜지 않거나 끄기(끄면 나머지 기능은 그대로 쓸 수 있습니다).
+</p>
+<p>
+  또한 5항(음성 인식 엔진)과 6항(Google Play 결제)은 여러분과 해당 제공자 사이의 별개 관계이며,
   각 제공자의 방침이 적용됩니다.
 </p>
 
@@ -161,6 +175,7 @@
   않습니다. 기기 안에 저장된 값은 다음과 같이 직접 삭제할 수 있습니다.
 </p>
 <ul>
+  <li>AI 교정의 진단 정보: 설정에서 AI 교정을 끄면 더 이상 보내지 않습니다. 이미 보낸 정보는 Google 이 보관하며 개발자는 지울 수 없습니다.</li>
   <li>클립보드 기록: 키보드 <code>📋</code> 화면에서 항목을 길게 눌러 삭제</li>
   <li>전체 데이터: 앱 삭제, 또는 <em>설정 &gt; 애플리케이션 &gt; Floating Keyboard &gt; 저장공간 &gt; 데이터 삭제</em></li>
 </ul>
@@ -176,8 +191,8 @@
 
 <h2>1. Summary</h2>
 <p class="lead">
-  This app <strong>does not collect any personal data and does not transmit anything off your
-  device.</strong> The app's own code performs no network I/O, and it contains no advertising or
+  By default this app <strong>does not collect any personal data and does not transmit anything off your
+  device.</strong> Only if you turn on the optional AI proofreading does Google ML Kit send diagnostic information (never your text) to Google (section 5a). The app's own code performs no network I/O, and it contains no advertising or
   analytics SDKs. The Google Play Billing library does add the <code>INTERNET</code> and
   <code>ACCESS_NETWORK_STATE</code> permissions, which it needs to process the premium purchase;
   only that library uses them. Nothing you type is sent anywhere. A word-suggestion feature remembers
@@ -190,7 +205,7 @@
   other apps, but:
 </p>
 <ul>
-  <li>It <strong>never transmits</strong> what you type to anyone, including the developer. The app has no network permission.</li>
+  <li>It <strong>never transmits</strong> what you type to anyone, including the developer. Even with AI proofreading, your text is processed on the device (section 5a).</li>
   <li>It <strong>does not store sentences.</strong> With word suggestions on (the default), only <strong>words ended by a space,
       Enter or punctuation, and how often you used them</strong>, are kept per keyboard language in the app's private storage on your device.
       No sentences, no word order, no timestamps, no record of which app you typed in.</li>
@@ -224,7 +239,7 @@
   <li>Clipboard history only works <strong>if you have purchased premium</strong>. In the free version nothing you copy is ever stored.</li>
   <li>Android grants clipboard read access <strong>only to the currently selected default input method</strong>. When this app is not your default keyboard it cannot access the clipboard at all.</li>
   <li>Only text is stored, in the private storage described in section 3.</li>
-  <li>Clipboard history is <strong>never transmitted</strong> &mdash; the app has no network permission.</li>
+  <li>Clipboard history is <strong>never transmitted</strong>.</li>
   <li>Long-press an entry on the <code>📋</code> panel to delete it individually.</li>
 </ul>
 
@@ -245,6 +260,16 @@
   <em>Settings &gt; System &gt; Languages &amp; input &gt; Speech recognition</em> (path varies by device).
 </p>
 
+<h2>5a. AI proofreading (optional, off by default)</h2>
+<ul>
+  <li>An optional feature you must <strong>turn on yourself</strong> in Settings (off by default), available only on devices with built-in on-device AI (Gemini Nano).</li>
+  <li>Tapping ✨ on the keyboard proofreads the text before the cursor (up to about 600 characters) with the on-device AI, shows you the result, and replaces the text only when you tap Apply.</li>
+  <li>The text is processed <strong>on your device</strong>. This app neither stores nor transmits it, and Google's ML Kit documentation states that input, inference and output are processed locally.</li>
+  <li>However, the Google ML Kit library used for this feature sends <strong>diagnostic and usage-analytics information</strong> to Google while it runs: device manufacturer, model and OS version; app package name and version; a per-installation identifier; performance metrics such as latency; input and output sizes; feature version, event types and error codes; and the configured language. <strong>The content of your text is not on this list.</strong> It is encrypted in transit (HTTPS), and Google states it does not transfer this data to third parties (<a href="https://developers.google.com/ml-kit/android-data-disclosure">ML Kit data disclosure</a>). The developer has no way to receive this information.</li>
+  <li>If you never turn AI proofreading on, ML Kit does not run and none of this is sent. You can turn it off in Settings at any time.</li>
+  <li>Use of the on-device AI is subject to the <a href="https://developers.google.com/ml-kit/terms">ML Kit Terms</a> and Google's privacy policy.</li>
+</ul>
+
 <h2>6. Payments</h2>
 <ul>
   <li>Premium is a one-time purchase (product ID <code>premium_unlock</code>) handled end-to-end by <strong>Google Play</strong>.</li>
@@ -264,9 +289,12 @@
 
 <h2>8. Third parties, processors, and international transfers</h2>
 <p>
-  Because the app collects no personal data, there is <strong>nothing shared with third parties,
+  By default the app collects no personal data, so there is <strong>nothing shared with third parties,
   nothing handed to a processor, and nothing transferred internationally.</strong> The app contains
   no ad network, no analytics, no crash reporter, and no tracking SDK.
+</p>
+<p>
+  <strong>Exception — when AI proofreading (section 5a) is on</strong>: Google ML Kit sends the diagnostic information listed in section 5a to Google LLC in the United States, over HTTPS while the feature runs, for ML Kit diagnostics and usage analytics, retained under Google's policies. To refuse, leave AI proofreading off or turn it off; every other feature keeps working.
 </p>
 <p>
   Sections 5 (speech recognition engine) and 6 (Google Play billing) describe separate
@@ -285,6 +313,7 @@
   deletion request procedure. Data held on your device can be removed directly:
 </p>
 <ul>
+  <li>AI proofreading diagnostics: turn AI proofreading off in Settings and nothing more is sent. Information already sent is held by Google; the developer cannot delete it.</li>
   <li>Clipboard history: long-press an entry on the keyboard's <code>📋</code> panel</li>
   <li>Everything: uninstall the app, or <em>Settings &gt; Apps &gt; Floating Keyboard &gt; Storage &gt; Clear data</em></li>
 </ul>
