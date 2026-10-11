@@ -1,0 +1,512 @@
+{
+  "ko": {
+    "name": "한국어",
+    "title": "개인정보처리방침",
+    "effective": "시행일",
+    "sections": [
+      [
+        "요약",
+        "우주 개척단(이하 \"게임\")은 회원가입이 없고 이름·이메일·전화번호 같은 개인을 식별하는 정보를 수집하지 않습니다. 게임 진행 데이터는 기기 안에만 저장됩니다. 외부로 정보가 나가는 경우는 인앱 결제 처리(RevenueCat), 광고(Google AdMob), 사용자가 직접 보내는 피드백 메일, 그리고 사용자가 직접 켠 경우의 주간 순위표(무작위 설치 ID·자동 생성 별명·주간 점수)뿐입니다."
+      ],
+      [
+        "기기에 저장하는 정보",
+        "진행 상황, 보유 재화(크레딧·광석·젬), 구매한 상품과 결제 거래 번호, 설정(언어·소리·알림)을 기기 안에 저장합니다. 개발자는 이 데이터를 받지 않습니다. Android 기기의 백업 설정이 켜져 있으면 운영체제가 이 데이터를 사용자 Google 계정 백업에 포함할 수 있습니다."
+      ],
+      [
+        "인앱 결제",
+        "결제는 Google Play 또는 Apple App Store가 처리하며 결제 수단 정보는 개발자에게 전달되지 않습니다. 구매 확인(영수증 검증)과 구매 복원을 위해 RevenueCat, Inc.를 사용합니다. RevenueCat은 기기에서 만든 익명 사용자 ID, 구매 내역(상품, 거래 번호, 시각, 가격), 기기·앱 정보(운영체제, 앱 버전, 국가)를 처리합니다. 이 정보로 사용자 개인을 식별하지 않습니다. RevenueCat 개인정보처리방침: https://www.revenuecat.com/privacy"
+      ],
+      [
+        "광고",
+        "게임은 사용자가 직접 선택한 경우에만 보상형 광고를 보여줍니다(함대 사령관 패스 보유 시 광고 없음). 광고는 Google AdMob이 제공합니다. AdMob은 광고 제공, 허용되는 경우의 맞춤형 광고, 광고 성과 측정, 부정 행위 방지를 위해 광고 식별자(Android 광고 ID), IP 주소, 기기 정보를 사용할 수 있습니다. iOS에서는 광고 식별자(IDFA)를 사용하지 않으며 추적 허용 요청도 표시하지 않습니다. 유럽 경제 지역·영국·스위스에서는 처음 실행할 때 광고 동의 메시지를 보여주며, 동의는 언제든 설정 → \"광고 개인정보 설정\"에서 변경하거나 철회할 수 있습니다. Google 개인정보처리방침: https://policies.google.com/privacy , 파트너 사이트에서의 데이터 사용: https://policies.google.com/technologies/partner-sites"
+      ],
+      [
+        "알림",
+        "게임은 저장고가 가득 찼을 때 등을 알려주는 로컬 알림을 기기 안에서 예약합니다. 알림 내용은 외부로 전송되지 않으며, 게임 설정 또는 기기 설정에서 끌 수 있습니다."
+      ],
+      [
+        "피드백",
+        "설정의 \"개발자에게 피드백 보내기\"를 누르면 사용자의 메일 앱이 열립니다. 사용자가 작성한 내용과 함께 앱 버전, 기기 모델, 운영체제 버전이 본문에 들어가며, 사용자가 직접 보낸 경우에만 개발자가 받습니다. 받은 메일은 문의 답변과 게임 개선에만 사용하고 답변이 끝나면 필요한 기간이 지난 뒤 삭제합니다."
+      ],
+      [
+        "아동의 개인정보",
+        "이 게임은 13세 이상 이용자를 대상으로 하며 13세 미만 아동을 대상으로 하지 않습니다. 13세 미만 아동의 개인정보를 알면서 수집하지 않습니다. 주간 순위표는 게임이 정해진 단어 목록으로 만든 별명만 사용하며, 자유 입력이나 채팅 기능은 없습니다. 아동이 정보를 제공했다고 생각되면 mkideabox.feedback@gmail.com 로 알려 주세요. 확인 후 삭제합니다."
+      ],
+      [
+        "주간 순위표",
+        "주간 순위표는 선택 기능이며 기본은 꺼져 있습니다. 사용자가 게임 설정이나 순위 화면에서 직접 켤 때만 참여합니다. 참여하면 기기에서 처음 만든 무작위 설치 ID(광고 ID·기기 ID가 아님), 게임이 정해진 단어 목록으로 만든 별명(예: \"용감한 수달 0427\", 서버에는 단어 번호만 저장), 그 주의 개척 점수를 서버로 보냅니다. 이름이나 사용자가 직접 입력한 글자는 보내지 않고, 채팅 기능도 없습니다. 다른 플레이어에게는 별명과 점수, 순위만 보입니다. 서버는 Supabase, Inc.의 서비스(서울 리전)를 사용하며, 순위 표시와 남용 방지(요청 횟수 제한)에만 씁니다. 참여를 끄면 그때부터 아무것도 보내지 않습니다. Supabase 개인정보처리방침: https://supabase.com/privacy"
+      ],
+      [
+        "데이터 삭제",
+        "게임 설정 → \"모든 데이터 초기화\"로 기기에 저장된 데이터를 언제든 지울 수 있고, 앱을 삭제해도 모두 지워집니다. 결제 처리용 익명 기록(RevenueCat)의 삭제를 원하면 아래 메일로 요청해 주세요. 주간 순위표에 참여했다면 \"모든 데이터 초기화\" 때 서버의 순위표 기록(설치 ID·별명·점수)도 함께 삭제됩니다. 앱을 먼저 삭제했다면 아래 메일로 삭제를 요청할 수 있으며, 참여하지 않은 주의 기록은 순위에 보이지 않습니다."
+      ],
+      [
+        "문의",
+        "개발자: mkideabox · 이메일: mkideabox.feedback@gmail.com"
+      ],
+      [
+        "변경",
+        "이 방침이 바뀌면 이 페이지에 새 시행일과 함께 게시합니다."
+      ]
+    ]
+  },
+  "en": {
+    "name": "English",
+    "title": "Privacy Policy",
+    "effective": "Effective date",
+    "sections": [
+      [
+        "Summary",
+        "Star Settlers (the \"Game\") has no sign-up and does not collect information that identifies you, such as your name, email or phone number. Game progress is stored only on your device. Information leaves your device only for in-app purchase processing (RevenueCat), advertising (Google AdMob), feedback emails you choose to send, and the optional weekly leaderboard (a random install ID, a generated nickname and a weekly score) if you turn it on."
+      ],
+      [
+        "Information stored on your device",
+        "Progress, currencies (credits, ore, gems), purchased items and purchase transaction IDs, and settings (language, sound, notifications) are stored on your device. The developer does not receive this data. If Android backup is enabled on your device, the operating system may include it in your Google account backup."
+      ],
+      [
+        "In-app purchases",
+        "Payments are processed by Google Play or the Apple App Store; your payment details are never shared with the developer. To verify receipts and restore purchases we use RevenueCat, Inc., which processes an anonymous user ID generated on your device, purchase history (product, transaction ID, time, price) and device/app information (operating system, app version, country). This information is not used to identify you. RevenueCat privacy policy: https://www.revenuecat.com/privacy"
+      ],
+      [
+        "Advertising",
+        "The Game shows rewarded ads only when you choose to watch one (none with the Fleet Commander Pass). Ads are provided by Google AdMob. AdMob may use the advertising identifier (Android advertising ID), your IP address and device information to serve ads, personalise them where permitted, measure ads and prevent fraud. On iOS the advertising identifier (IDFA) is not used and no tracking permission prompt is shown. In the European Economic Area, the UK and Switzerland, a consent message is shown on first launch, and you can change or withdraw your consent at any time in Settings → \"Ad privacy settings\". Google privacy policy: https://policies.google.com/privacy , how Google uses data from partner apps: https://policies.google.com/technologies/partner-sites"
+      ],
+      [
+        "Notifications",
+        "The Game schedules local notifications on your device (for example when storage is full). Their content is not sent anywhere, and you can turn them off in the Game's settings or your device settings."
+      ],
+      [
+        "Feedback",
+        "Tapping \"Send Feedback to Developer\" in Settings opens your email app. The message includes what you write plus the app version, device model and OS version, and reaches the developer only if you send it. Feedback emails are used only to reply and improve the Game, and are deleted once no longer needed."
+      ],
+      [
+        "Children's privacy",
+        "The Game is intended for users aged 13 and over and is not directed at children under 13. We do not knowingly collect personal information from children under 13. The weekly leaderboard uses only nicknames the Game generates from fixed word lists; there is no free text input and no chat. If you believe a child has provided us with information, contact us at mkideabox.feedback@gmail.com and we will delete it."
+      ],
+      [
+        "Weekly leaderboard",
+        "The weekly leaderboard is optional and off by default; you join only by turning it on in the game's Settings or on the ranking screen. When you join, the Game sends a random install ID created on the device (not an advertising or device ID), a nickname the Game builds from fixed word lists (for example \"Brave Otter 0427\"; the server stores only the word numbers), and that week's score. No names, nothing you type, and no chat. Other players see only the nickname, score and rank. The server is a Supabase, Inc. service (Seoul region), used only to show the rankings and to prevent abuse (rate limits). If you turn it off, nothing more is sent. Supabase privacy policy: https://supabase.com/privacy"
+      ],
+      [
+        "Deleting your data",
+        "Use Settings → \"Reset All Data\" to delete everything stored on your device at any time; uninstalling the app also deletes it. To request deletion of the anonymous purchase records held by RevenueCat, email us at the address below. If you joined the weekly leaderboard, \"Reset All Data\" also deletes your leaderboard record (install ID, nickname, scores) on the server. If you already uninstalled the app, you can request deletion by email at the address below."
+      ],
+      [
+        "Contact",
+        "Developer: mkideabox · Email: mkideabox.feedback@gmail.com"
+      ],
+      [
+        "Changes",
+        "If this policy changes, the updated version will be posted on this page with a new effective date."
+      ]
+    ]
+  },
+  "ja": {
+    "name": "日本語",
+    "title": "プライバシーポリシー",
+    "effective": "施行日",
+    "sections": [
+      [
+        "概要",
+        "Star Settlers(以下「本ゲーム」)には会員登録がなく、氏名・メールアドレス・電話番号など個人を識別する情報を収集しません。ゲームの進行データは端末内にのみ保存されます。情報が端末の外に送られるのは、アプリ内課金の処理(RevenueCat)、広告(Google AdMob)、ユーザーが自ら送信するフィードバックメール、およびユーザーが自らオンにした場合の週間ランキング(ランダムなインストールID・自動生成のニックネーム・週間スコア)に限られます。"
+      ],
+      [
+        "端末に保存される情報",
+        "進行状況、所持通貨(クレジット・鉱石・ジェム)、購入したアイテムと購入の取引ID、設定(言語・サウンド・通知)を端末内に保存します。開発者はこのデータを受け取りません。Android端末でバックアップ設定が有効な場合、OSがこのデータをユーザーのGoogleアカウントのバックアップに含めることがあります。"
+      ],
+      [
+        "アプリ内課金",
+        "支払いはGoogle PlayまたはApple App Storeが処理し、支払い方法の情報が開発者に渡ることはありません。購入の確認(レシート検証)と購入の復元のためにRevenueCat, Inc.を利用しています。RevenueCatは、端末で生成された匿名のユーザーID、購入履歴(商品、取引ID、日時、価格)、端末・アプリ情報(OS、アプリのバージョン、国)を処理します。これらの情報でユーザー個人を識別することはありません。RevenueCatのプライバシーポリシー:https://www.revenuecat.com/privacy"
+      ],
+      [
+        "広告",
+        "本ゲームは、ユーザーが自ら視聴を選んだ場合にのみリワード広告を表示します(「艦隊司令官パス」所有時は広告なし)。広告はGoogle AdMobが提供します。AdMobは、広告の配信、許可されている場合のパーソナライズ、広告の効果測定、不正防止のために、広告識別子(Androidの広告ID)、IPアドレス、端末情報を使用することがあります。iOSでは広告識別子(IDFA)を使用せず、トラッキング許可の確認も表示しません。欧州経済領域・英国・スイスでは初回起動時に同意メッセージを表示し、同意はいつでも「設定」→「広告のプライバシー設定」から変更・撤回できます。Googleのプライバシーポリシー:https://policies.google.com/privacy 、パートナーのサイトやアプリでのGoogleによるデータ使用:https://policies.google.com/technologies/partner-sites"
+      ],
+      [
+        "通知",
+        "本ゲームは、倉庫がいっぱいになったときなどにお知らせするローカル通知を端末内で予約します。通知の内容が外部に送信されることはなく、ゲームの設定または端末の設定でオフにできます。"
+      ],
+      [
+        "フィードバック",
+        "「設定」の「開発者にフィードバックを送る」をタップすると、メールアプリが開きます。本文にはユーザーが書いた内容に加えて、アプリのバージョン、端末のモデル、OSのバージョンが含まれ、ユーザーが自ら送信した場合にのみ開発者に届きます。受け取ったメールはお問い合わせへの回答とゲームの改善にのみ使用し、不要になった時点で削除します。"
+      ],
+      [
+        "子どものプライバシー",
+        "本ゲームは13歳以上のユーザーを対象としており、13歳未満の子どもを対象としたものではありません。13歳未満の子どもの個人情報を故意に収集することはありません。週間ランキングでは、ゲームが決まった単語リストから作るニックネームのみを使用し、自由入力やチャットの機能はありません。お子さまが情報を提供したと思われる場合は、mkideabox.feedback@gmail.com までご連絡ください。確認のうえ削除します。"
+      ],
+      [
+        "週間ランキング",
+        "週間ランキングは任意の機能で、初期設定はオフです。ゲームの設定またはランキング画面でユーザーが自らオンにした場合のみ参加します。参加すると、端末で最初に作成したランダムなインストールID(広告IDや端末IDではありません)、ゲームが決まった単語リストから作るニックネーム(例:「ゆうかんなラッコ 0427」。サーバーには単語の番号のみ保存)、その週のスコアをサーバーに送ります。名前やユーザーが入力した文字は送らず、チャット機能もありません。ほかのプレイヤーに表示されるのはニックネーム・スコア・順位だけです。サーバーはSupabase, Inc.のサービス(ソウルリージョン)を使用し、ランキング表示と不正防止(リクエスト回数の制限)にのみ使います。オフにすると、それ以降は何も送信しません。Supabaseのプライバシーポリシー: https://supabase.com/privacy"
+      ],
+      [
+        "データの削除",
+        "「設定」→「すべてのデータをリセット」で、端末に保存されたデータをいつでも削除できます。アプリをアンインストールした場合もすべて削除されます。RevenueCatが保持する匿名の購入記録の削除をご希望の場合は、下記のメールアドレスまでご連絡ください。週間ランキングに参加していた場合は、「すべてのデータをリセット」でサーバー上のランキング記録(インストールID・ニックネーム・スコア)も削除されます。先にアプリを削除した場合は、下記のメールアドレスで削除を依頼できます。"
+      ],
+      [
+        "お問い合わせ",
+        "開発者:mkideabox · メール:mkideabox.feedback@gmail.com"
+      ],
+      [
+        "変更",
+        "本ポリシーを変更した場合は、新しい施行日とともにこのページに掲載します。"
+      ]
+    ]
+  },
+  "zh": {
+    "name": "简体中文",
+    "title": "隐私政策",
+    "effective": "生效日期",
+    "sections": [
+      [
+        "摘要",
+        "Star Settlers(以下简称“本游戏”)无需注册,不收集姓名、电子邮箱、电话号码等可识别您身份的信息。游戏进度仅保存在您的设备上。仅在以下情况下信息会离开您的设备:应用内购买处理(RevenueCat)、广告(Google AdMob),您主动发送的反馈邮件,以及在您主动开启时的每周排行榜(随机安装 ID、自动生成的昵称和每周分数)。"
+      ],
+      [
+        "保存在您设备上的信息",
+        "游戏进度、货币(信用点、矿石、宝石)、已购买的商品及购买交易编号,以及设置(语言、声音、通知)均保存在您的设备上。开发者不会收到这些数据。如果您的 Android 设备开启了备份,操作系统可能会将这些数据包含在您的 Google 账号备份中。"
+      ],
+      [
+        "应用内购买",
+        "付款由 Google Play 或 Apple App Store 处理,您的支付信息不会提供给开发者。为验证收据和恢复购买,我们使用 RevenueCat, Inc.。RevenueCat 会处理在您设备上生成的匿名用户 ID、购买记录(商品、交易编号、时间、价格)以及设备/应用信息(操作系统、应用版本、国家/地区)。这些信息不会被用于识别您的身份。RevenueCat 隐私政策:https://www.revenuecat.com/privacy"
+      ],
+      [
+        "广告",
+        "本游戏仅在您主动选择观看时才会展示激励广告(持有“舰队指挥官通行证”时无广告)。广告由 Google AdMob 提供。AdMob 可能会使用广告标识符(Android 广告 ID)、IP 地址和设备信息,用于投放广告、在允许的情况下提供个性化广告、衡量广告效果以及防范欺诈。在 iOS 上不使用广告标识符(IDFA),也不会显示跟踪授权提示。在欧洲经济区、英国和瑞士,首次启动时会显示同意请求,您可以随时在“设置”→“广告隐私设置”中更改或撤回同意。Google 隐私政策:https://policies.google.com/privacy ,Google 如何使用合作伙伴应用中的数据:https://policies.google.com/technologies/partner-sites"
+      ],
+      [
+        "通知",
+        "本游戏会在您的设备上安排本地通知(例如仓库已满时)。通知内容不会发送到任何地方,您可以在游戏设置或设备设置中将其关闭。"
+      ],
+      [
+        "反馈",
+        "在“设置”中点按“向开发者发送反馈”会打开您的邮件应用。邮件包含您填写的内容以及应用版本、设备型号和操作系统版本,只有在您发送后才会到达开发者。反馈邮件仅用于回复和改进本游戏,不再需要时即予删除。"
+      ],
+      [
+        "儿童隐私",
+        "本游戏面向 13 岁及以上的用户,并非针对 13 岁以下儿童。我们不会在知情的情况下收集 13 岁以下儿童的个人信息。每周排行榜只使用游戏用固定词表生成的昵称,没有自由输入或聊天功能。如果您认为有儿童向我们提供了信息,请发送邮件至 mkideabox.feedback@gmail.com 联系我们,我们核实后将予以删除。"
+      ],
+      [
+        "每周排行榜",
+        "每周排行榜是可选功能,默认关闭,只有您在游戏设置或排行榜页面中主动开启时才会参加。参加后,本游戏会发送设备上首次生成的随机安装 ID(不是广告 ID 或设备 ID)、游戏用固定词表生成的昵称(例如“勇敢的水獭 0427”,服务器只保存词语编号)以及当周分数。不发送姓名或您输入的任何文字,也没有聊天功能。其他玩家只能看到昵称、分数和名次。服务器使用 Supabase, Inc. 的服务(首尔区域),仅用于显示排行和防止滥用(请求次数限制)。关闭后将不再发送任何内容。Supabase 隐私政策:https://supabase.com/privacy"
+      ],
+      [
+        "删除您的数据",
+        "您可以随时通过“设置”→“重置所有数据”删除保存在设备上的全部数据;卸载应用也会将其删除。如需删除 RevenueCat 保存的匿名购买记录,请发送邮件至下方地址提出请求。如果参加过每周排行榜,“重置所有数据”时也会删除服务器上的排行榜记录(安装 ID、昵称、分数)。如果已先卸载应用,可通过下方邮箱申请删除。"
+      ],
+      [
+        "联系方式",
+        "开发者:mkideabox · 电子邮箱:mkideabox.feedback@gmail.com"
+      ],
+      [
+        "变更",
+        "如本政策发生变更,更新后的版本将连同新的生效日期发布在本页面上。"
+      ]
+    ]
+  },
+  "es": {
+    "name": "Español",
+    "title": "Política de privacidad",
+    "effective": "Fecha de entrada en vigor",
+    "sections": [
+      [
+        "Resumen",
+        "Star Settlers (el \"Juego\") no requiere registro y no recopila información que te identifique, como tu nombre, correo electrónico o número de teléfono. El progreso del juego se guarda únicamente en tu dispositivo. La información solo sale de tu dispositivo para procesar compras dentro de la app (RevenueCat), para la publicidad (Google AdMob), en los correos de comentarios que decidas enviar y, si lo activas, en el ranking semanal opcional (un ID de instalación aleatorio, un apodo generado y una puntuación semanal)."
+      ],
+      [
+        "Información almacenada en tu dispositivo",
+        "El progreso, las monedas (créditos, mineral, gemas), los artículos comprados y los ID de transacción de las compras, y los ajustes (idioma, sonido, notificaciones) se guardan en tu dispositivo. El desarrollador no recibe estos datos. Si la copia de seguridad de Android está activada en tu dispositivo, el sistema operativo puede incluirlos en la copia de seguridad de tu cuenta de Google."
+      ],
+      [
+        "Compras dentro de la app",
+        "Los pagos los procesa Google Play o Apple App Store; tus datos de pago nunca se comparten con el desarrollador. Para verificar los recibos y restaurar compras utilizamos RevenueCat, Inc., que procesa un ID de usuario anónimo generado en tu dispositivo, el historial de compras (producto, ID de transacción, hora, precio) e información del dispositivo y de la app (sistema operativo, versión de la app, país). Esta información no se utiliza para identificarte. Política de privacidad de RevenueCat: https://www.revenuecat.com/privacy"
+      ],
+      [
+        "Publicidad",
+        "El Juego muestra anuncios con recompensa solo cuando decides ver uno (ninguno con el \"Pase de Comandante de Flota\"). Los anuncios los proporciona Google AdMob. AdMob puede usar el identificador de publicidad (ID de publicidad de Android), la dirección IP y la información del dispositivo para mostrar anuncios, personalizarlos cuando esté permitido, medirlos y prevenir el fraude. En iOS no se usa el identificador de publicidad (IDFA) ni se muestra ninguna solicitud de permiso de seguimiento. En el Espacio Económico Europeo, el Reino Unido y Suiza se muestra un mensaje de consentimiento la primera vez que abres el Juego, y puedes cambiar o retirar tu consentimiento en cualquier momento en \"Ajustes\" → \"Privacidad de anuncios\". Política de privacidad de Google: https://policies.google.com/privacy , cómo usa Google los datos de las apps de sus socios: https://policies.google.com/technologies/partner-sites"
+      ],
+      [
+        "Notificaciones",
+        "El Juego programa notificaciones locales en tu dispositivo (por ejemplo, cuando el almacén está lleno). Su contenido no se envía a ningún sitio, y puedes desactivarlas en los ajustes del Juego o en los ajustes de tu dispositivo."
+      ],
+      [
+        "Comentarios",
+        "Al tocar \"Enviar comentarios al desarrollador\" en \"Ajustes\" se abre tu app de correo. El mensaje incluye lo que escribas más la versión de la app, el modelo del dispositivo y la versión del sistema operativo, y solo llega al desarrollador si lo envías. Los correos de comentarios se usan únicamente para responder y mejorar el Juego, y se eliminan cuando ya no son necesarios."
+      ],
+      [
+        "Privacidad de los menores",
+        "El Juego está pensado para usuarios de 13 años o más y no está dirigido a menores de 13 años. No recopilamos a sabiendas información personal de menores de 13 años. El ranking semanal solo usa apodos que el Juego genera con listas de palabras fijas; no hay texto libre ni chat. Si crees que un menor nos ha facilitado información, escríbenos a mkideabox.feedback@gmail.com y la eliminaremos."
+      ],
+      [
+        "Ranking semanal",
+        "El ranking semanal es opcional y está desactivado por defecto; solo participas si lo activas en los Ajustes del juego o en la pantalla del ranking. Al participar, el Juego envía un ID de instalación aleatorio creado en el dispositivo (no es un ID de publicidad ni del dispositivo), un apodo que el Juego crea con listas de palabras fijas (por ejemplo, «Nutria Valiente 0427»; el servidor solo guarda los números de las palabras) y la puntuación de esa semana. Nada de nombres, nada que escribas y sin chat. Los demás jugadores solo ven el apodo, la puntuación y el puesto. El servidor es un servicio de Supabase, Inc. (región de Seúl) y se usa solo para mostrar el ranking y evitar abusos (límite de solicitudes). Si lo desactivas, no se envía nada más. Política de privacidad de Supabase: https://supabase.com/privacy"
+      ],
+      [
+        "Eliminación de tus datos",
+        "Usa \"Ajustes\" → \"Borrar todos los datos\" para eliminar en cualquier momento todo lo almacenado en tu dispositivo; desinstalar la app también lo elimina. Para solicitar la eliminación de los registros de compra anónimos que conserva RevenueCat, escríbenos a la dirección indicada abajo. Si te uniste al ranking semanal, «Borrar todos los datos» también elimina tu registro del ranking (ID de instalación, apodo, puntuaciones) en el servidor. Si ya desinstalaste la app, puedes pedir el borrado por correo a la dirección indicada abajo."
+      ],
+      [
+        "Contacto",
+        "Desarrollador: mkideabox · Correo electrónico: mkideabox.feedback@gmail.com"
+      ],
+      [
+        "Cambios",
+        "Si esta política cambia, la versión actualizada se publicará en esta página con una nueva fecha de entrada en vigor."
+      ]
+    ]
+  },
+  "fr": {
+    "name": "Français",
+    "title": "Politique de confidentialité",
+    "effective": "Date d'entrée en vigueur ",
+    "sections": [
+      [
+        "Résumé",
+        "Star Settlers (le « Jeu ») ne nécessite aucune inscription et ne collecte aucune information permettant de vous identifier, comme votre nom, votre adresse e-mail ou votre numéro de téléphone. La progression du jeu est enregistrée uniquement sur votre appareil. Des informations ne quittent votre appareil que pour le traitement des achats intégrés (RevenueCat), la publicité (Google AdMob), les e-mails de commentaires que vous choisissez d'envoyer et, si vous l'activez, le classement hebdomadaire facultatif (un identifiant d'installation aléatoire, un pseudo généré et un score hebdomadaire)."
+      ],
+      [
+        "Informations enregistrées sur votre appareil",
+        "La progression, les monnaies (crédits, minerai, gemmes), les articles achetés et les identifiants de transaction des achats, ainsi que les réglages (langue, son, notifications) sont enregistrés sur votre appareil. Le développeur ne reçoit pas ces données. Si la sauvegarde Android est activée sur votre appareil, le système d'exploitation peut les inclure dans la sauvegarde de votre compte Google."
+      ],
+      [
+        "Achats intégrés",
+        "Les paiements sont traités par Google Play ou l'Apple App Store ; vos informations de paiement ne sont jamais communiquées au développeur. Pour vérifier les reçus et restaurer les achats, nous utilisons RevenueCat, Inc., qui traite un identifiant utilisateur anonyme généré sur votre appareil, l'historique des achats (produit, identifiant de transaction, heure, prix) et des informations sur l'appareil et l'application (système d'exploitation, version de l'application, pays). Ces informations ne sont pas utilisées pour vous identifier. Politique de confidentialité de RevenueCat : https://www.revenuecat.com/privacy"
+      ],
+      [
+        "Publicité",
+        "Le Jeu n'affiche des publicités avec récompense que lorsque vous choisissez d'en regarder une (aucune avec le « Pass Commandant »). Les publicités sont fournies par Google AdMob. AdMob peut utiliser l'identifiant publicitaire (identifiant publicitaire Android), l'adresse IP et des informations sur l'appareil pour diffuser les publicités, les personnaliser lorsque cela est autorisé, les mesurer et prévenir la fraude. Sur iOS, l'identifiant publicitaire (IDFA) n'est pas utilisé et aucune demande d'autorisation de suivi n'est affichée. Dans l'Espace économique européen, au Royaume-Uni et en Suisse, un message de consentement s'affiche au premier lancement, et vous pouvez modifier ou retirer votre consentement à tout moment dans « Paramètres » → « Confidentialité des annonces ». Politique de confidentialité de Google : https://policies.google.com/privacy , utilisation par Google des données provenant des applications partenaires : https://policies.google.com/technologies/partner-sites"
+      ],
+      [
+        "Notifications",
+        "Le Jeu programme des notifications locales sur votre appareil (par exemple lorsque l'entrepôt est plein). Leur contenu n'est envoyé nulle part, et vous pouvez les désactiver dans les réglages du Jeu ou de votre appareil."
+      ],
+      [
+        "Commentaires",
+        "Appuyer sur « Envoyer un avis au développeur » dans « Paramètres » ouvre votre application de messagerie. Le message contient ce que vous écrivez ainsi que la version de l'application, le modèle de l'appareil et la version du système d'exploitation, et ne parvient au développeur que si vous l'envoyez. Les e-mails de commentaires servent uniquement à vous répondre et à améliorer le Jeu, et sont supprimés lorsqu'ils ne sont plus nécessaires."
+      ],
+      [
+        "Confidentialité des enfants",
+        "Le Jeu est destiné aux utilisateurs âgés de 13 ans et plus et ne s'adresse pas aux enfants de moins de 13 ans. Nous ne collectons pas sciemment d'informations personnelles auprès d'enfants de moins de 13 ans. Le classement hebdomadaire utilise uniquement des pseudos générés par le Jeu à partir de listes de mots fixes ; il n'y a ni saisie libre ni chat. Si vous pensez qu'un enfant nous a fourni des informations, contactez-nous à mkideabox.feedback@gmail.com et nous les supprimerons."
+      ],
+      [
+        "Classement hebdomadaire",
+        "Le classement hebdomadaire est facultatif et désactivé par défaut ; vous n'y participez qu'en l'activant dans les Réglages du jeu ou sur l'écran du classement. Si vous participez, le Jeu envoie un identifiant d'installation aléatoire créé sur l'appareil (ni identifiant publicitaire ni identifiant de l'appareil), un pseudo construit par le Jeu à partir de listes de mots fixes (par exemple « Loutre Courageuse 0427 » ; le serveur n'enregistre que les numéros des mots) et le score de la semaine. Aucun nom, rien de ce que vous tapez, et pas de chat. Les autres joueurs ne voient que le pseudo, le score et le rang. Le serveur est un service de Supabase, Inc. (région de Séoul), utilisé uniquement pour afficher le classement et éviter les abus (limitation des requêtes). Si vous le désactivez, plus rien n'est envoyé. Politique de confidentialité de Supabase : https://supabase.com/privacy"
+      ],
+      [
+        "Suppression de vos données",
+        "Utilisez « Paramètres » → « Réinitialiser toutes les données » pour supprimer à tout moment tout ce qui est enregistré sur votre appareil ; la désinstallation de l'application le supprime également. Pour demander la suppression des enregistrements d'achat anonymes conservés par RevenueCat, écrivez-nous à l'adresse ci-dessous. Si vous avez rejoint le classement hebdomadaire, « Réinitialiser toutes les données » supprime aussi votre entrée du classement (identifiant, pseudo, scores) sur le serveur. Si vous avez déjà désinstallé l'application, vous pouvez demander la suppression par e-mail à l'adresse ci-dessous."
+      ],
+      [
+        "Contact",
+        "Développeur : mkideabox · E-mail : mkideabox.feedback@gmail.com"
+      ],
+      [
+        "Modifications",
+        "Si cette politique change, la version mise à jour sera publiée sur cette page avec une nouvelle date d'entrée en vigueur."
+      ]
+    ]
+  },
+  "de": {
+    "name": "Deutsch",
+    "title": "Datenschutzerklärung",
+    "effective": "Gültig ab",
+    "sections": [
+      [
+        "Zusammenfassung",
+        "Star Settlers (das „Spiel“) erfordert keine Registrierung und erhebt keine Informationen, die dich identifizieren, wie deinen Namen, deine E-Mail-Adresse oder Telefonnummer. Der Spielfortschritt wird ausschließlich auf deinem Gerät gespeichert. Informationen verlassen dein Gerät nur für die Abwicklung von In-App-Käufen (RevenueCat), für Werbung (Google AdMob), in Feedback-E-Mails, die du selbst sendest, und – wenn du sie einschaltest – für die freiwillige Wochen-Rangliste (eine zufällige Installations-ID, ein erzeugter Spitzname und eine Wochenpunktzahl)."
+      ],
+      [
+        "Auf deinem Gerät gespeicherte Informationen",
+        "Fortschritt, Währungen (Credits, Erz, Edelsteine), gekaufte Artikel und Transaktions-IDs der Käufe sowie Einstellungen (Sprache, Ton, Benachrichtigungen) werden auf deinem Gerät gespeichert. Der Entwickler erhält diese Daten nicht. Wenn auf deinem Gerät die Android-Sicherung aktiviert ist, kann das Betriebssystem sie in die Sicherung deines Google-Kontos aufnehmen."
+      ],
+      [
+        "In-App-Käufe",
+        "Zahlungen werden von Google Play oder dem Apple App Store abgewickelt; deine Zahlungsdaten werden niemals an den Entwickler weitergegeben. Zur Prüfung von Kaufbelegen und zur Wiederherstellung von Käufen nutzen wir RevenueCat, Inc. RevenueCat verarbeitet eine auf deinem Gerät erzeugte anonyme Nutzer-ID, den Kaufverlauf (Produkt, Transaktions-ID, Zeitpunkt, Preis) sowie Geräte- und App-Informationen (Betriebssystem, App-Version, Land). Diese Informationen werden nicht verwendet, um dich zu identifizieren. Datenschutzerklärung von RevenueCat: https://www.revenuecat.com/privacy"
+      ],
+      [
+        "Werbung",
+        "Das Spiel zeigt Werbung mit Belohnung nur, wenn du dich selbst dafür entscheidest, sie anzusehen (keine mit dem „Kommandanten-Pass“). Die Werbung wird von Google AdMob bereitgestellt. AdMob kann die Werbe-ID (Android-Werbe-ID), die IP-Adresse und Geräteinformationen verwenden, um Werbung auszuliefern, sie – soweit zulässig – zu personalisieren, sie zu messen und Betrug zu verhindern. Unter iOS wird die Werbe-ID (IDFA) nicht verwendet, und es wird keine Tracking-Abfrage angezeigt. Im Europäischen Wirtschaftsraum, im Vereinigten Königreich und in der Schweiz wird beim ersten Start eine Einwilligungsabfrage angezeigt; du kannst deine Einwilligung jederzeit unter „Einstellungen“ → „Datenschutz für Werbung“ ändern oder widerrufen. Datenschutzerklärung von Google: https://policies.google.com/privacy , wie Google Daten aus Partner-Apps verwendet: https://policies.google.com/technologies/partner-sites"
+      ],
+      [
+        "Benachrichtigungen",
+        "Das Spiel plant lokale Benachrichtigungen auf deinem Gerät (zum Beispiel, wenn das Lager voll ist). Ihr Inhalt wird nirgendwohin gesendet, und du kannst sie in den Einstellungen des Spiels oder deines Geräts deaktivieren."
+      ],
+      [
+        "Feedback",
+        "Wenn du unter „Einstellungen“ auf „Feedback an Entwickler senden“ tippst, öffnet sich deine E-Mail-App. Die Nachricht enthält, was du schreibst, sowie die App-Version, das Gerätemodell und die Betriebssystemversion und erreicht den Entwickler nur, wenn du sie absendest. Feedback-E-Mails werden ausschließlich zur Beantwortung und zur Verbesserung des Spiels verwendet und gelöscht, sobald sie nicht mehr benötigt werden."
+      ],
+      [
+        "Datenschutz für Kinder",
+        "Das Spiel richtet sich an Nutzer ab 13 Jahren und nicht an Kinder unter 13 Jahren. Wir erheben nicht wissentlich personenbezogene Daten von Kindern unter 13 Jahren. Die Wochen-Rangliste verwendet nur Spitznamen, die das Spiel aus festen Wortlisten bildet; es gibt keine freie Texteingabe und keinen Chat. Wenn du glaubst, dass uns ein Kind Informationen übermittelt hat, kontaktiere uns unter mkideabox.feedback@gmail.com, und wir löschen sie."
+      ],
+      [
+        "Wochen-Rangliste",
+        "Die Wochen-Rangliste ist freiwillig und standardmäßig ausgeschaltet; du machst nur mit, wenn du sie in den Optionen des Spiels oder im Ranglisten-Bildschirm einschaltest. Dann sendet das Spiel eine zufällige, auf dem Gerät erzeugte Installations-ID (keine Werbe- oder Geräte-ID), einen Spitznamen, den das Spiel aus festen Wortlisten bildet (zum Beispiel „Mutiger Otter 0427“; der Server speichert nur die Nummern der Wörter), und die Punktzahl der Woche. Keine Namen, nichts, was du eintippst, und kein Chat. Andere Spieler sehen nur Spitzname, Punkte und Platz. Der Server ist ein Dienst der Supabase, Inc. (Region Seoul) und wird nur für die Anzeige der Rangliste und zum Schutz vor Missbrauch (Anfragebegrenzung) genutzt. Wenn du sie ausschaltest, wird nichts mehr gesendet. Datenschutzerklärung von Supabase: https://supabase.com/privacy"
+      ],
+      [
+        "Löschen deiner Daten",
+        "Unter „Einstellungen“ → „Alle Daten zurücksetzen“ kannst du jederzeit alles löschen, was auf deinem Gerät gespeichert ist; auch das Deinstallieren der App löscht es. Um die Löschung der von RevenueCat gespeicherten anonymen Kaufdaten zu beantragen, schreib uns eine E-Mail an die unten stehende Adresse. Wenn du bei der Wochen-Rangliste mitgemacht hast, löscht „Alle Daten zurücksetzen“ auch deinen Ranglisten-Eintrag (Installations-ID, Spitzname, Punkte) auf dem Server. Wenn du die App bereits deinstalliert hast, kannst du die Löschung per E-Mail an die unten stehende Adresse beantragen."
+      ],
+      [
+        "Kontakt",
+        "Entwickler: mkideabox · E-Mail: mkideabox.feedback@gmail.com"
+      ],
+      [
+        "Änderungen",
+        "Wenn sich diese Erklärung ändert, wird die aktualisierte Fassung mit einem neuen Gültigkeitsdatum auf dieser Seite veröffentlicht."
+      ]
+    ]
+  },
+  "pt": {
+    "name": "Português",
+    "title": "Política de Privacidade",
+    "effective": "Data de vigência",
+    "sections": [
+      [
+        "Resumo",
+        "Star Settlers (o \"Jogo\") não exige cadastro e não coleta informações que identifiquem você, como nome, e-mail ou número de telefone. O progresso do jogo é armazenado apenas no seu dispositivo. As informações só saem do seu dispositivo para o processamento de compras no aplicativo (RevenueCat), para publicidade (Google AdMob), nos e-mails de feedback que você decidir enviar e, se você ativar, no ranking semanal opcional (um ID de instalação aleatório, um apelido gerado e uma pontuação semanal)."
+      ],
+      [
+        "Informações armazenadas no seu dispositivo",
+        "O progresso, as moedas (créditos, minério, gemas), os itens comprados e os IDs de transação das compras, além das configurações (idioma, som, notificações), são armazenados no seu dispositivo. O desenvolvedor não recebe esses dados. Se o backup do Android estiver ativado no seu dispositivo, o sistema operacional poderá incluí-los no backup da sua conta Google."
+      ],
+      [
+        "Compras no aplicativo",
+        "Os pagamentos são processados pelo Google Play ou pela Apple App Store; seus dados de pagamento nunca são compartilhados com o desenvolvedor. Para verificar recibos e restaurar compras, usamos a RevenueCat, Inc., que processa um ID de usuário anônimo gerado no seu dispositivo, o histórico de compras (produto, ID da transação, horário, preço) e informações do dispositivo e do aplicativo (sistema operacional, versão do aplicativo, país). Essas informações não são usadas para identificar você. Política de privacidade da RevenueCat: https://www.revenuecat.com/privacy"
+      ],
+      [
+        "Publicidade",
+        "O Jogo exibe anúncios premiados somente quando você escolhe assistir a um (nenhum com o \"Passe de Comandante da Frota\"). Os anúncios são fornecidos pelo Google AdMob. O AdMob pode usar o identificador de publicidade (ID de publicidade do Android), o endereço IP e informações do dispositivo para veicular anúncios, personalizá-los quando permitido, medi-los e prevenir fraudes. No iOS, o identificador de publicidade (IDFA) não é usado e nenhum pedido de permissão de rastreamento é exibido. No Espaço Econômico Europeu, no Reino Unido e na Suíça, uma mensagem de consentimento é exibida na primeira vez que você abre o Jogo, e você pode alterar ou retirar seu consentimento a qualquer momento em \"Configurações\" → \"Privacidade dos anúncios\". Política de privacidade do Google: https://policies.google.com/privacy , como o Google usa dados de apps parceiros: https://policies.google.com/technologies/partner-sites"
+      ],
+      [
+        "Notificações",
+        "O Jogo agenda notificações locais no seu dispositivo (por exemplo, quando o armazém está cheio). O conteúdo delas não é enviado para lugar nenhum, e você pode desativá-las nas configurações do Jogo ou do seu dispositivo."
+      ],
+      [
+        "Feedback",
+        "Tocar em \"Enviar feedback ao desenvolvedor\" em \"Configurações\" abre seu aplicativo de e-mail. A mensagem inclui o que você escrever, além da versão do aplicativo, do modelo do dispositivo e da versão do sistema operacional, e só chega ao desenvolvedor se você enviá-la. Os e-mails de feedback são usados apenas para responder e melhorar o Jogo, e são excluídos quando não forem mais necessários."
+      ],
+      [
+        "Privacidade de crianças",
+        "O Jogo é destinado a usuários com 13 anos ou mais e não é direcionado a crianças menores de 13 anos. Não coletamos intencionalmente informações pessoais de crianças menores de 13 anos. O ranking semanal usa apenas apelidos que o Jogo gera a partir de listas fixas de palavras; não há texto livre nem chat. Se você acredita que uma criança nos forneceu informações, entre em contato pelo e-mail mkideabox.feedback@gmail.com e nós as excluiremos."
+      ],
+      [
+        "Ranking semanal",
+        "O ranking semanal é opcional e vem desativado; você só participa se ativar nos Ajustes do jogo ou na tela do ranking. Ao participar, o Jogo envia um ID de instalação aleatório criado no dispositivo (não é ID de publicidade nem do dispositivo), um apelido que o Jogo cria a partir de listas fixas de palavras (por exemplo, \"Lontra Valente 0427\"; o servidor guarda só os números das palavras) e a pontuação daquela semana. Nada de nomes, nada que você digite e sem chat. Os outros jogadores veem só o apelido, a pontuação e a posição. O servidor é um serviço da Supabase, Inc. (região de Seul), usado apenas para exibir o ranking e evitar abusos (limite de solicitações). Se você desativar, nada mais é enviado. Política de privacidade da Supabase: https://supabase.com/privacy"
+      ],
+      [
+        "Exclusão dos seus dados",
+        "Use \"Configurações\" → \"Apagar todos os dados\" para excluir a qualquer momento tudo o que está armazenado no seu dispositivo; desinstalar o aplicativo também exclui esses dados. Para solicitar a exclusão dos registros anônimos de compra mantidos pela RevenueCat, envie um e-mail para o endereço abaixo. Se você participou do ranking semanal, \"Apagar todos os dados\" também exclui seu registro no ranking (ID de instalação, apelido, pontuações) no servidor. Se você já desinstalou o app, pode pedir a exclusão por e-mail no endereço abaixo."
+      ],
+      [
+        "Contato",
+        "Desenvolvedor: mkideabox · E-mail: mkideabox.feedback@gmail.com"
+      ],
+      [
+        "Alterações",
+        "Se esta política mudar, a versão atualizada será publicada nesta página com uma nova data de vigência."
+      ]
+    ]
+  },
+  "ru": {
+    "name": "Русский",
+    "title": "Политика конфиденциальности",
+    "effective": "Дата вступления в силу",
+    "sections": [
+      [
+        "Кратко",
+        "Star Settlers (далее — «Игра») не требует регистрации и не собирает сведения, позволяющие установить вашу личность, такие как имя, адрес электронной почты или номер телефона. Игровой прогресс хранится только на вашем устройстве. Информация покидает ваше устройство только при обработке встроенных покупок (RevenueCat), для рекламы (Google AdMob), в отзывах по электронной почте, которые вы решите отправить, и — если вы его включите — для необязательного недельного рейтинга (случайный ID установки, сгенерированное прозвище и очки за неделю)."
+      ],
+      [
+        "Информация, хранящаяся на вашем устройстве",
+        "Прогресс, валюты (кредиты, руда, самоцветы), купленные товары и идентификаторы транзакций покупок, а также настройки (язык, звук, уведомления) хранятся на вашем устройстве. Разработчик не получает эти данные. Если на вашем устройстве включено резервное копирование Android, операционная система может включить их в резервную копию вашего аккаунта Google."
+      ],
+      [
+        "Встроенные покупки",
+        "Платежи обрабатываются Google Play или Apple App Store; ваши платёжные данные никогда не передаются разработчику. Для проверки чеков и восстановления покупок мы используем RevenueCat, Inc., которая обрабатывает анонимный идентификатор пользователя, созданный на вашем устройстве, историю покупок (товар, идентификатор транзакции, время, цена) и сведения об устройстве и приложении (операционная система, версия приложения, страна). Эта информация не используется для установления вашей личности. Политика конфиденциальности RevenueCat: https://www.revenuecat.com/privacy"
+      ],
+      [
+        "Реклама",
+        "Игра показывает рекламу с вознаграждением только тогда, когда вы сами решаете её посмотреть (с «Пропуском командира» рекламы нет). Рекламу предоставляет Google AdMob. AdMob может использовать рекламный идентификатор (рекламный идентификатор Android), IP-адрес и данные об устройстве для показа рекламы, её персонализации там, где это разрешено, оценки её эффективности и предотвращения мошенничества. В iOS рекламный идентификатор (IDFA) не используется, и запрос разрешения на отслеживание не показывается. В Европейской экономической зоне, Великобритании и Швейцарии при первом запуске показывается запрос согласия; изменить или отозвать согласие можно в любое время в разделе «Настройки» → «Настройки конфиденциальности рекламы». Политика конфиденциальности Google: https://policies.google.com/privacy , как Google использует данные из приложений партнёров: https://policies.google.com/technologies/partner-sites"
+      ],
+      [
+        "Уведомления",
+        "Игра планирует локальные уведомления на вашем устройстве (например, когда склад заполнен). Их содержание никуда не отправляется, и вы можете отключить их в настройках Игры или устройства."
+      ],
+      [
+        "Отзывы",
+        "При нажатии «Отправить отзыв разработчику» в разделе «Настройки» открывается ваше почтовое приложение. Письмо содержит написанный вами текст, а также версию приложения, модель устройства и версию операционной системы и попадает к разработчику, только если вы его отправите. Письма с отзывами используются только для ответа и улучшения Игры и удаляются, когда больше не нужны."
+      ],
+      [
+        "Конфиденциальность детей",
+        "Игра предназначена для пользователей от 13 лет и не ориентирована на детей младше 13 лет. Мы сознательно не собираем персональные данные детей младше 13 лет. В недельном рейтинге используются только прозвища, которые Игра составляет из готовых списков слов; свободного ввода текста и чата нет. Если вы считаете, что ребёнок передал нам какие-либо сведения, напишите на mkideabox.feedback@gmail.com, и мы их удалим."
+      ],
+      [
+        "Недельный рейтинг",
+        "Недельный рейтинг — необязательная функция, по умолчанию выключенная; вы участвуете, только если включите его в настройках игры или на экране рейтинга. При участии Игра отправляет случайный ID установки, созданный на устройстве (не рекламный ID и не ID устройства), прозвище, которое Игра составляет из готовых списков слов (например, «Смелая Выдра 0427»; на сервере хранятся только номера слов), и очки за эту неделю. Никаких имён, ничего, что вы вводите, и никакого чата. Другие игроки видят только прозвище, очки и место. Сервер — сервис Supabase, Inc. (регион Сеул); он используется только для показа рейтинга и защиты от злоупотреблений (ограничение запросов). Если выключить участие, больше ничего не отправляется. Политика конфиденциальности Supabase: https://supabase.com/privacy"
+      ],
+      [
+        "Удаление ваших данных",
+        "Используйте «Настройки» → «Сбросить все данные», чтобы в любой момент удалить всё, что хранится на вашем устройстве; удаление приложения также удаляет эти данные. Чтобы запросить удаление анонимных записей о покупках, хранящихся у RevenueCat, напишите нам по адресу ниже. Если вы участвовали в недельном рейтинге, «Сбросить все данные» также удаляет вашу запись в рейтинге (ID установки, прозвище, очки) на сервере. Если приложение уже удалено, удаление можно запросить по электронной почте по адресу ниже."
+      ],
+      [
+        "Контакты",
+        "Разработчик: mkideabox · Эл. почта: mkideabox.feedback@gmail.com"
+      ],
+      [
+        "Изменения",
+        "В случае изменения настоящей политики обновлённая версия будет опубликована на этой странице с новой датой вступления в силу."
+      ]
+    ]
+  },
+  "id": {
+    "name": "Bahasa Indonesia",
+    "title": "Kebijakan Privasi",
+    "effective": "Tanggal berlaku",
+    "sections": [
+      [
+        "Ringkasan",
+        "Star Settlers (\"Game\") tidak memerlukan pendaftaran dan tidak mengumpulkan informasi yang mengidentifikasi Anda, seperti nama, email, atau nomor telepon. Progres game hanya disimpan di perangkat Anda. Informasi hanya keluar dari perangkat Anda untuk pemrosesan pembelian dalam aplikasi (RevenueCat), iklan (Google AdMob), email masukan yang Anda pilih untuk dikirim, dan — jika Anda menyalakannya — papan peringkat mingguan opsional (ID instalasi acak, nama panggilan buatan game, dan skor mingguan)."
+      ],
+      [
+        "Informasi yang disimpan di perangkat Anda",
+        "Progres, mata uang (kredit, bijih, permata), item yang dibeli dan ID transaksi pembelian, serta pengaturan (bahasa, suara, notifikasi) disimpan di perangkat Anda. Pengembang tidak menerima data ini. Jika pencadangan Android diaktifkan di perangkat Anda, sistem operasi dapat menyertakannya dalam cadangan akun Google Anda."
+      ],
+      [
+        "Pembelian dalam aplikasi",
+        "Pembayaran diproses oleh Google Play atau Apple App Store; detail pembayaran Anda tidak pernah dibagikan kepada pengembang. Untuk memverifikasi tanda terima dan memulihkan pembelian, kami menggunakan RevenueCat, Inc., yang memproses ID pengguna anonim yang dibuat di perangkat Anda, riwayat pembelian (produk, ID transaksi, waktu, harga), serta informasi perangkat/aplikasi (sistem operasi, versi aplikasi, negara). Informasi ini tidak digunakan untuk mengidentifikasi Anda. Kebijakan privasi RevenueCat: https://www.revenuecat.com/privacy"
+      ],
+      [
+        "Iklan",
+        "Game hanya menampilkan iklan berhadiah jika Anda memilih untuk menontonnya (tidak ada iklan dengan \"Pass Komandan\"). Iklan disediakan oleh Google AdMob. AdMob dapat menggunakan ID iklan (ID iklan Android), alamat IP, dan informasi perangkat untuk menayangkan iklan, mempersonalisasinya jika diizinkan, mengukur iklan, dan mencegah penipuan. Di iOS, ID iklan (IDFA) tidak digunakan dan tidak ada permintaan izin pelacakan yang ditampilkan. Di Wilayah Ekonomi Eropa, Inggris, dan Swiss, pesan persetujuan ditampilkan saat Game pertama kali dibuka, dan Anda dapat mengubah atau menarik persetujuan kapan saja di \"Pengaturan\" → \"Pengaturan privasi iklan\". Kebijakan privasi Google: https://policies.google.com/privacy , cara Google menggunakan data dari aplikasi partner: https://policies.google.com/technologies/partner-sites"
+      ],
+      [
+        "Notifikasi",
+        "Game menjadwalkan notifikasi lokal di perangkat Anda (misalnya saat gudang penuh). Isinya tidak dikirim ke mana pun, dan Anda dapat menonaktifkannya di pengaturan Game atau pengaturan perangkat Anda."
+      ],
+      [
+        "Masukan",
+        "Mengetuk \"Kirim Masukan ke Pengembang\" di \"Pengaturan\" akan membuka aplikasi email Anda. Pesan tersebut berisi apa yang Anda tulis beserta versi aplikasi, model perangkat, dan versi sistem operasi, dan hanya sampai ke pengembang jika Anda mengirimkannya. Email masukan hanya digunakan untuk membalas dan meningkatkan Game, dan dihapus setelah tidak lagi diperlukan."
+      ],
+      [
+        "Privasi anak",
+        "Game ini ditujukan untuk pengguna berusia 13 tahun ke atas dan tidak ditujukan untuk anak-anak di bawah 13 tahun. Kami tidak dengan sengaja mengumpulkan informasi pribadi dari anak-anak di bawah 13 tahun. Papan peringkat mingguan hanya menggunakan nama panggilan yang dibuat Game dari daftar kata tetap; tidak ada input teks bebas maupun chat. Jika Anda yakin seorang anak telah memberikan informasi kepada kami, hubungi kami di mkideabox.feedback@gmail.com dan kami akan menghapusnya."
+      ],
+      [
+        "Papan peringkat mingguan",
+        "Papan peringkat mingguan bersifat opsional dan mati secara default; Anda hanya ikut jika menyalakannya di Pengaturan game atau layar peringkat. Saat ikut, Game mengirim ID instalasi acak yang dibuat di perangkat (bukan ID iklan atau ID perangkat), nama panggilan yang dibuat Game dari daftar kata tetap (misalnya \"Berang-berang Pemberani 0427\"; server hanya menyimpan nomor kata), dan skor minggu itu. Tanpa nama, tanpa apa pun yang Anda ketik, dan tanpa chat. Pemain lain hanya melihat nama panggilan, skor, dan peringkat. Servernya adalah layanan Supabase, Inc. (wilayah Seoul), dipakai hanya untuk menampilkan peringkat dan mencegah penyalahgunaan (batas permintaan). Jika dimatikan, tidak ada lagi yang dikirim. Kebijakan privasi Supabase: https://supabase.com/privacy"
+      ],
+      [
+        "Menghapus data Anda",
+        "Gunakan \"Pengaturan\" → \"Reset Semua Data\" untuk menghapus semua yang tersimpan di perangkat Anda kapan saja; menghapus instalasi aplikasi juga akan menghapusnya. Untuk meminta penghapusan catatan pembelian anonim yang disimpan oleh RevenueCat, kirim email kepada kami di alamat di bawah ini. Jika Anda ikut papan peringkat mingguan, \"Reset Semua Data\" juga menghapus catatan peringkat Anda (ID instalasi, nama panggilan, skor) di server. Jika aplikasi sudah dihapus, Anda bisa meminta penghapusan lewat email ke alamat di bawah ini."
+      ],
+      [
+        "Kontak",
+        "Pengembang: mkideabox · Email: mkideabox.feedback@gmail.com"
+      ],
+      [
+        "Perubahan",
+        "Jika kebijakan ini berubah, versi terbaru akan dipublikasikan di halaman ini dengan tanggal berlaku yang baru."
+      ]
+    ]
+  }
+}
