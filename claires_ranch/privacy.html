@@ -14,6 +14,7 @@ h2 { font-size: 1.15rem; margin-top: 1.6em; }
 .meta code { background: #f2f2f2; padding: .1em .35em; border-radius: 3px; }
 nav { margin: 1.2em 0 2em; font-size: .95rem; display: flex; flex-wrap: wrap; gap: .4em 1em; }
 section { border-top: 1px solid #e2e2e2; }
+li { margin: .3em 0; }
 a { color: #2b5fbf; word-break: break-all; }
 @media (prefers-color-scheme: dark) {
   body { background: #17181a; color: #e6e6e6; } section { border-color: #333; }
@@ -31,260 +32,660 @@ a { color: #2b5fbf; word-break: break-all; }
 <h1>개인정보처리방침 &middot; 한국어</h1>
 <p class="meta">시행일: 2026-10-11</p>
 <h2>1. 요약</h2>
-<p>클레어의 농장(이하 &quot;게임&quot;)은 회원가입이나 로그인이 없고, 광고·인앱 결제·분석 도구·오류 보고 도구를 넣지 않았습니다. 게임 진행 데이터는 기기 안에만 저장됩니다. 정보가 기기 밖으로 나가는 경우는 두 가지뿐입니다. 플레이어가 동의한 뒤 박람회 점수를 온라인 순위에 올릴 때, 그리고 플레이어가 직접 의견 메일을 보낼 때입니다.</p>
+<p>클레어의 농장(이하 &quot;게임&quot;)은 회원가입이나 로그인이 없고, 광고·분석 도구·오류 보고 도구를 넣지 않았습니다. 게임 진행 데이터는 기기 안에만 저장되고, 유료 아이템인 편자와 가속권만 개발자가 운영하는 지갑 서버에 보관됩니다. 정보가 기기 밖으로 나가는 경우는 세 가지입니다. 플레이어가 동의한 뒤 박람회 점수를 온라인 순위에 올릴 때, 플레이어가 우편함·잡화점·편자 가속을 열어 편자 지갑을 쓸 때(선택 사항인 인앱 구매 포함), 그리고 플레이어가 직접 의견 메일을 보낼 때입니다.</p>
 <h2>2. 기기에 저장하는 정보</h2>
-<p>농장·가축·작물·보유 물품 같은 게임 진행 상황과 설정(소리·진동·언어)은 기기 안의 앱 전용 저장 공간에만 저장됩니다. 온라인 순위에 쓰는 별명, 참여 동의 여부, 무작위 설치 번호도 기기에 저장됩니다. 개발자는 이 데이터를 받거나 볼 수 없습니다. 앱을 삭제하거나 기기 설정에서 앱 데이터를 지우면 모두 삭제됩니다. Android 기기의 백업이 켜져 있으면 운영체제가 이 데이터를 사용자 본인의 Google 계정 백업에 포함할 수 있습니다.</p>
+<p>농장·가축·작물·보유 물품 같은 게임 진행 상황과 설정(소리·진동·언어)은 기기 안의 앱 전용 저장 공간에만 저장됩니다. 온라인 순위에 쓰는 별명과 참여 동의 여부, 온라인 순위와 편자 지갑에 쓰는 무작위 설치 번호도 기기에 저장됩니다. 개발자는 이 데이터를 받거나 볼 수 없습니다. 앱을 삭제하거나 기기 설정에서 앱 데이터를 지우면 모두 삭제됩니다. Android 기기의 백업이 켜져 있으면 운영체제가 이 데이터를 사용자 본인의 Google 계정 백업에 포함할 수 있습니다.</p>
 <h2>3. 온라인 박람회 순위(선택)</h2>
 <p>주간 박람회 순위는 선택 기능입니다. 순위 화면에서 별명을 정하고 &quot;동의하고 순위에 올리기&quot;를 누르기 전에는 게임이 서버로 아무것도 보내지 않습니다. 동의한 뒤에도 점수는 플레이어가 올리기를 누를 때만 전송됩니다.</p>
 <p>전송하는 정보: 플레이어가 정한 별명(2~12자), 박람회 대회 점수, 주차·지역·종목, 그리고 이 기기에서 처음 만든 무작위 설치 번호(UUID)입니다. 서버는 받은 시각을 함께 기록합니다. 설치 번호는 광고 ID나 Android 기기 ID가 아니며, 같은 기기의 점수를 묶고 순위표에서 내 자리를 표시하는 데만 씁니다. 순위표를 불러올 때도 내 자리를 표시하려고 이 번호를 함께 보냅니다. 이름·이메일·위치·연락처는 보내지 않습니다.</p>
 <p>저장과 공개: 정보는 HTTPS로 암호화되어 전송되고, 개발자가 게임용으로 운영하는 Supabase 프로젝트(Supabase, Inc.가 제공하는 클라우드 데이터베이스)에 저장됩니다. 서버는 이용자가 사는 나라 밖에 있을 수 있습니다. 다른 플레이어에게는 같은 주·지역·종목 순위표의 별명, 점수, 등수만 보이고 설치 번호는 보이지 않습니다. 별명은 다른 사람이 보게 되므로 실명이나 연락처를 쓰지 마세요. Supabase는 서비스 운영과 보안을 위해 접속 IP 주소 같은 요청 기록을 남길 수 있으며, 개발자는 이를 순위 운영 외의 목적으로 쓰지 않습니다. Supabase 개인정보처리방침: <a href="https://supabase.com/privacy">https://supabase.com/privacy</a></p>
 <p>그만두기·보관·삭제: 순위 화면의 &quot;순위 참여 그만두기&quot;를 누르면 그 뒤로는 아무것도 보내지 않고 순위도 불러오지 않습니다. 이미 올린 기록은 순위 서비스를 운영하는 동안 보관되며 자동으로 지워지지 않습니다. 삭제를 원하면 <a href="mailto:mkideabox@gmail.com">mkideabox@gmail.com</a>로 사용한 별명과 대략적인 참여 날짜(알면 지역·종목도)를 알려 주세요. 게임 화면에는 설치 번호가 표시되지 않으므로 별명으로 기록을 찾아 확인한 뒤 별명과 점수 기록을 삭제합니다.</p>
 <p>신고: 순위표에서 다른 플레이어의 별명을 신고하면 내 설치 번호, 신고한 별명과 그 플레이어의 기록이 서버에 저장됩니다. 신고한 별명은 내 기기에서 바로 숨겨지고, 서로 다른 플레이어 세 명이 같은 별명을 신고하면 모든 사람에게 숨겨집니다(본인에게는 그대로 보입니다). 별명을 바꾸면 숨김이 풀립니다. 신고 기록은 부적절한 별명을 관리하는 데만 쓰며, 위의 순위 기록과 같은 방법으로 삭제를 요청할 수 있습니다.</p>
-<h2>4. 의견 보내기</h2>
+<h2>4. 편자 지갑·우편함·인앱 구매</h2>
+<p>연결 시점: 게임의 유료 아이템인 편자와 가속권은 개발자가 운영하는 지갑 서버에 보관됩니다. 기기 저장 파일을 고쳐 잔액을 바꾸지 못하게 하고, 선물과 구매가 정확히 한 번만 반영되게 하기 위해서입니다. 게임은 플레이어가 우편함, 잡화점, 편자로 바로 완료나 가속권 사용을 열 때만 이 서버에 연결하며, 그 전에는 아무것도 보내지 않습니다. 편자를 쓰는 도중 연결이 끊겼다면 다음 실행 때 그 요청 한 건의 결과만 다시 확인합니다.</p>
+<p>서버에 저장하는 정보:</p>
+<ul>
+<li>무작위 설치 번호(UUID): 온라인 순위와 같은 번호로, 이 기기에서 처음 필요할 때 만들어집니다. 광고 ID나 Android 기기 ID가 아닙니다.</li>
+<li>잔액: 편자 수, 가속권 종류별 개수, 편자로 산 추가 목수와 두 번째 연구대, 일일 선물 연속 일수와 마지막 수령 날짜.</li>
+<li>장부: 편자·가속권을 받거나 사거나 쓴 기록(종류, 수량, 요청 번호, 결과, 시각). 같은 요청이 두 번 처리되지 않게 하는 데도 씁니다.</li>
+<li>우편함: 받은 우편(일일 선물, 개발자가 보낸 선물, 목장 정기권의 매일 편자), 받은 시각, 만료 시각.</li>
+<li>구매 기록(인앱 구매를 한 경우에만): Google Play 주문 번호, 상품, 결제 금액과 통화, 스토어, 테스트 결제 여부, 구매·환불 시각, 넣어 준 편자와 가속권.</li>
+<li>호출 기록: 남용을 막기 위해 설치 번호와 호출 시각을 남겨 1분당 호출 수를 제한하며, 약 10분 뒤 지웁니다.</li>
+</ul>
+<p>게임은 서버 응답에 들어 있는 서버 시각을 기기의 경과 시간과 함께 써서 건설·강화 시간을 셉니다. 기기 시계 값은 서버로 보내지 않습니다. 이름·이메일·위치·연락처도 보내지 않습니다.</p>
+<p>인앱 구매: 판매하는 상품은 편자 묶음, 개척자 꾸러미(한 번만 구매 가능, 편자와 가속권), 목장 정기권(바로 편자 300개, 이후 30일 동안 매일 130개를 우편으로 지급, 자동 갱신되지 않음)입니다. 결제는 Google Play가 처리하고, RevenueCat, Inc.가 구매가 정상인지 확인해 지갑 서버에 알리면 서버가 편자를 넣습니다. RevenueCat은 잡화점을 열 때에만 시작되며 설치 번호를 사용자 ID로 씁니다. 카드 번호·계좌 같은 결제 수단 정보는 Google Play가 처리하며 개발자는 받지 않고, Google Play에서 구매자의 이름이나 이메일 주소도 받지 않습니다.</p>
+<p>재설치: 농장 진행 상황은 기기에만 저장됩니다. 앱을 삭제하거나 앱 데이터를 지우면 설치 번호도 함께 지워지고, 지금은 서버의 지갑(남은 편자 포함)과 다시 연결할 다른 방법이 없습니다. 구매한 편자가 이렇게 된 경우 주문 번호와 함께 문의해 주세요.</p>
+<p>이용 목적: 편자·가속권 잔액 보관과 사용, 일일 선물·개발자 선물·목장 정기권 편자 지급, 중복 지급·중복 차감과 부정 사용 방지, 구매 확인과 지급, 환불 처리, 문의와 분쟁 대응, 법령에 따른 거래 기록 보관.</p>
+<p>보관 기간:</p>
+<ul>
+<li>지갑(잔액·우편함): 사용하는 동안 보관하고, 마지막으로 사용한 날부터 3년이 지나면 삭제합니다. 삭제를 요청하면 지체 없이 삭제합니다.</li>
+<li>장부·구매·환불 기록: 거래일부터 5년. 「전자상거래 등에서의 소비자보호에 관한 법률」에 따라 계약·청약철회, 대금 결제, 재화 공급에 관한 기록을 보관해야 하므로, 지갑을 삭제한 뒤에도 이 기간 동안은 다른 데이터와 분리해 보관하고 기간이 지나면 삭제합니다.</li>
+<li>호출 기록: 약 10분.</li>
+</ul>
+<p>처리를 맡기는 곳:</p>
+<ul>
+<li>Supabase, Inc.(미국 회사): 지갑 서버(데이터베이스와 함수) 운영. 데이터는 대한민국 서울 리전에 저장됩니다.</li>
+<li>RevenueCat, Inc.(미국): 인앱 구매 확인, 구매·환불 알림 전달.</li>
+<li>Google LLC(미국 등): Google Play 결제와 환불.</li>
+</ul>
+<p>국외 이전(RevenueCat): 잡화점을 열면 상품 목록을 불러오기 위해 설치 번호가 HTTPS로 암호화되어 RevenueCat, Inc.(미국, <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a>)로 전송되고, 구매하면 구매 정보(상품, 주문 번호, 구매 토큰, 가격, 시각)도 전송됩니다. 이때 앱 버전·스토어 국가처럼 RevenueCat SDK가 동작하는 데 필요한 기술 정보가 함께 전달될 수 있습니다. 목적은 구매 확인과 환불 처리이며, 위 구매 기록 보관 기간 동안 보관됩니다. 이전을 원하지 않으면 잡화점을 열지 않으면 되고, 우편함과 편자 가속, 게임의 다른 기능은 그대로 쓸 수 있습니다.</p>
+<p>모든 전송은 HTTPS로 암호화됩니다. 개발자는 이 정보를 판매하거나 광고에 쓰지 않습니다. 각 회사의 개인정보처리방침: Supabase <a href="https://supabase.com/privacy">https://supabase.com/privacy</a> · RevenueCat <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a> · Google <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+<h2>5. 결제·환불·청약철회</h2>
+<ul>
+<li>인앱 구매는 선택 사항입니다. 구매하지 않아도 모든 지역과 건물을 즐길 수 있고, 편자는 우편함의 일일 선물로도 받습니다.</li>
+<li>확률에 따라 결과가 달라지는 상품(뽑기·무작위 상자)은 팔지 않습니다. 모든 상품은 내용과 수량이 정해져 있습니다.</li>
+<li>결제는 Google Play가 처리하며, 결제 수단·영수증·가격 표시는 Google Play의 정책을 따릅니다. 목장 정기권은 자동으로 갱신되지 않는 30일 상품입니다.</li>
+<li>청약철회(대한민국): 사용하지 않은 편자와 가속권은 구매일로부터 7일 이내에 청약철회(환불)를 요청할 수 있습니다. Google Play 주문 내역(<a href="https://play.google.com/store/account/orderhistory">https://play.google.com/store/account/orderhistory</a>)에서 요청하거나, Google Play 주문 번호(GPA.로 시작)를 적어 <a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a>로 보내 주세요. 이미 사용한 편자·가속권과 선물로 무료로 받은 편자는 청약철회 대상이 아닙니다. 묶음 상품이나 목장 정기권을 일부만 사용한 경우에는 문의해 주시면 관계 법령에 따라 처리합니다.</li>
+<li>환불되면 그 구매로 받은 편자를 잔액에서 빼고, 목장 정기권이면 아직 도착하지 않은 매일 우편도 취소합니다. 이미 사용해 잔액이 모자라면 잔액은 0이 되며, 이미 끝낸 건설·강화는 되돌리지 않습니다.</li>
+<li>다른 나라의 이용자도 Google Play 환불 정책과 거주 국가의 소비자 보호 법령에 따른 권리를 가집니다.</li>
+</ul>
+<h2>6. 의견 보내기</h2>
 <p>축음기 메뉴의 &quot;개발자에게 의견 보내기&quot;를 누르면 기기의 메일 앱이 개발자 피드백 주소(<a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a>)로 열립니다. 본문 아래에는 문제 확인을 위해 게임 버전과 빌드 번호, 기기 모델명, 운영체제 버전이 미리 적혀 있고, 보내기 전에 확인하거나 지울 수 있습니다. 게임이 직접 메일을 보내지는 않으며, 이용자가 메일 앱에서 보내기를 누른 경우에만 작성한 내용과 이메일 주소가 개발자에게 전달됩니다. 받은 메일은 답변, 오류 확인, 게임 개선에만 쓰고 필요한 기간이 지나면 삭제하며, 요청하면 바로 삭제합니다.</p>
-<h2>5. 수집하지 않는 정보</h2>
-<p>게임에는 광고, 인앱 결제, 분석 도구, 오류 보고 도구가 없습니다. 위치, 연락처, 사진, 카메라, 마이크에 접근하지 않고 광고 ID를 사용하지 않습니다. 개발자는 이용자 정보를 판매하거나 광고 목적으로 제3자와 공유하지 않습니다.</p>
-<h2>6. 아동의 개인정보</h2>
+<h2>7. 수집하지 않는 정보</h2>
+<p>게임에는 광고, 분석 도구, 오류 보고 도구가 없습니다. 결제 수단 정보(카드·계좌)는 Google Play가 처리하며 개발자는 받지 않습니다. 위치, 연락처, 사진, 카메라, 마이크에 접근하지 않고 광고 ID를 사용하지 않습니다. 개발자는 이용자 정보를 판매하거나 광고 목적으로 제3자와 공유하지 않습니다.</p>
+<h2>8. 아동의 개인정보</h2>
 <p>이 게임은 13세 미만 아동을 대상으로 하지 않습니다. 게임은 나이나 이름을 묻지 않으며, 온라인 순위는 플레이어가 별명을 정하고 동의해야만 참여됩니다. 보호자는 아이가 순위에 참여하지 않게 하거나, 위의 방법으로 기록 삭제를 요청할 수 있습니다. 아이의 정보가 전달됐다고 생각되면 아래 메일로 알려 주세요. 확인 후 삭제합니다.</p>
-<h2>7. 이용자의 권리와 데이터 삭제</h2>
+<p>인앱 구매에는 Google Play 계정의 결제 수단이 필요합니다. 보호자는 Google Play의 구매 승인(자녀 보호 기능)으로 구매를 막을 수 있습니다. 대한민국에서 미성년자가 법정대리인의 동의 없이 결제한 경우 미성년자 본인이나 법정대리인이 구매를 취소할 수 있으니, 주문 번호와 함께 <a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a>로 알려 주세요.</p>
+<h2>9. 이용자의 권리와 데이터 삭제</h2>
 <p>기기에 저장된 데이터는 앱 삭제나 기기 설정의 앱 데이터 지우기로 언제든 삭제할 수 있습니다. 온라인 순위 기록이나 보낸 의견 메일의 열람·정정·삭제는 <a href="mailto:mkideabox@gmail.com">mkideabox@gmail.com</a>로 요청해 주세요. 확인 후 지체 없이 처리합니다.</p>
-<h2>8. 문의</h2>
+<p>편자 지갑의 열람·삭제는 <a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a>로 요청해 주세요. 구매한 적이 있다면 Google Play 주문 번호(GPA.로 시작)를 함께 알려 주시면 그 구매에 연결된 지갑을 찾아 확인합니다. 구매한 적이 없는 지갑은 이름이나 연락처 없이 무작위 설치 번호로만 저장되고 게임 화면에 그 번호가 표시되지 않아, 지금은 메일로 본인의 지갑인지 확인할 방법이 없습니다. 이런 지갑은 마지막 사용 후 3년이 지나면 삭제됩니다. 지갑을 삭제하면 남은 편자와 가속권은 되살릴 수 없고 환불되지 않습니다. 장부·구매 기록은 4번 항목의 보관 기간이 지난 뒤 삭제합니다.</p>
+<h2>10. 문의</h2>
 <p>개발자: MK Ideabox · 이메일: <a href="mailto:mkideabox@gmail.com">mkideabox@gmail.com</a></p>
-<h2>9. 변경</h2>
+<h2>11. 변경</h2>
 <p>이 방침이 바뀌면 이 페이지에 새 시행일과 함께 게시합니다.</p>
 </section>
 <section id="en" lang="en">
 <h1>Privacy Policy &middot; English</h1>
 <p class="meta">Effective date: 2026-10-11</p>
 <h2>1. Summary</h2>
-<p>Claire&#x27;s Ranch (the &quot;Game&quot;) has no sign-up or login, and contains no ads, in-app purchases, analytics or crash-reporting tools. Your game progress is stored only on your device. Information leaves your device in just two cases: when you agree to post a fair score to the online ranking, and when you choose to send us a feedback email.</p>
+<p>Claire&#x27;s Ranch (the &quot;Game&quot;) has no sign-up or login, and contains no ads, analytics or crash-reporting tools. Your game progress is stored only on your device; only horseshoes and speed-ups, the Game&#x27;s paid items, are kept on a wallet server the developer runs. Information leaves your device in three cases: when you agree to post a fair score to the online ranking, when you open the mailbox, the General Store or a horseshoe speed-up and use your horseshoe wallet (including optional in-app purchases), and when you choose to send us a feedback email.</p>
 <h2>2. Information stored on your device</h2>
-<p>Your progress (ranch, animals, crops, items) and your settings (sound, vibration, language) are kept only in the app&#x27;s private storage on your device. The nickname, ranking consent and random install ID used by the online ranking are stored there too. The developer cannot receive or see this data. Uninstalling the app or clearing its data in your device settings deletes it all. If Android backup is turned on, the operating system may include this data in your own Google account backup.</p>
+<p>Your progress (ranch, animals, crops, items) and your settings (sound, vibration, language) are kept only in the app&#x27;s private storage on your device. The nickname and ranking consent used by the online ranking, and the random install ID used by the online ranking and the horseshoe wallet, are stored there too. The developer cannot receive or see this data. Uninstalling the app or clearing its data in your device settings deletes it all. If Android backup is turned on, the operating system may include this data in your own Google account backup.</p>
 <h2>3. Online fair ranking (optional)</h2>
 <p>The weekly fair ranking is optional. Until you choose a nickname on the ranking screen and tap &quot;Agree and Post&quot;, the Game sends nothing to any server. Even after you agree, a score is sent only when you tap to post it.</p>
 <p>What is sent: the nickname you chose (2–12 characters), your fair contest score, the week, region and crop, and a random install ID (a UUID created on your device the first time it is needed). The server also records when it received the score. The install ID is not your advertising ID or Android device ID; it is used only to group scores from the same device and to mark your own place on the board. It is also sent when the board is loaded, so your place can be highlighted. Your name, email, location and contacts are never sent.</p>
 <p>Storage and visibility: the data travels encrypted over HTTPS and is stored in a Supabase project the developer runs for its games (a cloud database provided by Supabase, Inc.). The server may be located outside your country. Other players see only the nickname, score and rank on the board for the same week, region and crop; the install ID is never shown. Because others can see your nickname, please don&#x27;t use your real name or contact details. Supabase may keep request logs such as IP addresses to operate and secure the service; the developer does not use them for anything other than running the ranking. Supabase privacy policy: <a href="https://supabase.com/privacy">https://supabase.com/privacy</a></p>
 <p>Stopping, retention and deletion: tap &quot;Stop Ranking&quot; on the ranking screen and the Game stops sending anything and stops loading the board. Records already posted are kept while the ranking service is running and are not deleted automatically. To have them deleted, email <a href="mailto:mkideabox@gmail.com">mkideabox@gmail.com</a> with the nickname you used and the approximate dates you took part (and the region and crop, if you remember). The install ID is not shown in the Game, so we find your records by nickname, confirm them, and delete the nickname and its scores.</p>
 <p>Reports: if you report another player&#x27;s nickname on the board, your install ID, the reported nickname and that player&#x27;s record are stored on the server. The nickname is hidden on your device at once, and once three different players report the same nickname it is hidden from everyone (its owner still sees it). Choosing a new nickname lifts the hide. Reports are used only to manage inappropriate nicknames, and you can ask for them to be deleted the same way as ranking records above.</p>
-<h2>4. Sending feedback</h2>
+<h2>4. Horseshoe wallet, mailbox and in-app purchases</h2>
+<p>When the Game connects: horseshoes and speed-ups, the Game&#x27;s paid items, are kept on a wallet server the developer runs. This stops balances from being changed by editing the save file and makes sure gifts and purchases are applied exactly once. The Game contacts this server only when you open the mailbox, the General Store, &quot;Finish now&quot; with horseshoes or a speed-up; before that, nothing is sent. If the connection drops while horseshoes are being spent, the Game checks the result of that one request at the next launch.</p>
+<p>What is stored on the server:</p>
+<ul>
+<li>A random install ID (UUID): the same number the online ranking uses, created on your device the first time it is needed. It is not your advertising ID or Android device ID.</li>
+<li>Balances: horseshoes, speed-ups by type, extra carpenters and the second research bench bought with horseshoes, and your daily-gift streak and last claim date.</li>
+<li>Ledger: each time horseshoes or speed-ups are received, bought or spent (type, amount, request number, result, time). It also keeps a request from being applied twice.</li>
+<li>Mailbox: letters sent to you (daily gifts, gifts from the developer, the Ranch Pass&#x27;s daily horseshoes), when you claimed them and when they expire.</li>
+<li>Purchase records (only if you buy): Google Play order number, product, price and currency, store, whether it was a test purchase, purchase and refund times, and the horseshoes and speed-ups credited.</li>
+<li>Call log: your install ID and the time of each call, used to limit calls per minute against abuse and deleted after about 10 minutes.</li>
+</ul>
+<p>Building and upgrade timers are counted using the server time in the wallet&#x27;s replies together with the time elapsed on your device. Your device clock is not sent. Your name, email, location and contacts are never sent.</p>
+<p>In-app purchases: the products are horseshoe packs, the Pioneer Pack (one purchase only; horseshoes and speed-ups) and the Ranch Pass (300 horseshoes at once, then 130 a day by mail for 30 days; it does not renew). Payment is handled by Google Play. RevenueCat, Inc. checks that the purchase is genuine and notifies the wallet server, which credits the horseshoes. RevenueCat is started only when you open the General Store, and it uses your install ID as its user ID. Payment details such as card or bank information are handled by Google Play and never reach the developer, and the developer does not receive your name or email address from Google Play.</p>
+<p>Reinstalling: your ranch progress is stored only on your device. Uninstalling the app or clearing its data also deletes the install ID, and for now there is no other way to reconnect to the wallet on the server (including any horseshoes left in it). If this happens to horseshoes you bought, contact us with the order number.</p>
+<p>Purposes: keeping and spending horseshoe and speed-up balances; delivering daily gifts, developer gifts and Ranch Pass horseshoes; preventing double credits, double charges and abuse; confirming and crediting purchases; processing refunds; answering inquiries and disputes; keeping transaction records required by law.</p>
+<p>Retention:</p>
+<ul>
+<li>Wallet (balances, mailbox): kept while you use it and deleted 3 years after your last use, or promptly when you ask.</li>
+<li>Ledger, purchase and refund records: 5 years from the transaction, because the Korean Act on Consumer Protection in Electronic Commerce requires records of contracts, withdrawals, payments and supply to be kept. After a wallet is deleted they are stored separately from other data, and they are erased when the period ends.</li>
+<li>Call log: about 10 minutes.</li>
+</ul>
+<p>Service providers:</p>
+<ul>
+<li>Supabase, Inc. (US company): runs the wallet server (database and functions). The data is stored in its Seoul region, Republic of Korea.</li>
+<li>RevenueCat, Inc. (USA): confirms in-app purchases and forwards purchase and refund notices.</li>
+<li>Google LLC (USA and elsewhere): Google Play payments and refunds.</li>
+</ul>
+<p>Transfer abroad (RevenueCat): when you open the General Store, your install ID is sent encrypted over HTTPS to RevenueCat, Inc. (USA, <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a>) to load the products, and when you buy, the purchase details (product, order number, purchase token, price, time) are sent as well. Technical information its SDK needs to work, such as the app version and store country, may be sent with them. The purpose is confirming purchases and handling refunds, and the data is kept for the purchase-record period above. If you do not want this, do not open the General Store; the mailbox, horseshoe speed-ups and the rest of the Game work the same.</p>
+<p>All transfers are encrypted with HTTPS. The developer does not sell this information or use it for advertising. Privacy policies: Supabase <a href="https://supabase.com/privacy">https://supabase.com/privacy</a> · RevenueCat <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a> · Google <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+<h2>5. Payments, refunds and withdrawal</h2>
+<ul>
+<li>In-app purchases are optional. Every region and building can be enjoyed without paying, and horseshoes also arrive free as daily gifts in the mailbox.</li>
+<li>We do not sell items whose result depends on chance (draws or random boxes). Every product has fixed, stated contents and amounts.</li>
+<li>Payments are processed by Google Play under its rules for payment methods, receipts and pricing. The Ranch Pass is a 30-day item that does not renew automatically.</li>
+<li>Users in the Republic of Korea: you may withdraw a purchase of unused horseshoes and speed-ups within 7 days of purchase. Ask in your Google Play order history (<a href="https://play.google.com/store/account/orderhistory">https://play.google.com/store/account/orderhistory</a>) or email <a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a> with your Google Play order number (starting with GPA.). Horseshoes and speed-ups already used, and horseshoes received free as gifts, cannot be withdrawn. If you have used only part of a pack or of the Ranch Pass, contact us and we will handle it as the law requires.</li>
+<li>If a purchase is refunded, the horseshoes it gave are removed from your balance, and for the Ranch Pass the daily letters not yet delivered are cancelled. If you have already spent them, your balance goes to zero; finished construction and upgrades are not undone.</li>
+<li>Users in other countries keep their rights under Google Play&#x27;s refund policy and the consumer law of the country where they live.</li>
+</ul>
+<h2>6. Sending feedback</h2>
 <p>Tapping &quot;Send Feedback&quot; in the Gramophone menu opens your email app, addressed to our feedback inbox (<a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a>). To help us look into problems, the game version and build number, device model and operating system version are pre-filled below your message, and you can check or remove them before sending. The Game never sends email by itself: we receive your message and email address only if you tap send in your email app. Feedback is used only to reply, investigate problems and improve the Game; it is deleted once no longer needed, or right away if you ask.</p>
-<h2>5. What we do not collect</h2>
-<p>The Game has no ads, in-app purchases, analytics or crash-reporting tools. It does not access your location, contacts, photos, camera or microphone, and does not use the advertising ID. The developer does not sell your information or share it with third parties for advertising.</p>
-<h2>6. Children&#x27;s privacy</h2>
+<h2>7. What we do not collect</h2>
+<p>The Game has no ads, analytics or crash-reporting tools. Payment details (card or bank) are handled by Google Play and never reach the developer. The Game does not access your location, contacts, photos, camera or microphone, and does not use the advertising ID. The developer does not sell your information or share it with third parties for advertising.</p>
+<h2>8. Children&#x27;s privacy</h2>
 <p>This Game is not directed at children under 13. It does not ask for age or name, and the online ranking can be joined only after the player picks a nickname and agrees. Parents can keep a child from joining the ranking, or ask us to delete records as described above. If you believe a child&#x27;s information has reached us, email us at the address below and we will delete it after checking.</p>
-<h2>7. Your rights and data deletion</h2>
+<p>In-app purchases use the payment method on the Google Play account. Parents can block purchases with Google Play purchase approvals (parental controls). In the Republic of Korea, a purchase made by a minor without a legal guardian&#x27;s consent can be cancelled by the minor or the guardian; email <a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a> with the order number.</p>
+<h2>9. Your rights and data deletion</h2>
 <p>You can delete the data on your device at any time by uninstalling the app or clearing its data in your device settings. To access, correct or delete your online ranking records or feedback emails you sent, contact <a href="mailto:mkideabox@gmail.com">mkideabox@gmail.com</a>. We will handle your request promptly.</p>
-<h2>8. Contact</h2>
+<p>To see or delete your horseshoe wallet, email <a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a>. If you have made a purchase, include your Google Play order number (starting with GPA.) so we can find the wallet linked to it. A wallet with no purchases is stored only under a random install ID, with no name or contact details, and the Game does not show that ID, so for now we cannot confirm by email which wallet is yours; such wallets are deleted 3 years after their last use. Deleting a wallet permanently removes the horseshoes and speed-ups left in it, and they are not refunded. Ledger and purchase records are deleted after the retention period in section 4.</p>
+<h2>10. Contact</h2>
 <p>Developer: MK Ideabox · Email: <a href="mailto:mkideabox@gmail.com">mkideabox@gmail.com</a></p>
-<h2>9. Changes</h2>
+<h2>11. Changes</h2>
 <p>If this policy changes, the updated version will be posted on this page with a new effective date.</p>
 </section>
 <section id="ja" lang="ja">
 <h1>プライバシーポリシー &middot; 日本語</h1>
 <p class="meta">施行日: 2026-10-11</p>
 <h2>1. 概要</h2>
-<p>クレアの牧場(以下「本ゲーム」)には会員登録やログインがなく、広告・アプリ内課金・分析ツール・クラッシュレポートツールも組み込んでいません。ゲームの進行データは端末内にのみ保存されます。情報が端末の外に出るのは次の2つの場合だけです。プレイヤーが同意したうえで品評会のスコアをオンラインランキングに載せるとき、そしてプレイヤー自身が意見メールを送るときです。</p>
+<p>クレアの牧場(以下「本ゲーム」)には会員登録やログインがなく、広告・分析ツール・クラッシュレポートツールも組み込んでいません。ゲームの進行データは端末内にのみ保存され、有料アイテムである蹄鉄と短縮券だけが開発者の運営するウォレットサーバーに保管されます。情報が端末の外に出るのは次の3つの場合です。プレイヤーが同意したうえで品評会のスコアをオンラインランキングに載せるとき、郵便受け・雑貨屋・蹄鉄による短縮を開いて蹄鉄ウォレットを使うとき(任意のアプリ内課金を含む)、そしてプレイヤー自身が意見メールを送るときです。</p>
 <h2>2. 端末に保存される情報</h2>
-<p>牧場・家畜・作物・所持品などの進行状況と設定(サウンド・振動・言語)は、端末内のアプリ専用領域にのみ保存されます。オンラインランキング用のニックネーム、参加への同意、ランダムなインストール番号も端末に保存されます。開発者はこれらのデータを受け取ったり見たりすることはできません。アプリを削除するか、端末の設定でアプリのデータを消去するとすべて削除されます。Android端末でバックアップが有効な場合、OSがこのデータをユーザー自身のGoogleアカウントのバックアップに含めることがあります。</p>
+<p>牧場・家畜・作物・所持品などの進行状況と設定(サウンド・振動・言語)は、端末内のアプリ専用領域にのみ保存されます。オンラインランキング用のニックネームと参加への同意、オンラインランキングと蹄鉄ウォレットに使うランダムなインストール番号も端末に保存されます。開発者はこれらのデータを受け取ったり見たりすることはできません。アプリを削除するか、端末の設定でアプリのデータを消去するとすべて削除されます。Android端末でバックアップが有効な場合、OSがこのデータをユーザー自身のGoogleアカウントのバックアップに含めることがあります。</p>
 <h2>3. オンライン品評会ランキング(任意)</h2>
 <p>週間の品評会ランキングは任意の機能です。ランキング画面でニックネームを決めて「同意してランキングに載せる」をタップするまで、本ゲームはサーバーに何も送信しません。同意した後も、スコアはプレイヤーが送信をタップしたときにのみ送られます。</p>
 <p>送信する情報:プレイヤーが決めたニックネーム(2〜12文字)、品評会のスコア、週・地域・部門、そしてこの端末で初めて作られたランダムなインストール番号(UUID)です。サーバーは受信した日時もあわせて記録します。インストール番号は広告IDやAndroidの端末IDではなく、同じ端末のスコアをまとめ、ランキング表で自分の順位を示すためだけに使います。ランキング表を読み込むときも、自分の順位を示すためにこの番号を送ります。名前・メールアドレス・位置情報・連絡先は送信しません。</p>
 <p>保存と公開:情報はHTTPSで暗号化して送信され、開発者がゲーム用に運用するSupabaseのプロジェクト(Supabase, Inc.が提供するクラウドデータベース)に保存されます。サーバーはお住まいの国の外にある場合があります。他のプレイヤーに見えるのは、同じ週・地域・部門のランキング表にあるニックネーム、スコア、順位だけで、インストール番号は表示されません。ニックネームは他の人の目に触れるため、本名や連絡先は使わないでください。Supabaseはサービスの運用とセキュリティのためにIPアドレスなどのアクセス記録を残すことがあり、開発者はそれをランキング運営以外の目的には使いません。Supabaseのプライバシーポリシー:<a href="https://supabase.com/privacy">https://supabase.com/privacy</a></p>
 <p>参加の停止・保存期間・削除:ランキング画面の「ランキング参加をやめる」をタップすると、それ以降は何も送信せず、ランキングの読み込みも行いません。すでに載せた記録はランキングサービスを運営している間保存され、自動では削除されません。削除をご希望の場合は、<a href="mailto:mkideabox@gmail.com">mkideabox@gmail.com</a> まで使用したニックネームとおおよその参加日(わかれば地域・部門も)をお知らせください。インストール番号はゲーム画面に表示されないため、ニックネームで記録を探して確認したうえで、ニックネームとスコアの記録を削除します。</p>
 <p>通報: ランキングで他のプレイヤーのニックネームを通報すると、あなたのインストール番号、通報したニックネームとそのプレイヤーの記録がサーバーに保存されます。通報したニックネームはあなたの端末ですぐに非表示になり、異なる3人のプレイヤーが同じニックネームを通報するとすべての人に非表示になります(本人には表示されます)。ニックネームを変更すると非表示は解除されます。通報記録は不適切なニックネームの管理にのみ使い、上記のランキング記録と同じ方法で削除を依頼できます。</p>
-<h2>4. 意見を送る</h2>
+<h2>4. 蹄鉄ウォレット・郵便受け・アプリ内課金</h2>
+<p>接続するとき:本ゲームの有料アイテムである蹄鉄と短縮券は、開発者が運営するウォレットサーバーに保管されます。端末の保存ファイルを書き換えて残高を変えられないようにし、ギフトや購入が必ず一度だけ反映されるようにするためです。本ゲームがこのサーバーに接続するのは、郵便受け、雑貨屋、蹄鉄での「すぐ完了」、短縮券の使用を開いたときだけで、それ以前は何も送信しません。蹄鉄を使っている途中で接続が切れた場合は、次回起動時にそのリクエスト1件の結果だけを確認し直します。</p>
+<p>サーバーに保存する情報:</p>
+<ul>
+<li>ランダムなインストール番号(UUID):オンラインランキングと同じ番号で、この端末で初めて必要になったときに作られます。広告IDやAndroidの端末IDではありません。</li>
+<li>残高:蹄鉄の数、種類別の短縮券の数、蹄鉄で購入した追加の大工と2台目の研究台、デイリーギフトの連続日数と最終受取日。</li>
+<li>台帳:蹄鉄・短縮券を受け取った・購入した・使った記録(種類、数量、リクエスト番号、結果、時刻)。同じリクエストが二重に処理されるのを防ぐためにも使います。</li>
+<li>郵便受け:届いた郵便(デイリーギフト、開発者からのギフト、牧場定期券の毎日の蹄鉄)、受取時刻、有効期限。</li>
+<li>購入記録(アプリ内課金をした場合のみ):Google Playの注文番号、商品、支払金額と通貨、ストア、テスト購入かどうか、購入・返金時刻、付与した蹄鉄と短縮券。</li>
+<li>呼び出し記録:乱用を防ぐため、インストール番号と呼び出し時刻を記録して1分あたりの呼び出し回数を制限します。約10分後に削除します。</li>
+</ul>
+<p>建設・強化の時間は、サーバーの応答に含まれるサーバー時刻と端末の経過時間を使って数えます。端末の時計の値はサーバーに送信しません。名前・メールアドレス・位置情報・連絡先も送信しません。</p>
+<p>アプリ内課金:販売する商品は、蹄鉄のパック、開拓者パック(購入は1回のみ。蹄鉄と短縮券)、牧場定期券(すぐに蹄鉄300個、その後30日間、毎日130個を郵便で付与。自動更新なし)です。決済はGoogle Playが処理し、RevenueCat, Inc.が購入が正当であることを確認してウォレットサーバーに知らせ、サーバーが蹄鉄を付与します。RevenueCatは雑貨屋を開いたときにだけ起動し、インストール番号をユーザーIDとして使います。カード番号や口座などの決済手段の情報はGoogle Playが処理し、開発者は受け取りません。Google Playから購入者の氏名やメールアドレスを受け取ることもありません。</p>
+<p>再インストール:牧場の進行状況は端末にのみ保存されます。アプリを削除するか、アプリのデータを消去するとインストール番号も消え、現時点ではサーバーのウォレット(残っている蹄鉄を含む)に再びつなぐ方法はほかにありません。購入した蹄鉄がこうなった場合は、注文番号を添えてお問い合わせください。</p>
+<p>利用目的:蹄鉄・短縮券の残高の保管と使用、デイリーギフト・開発者からのギフト・牧場定期券の蹄鉄の付与、二重付与・二重消費・不正利用の防止、購入の確認と付与、返金処理、お問い合わせ・紛争への対応、法令に基づく取引記録の保管。</p>
+<p>保存期間:</p>
+<ul>
+<li>ウォレット(残高・郵便受け):使用している間は保存し、最後に使用した日から3年が過ぎると削除します。削除のご依頼があれば速やかに削除します。</li>
+<li>台帳・購入・返金の記録:取引日から5年間。韓国の「電子商取引等における消費者保護に関する法律」により、契約・申込みの撤回、代金決済、商品の供給に関する記録の保存が求められるため、ウォレットを削除した後もこの期間は他のデータと分けて保管し、期間が過ぎたら削除します。</li>
+<li>呼び出し記録:約10分。</li>
+</ul>
+<p>委託先:</p>
+<ul>
+<li>Supabase, Inc.(米国の会社):ウォレットサーバー(データベースと関数)の運用。データは大韓民国ソウルのリージョンに保存されます。</li>
+<li>RevenueCat, Inc.(米国):アプリ内課金の確認、購入・返金通知の転送。</li>
+<li>Google LLC(米国ほか):Google Playの決済と返金。</li>
+</ul>
+<p>国外への移転(RevenueCat):雑貨屋を開くと、商品一覧を読み込むためにインストール番号がHTTPSで暗号化されてRevenueCat, Inc.(米国、<a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a>)に送信され、購入すると購入情報(商品、注文番号、購入トークン、価格、時刻)も送信されます。その際、アプリのバージョンやストアの国など、RevenueCatのSDKが動作するために必要な技術情報があわせて送られることがあります。目的は購入の確認と返金処理で、上記の購入記録の保存期間だけ保管されます。望まない場合は雑貨屋を開かなければよく、郵便受けや蹄鉄による短縮、ゲームのその他の機能はそのまま使えます。</p>
+<p>すべての送信はHTTPSで暗号化されます。開発者はこれらの情報を販売したり広告に使ったりしません。各社のプライバシーポリシー:Supabase <a href="https://supabase.com/privacy">https://supabase.com/privacy</a> · RevenueCat <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a> · Google <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+<h2>5. 決済・返金・申込みの撤回</h2>
+<ul>
+<li>アプリ内課金は任意です。購入しなくてもすべての地域と建物を楽しめ、蹄鉄は郵便受けのデイリーギフトでも受け取れます。</li>
+<li>確率で結果が変わる商品(ガチャ・ランダムな箱)は販売しません。すべての商品は内容と数量が決まっています。</li>
+<li>決済はGoogle Playが処理し、決済手段・領収書・価格表示はGoogle Playのポリシーに従います。牧場定期券は自動更新されない30日間の商品です。</li>
+<li>大韓民国のユーザー:未使用の蹄鉄と短縮券は、購入日から7日以内に申込みの撤回(返金)を求めることができます。Google Playの注文履歴(<a href="https://play.google.com/store/account/orderhistory">https://play.google.com/store/account/orderhistory</a>)から申請するか、Google Playの注文番号(GPA.で始まる番号)を添えて <a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a> までメールしてください。使用済みの蹄鉄・短縮券、ギフトとして無料で受け取った蹄鉄は対象外です。パック商品や牧場定期券の一部だけを使った場合は、お問い合わせいただければ関係法令に従って対応します。</li>
+<li>返金された場合、その購入で得た蹄鉄を残高から差し引き、牧場定期券であればまだ届いていない毎日の郵便も取り消します。すでに使っていて足りない場合、残高は0になり、完了済みの建設・強化は元に戻しません。</li>
+<li>他の国のユーザーも、Google Playの返金ポリシーと居住国の消費者保護法に基づく権利を持ちます。</li>
+</ul>
+<h2>6. 意見を送る</h2>
 <p>蓄音機メニューの「開発者に意見を送る」をタップすると、端末のメールアプリが開発者のフィードバック用アドレス(<a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a>)宛てに開きます。本文の下には、問題の確認のためにゲームのバージョンとビルド番号、端末のモデル名、OSのバージョンがあらかじめ記入されており、送信前に確認したり消したりできます。本ゲームが自動でメールを送ることはなく、ユーザーがメールアプリで送信した場合にのみ、書いた内容とメールアドレスが開発者に届きます。受け取ったメールは返信、不具合の確認、ゲームの改善にのみ使い、不要になった時点で削除します。ご依頼があればすぐに削除します。</p>
-<h2>5. 収集しない情報</h2>
-<p>本ゲームには広告、アプリ内課金、分析ツール、クラッシュレポートツールがありません。位置情報、連絡先、写真、カメラ、マイクにはアクセスせず、広告IDも使用しません。開発者がユーザーの情報を販売したり、広告目的で第三者と共有したりすることはありません。</p>
-<h2>6. 子どものプライバシー</h2>
+<h2>7. 収集しない情報</h2>
+<p>本ゲームには広告、分析ツール、クラッシュレポートツールがありません。決済手段の情報(カード・口座)はGoogle Playが処理し、開発者には届きません。位置情報、連絡先、写真、カメラ、マイクにはアクセスせず、広告IDも使用しません。開発者がユーザーの情報を販売したり、広告目的で第三者と共有したりすることはありません。</p>
+<h2>8. 子どものプライバシー</h2>
 <p>本ゲームは13歳未満の子どもを対象としていません。年齢や名前を尋ねることはなく、オンラインランキングにはプレイヤーがニックネームを決めて同意しない限り参加できません。保護者の方は、お子さまがランキングに参加しないようにしたり、上記の方法で記録の削除を依頼したりできます。お子さまの情報が当方に届いたと思われる場合は、下記のメールアドレスまでご連絡ください。確認のうえ削除します。</p>
-<h2>7. ユーザーの権利とデータの削除</h2>
+<p>アプリ内課金にはGoogle Playアカウントの決済手段が必要です。保護者の方はGoogle Playの購入リクエスト(保護者による使用制限)で購入を止められます。大韓民国では、未成年者が法定代理人の同意なく行った決済は、本人または法定代理人が取り消すことができます。注文番号を添えて <a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a> までご連絡ください。</p>
+<h2>9. ユーザーの権利とデータの削除</h2>
 <p>端末に保存されたデータは、アプリの削除または端末の設定でのデータ消去により、いつでも削除できます。オンラインランキングの記録や送信した意見メールの開示・訂正・削除は <a href="mailto:mkideabox@gmail.com">mkideabox@gmail.com</a> までご依頼ください。確認のうえ速やかに対応します。</p>
-<h2>8. お問い合わせ</h2>
+<p>蹄鉄ウォレットの閲覧・削除は <a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a> までご依頼ください。購入したことがあれば、Google Playの注文番号(GPA.で始まる番号)をお知らせいただければ、その購入に結びついたウォレットを探して確認します。購入したことのないウォレットは名前や連絡先なしにランダムなインストール番号だけで保存され、その番号はゲーム画面に表示されないため、現時点ではメールでご本人のウォレットかどうかを確認する方法がありません。このようなウォレットは最後の使用から3年が過ぎると削除されます。ウォレットを削除すると、残っている蹄鉄と短縮券は元に戻せず、返金もされません。台帳・購入記録は4の保存期間が過ぎた後に削除します。</p>
+<h2>10. お問い合わせ</h2>
 <p>開発者:MK Ideabox · メール:<a href="mailto:mkideabox@gmail.com">mkideabox@gmail.com</a></p>
-<h2>9. 変更</h2>
+<h2>11. 変更</h2>
 <p>本ポリシーを変更した場合は、新しい施行日とともにこのページに掲載します。</p>
 </section>
 <section id="zh" lang="zh-Hans">
 <h1>隐私政策 &middot; 简体中文</h1>
 <p class="meta">生效日期: 2026-10-11</p>
 <h2>1. 摘要</h2>
-<p>克莱尔的牧场(以下简称“本游戏”)无需注册或登录,不含广告、应用内购买、分析工具或崩溃报告工具。游戏进度只保存在您的设备上。信息只会在两种情况下离开您的设备:您同意后将集市评比成绩上传到在线排行榜时,以及您主动发送意见邮件时。</p>
+<p>克莱尔的牧场(以下简称“本游戏”)无需注册或登录,不含广告、分析工具或崩溃报告工具。游戏进度只保存在您的设备上,只有付费道具马蹄铁和加速券保存在开发者运营的钱包服务器上。信息会在三种情况下离开您的设备:您同意后将集市评比成绩上传到在线排行榜时;您打开信箱、杂货店或马蹄铁加速并使用马蹄铁钱包时(包括可选的应用内购买);以及您主动发送意见邮件时。</p>
 <h2>2. 保存在您设备上的信息</h2>
-<p>牧场、牲畜、作物、物品等游戏进度和设置(声音、振动、语言)只保存在设备上的应用专属存储空间中。在线排行榜使用的昵称、是否同意参与以及随机安装编号也保存在设备上。开发者无法接收或查看这些数据。卸载应用或在设备设置中清除应用数据即可将其全部删除。如果您的 Android 设备开启了备份,操作系统可能会将这些数据包含在您本人的 Google 账号备份中。</p>
+<p>牧场、牲畜、作物、物品等游戏进度和设置(声音、振动、语言)只保存在设备上的应用专属存储空间中。在线排行榜使用的昵称和是否同意参与,以及在线排行榜和马蹄铁钱包使用的随机安装编号,也保存在设备上。开发者无法接收或查看这些数据。卸载应用或在设备设置中清除应用数据即可将其全部删除。如果您的 Android 设备开启了备份,操作系统可能会将这些数据包含在您本人的 Google 账号备份中。</p>
 <h2>3. 在线集市排行榜(可选)</h2>
 <p>每周集市排行榜是可选功能。在排行榜界面设定昵称并点按“同意并上榜”之前,本游戏不会向服务器发送任何内容。同意之后,也只有在您点按上传时才会发送成绩。</p>
 <p>发送的信息:您设定的昵称(2–12 个字符)、集市评比得分、周次、地区和项目,以及在本设备上首次生成的随机安装编号(UUID)。服务器还会记录收到的时间。安装编号不是广告 ID,也不是 Android 设备 ID,只用于归并同一设备的成绩并在排行榜上标出您的名次。加载排行榜时也会发送此编号,以便标出您的名次。不会发送姓名、电子邮箱、位置或联系人。</p>
 <p>存储与公开:信息通过 HTTPS 加密传输,保存在开发者为旗下游戏运营的 Supabase 项目中(由 Supabase, Inc. 提供的云数据库)。服务器可能位于您所在国家/地区之外。其他玩家只能看到同一周次、地区和项目排行榜上的昵称、得分和名次,看不到安装编号。昵称会被他人看到,请勿使用真实姓名或联系方式。Supabase 可能会为运营和安全目的保留 IP 地址等请求记录,开发者不会将其用于排行榜运营以外的目的。Supabase 隐私政策:<a href="https://supabase.com/privacy">https://supabase.com/privacy</a></p>
 <p>停止参与、保存与删除:在排行榜界面点按“退出排名”后,本游戏将不再发送任何内容,也不再加载排行榜。已上传的记录会在排行榜服务运营期间保留,不会自动删除。如需删除,请发送邮件至 <a href="mailto:mkideabox@gmail.com">mkideabox@gmail.com</a>,告知您使用的昵称和大致参与日期(如记得,也请注明地区和项目)。由于游戏界面不显示安装编号,我们将按昵称查找并核实记录,然后删除该昵称及其成绩记录。</p>
 <p>举报:在排行榜上举报其他玩家的昵称时,您的安装编号、被举报的昵称及该玩家的记录会保存在服务器上。被举报的昵称会立即在您的设备上隐藏;当三位不同的玩家举报同一昵称时,该昵称将对所有人隐藏(本人仍可看到)。更换昵称后隐藏即解除。举报记录仅用于管理不当昵称,您可以按上述排行榜记录的相同方式申请删除。</p>
-<h2>4. 发送意见</h2>
+<h2>4. 马蹄铁钱包、信箱与应用内购买</h2>
+<p>何时连接:本游戏的付费道具马蹄铁和加速券保存在开发者运营的钱包服务器上。这样可以防止通过修改存档文件改变余额,并确保礼物和购买只生效一次。本游戏只在您打开信箱、杂货店、用马蹄铁“立即完成”或使用加速券时才连接此服务器,在此之前不会发送任何内容。如果使用马蹄铁时连接中断,下次启动时只会重新确认那一个请求的结果。</p>
+<p>服务器保存的信息:</p>
+<ul>
+<li>随机安装编号(UUID):与在线排行榜使用的编号相同,在本设备上首次需要时生成。它不是广告 ID,也不是 Android 设备 ID。</li>
+<li>余额:马蹄铁数量、各类加速券数量、用马蹄铁购买的额外木匠和第二张研究台、每日礼物连续天数和最后领取日期。</li>
+<li>账本:获得、购买或使用马蹄铁和加速券的记录(类型、数量、请求编号、结果、时间),也用于防止同一请求被处理两次。</li>
+<li>信箱:收到的邮件(每日礼物、开发者赠送的礼物、牧场月卡的每日马蹄铁)、领取时间和到期时间。</li>
+<li>购买记录(仅在您进行应用内购买时):Google Play 订单号、商品、支付金额和币种、商店、是否为测试购买、购买与退款时间、发放的马蹄铁和加速券。</li>
+<li>调用记录:为防止滥用,记录安装编号和调用时间以限制每分钟的调用次数,约 10 分钟后删除。</li>
+</ul>
+<p>建造和升级的计时使用服务器回复中的服务器时间加上设备上的经过时间。设备时钟的数值不会发送到服务器。姓名、电子邮箱、位置和联系人也不会发送。</p>
+<p>应用内购买:出售的商品有马蹄铁礼包、开拓者礼包(限购一次,含马蹄铁和加速券)和牧场月卡(立即获得 300 个马蹄铁,之后 30 天内每天通过信箱发放 130 个,不会自动续订)。付款由 Google Play 处理,RevenueCat, Inc. 确认购买真实有效后通知钱包服务器,由服务器发放马蹄铁。RevenueCat 只在您打开杂货店时启动,并以安装编号作为用户 ID。银行卡号、银行账户等支付方式信息由 Google Play 处理,开发者不会收到;开发者也不会从 Google Play 获取购买者的姓名或电子邮箱地址。</p>
+<p>重新安装:牧场进度只保存在设备上。卸载应用或清除应用数据时,安装编号也会一并删除,目前没有其他方法重新连接到服务器上的钱包(包括其中剩余的马蹄铁)。如果您购买的马蹄铁因此无法使用,请附上订单号联系我们。</p>
+<p>使用目的:保管和使用马蹄铁与加速券余额;发放每日礼物、开发者礼物和牧场月卡马蹄铁;防止重复发放、重复扣除和滥用;确认购买并发放;处理退款;回应咨询和纠纷;依法保存交易记录。</p>
+<p>保存期限:</p>
+<ul>
+<li>钱包(余额、信箱):在您使用期间保存,自最后一次使用起满 3 年后删除;收到删除请求后会及时删除。</li>
+<li>账本、购买和退款记录:自交易日起保存 5 年。韩国《电子商务等消费者保护法》要求保存合同与撤回、货款支付和商品供应的记录,因此删除钱包后,这些记录在此期限内仍与其他数据分开保存,期满后删除。</li>
+<li>调用记录:约 10 分钟。</li>
+</ul>
+<p>受托方:</p>
+<ul>
+<li>Supabase, Inc.(美国公司):运营钱包服务器(数据库与函数)。数据存储在韩国首尔区域。</li>
+<li>RevenueCat, Inc.(美国):确认应用内购买,转发购买和退款通知。</li>
+<li>Google LLC(美国及其他地区):Google Play 付款和退款。</li>
+</ul>
+<p>跨境传输(RevenueCat):打开杂货店时,为加载商品列表,安装编号会通过 HTTPS 加密发送至 RevenueCat, Inc.(美国,<a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a>);购买时,购买信息(商品、订单号、购买令牌、价格、时间)也会被发送。同时可能附带 RevenueCat SDK 运行所需的技术信息,例如应用版本和商店所在国家。目的是确认购买和处理退款,并按上述购买记录的期限保存。如果您不希望如此,不打开杂货店即可;信箱、马蹄铁加速和游戏的其他功能不受影响。</p>
+<p>所有传输均使用 HTTPS 加密。开发者不会出售这些信息,也不会将其用于广告。各公司的隐私政策:Supabase <a href="https://supabase.com/privacy">https://supabase.com/privacy</a> · RevenueCat <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a> · Google <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+<h2>5. 付款、退款与撤回</h2>
+<ul>
+<li>应用内购买是可选的。不购买也可以体验所有地区和建筑,马蹄铁也可以通过信箱的每日礼物免费获得。</li>
+<li>我们不出售结果随概率变化的商品(抽卡、随机箱子)。所有商品的内容和数量都是固定的。</li>
+<li>付款由 Google Play 处理,付款方式、收据和价格显示遵循 Google Play 的政策。牧场月卡是不会自动续订的 30 天商品。</li>
+<li>韩国用户:未使用的马蹄铁和加速券可在购买之日起 7 天内申请撤回(退款)。请在 Google Play 订单记录(<a href="https://play.google.com/store/account/orderhistory">https://play.google.com/store/account/orderhistory</a>)中申请,或附上 Google Play 订单号(以 GPA. 开头)发送邮件至 <a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a>。已使用的马蹄铁和加速券,以及作为礼物免费获得的马蹄铁不在撤回范围内。如果礼包或牧场月卡只使用了一部分,请联系我们,我们将依照相关法律处理。</li>
+<li>退款后,会从余额中扣除该次购买获得的马蹄铁;如果是牧场月卡,尚未送达的每日邮件也会取消。如果已经用掉导致余额不足,余额将变为 0,已完成的建造和升级不会撤销。</li>
+<li>其他国家的用户也依据 Google Play 退款政策和所在国的消费者保护法律享有相应权利。</li>
+</ul>
+<h2>6. 发送意见</h2>
 <p>在留声机菜单中点按“向开发者发送意见”,设备的邮件应用会打开,收件人为开发者的反馈邮箱(<a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a>)。为便于排查问题,正文下方已预先填写游戏版本和构建号、设备型号以及操作系统版本,您可以在发送前查看或删除。本游戏不会自行发送邮件,只有您在邮件应用中点按发送后,开发者才会收到您写的内容和您的邮箱地址。收到的邮件只用于回复、排查问题和改进游戏,不再需要时即予删除;如您提出要求,我们会立即删除。</p>
-<h2>5. 我们不收集的信息</h2>
-<p>本游戏没有广告、应用内购买、分析工具或崩溃报告工具,不访问您的位置、联系人、照片、相机或麦克风,也不使用广告 ID。开发者不会出售您的信息,也不会为广告目的与第三方共享。</p>
-<h2>6. 儿童隐私</h2>
+<h2>7. 我们不收集的信息</h2>
+<p>本游戏没有广告、分析工具或崩溃报告工具。支付方式信息(银行卡、账户)由 Google Play 处理,不会传给开发者。本游戏不访问您的位置、联系人、照片、相机或麦克风,也不使用广告 ID。开发者不会出售您的信息,也不会为广告目的与第三方共享。</p>
+<h2>8. 儿童隐私</h2>
 <p>本游戏并非面向 13 岁以下儿童。游戏不会询问年龄或姓名,玩家必须设定昵称并同意后才能参与在线排行榜。家长可以让孩子不参与排行榜,或按上述方式要求删除记录。如果您认为儿童的信息已被我们收到,请通过下方邮箱联系我们,我们核实后将予以删除。</p>
-<h2>7. 您的权利与数据删除</h2>
+<p>应用内购买需要使用 Google Play 账号中的付款方式。家长可以通过 Google Play 的购买批准(家长控制)阻止购买。在韩国,未成年人未经法定代理人同意进行的付款,本人或法定代理人可以取消;请附上订单号发送邮件至 <a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a>。</p>
+<h2>9. 您的权利与数据删除</h2>
 <p>您可以随时通过卸载应用或在设备设置中清除应用数据来删除设备上的数据。如需查阅、更正或删除在线排行榜记录或您发送的意见邮件,请联系 <a href="mailto:mkideabox@gmail.com">mkideabox@gmail.com</a>,我们会尽快处理。</p>
-<h2>8. 联系方式</h2>
+<p>如需查看或删除马蹄铁钱包,请发送邮件至 <a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a>。如有购买,请附上 Google Play 订单号(以 GPA. 开头),我们会找到与该购买关联的钱包并核实。未购买过的钱包只以随机安装编号保存,不含姓名或联系方式,而且游戏界面不显示该编号,因此目前无法通过邮件确认哪个钱包属于您;这类钱包在最后一次使用满 3 年后删除。删除钱包后,剩余的马蹄铁和加速券将无法恢复,也不予退款。账本和购买记录将在第 4 节所述保存期限届满后删除。</p>
+<h2>10. 联系方式</h2>
 <p>开发者:MK Ideabox · 电子邮箱:<a href="mailto:mkideabox@gmail.com">mkideabox@gmail.com</a></p>
-<h2>9. 变更</h2>
+<h2>11. 变更</h2>
 <p>如本政策发生变更,更新后的版本将连同新的生效日期发布在本页面上。</p>
 </section>
 <section id="es" lang="es">
 <h1>Política de privacidad &middot; Español</h1>
 <p class="meta">Fecha de entrada en vigor: 2026-10-11</p>
 <h2>1. Resumen</h2>
-<p>El rancho de Claire (el &quot;Juego&quot;) no requiere registro ni inicio de sesión, y no incluye anuncios, compras dentro de la app, herramientas de analítica ni de informes de fallos. Tu progreso se guarda únicamente en tu dispositivo. La información solo sale de tu dispositivo en dos casos: cuando aceptas publicar una puntuación de la feria en la clasificación en línea y cuando decides enviarnos un correo con tus comentarios.</p>
+<p>El rancho de Claire (el &quot;Juego&quot;) no requiere registro ni inicio de sesión, y no incluye anuncios, herramientas de analítica ni de informes de fallos. Tu progreso se guarda únicamente en tu dispositivo; solo las herraduras y los aceleradores, los artículos de pago del Juego, se guardan en un servidor de monedero que gestiona el desarrollador. La información sale de tu dispositivo en tres casos: cuando aceptas publicar una puntuación de la feria en la clasificación en línea, cuando abres el buzón, la tienda general o una aceleración con herraduras y usas tu monedero de herraduras (incluidas las compras opcionales dentro de la app), y cuando decides enviarnos un correo con tus comentarios.</p>
 <h2>2. Información almacenada en tu dispositivo</h2>
-<p>Tu progreso (rancho, animales, cultivos, objetos) y tus ajustes (sonido, vibración, idioma) se guardan solo en el almacenamiento privado de la app en tu dispositivo. El apodo, el consentimiento para la clasificación y el número de instalación aleatorio que usa la clasificación en línea también se guardan ahí. El desarrollador no puede recibir ni ver estos datos. Al desinstalar la app o borrar sus datos en los ajustes del dispositivo, se elimina todo. Si la copia de seguridad de Android está activada, el sistema operativo puede incluir estos datos en la copia de seguridad de tu propia cuenta de Google.</p>
+<p>Tu progreso (rancho, animales, cultivos, objetos) y tus ajustes (sonido, vibración, idioma) se guardan solo en el almacenamiento privado de la app en tu dispositivo. El apodo y el consentimiento que usa la clasificación en línea, y el número de instalación aleatorio que usan la clasificación en línea y el monedero de herraduras, también se guardan ahí. El desarrollador no puede recibir ni ver estos datos. Al desinstalar la app o borrar sus datos en los ajustes del dispositivo, se elimina todo. Si la copia de seguridad de Android está activada, el sistema operativo puede incluir estos datos en la copia de seguridad de tu propia cuenta de Google.</p>
 <h2>3. Clasificación en línea de la feria (opcional)</h2>
 <p>La clasificación semanal de la feria es opcional. Hasta que elijas un apodo en la pantalla de clasificación y toques &quot;Aceptar y publicar&quot;, el Juego no envía nada a ningún servidor. Incluso después de aceptar, una puntuación solo se envía cuando tocas para publicarla.</p>
 <p>Qué se envía: el apodo que elegiste (de 2 a 12 caracteres), tu puntuación en el concurso de la feria, la semana, la región y el cultivo, y un número de instalación aleatorio (un UUID creado en tu dispositivo la primera vez que hace falta). El servidor también registra cuándo recibió la puntuación. El número de instalación no es tu ID de publicidad ni el ID del dispositivo Android; solo sirve para agrupar las puntuaciones de un mismo dispositivo y marcar tu puesto en la tabla. También se envía al cargar la tabla, para resaltar tu puesto. Nunca se envían tu nombre, correo, ubicación ni contactos.</p>
 <p>Almacenamiento y visibilidad: los datos viajan cifrados por HTTPS y se guardan en un proyecto de Supabase que el desarrollador gestiona para sus juegos (una base de datos en la nube de Supabase, Inc.). El servidor puede estar fuera de tu país. Los demás jugadores solo ven el apodo, la puntuación y el puesto en la tabla de la misma semana, región y cultivo; el número de instalación nunca se muestra. Como otros pueden ver tu apodo, no uses tu nombre real ni datos de contacto. Supabase puede conservar registros de solicitudes, como direcciones IP, para operar y proteger el servicio; el desarrollador no los usa para nada más que gestionar la clasificación. Política de privacidad de Supabase: <a href="https://supabase.com/privacy">https://supabase.com/privacy</a></p>
 <p>Dejar de participar, conservación y eliminación: toca &quot;Dejar el ranking&quot; en la pantalla de clasificación y el Juego dejará de enviar datos y de cargar la tabla. Los registros ya publicados se conservan mientras funcione el servicio de clasificación y no se borran automáticamente. Para que los eliminemos, escribe a <a href="mailto:mkideabox@gmail.com">mkideabox@gmail.com</a> indicando el apodo que usaste y las fechas aproximadas en que participaste (y la región y el cultivo, si los recuerdas). El número de instalación no aparece en el Juego, así que buscamos tus registros por el apodo, los comprobamos y eliminamos el apodo y sus puntuaciones.</p>
 <p>Denuncias: si denuncias el apodo de otro jugador en la clasificación, se guardan en el servidor tu número de instalación, el apodo denunciado y el registro de ese jugador. El apodo se oculta en tu dispositivo de inmediato y, cuando tres jugadores distintos denuncian el mismo apodo, se oculta para todos (su dueño lo sigue viendo). Elegir un apodo nuevo quita la ocultación. Las denuncias solo se usan para gestionar apodos inapropiados y puedes pedir que se eliminen igual que los registros de clasificación.</p>
-<h2>4. Enviar comentarios</h2>
+<h2>4. Monedero de herraduras, buzón y compras dentro de la app</h2>
+<p>Cuándo se conecta el Juego: las herraduras y los aceleradores, los artículos de pago del Juego, se guardan en un servidor de monedero que gestiona el desarrollador. Así no se puede cambiar el saldo editando el archivo de guardado y los regalos y las compras se aplican exactamente una vez. El Juego solo se conecta a este servidor cuando abres el buzón, la tienda general, &quot;Terminar ya&quot; con herraduras o un acelerador; antes de eso no se envía nada. Si la conexión se corta mientras se gastan herraduras, el Juego comprueba el resultado de esa única solicitud en el siguiente inicio.</p>
+<p>Qué se guarda en el servidor:</p>
+<ul>
+<li>Un número de instalación aleatorio (UUID): el mismo que usa la clasificación en línea, creado en tu dispositivo la primera vez que hace falta. No es tu ID de publicidad ni el ID del dispositivo Android.</li>
+<li>Saldos: herraduras, aceleradores por tipo, carpinteros adicionales y segundo banco de investigación comprados con herraduras, y tu racha de regalos diarios y fecha del último regalo.</li>
+<li>Registro: cada vez que recibes, compras o gastas herraduras o aceleradores (tipo, cantidad, número de solicitud, resultado, hora). También evita que una solicitud se aplique dos veces.</li>
+<li>Buzón: cartas que te llegan (regalos diarios, regalos del desarrollador, las herraduras diarias del Pase del rancho), cuándo las recogiste y cuándo caducan.</li>
+<li>Registros de compra (solo si compras): número de pedido de Google Play, producto, precio y moneda, tienda, si fue una compra de prueba, horas de compra y reembolso, y las herraduras y aceleradores abonados.</li>
+<li>Registro de llamadas: tu número de instalación y la hora de cada llamada, para limitar las llamadas por minuto y evitar abusos; se borra al cabo de unos 10 minutos.</li>
+</ul>
+<p>Los tiempos de construcción y mejora se cuentan con la hora del servidor que llega en las respuestas del monedero y el tiempo transcurrido en tu dispositivo. La hora de tu dispositivo no se envía. Tampoco se envían tu nombre, correo, ubicación ni contactos.</p>
+<p>Compras dentro de la app: los productos son paquetes de herraduras, el Pack del pionero (una sola compra; herraduras y aceleradores) y el Pase del rancho (300 herraduras al momento y luego 130 al día por correo durante 30 días; no se renueva). El pago lo gestiona Google Play. RevenueCat, Inc. comprueba que la compra es auténtica y avisa al servidor del monedero, que abona las herraduras. RevenueCat solo se inicia cuando abres la tienda general y usa tu número de instalación como ID de usuario. Los datos de pago, como tarjeta o cuenta bancaria, los gestiona Google Play y nunca llegan al desarrollador, que tampoco recibe tu nombre ni tu correo de Google Play.</p>
+<p>Reinstalar: el progreso del rancho se guarda solo en tu dispositivo. Al desinstalar la app o borrar sus datos también se borra el número de instalación y, por ahora, no hay otra forma de volver a conectar con el monedero del servidor (ni con las herraduras que queden en él). Si te ocurre con herraduras compradas, escríbenos con el número de pedido.</p>
+<p>Finalidades: guardar y gastar saldos de herraduras y aceleradores; entregar regalos diarios, regalos del desarrollador y las herraduras del Pase del rancho; evitar abonos o cargos dobles y abusos; confirmar y abonar compras; tramitar reembolsos; atender consultas y disputas; conservar los registros de transacciones exigidos por la ley.</p>
+<p>Conservación:</p>
+<ul>
+<li>Monedero (saldos, buzón): se conserva mientras lo usas y se elimina 3 años después de su último uso, o sin demora si lo solicitas.</li>
+<li>Registros, compras y reembolsos: 5 años desde la transacción, porque la ley coreana de protección del consumidor en el comercio electrónico exige conservar los registros de contratos, desistimientos, pagos y suministro. Tras eliminar un monedero se guardan separados del resto de datos y se borran al terminar el plazo.</li>
+<li>Registro de llamadas: unos 10 minutos.</li>
+</ul>
+<p>Proveedores de servicios:</p>
+<ul>
+<li>Supabase, Inc. (empresa de EE. UU.): gestiona el servidor del monedero (base de datos y funciones). Los datos se guardan en su región de Seúl, República de Corea.</li>
+<li>RevenueCat, Inc. (EE. UU.): confirma las compras dentro de la app y reenvía los avisos de compra y reembolso.</li>
+<li>Google LLC (EE. UU. y otros): pagos y reembolsos de Google Play.</li>
+</ul>
+<p>Transferencia internacional (RevenueCat): al abrir la tienda general, tu número de instalación se envía cifrado por HTTPS a RevenueCat, Inc. (EE. UU., <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a>) para cargar los productos, y al comprar se envían también los datos de la compra (producto, número de pedido, token de compra, precio, hora). Con ellos puede enviarse información técnica que su SDK necesita para funcionar, como la versión de la app y el país de la tienda. La finalidad es confirmar compras y tramitar reembolsos, y los datos se conservan durante el plazo de los registros de compra indicado arriba. Si no lo deseas, no abras la tienda general; el buzón, las aceleraciones con herraduras y el resto del Juego funcionan igual.</p>
+<p>Todas las transferencias se cifran con HTTPS. El desarrollador no vende esta información ni la usa para publicidad. Políticas de privacidad: Supabase <a href="https://supabase.com/privacy">https://supabase.com/privacy</a> · RevenueCat <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a> · Google <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+<h2>5. Pagos, reembolsos y desistimiento</h2>
+<ul>
+<li>Las compras dentro de la app son opcionales. Todas las regiones y edificios se pueden disfrutar sin pagar, y también recibes herraduras gratis como regalos diarios en el buzón.</li>
+<li>No vendemos artículos cuyo resultado dependa del azar (sorteos o cajas aleatorias). Cada producto tiene un contenido y una cantidad fijos e indicados.</li>
+<li>Los pagos los procesa Google Play según sus normas sobre métodos de pago, recibos y precios. El Pase del rancho es un artículo de 30 días que no se renueva automáticamente.</li>
+<li>Usuarios en la República de Corea: puedes desistir de la compra de herraduras y aceleradores no usados dentro de los 7 días posteriores a la compra. Solicítalo en tu historial de pedidos de Google Play (<a href="https://play.google.com/store/account/orderhistory">https://play.google.com/store/account/orderhistory</a>) o escribe a <a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a> con tu número de pedido de Google Play (empieza por GPA.). No se puede desistir de herraduras y aceleradores ya usados ni de herraduras recibidas gratis como regalo. Si solo has usado parte de un paquete o del Pase del rancho, escríbenos y lo resolveremos según exige la ley.</li>
+<li>Si se reembolsa una compra, las herraduras que dio se restan de tu saldo y, en el caso del Pase del rancho, se cancelan las cartas diarias aún no entregadas. Si ya las gastaste, el saldo queda en cero; las construcciones y mejoras terminadas no se deshacen.</li>
+<li>Los usuarios de otros países conservan sus derechos según la política de reembolsos de Google Play y la ley de consumo del país donde viven.</li>
+</ul>
+<h2>6. Enviar comentarios</h2>
 <p>Al tocar &quot;Enviar comentarios&quot; en el menú del Gramófono se abre tu app de correo, dirigida a nuestro buzón de comentarios (<a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a>). Para ayudarnos a investigar problemas, debajo de tu mensaje aparecen ya la versión y el número de compilación del juego, el modelo del dispositivo y la versión del sistema operativo, y puedes revisarlos o borrarlos antes de enviar. El Juego nunca envía correos por sí mismo: solo recibimos tu mensaje y tu dirección de correo si tocas enviar en tu app de correo. Los comentarios se usan únicamente para responderte, investigar problemas y mejorar el Juego; se eliminan cuando dejan de ser necesarios o en cuanto lo pidas.</p>
-<h2>5. Lo que no recopilamos</h2>
-<p>El Juego no tiene anuncios, compras dentro de la app, analítica ni informes de fallos. No accede a tu ubicación, contactos, fotos, cámara ni micrófono, y no usa el ID de publicidad. El desarrollador no vende tu información ni la comparte con terceros con fines publicitarios.</p>
-<h2>6. Privacidad de los menores</h2>
+<h2>7. Lo que no recopilamos</h2>
+<p>El Juego no tiene anuncios, analítica ni informes de fallos. Los datos de pago (tarjeta o banco) los gestiona Google Play y nunca llegan al desarrollador. No accede a tu ubicación, contactos, fotos, cámara ni micrófono, y no usa el ID de publicidad. El desarrollador no vende tu información ni la comparte con terceros con fines publicitarios.</p>
+<h2>8. Privacidad de los menores</h2>
 <p>Este Juego no está dirigido a menores de 13 años. No pide la edad ni el nombre, y solo se puede participar en la clasificación en línea después de elegir un apodo y aceptar. Los padres pueden evitar que su hijo participe en la clasificación o pedirnos que eliminemos sus registros como se explica arriba. Si crees que nos ha llegado información de un menor, escríbenos a la dirección indicada abajo y, tras comprobarlo, la eliminaremos.</p>
-<h2>7. Tus derechos y la eliminación de datos</h2>
+<p>Las compras dentro de la app usan el método de pago de la cuenta de Google Play. Los padres pueden bloquear las compras con las aprobaciones de compra de Google Play (controles parentales). En la República de Corea, una compra hecha por un menor sin el consentimiento de su representante legal puede ser cancelada por el menor o su representante; escribe a <a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a> con el número de pedido.</p>
+<h2>9. Tus derechos y la eliminación de datos</h2>
 <p>Puedes borrar en cualquier momento los datos de tu dispositivo desinstalando la app o borrando sus datos en los ajustes del dispositivo. Para acceder a tus registros de la clasificación en línea o a los correos de comentarios que nos enviaste, corregirlos o eliminarlos, escribe a <a href="mailto:mkideabox@gmail.com">mkideabox@gmail.com</a>. Atenderemos tu solicitud sin demora.</p>
-<h2>8. Contacto</h2>
+<p>Para ver o eliminar tu monedero de herraduras, escribe a <a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a>. Si has comprado algo, incluye tu número de pedido de Google Play (empieza por GPA.) para que encontremos el monedero vinculado a esa compra. Un monedero sin compras se guarda solo con un número de instalación aleatorio, sin nombre ni datos de contacto, y el Juego no muestra ese número, así que por ahora no podemos confirmar por correo cuál es el tuyo; estos monederos se eliminan 3 años después de su último uso. Eliminar un monedero borra para siempre las herraduras y aceleradores que queden en él, y no se reembolsan. Los registros y las compras se eliminan al terminar el plazo de conservación de la sección 4.</p>
+<h2>10. Contacto</h2>
 <p>Desarrollador: MK Ideabox · Correo electrónico: <a href="mailto:mkideabox@gmail.com">mkideabox@gmail.com</a></p>
-<h2>9. Cambios</h2>
+<h2>11. Cambios</h2>
 <p>Si esta política cambia, la versión actualizada se publicará en esta página con una nueva fecha de entrada en vigor.</p>
 </section>
 <section id="fr" lang="fr">
 <h1>Politique de confidentialité &middot; Français</h1>
 <p class="meta">Date d&#x27;entrée en vigueur: 2026-10-11</p>
 <h2>1. Résumé</h2>
-<p>Le ranch de Claire (le « Jeu ») ne demande ni inscription ni connexion, et ne contient ni publicité, ni achats intégrés, ni outils d&#x27;analyse ou de rapport de plantage. Votre progression est enregistrée uniquement sur votre appareil. Des informations ne quittent votre appareil que dans deux cas : lorsque vous acceptez de publier un score de la foire dans le classement en ligne, et lorsque vous choisissez de nous envoyer un e-mail.</p>
+<p>Le ranch de Claire (le « Jeu ») ne demande ni inscription ni connexion, et ne contient ni publicité, ni outils d&#x27;analyse ou de rapport de plantage. Votre progression est enregistrée uniquement sur votre appareil ; seuls les fers à cheval et les accélérateurs, articles payants du Jeu, sont conservés sur un serveur de porte-monnaie exploité par le développeur. Des informations quittent votre appareil dans trois cas : lorsque vous acceptez de publier un score de la foire dans le classement en ligne, lorsque vous ouvrez la boîte aux lettres, le bazar ou une accélération avec des fers à cheval et utilisez votre porte-monnaie de fers à cheval (achats intégrés facultatifs compris), et lorsque vous choisissez de nous envoyer un e-mail.</p>
 <h2>2. Informations enregistrées sur votre appareil</h2>
-<p>Votre progression (ranch, animaux, cultures, objets) et vos réglages (son, vibration, langue) sont conservés uniquement dans l&#x27;espace de stockage privé de l&#x27;application sur votre appareil. Le pseudo, l&#x27;accord de participation et le numéro d&#x27;installation aléatoire utilisés par le classement en ligne y sont également enregistrés. Le développeur ne peut ni recevoir ni consulter ces données. Désinstaller l&#x27;application ou effacer ses données dans les réglages de l&#x27;appareil supprime tout. Si la sauvegarde Android est activée, le système d&#x27;exploitation peut inclure ces données dans la sauvegarde de votre propre compte Google.</p>
+<p>Votre progression (ranch, animaux, cultures, objets) et vos réglages (son, vibration, langue) sont conservés uniquement dans l&#x27;espace de stockage privé de l&#x27;application sur votre appareil. Le pseudo et l&#x27;accord de participation utilisés par le classement en ligne, ainsi que le numéro d&#x27;installation aléatoire utilisé par le classement en ligne et le porte-monnaie de fers à cheval, y sont également enregistrés. Le développeur ne peut ni recevoir ni consulter ces données. Désinstaller l&#x27;application ou effacer ses données dans les réglages de l&#x27;appareil supprime tout. Si la sauvegarde Android est activée, le système d&#x27;exploitation peut inclure ces données dans la sauvegarde de votre propre compte Google.</p>
 <h2>3. Classement en ligne de la foire (facultatif)</h2>
 <p>Le classement hebdomadaire de la foire est facultatif. Tant que vous n&#x27;avez pas choisi un pseudo sur l&#x27;écran du classement et appuyé sur « Accepter et me classer », le Jeu n&#x27;envoie rien à aucun serveur. Même après votre accord, un score n&#x27;est envoyé que lorsque vous appuyez pour le publier.</p>
 <p>Ce qui est envoyé : le pseudo que vous avez choisi (2 à 12 caractères), votre score au concours de la foire, la semaine, la région et la culture, ainsi qu&#x27;un numéro d&#x27;installation aléatoire (un UUID créé sur votre appareil la première fois qu&#x27;il est nécessaire). Le serveur enregistre aussi l&#x27;heure de réception. Ce numéro n&#x27;est ni votre identifiant publicitaire ni l&#x27;identifiant de l&#x27;appareil Android ; il sert uniquement à regrouper les scores d&#x27;un même appareil et à repérer votre place dans le tableau. Il est aussi envoyé au chargement du tableau, pour mettre votre place en évidence. Votre nom, votre e-mail, votre position et vos contacts ne sont jamais envoyés.</p>
 <p>Stockage et visibilité : les données transitent chiffrées en HTTPS et sont stockées dans un projet Supabase que le développeur exploite pour ses jeux (une base de données dans le cloud fournie par Supabase, Inc.). Le serveur peut se trouver hors de votre pays. Les autres joueurs ne voient que le pseudo, le score et le rang dans le tableau de la même semaine, région et culture ; le numéro d&#x27;installation n&#x27;est jamais affiché. Comme votre pseudo est visible par d&#x27;autres, n&#x27;utilisez pas votre vrai nom ni vos coordonnées. Supabase peut conserver des journaux de requêtes, comme les adresses IP, pour faire fonctionner et sécuriser le service ; le développeur ne les utilise à aucune autre fin que la gestion du classement. Politique de confidentialité de Supabase : <a href="https://supabase.com/privacy">https://supabase.com/privacy</a></p>
 <p>Arrêt, conservation et suppression : appuyez sur « Quitter le classement » sur l&#x27;écran du classement et le Jeu cesse d&#x27;envoyer quoi que ce soit et de charger le tableau. Les scores déjà publiés sont conservés tant que le service de classement fonctionne et ne sont pas supprimés automatiquement. Pour les faire supprimer, écrivez à <a href="mailto:mkideabox@gmail.com">mkideabox@gmail.com</a> en indiquant le pseudo utilisé et les dates approximatives de votre participation (ainsi que la région et la culture, si vous vous en souvenez). Le numéro d&#x27;installation n&#x27;apparaît pas dans le Jeu : nous retrouvons donc vos données grâce au pseudo, les vérifions, puis supprimons le pseudo et ses scores.</p>
 <p>Signalements : si vous signalez le pseudo d&#x27;un autre joueur dans le classement, votre numéro d&#x27;installation, le pseudo signalé et l&#x27;enregistrement de ce joueur sont conservés sur le serveur. Le pseudo est aussitôt masqué sur votre appareil et, lorsque trois joueurs différents signalent le même pseudo, il est masqué pour tout le monde (son propriétaire le voit toujours). Choisir un nouveau pseudo lève le masquage. Les signalements servent uniquement à gérer les pseudos inappropriés ; vous pouvez en demander la suppression comme pour les enregistrements de classement.</p>
-<h2>4. Envoyer un avis</h2>
+<h2>4. Porte-monnaie de fers à cheval, boîte aux lettres et achats intégrés</h2>
+<p>Quand le Jeu se connecte : les fers à cheval et les accélérateurs, articles payants du Jeu, sont conservés sur un serveur de porte-monnaie exploité par le développeur. Cela empêche de modifier le solde en éditant le fichier de sauvegarde et garantit que les cadeaux et les achats ne sont appliqués qu&#x27;une seule fois. Le Jeu ne contacte ce serveur que lorsque vous ouvrez la boîte aux lettres, le bazar, « Finir » avec des fers à cheval ou un accélérateur ; avant cela, rien n&#x27;est envoyé. Si la connexion est coupée pendant une dépense de fers à cheval, le Jeu vérifie le résultat de cette seule demande au lancement suivant.</p>
+<p>Ce qui est conservé sur le serveur :</p>
+<ul>
+<li>Un numéro d&#x27;installation aléatoire (UUID) : le même que celui du classement en ligne, créé sur votre appareil la première fois qu&#x27;il est nécessaire. Ce n&#x27;est ni votre identifiant publicitaire ni l&#x27;identifiant de l&#x27;appareil Android.</li>
+<li>Soldes : fers à cheval, accélérateurs par type, charpentiers supplémentaires et deuxième établi de recherche achetés avec des fers à cheval, série de cadeaux quotidiens et date du dernier cadeau.</li>
+<li>Registre : chaque réception, achat ou dépense de fers à cheval ou d&#x27;accélérateurs (type, quantité, numéro de demande, résultat, heure). Il empêche aussi qu&#x27;une demande soit appliquée deux fois.</li>
+<li>Boîte aux lettres : courriers reçus (cadeaux quotidiens, cadeaux du développeur, fers à cheval quotidiens du Pass du ranch), date de réception et date d&#x27;expiration.</li>
+<li>Historique d&#x27;achats (uniquement si vous achetez) : numéro de commande Google Play, produit, prix et devise, boutique, achat de test ou non, heures d&#x27;achat et de remboursement, fers à cheval et accélérateurs crédités.</li>
+<li>Journal d&#x27;appels : votre numéro d&#x27;installation et l&#x27;heure de chaque appel, pour limiter les appels par minute et prévenir les abus ; il est effacé au bout d&#x27;environ 10 minutes.</li>
+</ul>
+<p>Les durées de construction et d&#x27;amélioration sont calculées avec l&#x27;heure du serveur contenue dans les réponses du porte-monnaie et le temps écoulé sur votre appareil. L&#x27;heure de votre appareil n&#x27;est pas envoyée. Votre nom, votre e-mail, votre position et vos contacts ne sont jamais envoyés.</p>
+<p>Achats intégrés : les produits sont des lots de fers à cheval, le Pack du pionnier (un seul achat possible ; fers à cheval et accélérateurs) et le Pass du ranch (300 fers à cheval tout de suite, puis 130 par jour par courrier pendant 30 jours ; il ne se renouvelle pas). Le paiement est géré par Google Play. RevenueCat, Inc. vérifie que l&#x27;achat est authentique et prévient le serveur du porte-monnaie, qui crédite les fers à cheval. RevenueCat n&#x27;est démarré que lorsque vous ouvrez le bazar et utilise votre numéro d&#x27;installation comme identifiant d&#x27;utilisateur. Les informations de paiement (carte, compte bancaire) sont traitées par Google Play et ne parviennent jamais au développeur, qui ne reçoit pas non plus votre nom ni votre adresse e-mail de Google Play.</p>
+<p>Réinstallation : la progression du ranch n&#x27;est enregistrée que sur votre appareil. Désinstaller l&#x27;application ou effacer ses données supprime aussi le numéro d&#x27;installation, et il n&#x27;existe pour l&#x27;instant aucun autre moyen de vous reconnecter au porte-monnaie du serveur (ni aux fers à cheval qui y restent). Si cela arrive à des fers à cheval achetés, contactez-nous avec le numéro de commande.</p>
+<p>Finalités : conserver et dépenser les soldes de fers à cheval et d&#x27;accélérateurs ; distribuer les cadeaux quotidiens, les cadeaux du développeur et les fers à cheval du Pass du ranch ; empêcher les doubles crédits, doubles débits et abus ; confirmer et créditer les achats ; traiter les remboursements ; répondre aux demandes et litiges ; conserver les enregistrements de transactions exigés par la loi.</p>
+<p>Durée de conservation :</p>
+<ul>
+<li>Porte-monnaie (soldes, boîte aux lettres) : conservé tant que vous l&#x27;utilisez et supprimé 3 ans après sa dernière utilisation, ou rapidement sur demande.</li>
+<li>Registre, achats et remboursements : 5 ans à compter de la transaction, car la loi coréenne sur la protection des consommateurs dans le commerce électronique impose de conserver les enregistrements relatifs aux contrats, rétractations, paiements et fournitures. Après la suppression d&#x27;un porte-monnaie, ils sont conservés séparément des autres données et effacés à la fin de cette durée.</li>
+<li>Journal d&#x27;appels : environ 10 minutes.</li>
+</ul>
+<p>Prestataires :</p>
+<ul>
+<li>Supabase, Inc. (société américaine) : exploite le serveur du porte-monnaie (base de données et fonctions). Les données sont stockées dans sa région de Séoul, en République de Corée.</li>
+<li>RevenueCat, Inc. (États-Unis) : confirme les achats intégrés et transmet les avis d&#x27;achat et de remboursement.</li>
+<li>Google LLC (États-Unis et ailleurs) : paiements et remboursements Google Play.</li>
+</ul>
+<p>Transfert à l&#x27;étranger (RevenueCat) : lorsque vous ouvrez le bazar, votre numéro d&#x27;installation est envoyé chiffré en HTTPS à RevenueCat, Inc. (États-Unis, <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a>) pour charger les produits ; lors d&#x27;un achat, les détails de l&#x27;achat (produit, numéro de commande, jeton d&#x27;achat, prix, heure) sont aussi envoyés. Des informations techniques nécessaires au fonctionnement de son SDK, comme la version de l&#x27;application et le pays de la boutique, peuvent les accompagner. La finalité est de confirmer les achats et de traiter les remboursements, et les données sont conservées pendant la durée prévue ci-dessus pour l&#x27;historique d&#x27;achats. Si vous ne le souhaitez pas, n&#x27;ouvrez pas le bazar ; la boîte aux lettres, les accélérations avec des fers à cheval et le reste du Jeu fonctionnent de la même façon.</p>
+<p>Tous les transferts sont chiffrés en HTTPS. Le développeur ne vend pas ces informations et ne les utilise pas à des fins publicitaires. Politiques de confidentialité : Supabase <a href="https://supabase.com/privacy">https://supabase.com/privacy</a> · RevenueCat <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a> · Google <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+<h2>5. Paiements, remboursements et rétractation</h2>
+<ul>
+<li>Les achats intégrés sont facultatifs. Toutes les régions et tous les bâtiments sont accessibles sans payer, et des fers à cheval arrivent aussi gratuitement comme cadeaux quotidiens dans la boîte aux lettres.</li>
+<li>Nous ne vendons pas d&#x27;articles dont le résultat dépend du hasard (tirages ou boîtes aléatoires). Chaque produit a un contenu et une quantité fixes et annoncés.</li>
+<li>Les paiements sont traités par Google Play selon ses règles relatives aux moyens de paiement, reçus et prix. Le Pass du ranch est un article de 30 jours qui ne se renouvelle pas automatiquement.</li>
+<li>Utilisateurs en République de Corée : vous pouvez vous rétracter de l&#x27;achat de fers à cheval et d&#x27;accélérateurs non utilisés dans les 7 jours suivant l&#x27;achat. Faites la demande dans l&#x27;historique des commandes Google Play (<a href="https://play.google.com/store/account/orderhistory">https://play.google.com/store/account/orderhistory</a>) ou écrivez à <a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a> avec votre numéro de commande Google Play (commençant par GPA.). Les fers à cheval et accélérateurs déjà utilisés et les fers à cheval reçus gratuitement en cadeau ne sont pas concernés. Si vous n&#x27;avez utilisé qu&#x27;une partie d&#x27;un lot ou du Pass du ranch, contactez-nous et nous traiterons la demande conformément à la loi.</li>
+<li>Si un achat est remboursé, les fers à cheval qu&#x27;il a apportés sont retirés de votre solde et, pour le Pass du ranch, les courriers quotidiens pas encore arrivés sont annulés. S&#x27;ils ont déjà été dépensés, le solde passe à zéro ; les constructions et améliorations terminées ne sont pas annulées.</li>
+<li>Les utilisateurs des autres pays conservent leurs droits au titre de la politique de remboursement de Google Play et du droit de la consommation de leur pays de résidence.</li>
+</ul>
+<h2>6. Envoyer un avis</h2>
 <p>Appuyer sur « Écrire au développeur » dans le menu du Phonographe ouvre votre application de messagerie, adressée à notre boîte de retours (<a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a>). Pour nous aider à analyser les problèmes, la version et le numéro de build du jeu, le modèle de l&#x27;appareil et la version du système d&#x27;exploitation sont déjà indiqués sous votre message ; vous pouvez les vérifier ou les effacer avant l&#x27;envoi. Le Jeu n&#x27;envoie jamais d&#x27;e-mail tout seul : nous ne recevons votre message et votre adresse e-mail que si vous appuyez sur Envoyer dans votre messagerie. Les messages servent uniquement à vous répondre, à analyser les problèmes et à améliorer le Jeu ; ils sont supprimés lorsqu&#x27;ils ne sont plus nécessaires, ou immédiatement sur demande.</p>
-<h2>5. Ce que nous ne collectons pas</h2>
-<p>Le Jeu ne comporte ni publicité, ni achats intégrés, ni outils d&#x27;analyse ou de rapport de plantage. Il n&#x27;accède ni à votre position, ni à vos contacts, photos, appareil photo ou micro, et n&#x27;utilise pas l&#x27;identifiant publicitaire. Le développeur ne vend pas vos informations et ne les partage pas avec des tiers à des fins publicitaires.</p>
-<h2>6. Confidentialité des enfants</h2>
+<h2>7. Ce que nous ne collectons pas</h2>
+<p>Le Jeu ne comporte ni publicité, ni outils d&#x27;analyse ou de rapport de plantage. Les informations de paiement (carte ou banque) sont traitées par Google Play et ne parviennent jamais au développeur. Le Jeu n&#x27;accède ni à votre position, ni à vos contacts, photos, appareil photo ou micro, et n&#x27;utilise pas l&#x27;identifiant publicitaire. Le développeur ne vend pas vos informations et ne les partage pas avec des tiers à des fins publicitaires.</p>
+<h2>8. Confidentialité des enfants</h2>
 <p>Ce Jeu ne s&#x27;adresse pas aux enfants de moins de 13 ans. Il ne demande ni l&#x27;âge ni le nom, et le classement en ligne n&#x27;est accessible qu&#x27;après le choix d&#x27;un pseudo et l&#x27;accord du joueur. Les parents peuvent empêcher leur enfant de participer au classement ou nous demander de supprimer ses données comme indiqué ci-dessus. Si vous pensez que des informations concernant un enfant nous sont parvenues, écrivez-nous à l&#x27;adresse ci-dessous : après vérification, nous les supprimerons.</p>
-<h2>7. Vos droits et la suppression des données</h2>
+<p>Les achats intégrés utilisent le moyen de paiement du compte Google Play. Les parents peuvent bloquer les achats avec les autorisations d&#x27;achat de Google Play (contrôle parental). En République de Corée, un achat effectué par un mineur sans le consentement de son représentant légal peut être annulé par le mineur ou son représentant ; écrivez à <a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a> avec le numéro de commande.</p>
+<h2>9. Vos droits et la suppression des données</h2>
 <p>Vous pouvez supprimer à tout moment les données de votre appareil en désinstallant l&#x27;application ou en effaçant ses données dans les réglages de l&#x27;appareil. Pour consulter, corriger ou supprimer vos données du classement en ligne ou les e-mails que vous nous avez envoyés, contactez <a href="mailto:mkideabox@gmail.com">mkideabox@gmail.com</a>. Nous traiterons votre demande rapidement.</p>
-<h2>8. Contact</h2>
+<p>Pour consulter ou supprimer votre porte-monnaie de fers à cheval, écrivez à <a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a>. Si vous avez effectué un achat, indiquez votre numéro de commande Google Play (commençant par GPA.) afin que nous retrouvions le porte-monnaie lié à cet achat. Un porte-monnaie sans achat n&#x27;est enregistré que sous un numéro d&#x27;installation aléatoire, sans nom ni coordonnées, et le Jeu n&#x27;affiche pas ce numéro : pour l&#x27;instant, nous ne pouvons donc pas confirmer par e-mail lequel est le vôtre ; ces porte-monnaie sont supprimés 3 ans après leur dernière utilisation. Supprimer un porte-monnaie efface définitivement les fers à cheval et accélérateurs restants, sans remboursement. Le registre et l&#x27;historique d&#x27;achats sont supprimés à la fin de la durée de conservation indiquée à la section 4.</p>
+<h2>10. Contact</h2>
 <p>Développeur : MK Ideabox · E-mail : <a href="mailto:mkideabox@gmail.com">mkideabox@gmail.com</a></p>
-<h2>9. Modifications</h2>
+<h2>11. Modifications</h2>
 <p>Si cette politique change, la version mise à jour sera publiée sur cette page avec une nouvelle date d&#x27;entrée en vigueur.</p>
 </section>
 <section id="de" lang="de">
 <h1>Datenschutzerklärung &middot; Deutsch</h1>
 <p class="meta">Gültig ab: 2026-10-11</p>
 <h2>1. Zusammenfassung</h2>
-<p>Claire&#x27;s Ranch (das „Spiel“) kommt ohne Registrierung und Anmeldung aus und enthält weder Werbung noch In-App-Käufe, Analyse- oder Absturzberichts-Tools. Dein Spielfortschritt wird nur auf deinem Gerät gespeichert. Informationen verlassen dein Gerät nur in zwei Fällen: wenn du zustimmst, ein Ergebnis vom Jahrmarkt in die Online-Rangliste einzutragen, und wenn du uns selbst eine Feedback-E-Mail schickst.</p>
+<p>Claire&#x27;s Ranch (das „Spiel“) kommt ohne Registrierung und Anmeldung aus und enthält weder Werbung noch Analyse- oder Absturzberichts-Tools. Dein Spielfortschritt wird nur auf deinem Gerät gespeichert; nur Hufeisen und Beschleuniger, die kostenpflichtigen Gegenstände des Spiels, liegen auf einem Börsen-Server, den der Entwickler betreibt. Informationen verlassen dein Gerät in drei Fällen: wenn du zustimmst, ein Ergebnis vom Jahrmarkt in die Online-Rangliste einzutragen, wenn du den Briefkasten, den Gemischtwarenladen oder eine Beschleunigung mit Hufeisen öffnest und deine Hufeisen-Börse nutzt (einschließlich freiwilliger In-App-Käufe), und wenn du uns selbst eine Feedback-E-Mail schickst.</p>
 <h2>2. Auf deinem Gerät gespeicherte Informationen</h2>
-<p>Dein Fortschritt (Ranch, Tiere, Feldfrüchte, Gegenstände) und deine Einstellungen (Ton, Vibration, Sprache) liegen nur im privaten Speicherbereich der App auf deinem Gerät. Auch der Spitzname, deine Zustimmung zur Rangliste und die zufällige Installationsnummer für die Online-Rangliste werden dort gespeichert. Der Entwickler kann diese Daten weder empfangen noch einsehen. Wenn du die App deinstallierst oder ihre Daten in den Geräteeinstellungen löschst, wird alles entfernt. Ist die Android-Sicherung aktiviert, kann das Betriebssystem diese Daten in die Sicherung deines eigenen Google-Kontos aufnehmen.</p>
+<p>Dein Fortschritt (Ranch, Tiere, Feldfrüchte, Gegenstände) und deine Einstellungen (Ton, Vibration, Sprache) liegen nur im privaten Speicherbereich der App auf deinem Gerät. Auch der Spitzname und deine Zustimmung zur Rangliste sowie die zufällige Installationsnummer für die Online-Rangliste und die Hufeisen-Börse werden dort gespeichert. Der Entwickler kann diese Daten weder empfangen noch einsehen. Wenn du die App deinstallierst oder ihre Daten in den Geräteeinstellungen löschst, wird alles entfernt. Ist die Android-Sicherung aktiviert, kann das Betriebssystem diese Daten in die Sicherung deines eigenen Google-Kontos aufnehmen.</p>
 <h2>3. Online-Rangliste des Jahrmarkts (freiwillig)</h2>
 <p>Die wöchentliche Jahrmarkt-Rangliste ist freiwillig. Solange du auf dem Ranglisten-Bildschirm keinen Spitznamen gewählt und auf „Zustimmen und eintragen“ getippt hast, sendet das Spiel nichts an einen Server. Auch nach deiner Zustimmung wird ein Ergebnis nur gesendet, wenn du es selbst einträgst.</p>
 <p>Was gesendet wird: der von dir gewählte Spitzname (2–12 Zeichen), dein Ergebnis im Jahrmarkt-Wettbewerb, Woche, Region und Feldfrucht sowie eine zufällige Installationsnummer (eine UUID, die beim ersten Bedarf auf deinem Gerät erzeugt wird). Der Server speichert außerdem, wann er das Ergebnis erhalten hat. Die Installationsnummer ist weder deine Werbe-ID noch die Android-Geräte-ID; sie dient nur dazu, Ergebnisse desselben Geräts zusammenzufassen und deinen Platz in der Tabelle zu markieren. Sie wird auch beim Laden der Tabelle gesendet, damit dein Platz hervorgehoben werden kann. Name, E-Mail-Adresse, Standort und Kontakte werden nie gesendet.</p>
 <p>Speicherung und Sichtbarkeit: Die Daten werden verschlüsselt per HTTPS übertragen und in einem Supabase-Projekt gespeichert, das der Entwickler für seine Spiele betreibt (eine Cloud-Datenbank von Supabase, Inc.). Der Server kann außerhalb deines Landes stehen. Andere Spieler sehen nur Spitzname, Ergebnis und Platz in der Tabelle derselben Woche, Region und Feldfrucht; die Installationsnummer wird nie angezeigt. Da andere deinen Spitznamen sehen können, verwende bitte nicht deinen echten Namen oder Kontaktdaten. Supabase kann zum Betrieb und Schutz des Dienstes Anfrageprotokolle wie IP-Adressen speichern; der Entwickler nutzt sie ausschließlich für den Betrieb der Rangliste. Datenschutzerklärung von Supabase: <a href="https://supabase.com/privacy">https://supabase.com/privacy</a></p>
 <p>Beenden, Aufbewahrung und Löschung: Tippe auf dem Ranglisten-Bildschirm auf „Rangliste verlassen“ – danach sendet das Spiel nichts mehr und lädt auch die Tabelle nicht mehr. Bereits eingetragene Ergebnisse bleiben gespeichert, solange der Ranglisten-Dienst läuft, und werden nicht automatisch gelöscht. Wenn du sie löschen lassen möchtest, schreib an <a href="mailto:mkideabox@gmail.com">mkideabox@gmail.com</a> und nenne den verwendeten Spitznamen und den ungefähren Zeitraum deiner Teilnahme (und, falls bekannt, Region und Feldfrucht). Die Installationsnummer wird im Spiel nicht angezeigt; wir finden deine Einträge daher über den Spitznamen, prüfen sie und löschen den Spitznamen samt Ergebnissen.</p>
 <p>Meldungen: Wenn du in der Rangliste den Namen eines anderen Spielers meldest, werden deine Installationsnummer, der gemeldete Name und der Eintrag dieses Spielers auf dem Server gespeichert. Der Name wird auf deinem Gerät sofort ausgeblendet; melden drei verschiedene Spieler denselben Namen, wird er für alle ausgeblendet (sein Besitzer sieht ihn weiterhin). Ein neuer Name hebt das Ausblenden auf. Meldungen dienen nur dazu, unangemessene Namen zu verwalten; ihre Löschung kannst du wie bei den Ranglisteneinträgen beantragen.</p>
-<h2>4. Feedback senden</h2>
+<h2>4. Hufeisen-Börse, Briefkasten und In-App-Käufe</h2>
+<p>Wann das Spiel sich verbindet: Hufeisen und Beschleuniger, die kostenpflichtigen Gegenstände des Spiels, liegen auf einem Börsen-Server, den der Entwickler betreibt. So lässt sich das Guthaben nicht durch Bearbeiten der Speicherdatei ändern, und Geschenke und Käufe werden genau einmal angerechnet. Das Spiel verbindet sich nur mit diesem Server, wenn du den Briefkasten, den Gemischtwarenladen, „Sofort fertig“ mit Hufeisen oder einen Beschleuniger öffnest; vorher wird nichts gesendet. Bricht die Verbindung ab, während Hufeisen ausgegeben werden, prüft das Spiel beim nächsten Start nur das Ergebnis dieser einen Anfrage.</p>
+<p>Was auf dem Server gespeichert wird:</p>
+<ul>
+<li>Eine zufällige Installationsnummer (UUID): dieselbe wie für die Online-Rangliste, erzeugt auf deinem Gerät, wenn sie zum ersten Mal gebraucht wird. Sie ist weder deine Werbe-ID noch die Android-Geräte-ID.</li>
+<li>Guthaben: Hufeisen, Beschleuniger nach Art, mit Hufeisen gekaufte zusätzliche Zimmerleute und zweite Forschungsbank sowie deine Serie an Tagesgeschenken und das Datum des letzten Geschenks.</li>
+<li>Buchungen: jedes Erhalten, Kaufen oder Ausgeben von Hufeisen oder Beschleunigern (Art, Menge, Anfragenummer, Ergebnis, Zeit). Sie verhindern auch, dass eine Anfrage doppelt ausgeführt wird.</li>
+<li>Briefkasten: Post an dich (Tagesgeschenke, Geschenke des Entwicklers, die täglichen Hufeisen des Ranch-Passes), wann du sie abgeholt hast und wann sie ablaufen.</li>
+<li>Kaufdaten (nur wenn du kaufst): Google-Play-Bestellnummer, Produkt, Preis und Währung, Store, ob es ein Testkauf war, Kauf- und Erstattungszeit sowie die gutgeschriebenen Hufeisen und Beschleuniger.</li>
+<li>Aufrufprotokoll: deine Installationsnummer und die Zeit jedes Aufrufs, um Aufrufe pro Minute zu begrenzen und Missbrauch zu verhindern; es wird nach etwa 10 Minuten gelöscht.</li>
+</ul>
+<p>Bau- und Ausbauzeiten werden mit der Serverzeit aus den Antworten der Börse und der auf deinem Gerät vergangenen Zeit berechnet. Die Uhrzeit deines Geräts wird nicht gesendet. Name, E-Mail-Adresse, Standort und Kontakte werden nie gesendet.</p>
+<p>In-App-Käufe: Angeboten werden Hufeisen-Pakete, das Pionierpaket (nur einmal kaufbar; Hufeisen und Beschleuniger) und der Ranch-Pass (sofort 300 Hufeisen, danach 30 Tage lang täglich 130 per Post; er verlängert sich nicht). Die Zahlung wickelt Google Play ab. RevenueCat, Inc. prüft, ob der Kauf echt ist, und benachrichtigt den Börsen-Server, der die Hufeisen gutschreibt. RevenueCat wird erst gestartet, wenn du den Gemischtwarenladen öffnest, und verwendet deine Installationsnummer als Nutzer-ID. Zahlungsdaten wie Karte oder Bankkonto verarbeitet Google Play; sie erreichen den Entwickler nie, und er erhält von Google Play auch nicht deinen Namen oder deine E-Mail-Adresse.</p>
+<p>Neuinstallation: Dein Ranch-Fortschritt wird nur auf deinem Gerät gespeichert. Wenn du die App deinstallierst oder ihre Daten löschst, wird auch die Installationsnummer gelöscht, und derzeit gibt es keinen anderen Weg, dich wieder mit der Börse auf dem Server (und den dort verbliebenen Hufeisen) zu verbinden. Passiert das mit gekauften Hufeisen, schreib uns mit der Bestellnummer.</p>
+<p>Zwecke: Aufbewahren und Ausgeben von Hufeisen- und Beschleuniger-Guthaben; Ausgabe von Tagesgeschenken, Geschenken des Entwicklers und den Hufeisen des Ranch-Passes; Verhindern doppelter Gutschriften, doppelter Abbuchungen und Missbrauch; Bestätigen und Gutschreiben von Käufen; Bearbeiten von Erstattungen; Beantworten von Anfragen und Streitfällen; gesetzlich vorgeschriebene Aufbewahrung von Transaktionsdaten.</p>
+<p>Speicherdauer:</p>
+<ul>
+<li>Börse (Guthaben, Briefkasten): wird gespeichert, solange du sie nutzt, und 3 Jahre nach der letzten Nutzung gelöscht, auf Anfrage umgehend.</li>
+<li>Buchungen, Kauf- und Erstattungsdaten: 5 Jahre ab der Transaktion, weil das koreanische Gesetz über den Verbraucherschutz im elektronischen Handel die Aufbewahrung von Aufzeichnungen über Verträge, Widerrufe, Zahlungen und Lieferungen verlangt. Nach dem Löschen einer Börse werden sie getrennt von anderen Daten aufbewahrt und nach Ablauf der Frist gelöscht.</li>
+<li>Aufrufprotokoll: etwa 10 Minuten.</li>
+</ul>
+<p>Dienstleister:</p>
+<ul>
+<li>Supabase, Inc. (US-Unternehmen): betreibt den Börsen-Server (Datenbank und Funktionen). Die Daten liegen in seiner Region Seoul, Republik Korea.</li>
+<li>RevenueCat, Inc. (USA): bestätigt In-App-Käufe und leitet Kauf- und Erstattungsmeldungen weiter.</li>
+<li>Google LLC (USA und andere Länder): Zahlungen und Erstattungen über Google Play.</li>
+</ul>
+<p>Übermittlung ins Ausland (RevenueCat): Wenn du den Gemischtwarenladen öffnest, wird deine Installationsnummer per HTTPS verschlüsselt an RevenueCat, Inc. (USA, <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a>) gesendet, um die Produkte zu laden; bei einem Kauf werden zusätzlich die Kaufdaten (Produkt, Bestellnummer, Kauf-Token, Preis, Zeit) gesendet. Dabei können technische Angaben mitgesendet werden, die das SDK zum Funktionieren braucht, etwa die App-Version und das Store-Land. Zweck ist die Bestätigung von Käufen und die Bearbeitung von Erstattungen; gespeichert wird für die oben genannte Dauer der Kaufdaten. Wenn du das nicht möchtest, öffne den Gemischtwarenladen nicht; Briefkasten, Beschleunigung mit Hufeisen und der Rest des Spiels funktionieren genauso.</p>
+<p>Alle Übertragungen sind per HTTPS verschlüsselt. Der Entwickler verkauft diese Daten nicht und nutzt sie nicht für Werbung. Datenschutzerklärungen: Supabase <a href="https://supabase.com/privacy">https://supabase.com/privacy</a> · RevenueCat <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a> · Google <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+<h2>5. Zahlungen, Erstattungen und Widerruf</h2>
+<ul>
+<li>In-App-Käufe sind freiwillig. Alle Regionen und Gebäude sind ohne Bezahlung spielbar, und Hufeisen kommen auch kostenlos als Tagesgeschenke in den Briefkasten.</li>
+<li>Wir verkaufen keine Gegenstände, deren Ergebnis vom Zufall abhängt (Ziehungen oder Zufallskisten). Jedes Produkt hat einen festen, angegebenen Inhalt und eine feste Menge.</li>
+<li>Zahlungen wickelt Google Play nach seinen Regeln für Zahlungsmittel, Belege und Preise ab. Der Ranch-Pass ist ein 30-Tage-Artikel, der sich nicht automatisch verlängert.</li>
+<li>Nutzer in der Republik Korea: Du kannst den Kauf unbenutzter Hufeisen und Beschleuniger innerhalb von 7 Tagen nach dem Kauf widerrufen. Beantrage dies im Google-Play-Bestellverlauf (<a href="https://play.google.com/store/account/orderhistory">https://play.google.com/store/account/orderhistory</a>) oder schreib an <a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a> mit deiner Google-Play-Bestellnummer (beginnt mit GPA.). Bereits verwendete Hufeisen und Beschleuniger sowie kostenlos als Geschenk erhaltene Hufeisen sind ausgenommen. Hast du ein Paket oder den Ranch-Pass nur teilweise genutzt, schreib uns; wir bearbeiten das nach den gesetzlichen Vorgaben.</li>
+<li>Wird ein Kauf erstattet, werden die Hufeisen daraus von deinem Guthaben abgezogen, und beim Ranch-Pass wird die noch nicht zugestellte tägliche Post storniert. Wurden sie bereits ausgegeben, fällt das Guthaben auf null; abgeschlossene Bauten und Ausbauten werden nicht rückgängig gemacht.</li>
+<li>Nutzer in anderen Ländern behalten ihre Rechte nach der Erstattungsrichtlinie von Google Play und dem Verbraucherrecht ihres Wohnsitzlandes.</li>
+</ul>
+<h2>6. Feedback senden</h2>
 <p>Wenn du im Grammophon-Menü auf „Feedback an den Entwickler“ tippst, öffnet sich deine E-Mail-App mit unserem Feedback-Postfach (<a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a>) als Empfänger. Damit wir Probleme nachvollziehen können, stehen Spielversion und Build-Nummer, Gerätemodell und Betriebssystemversion bereits unter deiner Nachricht; du kannst sie vor dem Senden prüfen oder löschen. Das Spiel versendet nie selbst E-Mails: Wir erhalten deine Nachricht und deine E-Mail-Adresse nur, wenn du in deiner E-Mail-App auf Senden tippst. Feedback wird nur genutzt, um dir zu antworten, Probleme zu untersuchen und das Spiel zu verbessern; es wird gelöscht, sobald es nicht mehr benötigt wird, oder sofort auf Wunsch.</p>
-<h2>5. Was wir nicht erheben</h2>
-<p>Das Spiel enthält keine Werbung, keine In-App-Käufe und keine Analyse- oder Absturzberichts-Tools. Es greift nicht auf Standort, Kontakte, Fotos, Kamera oder Mikrofon zu und verwendet keine Werbe-ID. Der Entwickler verkauft deine Daten nicht und gibt sie nicht zu Werbezwecken an Dritte weiter.</p>
-<h2>6. Datenschutz für Kinder</h2>
+<h2>7. Was wir nicht erheben</h2>
+<p>Das Spiel enthält keine Werbung und keine Analyse- oder Absturzberichts-Tools. Zahlungsdaten (Karte oder Bank) verarbeitet Google Play; sie erreichen den Entwickler nie. Das Spiel greift nicht auf Standort, Kontakte, Fotos, Kamera oder Mikrofon zu und verwendet keine Werbe-ID. Der Entwickler verkauft deine Daten nicht und gibt sie nicht zu Werbezwecken an Dritte weiter.</p>
+<h2>8. Datenschutz für Kinder</h2>
 <p>Dieses Spiel richtet sich nicht an Kinder unter 13 Jahren. Es fragt weder Alter noch Namen ab, und an der Online-Rangliste kann man nur teilnehmen, nachdem man einen Spitznamen gewählt und zugestimmt hat. Eltern können verhindern, dass ihr Kind an der Rangliste teilnimmt, oder wie oben beschrieben die Löschung der Einträge verlangen. Wenn du glaubst, dass uns Daten eines Kindes erreicht haben, schreib uns an die unten stehende Adresse; nach Prüfung löschen wir sie.</p>
-<h2>7. Deine Rechte und Löschung von Daten</h2>
+<p>In-App-Käufe nutzen das Zahlungsmittel des Google-Play-Kontos. Eltern können Käufe mit den Kaufgenehmigungen von Google Play (Jugendschutzeinstellungen) sperren. In der Republik Korea kann ein Kauf, den eine minderjährige Person ohne Zustimmung des gesetzlichen Vertreters getätigt hat, von ihr oder dem Vertreter rückgängig gemacht werden; schreib an <a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a> mit der Bestellnummer.</p>
+<h2>9. Deine Rechte und Löschung von Daten</h2>
 <p>Die Daten auf deinem Gerät kannst du jederzeit löschen, indem du die App deinstallierst oder ihre Daten in den Geräteeinstellungen löschst. Für Auskunft, Berichtigung oder Löschung deiner Einträge in der Online-Rangliste oder deiner an uns gesendeten Feedback-E-Mails wende dich an <a href="mailto:mkideabox@gmail.com">mkideabox@gmail.com</a>. Wir bearbeiten deine Anfrage umgehend.</p>
-<h2>8. Kontakt</h2>
+<p>Um deine Hufeisen-Börse einzusehen oder zu löschen, schreib an <a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a>. Wenn du etwas gekauft hast, gib deine Google-Play-Bestellnummer (beginnt mit GPA.) an, damit wir die mit diesem Kauf verknüpfte Börse finden. Eine Börse ohne Käufe ist nur unter einer zufälligen Installationsnummer gespeichert, ohne Namen oder Kontaktdaten, und das Spiel zeigt diese Nummer nicht an; deshalb können wir derzeit per E-Mail nicht feststellen, welche Börse deine ist. Solche Börsen werden 3 Jahre nach der letzten Nutzung gelöscht. Das Löschen einer Börse entfernt die verbliebenen Hufeisen und Beschleuniger endgültig und ohne Erstattung. Buchungen und Kaufdaten werden nach Ablauf der Speicherdauer aus Abschnitt 4 gelöscht.</p>
+<h2>10. Kontakt</h2>
 <p>Entwickler: MK Ideabox · E-Mail: <a href="mailto:mkideabox@gmail.com">mkideabox@gmail.com</a></p>
-<h2>9. Änderungen</h2>
+<h2>11. Änderungen</h2>
 <p>Wenn sich diese Erklärung ändert, wird die aktualisierte Fassung mit einem neuen Gültigkeitsdatum auf dieser Seite veröffentlicht.</p>
 </section>
 <section id="pt" lang="pt">
 <h1>Política de Privacidade &middot; Português</h1>
 <p class="meta">Data de vigência: 2026-10-11</p>
 <h2>1. Resumo</h2>
-<p>Rancho da Claire (o &quot;Jogo&quot;) não exige cadastro nem login e não inclui anúncios, compras no aplicativo, ferramentas de análise ou de relatório de falhas. Seu progresso fica salvo apenas no seu dispositivo. As informações só saem do seu dispositivo em dois casos: quando você concorda em enviar uma pontuação da feira para o ranking on-line e quando decide nos enviar um e-mail com sua opinião.</p>
+<p>Rancho da Claire (o &quot;Jogo&quot;) não exige cadastro nem login e não inclui anúncios, ferramentas de análise ou de relatório de falhas. Seu progresso fica salvo apenas no seu dispositivo; somente as ferraduras e os aceleradores, itens pagos do Jogo, ficam em um servidor de carteira mantido pelo desenvolvedor. As informações saem do seu dispositivo em três casos: quando você concorda em enviar uma pontuação da feira para o ranking on-line, quando abre a caixa de correio, o armazém ou uma aceleração com ferraduras e usa sua carteira de ferraduras (incluindo compras opcionais no aplicativo), e quando decide nos enviar um e-mail com sua opinião.</p>
 <h2>2. Informações armazenadas no seu dispositivo</h2>
-<p>Seu progresso (rancho, animais, plantações, itens) e suas configurações (som, vibração, idioma) ficam apenas no armazenamento privado do aplicativo no seu dispositivo. O apelido, o consentimento de participação e o número de instalação aleatório usados pelo ranking on-line também ficam salvos ali. O desenvolvedor não pode receber nem ver esses dados. Desinstalar o aplicativo ou limpar os dados dele nas configurações do dispositivo apaga tudo. Se o backup do Android estiver ativado, o sistema operacional poderá incluir esses dados no backup da sua própria conta Google.</p>
+<p>Seu progresso (rancho, animais, plantações, itens) e suas configurações (som, vibração, idioma) ficam apenas no armazenamento privado do aplicativo no seu dispositivo. O apelido e o consentimento de participação usados pelo ranking on-line, e o número de instalação aleatório usado pelo ranking on-line e pela carteira de ferraduras, também ficam salvos ali. O desenvolvedor não pode receber nem ver esses dados. Desinstalar o aplicativo ou limpar os dados dele nas configurações do dispositivo apaga tudo. Se o backup do Android estiver ativado, o sistema operacional poderá incluir esses dados no backup da sua própria conta Google.</p>
 <h2>3. Ranking on-line da feira (opcional)</h2>
 <p>O ranking semanal da feira é opcional. Até você escolher um apelido na tela do ranking e tocar em &quot;Aceitar e entrar no ranking&quot;, o Jogo não envia nada a nenhum servidor. Mesmo depois de aceitar, uma pontuação só é enviada quando você toca para enviá-la.</p>
 <p>O que é enviado: o apelido que você escolheu (de 2 a 12 caracteres), sua pontuação no concurso da feira, a semana, a região e a cultura, e um número de instalação aleatório (um UUID criado no seu dispositivo na primeira vez em que é necessário). O servidor também registra quando recebeu a pontuação. O número de instalação não é o seu ID de publicidade nem o ID do dispositivo Android; ele serve apenas para agrupar as pontuações do mesmo dispositivo e marcar a sua posição na tabela. Ele também é enviado ao carregar a tabela, para destacar sua posição. Seu nome, e-mail, localização e contatos nunca são enviados.</p>
 <p>Armazenamento e visibilidade: os dados trafegam criptografados por HTTPS e ficam armazenados em um projeto Supabase que o desenvolvedor mantém para seus jogos (um banco de dados em nuvem fornecido pela Supabase, Inc.). O servidor pode ficar fora do seu país. Os outros jogadores veem apenas o apelido, a pontuação e a posição na tabela da mesma semana, região e cultura; o número de instalação nunca aparece. Como outras pessoas podem ver seu apelido, não use seu nome real nem dados de contato. A Supabase pode manter registros de acesso, como endereços IP, para operar e proteger o serviço; o desenvolvedor não os usa para nada além de manter o ranking. Política de privacidade da Supabase: <a href="https://supabase.com/privacy">https://supabase.com/privacy</a></p>
 <p>Parar, retenção e exclusão: toque em &quot;Sair do ranking&quot; na tela do ranking e o Jogo deixa de enviar qualquer coisa e de carregar a tabela. Os registros já enviados ficam guardados enquanto o serviço de ranking estiver funcionando e não são apagados automaticamente. Para pedir a exclusão, escreva para <a href="mailto:mkideabox@gmail.com">mkideabox@gmail.com</a> informando o apelido usado e as datas aproximadas em que participou (e a região e a cultura, se lembrar). O número de instalação não aparece no Jogo, por isso localizamos seus registros pelo apelido, conferimos e excluímos o apelido e as pontuações.</p>
 <p>Denúncias: se você denunciar o apelido de outro jogador no ranking, seu número de instalação, o apelido denunciado e o registro desse jogador são guardados no servidor. O apelido fica oculto no seu aparelho na hora e, quando três jogadores diferentes denunciam o mesmo apelido, ele fica oculto para todos (o dono continua vendo). Escolher um novo apelido desfaz a ocultação. As denúncias servem apenas para gerenciar apelidos inadequados, e você pode pedir a exclusão do mesmo jeito que os registros do ranking.</p>
-<h2>4. Enviar opinião</h2>
+<h2>4. Carteira de ferraduras, caixa de correio e compras no aplicativo</h2>
+<p>Quando o Jogo se conecta: as ferraduras e os aceleradores, itens pagos do Jogo, ficam em um servidor de carteira mantido pelo desenvolvedor. Assim o saldo não pode ser alterado editando o arquivo de salvamento, e presentes e compras são aplicados exatamente uma vez. O Jogo só se conecta a esse servidor quando você abre a caixa de correio, o armazém, &quot;Concluir já&quot; com ferraduras ou um acelerador; antes disso, nada é enviado. Se a conexão cair enquanto ferraduras estão sendo gastas, o Jogo confere o resultado desse único pedido na próxima abertura.</p>
+<p>O que fica guardado no servidor:</p>
+<ul>
+<li>Um número de instalação aleatório (UUID): o mesmo usado pelo ranking on-line, criado no seu dispositivo na primeira vez em que é necessário. Não é seu ID de publicidade nem o ID do dispositivo Android.</li>
+<li>Saldos: ferraduras, aceleradores por tipo, carpinteiros extras e segunda bancada de pesquisa comprados com ferraduras, sequência de presentes diários e data do último presente.</li>
+<li>Registro: cada vez que você recebe, compra ou gasta ferraduras ou aceleradores (tipo, quantidade, número do pedido interno, resultado, horário). Também impede que um pedido seja aplicado duas vezes.</li>
+<li>Caixa de correio: cartas enviadas a você (presentes diários, presentes do desenvolvedor, as ferraduras diárias do Passe do rancho), quando foram resgatadas e quando expiram.</li>
+<li>Registros de compra (somente se você comprar): número do pedido do Google Play, produto, preço e moeda, loja, se foi uma compra de teste, horários de compra e reembolso, e as ferraduras e aceleradores creditados.</li>
+<li>Registro de chamadas: seu número de instalação e o horário de cada chamada, para limitar as chamadas por minuto e evitar abuso; é apagado depois de cerca de 10 minutos.</li>
+</ul>
+<p>Os tempos de construção e melhoria são contados com o horário do servidor que vem nas respostas da carteira e o tempo decorrido no seu dispositivo. O relógio do seu dispositivo não é enviado. Seu nome, e-mail, localização e contatos nunca são enviados.</p>
+<p>Compras no aplicativo: os produtos são pacotes de ferraduras, o Pacote do pioneiro (uma única compra; ferraduras e aceleradores) e o Passe do rancho (300 ferraduras na hora e depois 130 por dia pelo correio durante 30 dias; não é renovado). O pagamento é feito pelo Google Play. A RevenueCat, Inc. verifica se a compra é legítima e avisa o servidor da carteira, que credita as ferraduras. A RevenueCat só é iniciada quando você abre o armazém e usa seu número de instalação como ID de usuário. Dados de pagamento, como cartão ou conta bancária, são tratados pelo Google Play e nunca chegam ao desenvolvedor, que também não recebe seu nome nem seu e-mail do Google Play.</p>
+<p>Reinstalação: o progresso do rancho fica salvo só no seu dispositivo. Desinstalar o aplicativo ou limpar os dados dele também apaga o número de instalação, e por enquanto não há outra forma de se reconectar à carteira no servidor (nem às ferraduras que restarem nela). Se isso acontecer com ferraduras compradas, entre em contato com o número do pedido.</p>
+<p>Finalidades: guardar e gastar saldos de ferraduras e aceleradores; entregar presentes diários, presentes do desenvolvedor e as ferraduras do Passe do rancho; evitar créditos ou cobranças em dobro e abusos; confirmar e creditar compras; processar reembolsos; responder a dúvidas e disputas; manter os registros de transações exigidos por lei.</p>
+<p>Retenção:</p>
+<ul>
+<li>Carteira (saldos, caixa de correio): guardada enquanto você a usa e excluída 3 anos após o último uso, ou prontamente se você pedir.</li>
+<li>Registro, compras e reembolsos: 5 anos a partir da transação, porque a lei coreana de proteção ao consumidor no comércio eletrônico exige guardar registros de contratos, arrependimentos, pagamentos e fornecimento. Depois da exclusão de uma carteira, ficam guardados separados dos demais dados e são apagados ao fim do prazo.</li>
+<li>Registro de chamadas: cerca de 10 minutos.</li>
+</ul>
+<p>Prestadores de serviço:</p>
+<ul>
+<li>Supabase, Inc. (empresa dos EUA): opera o servidor da carteira (banco de dados e funções). Os dados ficam na região de Seul, República da Coreia.</li>
+<li>RevenueCat, Inc. (EUA): confirma compras no aplicativo e encaminha avisos de compra e reembolso.</li>
+<li>Google LLC (EUA e outros): pagamentos e reembolsos do Google Play.</li>
+</ul>
+<p>Transferência internacional (RevenueCat): ao abrir o armazém, seu número de instalação é enviado criptografado por HTTPS à RevenueCat, Inc. (EUA, <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a>) para carregar os produtos, e ao comprar também são enviados os dados da compra (produto, número do pedido, token de compra, preço, horário). Junto com eles podem ir informações técnicas de que o SDK precisa para funcionar, como a versão do aplicativo e o país da loja. A finalidade é confirmar compras e processar reembolsos, e os dados são guardados pelo prazo dos registros de compra acima. Se não quiser isso, não abra o armazém; a caixa de correio, as acelerações com ferraduras e o restante do Jogo funcionam igual.</p>
+<p>Todas as transferências são criptografadas com HTTPS. O desenvolvedor não vende essas informações nem as usa para publicidade. Políticas de privacidade: Supabase <a href="https://supabase.com/privacy">https://supabase.com/privacy</a> · RevenueCat <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a> · Google <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+<h2>5. Pagamentos, reembolsos e arrependimento</h2>
+<ul>
+<li>As compras no aplicativo são opcionais. Todas as regiões e construções podem ser aproveitadas sem pagar, e ferraduras também chegam de graça como presentes diários na caixa de correio.</li>
+<li>Não vendemos itens cujo resultado depende da sorte (sorteios ou caixas aleatórias). Cada produto tem conteúdo e quantidade fixos e informados.</li>
+<li>Os pagamentos são processados pelo Google Play conforme suas regras de formas de pagamento, recibos e preços. O Passe do rancho é um item de 30 dias que não é renovado automaticamente.</li>
+<li>Usuários na República da Coreia: você pode desistir da compra de ferraduras e aceleradores não usados em até 7 dias após a compra. Solicite no histórico de pedidos do Google Play (<a href="https://play.google.com/store/account/orderhistory">https://play.google.com/store/account/orderhistory</a>) ou escreva para <a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a> com o número do pedido do Google Play (começa com GPA.). Ferraduras e aceleradores já usados e ferraduras recebidas de graça como presente não entram. Se você usou só parte de um pacote ou do Passe do rancho, entre em contato e trataremos o caso conforme a lei.</li>
+<li>Se uma compra for reembolsada, as ferraduras que ela deu são descontadas do saldo e, no caso do Passe do rancho, as cartas diárias ainda não entregues são canceladas. Se já foram gastas, o saldo fica em zero; construções e melhorias concluídas não são desfeitas.</li>
+<li>Usuários de outros países mantêm seus direitos pela política de reembolso do Google Play e pela lei de defesa do consumidor do país onde vivem.</li>
+</ul>
+<h2>6. Enviar opinião</h2>
 <p>Ao tocar em &quot;Enviar opinião ao desenvolvedor&quot; no menu do Gramofone, seu aplicativo de e-mail é aberto com a nossa caixa de feedback (<a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a>) como destinatária. Para nos ajudar a investigar problemas, a versão e o número da build do jogo, o modelo do dispositivo e a versão do sistema operacional já vêm preenchidos abaixo da sua mensagem, e você pode conferi-los ou apagá-los antes de enviar. O Jogo nunca envia e-mails sozinho: só recebemos sua mensagem e seu endereço de e-mail se você tocar em enviar no seu aplicativo de e-mail. As mensagens são usadas apenas para responder, investigar problemas e melhorar o Jogo; são excluídas quando não forem mais necessárias, ou imediatamente se você pedir.</p>
-<h2>5. O que não coletamos</h2>
-<p>O Jogo não tem anúncios, compras no aplicativo, ferramentas de análise ou de relatório de falhas. Não acessa sua localização, contatos, fotos, câmera ou microfone e não usa o ID de publicidade. O desenvolvedor não vende suas informações nem as compartilha com terceiros para fins de publicidade.</p>
-<h2>6. Privacidade de crianças</h2>
+<h2>7. O que não coletamos</h2>
+<p>O Jogo não tem anúncios, ferramentas de análise ou de relatório de falhas. Dados de pagamento (cartão ou banco) são tratados pelo Google Play e nunca chegam ao desenvolvedor. O Jogo não acessa sua localização, contatos, fotos, câmera ou microfone e não usa o ID de publicidade. O desenvolvedor não vende suas informações nem as compartilha com terceiros para fins de publicidade.</p>
+<h2>8. Privacidade de crianças</h2>
 <p>Este Jogo não é direcionado a crianças menores de 13 anos. Ele não pergunta idade nem nome, e só é possível participar do ranking on-line depois de escolher um apelido e concordar. Os responsáveis podem impedir que a criança participe do ranking ou pedir a exclusão dos registros da forma descrita acima. Se você acredita que recebemos informações de uma criança, escreva para o endereço abaixo; após a verificação, nós as excluiremos.</p>
-<h2>7. Seus direitos e exclusão de dados</h2>
+<p>As compras no aplicativo usam a forma de pagamento da conta do Google Play. Os responsáveis podem bloquear compras com as aprovações de compra do Google Play (controle parental). Na República da Coreia, uma compra feita por menor sem o consentimento do representante legal pode ser cancelada pelo menor ou pelo representante; escreva para <a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a> com o número do pedido.</p>
+<h2>9. Seus direitos e exclusão de dados</h2>
 <p>Você pode apagar a qualquer momento os dados do seu dispositivo desinstalando o aplicativo ou limpando os dados dele nas configurações do dispositivo. Para acessar, corrigir ou excluir seus registros do ranking on-line ou os e-mails de opinião que nos enviou, entre em contato pelo <a href="mailto:mkideabox@gmail.com">mkideabox@gmail.com</a>. Atenderemos seu pedido sem demora.</p>
-<h2>8. Contato</h2>
+<p>Para ver ou excluir sua carteira de ferraduras, escreva para <a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a>. Se você já comprou, informe o número do pedido do Google Play (começa com GPA.) para encontrarmos a carteira ligada a essa compra. Uma carteira sem compras fica guardada só com um número de instalação aleatório, sem nome nem dados de contato, e o Jogo não mostra esse número; por isso, por enquanto não conseguimos confirmar por e-mail qual carteira é a sua. Essas carteiras são excluídas 3 anos após o último uso. Excluir uma carteira apaga para sempre as ferraduras e aceleradores restantes, sem reembolso. O registro e as compras são apagados após o prazo de retenção da seção 4.</p>
+<h2>10. Contato</h2>
 <p>Desenvolvedor: MK Ideabox · E-mail: <a href="mailto:mkideabox@gmail.com">mkideabox@gmail.com</a></p>
-<h2>9. Alterações</h2>
+<h2>11. Alterações</h2>
 <p>Se esta política mudar, a versão atualizada será publicada nesta página com uma nova data de vigência.</p>
 </section>
 <section id="ru" lang="ru">
 <h1>Политика конфиденциальности &middot; Русский</h1>
 <p class="meta">Дата вступления в силу: 2026-10-11</p>
 <h2>1. Кратко</h2>
-<p>В «Ранчо Клэр» (далее — «Игра») нет регистрации и входа в аккаунт, нет рекламы, встроенных покупок, средств аналитики и отчётов о сбоях. Игровой прогресс хранится только на вашем устройстве. Информация покидает устройство лишь в двух случаях: когда вы соглашаетесь отправить результат ярмарки в онлайн-рейтинг и когда сами отправляете нам письмо с отзывом.</p>
+<p>В «Ранчо Клэр» (далее — «Игра») нет регистрации и входа в аккаунт, нет рекламы, средств аналитики и отчётов о сбоях. Игровой прогресс хранится только на вашем устройстве; лишь подковы и ускорители — платные предметы Игры — хранятся на сервере кошелька, которым управляет разработчик. Информация покидает устройство в трёх случаях: когда вы соглашаетесь отправить результат ярмарки в онлайн-рейтинг; когда вы открываете почтовый ящик, лавку или ускорение за подковы и пользуетесь кошельком подков (включая необязательные встроенные покупки); и когда вы сами отправляете нам письмо с отзывом.</p>
 <h2>2. Информация, хранящаяся на устройстве</h2>
-<p>Прогресс (ранчо, животные, посевы, предметы) и настройки (звук, вибрация, язык) хранятся только в закрытом хранилище приложения на вашем устройстве. Там же хранятся никнейм, согласие на участие и случайный номер установки, которые нужны для онлайн-рейтинга. Разработчик не может получить или просмотреть эти данные. Удаление приложения или очистка его данных в настройках устройства стирает всё. Если на устройстве включено резервное копирование Android, операционная система может включить эти данные в резервную копию вашего собственного аккаунта Google.</p>
+<p>Прогресс (ранчо, животные, посевы, предметы) и настройки (звук, вибрация, язык) хранятся только в закрытом хранилище приложения на вашем устройстве. Там же хранятся никнейм и согласие на участие, нужные для онлайн-рейтинга, и случайный номер установки, нужный для онлайн-рейтинга и кошелька подков. Разработчик не может получить или просмотреть эти данные. Удаление приложения или очистка его данных в настройках устройства стирает всё. Если на устройстве включено резервное копирование Android, операционная система может включить эти данные в резервную копию вашего собственного аккаунта Google.</p>
 <h2>3. Онлайн-рейтинг ярмарки (по желанию)</h2>
 <p>Еженедельный рейтинг ярмарки — необязательная функция. Пока вы не выберете никнейм на экране рейтинга и не нажмёте «Согласиться и участвовать», Игра ничего не отправляет на сервер. И после согласия результат отправляется только тогда, когда вы сами нажимаете кнопку отправки.</p>
 <p>Что отправляется: выбранный вами никнейм (от 2 до 12 символов), ваш результат в конкурсе ярмарки, неделя, регион и культура, а также случайный номер установки (UUID, который создаётся на устройстве при первой необходимости). Сервер также записывает время получения результата. Номер установки — это не рекламный идентификатор и не идентификатор устройства Android; он нужен только для того, чтобы объединять результаты одного устройства и отмечать ваше место в таблице. Он также отправляется при загрузке таблицы, чтобы выделить ваше место. Имя, адрес электронной почты, местоположение и контакты никогда не отправляются.</p>
 <p>Хранение и видимость: данные передаются в зашифрованном виде по HTTPS и хранятся в проекте Supabase, который разработчик ведёт для своих игр (облачная база данных компании Supabase, Inc.). Сервер может находиться за пределами вашей страны. Другие игроки видят только никнейм, результат и место в таблице той же недели, региона и культуры; номер установки нигде не показывается. Поскольку никнейм видят другие, не используйте настоящее имя или контактные данные. Supabase может хранить журналы запросов, например IP-адреса, для работы и защиты сервиса; разработчик использует их только для ведения рейтинга. Политика конфиденциальности Supabase: <a href="https://supabase.com/privacy">https://supabase.com/privacy</a></p>
 <p>Отказ от участия, хранение и удаление: нажмите «Выйти из рейтинга» на экране рейтинга — после этого Игра ничего не отправляет и не загружает таблицу. Уже отправленные результаты хранятся, пока работает сервис рейтинга, и автоматически не удаляются. Чтобы удалить их, напишите на <a href="mailto:mkideabox@gmail.com">mkideabox@gmail.com</a>, указав использованный никнейм и примерные даты участия (а также регион и культуру, если помните). Номер установки в Игре не отображается, поэтому мы находим ваши записи по никнейму, проверяем их и удаляем никнейм вместе с результатами.</p>
 <p>Жалобы: если вы пожалуетесь на имя другого игрока в рейтинге, на сервере сохраняются ваш номер установки, имя, на которое подана жалоба, и запись этого игрока. Имя сразу скрывается на вашем устройстве, а когда на одно и то же имя пожалуются три разных игрока, оно скрывается для всех (владелец по-прежнему его видит). Смена имени снимает скрытие. Жалобы используются только для управления неуместными именами; их удаления можно потребовать так же, как и записей рейтинга.</p>
-<h2>4. Отправка отзыва</h2>
+<h2>4. Кошелёк подков, почтовый ящик и встроенные покупки</h2>
+<p>Когда Игра подключается: подковы и ускорители — платные предметы Игры — хранятся на сервере кошелька, которым управляет разработчик. Так баланс нельзя изменить правкой файла сохранения, а подарки и покупки засчитываются ровно один раз. Игра обращается к этому серверу только когда вы открываете почтовый ящик, лавку, «Завершить» за подковы или ускоритель; до этого ничего не отправляется. Если связь оборвётся во время траты подков, при следующем запуске Игра проверит результат только этого одного запроса.</p>
+<p>Что хранится на сервере:</p>
+<ul>
+<li>Случайный номер установки (UUID): тот же, что и для онлайн-рейтинга, создаётся на устройстве при первой необходимости. Это не рекламный идентификатор и не идентификатор устройства Android.</li>
+<li>Баланс: подковы, ускорители по видам, дополнительные плотники и второй исследовательский стол, купленные за подковы, серия ежедневных подарков и дата последнего подарка.</li>
+<li>Журнал операций: каждое получение, покупка или трата подков и ускорителей (вид, количество, номер запроса, результат, время). Он также не даёт выполнить один запрос дважды.</li>
+<li>Почтовый ящик: письма вам (ежедневные подарки, подарки от разработчика, ежедневные подковы абонемента ранчо), время получения и срок действия.</li>
+<li>Записи о покупках (только если вы покупаете): номер заказа Google Play, товар, цена и валюта, магазин, была ли покупка тестовой, время покупки и возврата, начисленные подковы и ускорители.</li>
+<li>Журнал обращений: номер установки и время каждого обращения — для ограничения числа запросов в минуту и защиты от злоупотреблений; удаляется примерно через 10 минут.</li>
+</ul>
+<p>Время строительства и улучшения считается по серверному времени из ответов кошелька и по времени, прошедшему на устройстве. Время на часах устройства не отправляется. Имя, адрес электронной почты, местоположение и контакты никогда не отправляются.</p>
+<p>Встроенные покупки: в продаже наборы подков, набор первопроходца (покупается один раз; подковы и ускорители) и абонемент ранчо (сразу 300 подков, затем по 130 в день по почте в течение 30 дней; не продлевается). Оплату обрабатывает Google Play. RevenueCat, Inc. проверяет подлинность покупки и сообщает серверу кошелька, который начисляет подковы. RevenueCat запускается только при открытии лавки и использует номер установки как идентификатор пользователя. Платёжные данные, например карту или банковский счёт, обрабатывает Google Play; разработчик их никогда не получает, как и ваше имя или адрес электронной почты из Google Play.</p>
+<p>Переустановка: прогресс ранчо хранится только на устройстве. При удалении приложения или очистке его данных удаляется и номер установки, и сейчас нет другого способа снова подключиться к кошельку на сервере (и к оставшимся в нём подковам). Если так случилось с купленными подковами, напишите нам, указав номер заказа.</p>
+<p>Цели: хранение и трата баланса подков и ускорителей; выдача ежедневных подарков, подарков от разработчика и подков абонемента ранчо; защита от двойного начисления, двойного списания и злоупотреблений; подтверждение и начисление покупок; обработка возвратов; ответы на обращения и споры; хранение записей о сделках, требуемое законом.</p>
+<p>Срок хранения:</p>
+<ul>
+<li>Кошелёк (баланс, почтовый ящик): хранится, пока вы им пользуетесь, и удаляется через 3 года после последнего использования, а по запросу — без промедления.</li>
+<li>Журнал операций, покупки и возвраты: 5 лет со дня сделки, поскольку корейский Закон о защите прав потребителей в электронной торговле требует хранить записи о договорах, отказах от покупки, оплате и поставке. После удаления кошелька они хранятся отдельно от других данных и удаляются по истечении срока.</li>
+<li>Журнал обращений: около 10 минут.</li>
+</ul>
+<p>Обработчики:</p>
+<ul>
+<li>Supabase, Inc. (компания из США): работа сервера кошелька (база данных и функции). Данные хранятся в регионе Сеул (Республика Корея).</li>
+<li>RevenueCat, Inc. (США): подтверждает встроенные покупки и передаёт уведомления о покупках и возвратах.</li>
+<li>Google LLC (США и другие страны): платежи и возвраты Google Play.</li>
+</ul>
+<p>Трансграничная передача (RevenueCat): при открытии лавки номер установки передаётся в зашифрованном виде по HTTPS компании RevenueCat, Inc. (США, <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a>), чтобы загрузить список товаров, а при покупке передаются и данные покупки (товар, номер заказа, токен покупки, цена, время). Вместе с ними могут передаваться технические сведения, нужные для работы её SDK, например версия приложения и страна магазина. Цель — подтверждение покупок и обработка возвратов; данные хранятся в течение указанного выше срока для записей о покупках. Если вы этого не хотите, не открывайте лавку; почтовый ящик, ускорение за подковы и остальная Игра работают так же.</p>
+<p>Все передачи шифруются по HTTPS. Разработчик не продаёт эти данные и не использует их для рекламы. Политики конфиденциальности: Supabase <a href="https://supabase.com/privacy">https://supabase.com/privacy</a> · RevenueCat <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a> · Google <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+<h2>5. Оплата, возвраты и отказ от покупки</h2>
+<ul>
+<li>Встроенные покупки необязательны. Все регионы и постройки доступны без оплаты, а подковы также бесплатно приходят ежедневными подарками в почтовый ящик.</li>
+<li>Мы не продаём предметы, результат которых зависит от случая (розыгрыши или случайные ящики). У каждого товара фиксированное и указанное содержимое и количество.</li>
+<li>Платежи обрабатывает Google Play по своим правилам для способов оплаты, чеков и цен. Абонемент ранчо — товар на 30 дней, который не продлевается автоматически.</li>
+<li>Пользователи в Республике Корея: от покупки неиспользованных подков и ускорителей можно отказаться в течение 7 дней после покупки. Запросите возврат в истории заказов Google Play (<a href="https://play.google.com/store/account/orderhistory">https://play.google.com/store/account/orderhistory</a>) или напишите на <a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a>, указав номер заказа Google Play (начинается с GPA.). Уже использованные подковы и ускорители, а также подковы, полученные бесплатно в подарок, не возвращаются. Если вы использовали набор или абонемент ранчо лишь частично, напишите нам — мы рассмотрим запрос в соответствии с законом.</li>
+<li>Если покупка возвращена, полученные за неё подковы списываются с баланса, а для абонемента ранчо отменяются ещё не доставленные ежедневные письма. Если подковы уже потрачены, баланс становится равным нулю; завершённое строительство и улучшения не отменяются.</li>
+<li>Пользователи из других стран сохраняют права по правилам возврата Google Play и законодательству о защите прав потребителей страны проживания.</li>
+</ul>
+<h2>6. Отправка отзыва</h2>
 <p>Если в меню «Граммофон» нажать «Написать разработчику», откроется почтовое приложение с адресом нашего ящика для отзывов (<a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a>). Чтобы нам было проще разобраться в проблеме, под вашим сообщением уже указаны версия и номер сборки игры, модель устройства и версия операционной системы; перед отправкой их можно проверить или удалить. Игра никогда не отправляет письма сама: мы получаем ваше сообщение и адрес электронной почты, только если вы нажмёте «Отправить» в почтовом приложении. Отзывы используются только для ответа, поиска проблем и улучшения Игры; они удаляются, когда больше не нужны, или сразу по вашей просьбе.</p>
-<h2>5. Что мы не собираем</h2>
-<p>В Игре нет рекламы, встроенных покупок, средств аналитики и отчётов о сбоях. Она не обращается к местоположению, контактам, фотографиям, камере и микрофону и не использует рекламный идентификатор. Разработчик не продаёт ваши данные и не передаёт их третьим лицам в рекламных целях.</p>
-<h2>6. Конфиденциальность детей</h2>
+<h2>7. Что мы не собираем</h2>
+<p>В Игре нет рекламы, средств аналитики и отчётов о сбоях. Платёжные данные (карта или банк) обрабатывает Google Play, и они никогда не попадают к разработчику. Игра не обращается к местоположению, контактам, фотографиям, камере и микрофону и не использует рекламный идентификатор. Разработчик не продаёт ваши данные и не передаёт их третьим лицам в рекламных целях.</p>
+<h2>8. Конфиденциальность детей</h2>
 <p>Игра не предназначена для детей младше 13 лет. Она не спрашивает возраст или имя, а участвовать в онлайн-рейтинге можно только после выбора никнейма и согласия. Родители могут не допускать ребёнка к рейтингу или попросить удалить записи описанным выше способом. Если вы считаете, что к нам попала информация о ребёнке, напишите нам по адресу ниже — после проверки мы её удалим.</p>
-<h2>7. Ваши права и удаление данных</h2>
+<p>Для встроенных покупок используется способ оплаты аккаунта Google Play. Родители могут запретить покупки с помощью подтверждения покупок в Google Play (родительский контроль). В Республике Корея покупку, совершённую несовершеннолетним без согласия законного представителя, может отменить сам несовершеннолетний или его представитель; напишите на <a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a>, указав номер заказа.</p>
+<h2>9. Ваши права и удаление данных</h2>
 <p>Данные на устройстве можно удалить в любой момент, удалив приложение или очистив его данные в настройках устройства. Чтобы получить доступ к своим записям в онлайн-рейтинге или к отправленным нам письмам, исправить или удалить их, напишите на <a href="mailto:mkideabox@gmail.com">mkideabox@gmail.com</a>. Мы рассмотрим запрос без промедления.</p>
-<h2>8. Контакты</h2>
+<p>Чтобы посмотреть или удалить кошелёк подков, напишите на <a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a>. Если вы совершали покупки, укажите номер заказа Google Play (начинается с GPA.), чтобы мы нашли кошелёк, связанный с этой покупкой. Кошелёк без покупок хранится только под случайным номером установки, без имени и контактов, а Игра этот номер не показывает, поэтому сейчас мы не можем по письму подтвердить, какой кошелёк ваш; такие кошельки удаляются через 3 года после последнего использования. Удаление кошелька навсегда стирает оставшиеся в нём подковы и ускорители, их стоимость не возвращается. Журнал операций и записи о покупках удаляются по истечении срока хранения из раздела 4.</p>
+<h2>10. Контакты</h2>
 <p>Разработчик: MK Ideabox · Эл. почта: <a href="mailto:mkideabox@gmail.com">mkideabox@gmail.com</a></p>
-<h2>9. Изменения</h2>
+<h2>11. Изменения</h2>
 <p>В случае изменения настоящей политики обновлённая версия будет опубликована на этой странице с новой датой вступления в силу.</p>
 </section>
 <section id="id" lang="id">
 <h1>Kebijakan Privasi &middot; Bahasa Indonesia</h1>
 <p class="meta">Tanggal berlaku: 2026-10-11</p>
 <h2>1. Ringkasan</h2>
-<p>Peternakan Claire (&quot;Game&quot;) tidak memerlukan pendaftaran atau login, dan tidak berisi iklan, pembelian dalam aplikasi, alat analitik, maupun alat laporan error. Progres game Anda hanya disimpan di perangkat. Informasi hanya keluar dari perangkat Anda dalam dua hal: saat Anda setuju mengirim skor festival ke peringkat online, dan saat Anda sendiri mengirim email masukan kepada kami.</p>
+<p>Peternakan Claire (&quot;Game&quot;) tidak memerlukan pendaftaran atau login, dan tidak berisi iklan, alat analitik, maupun alat laporan error. Progres game Anda hanya disimpan di perangkat; hanya ladam dan tiket percepat, item berbayar di Game, yang disimpan di server dompet yang dikelola pengembang. Informasi keluar dari perangkat Anda dalam tiga hal: saat Anda setuju mengirim skor festival ke peringkat online, saat Anda membuka kotak surat, toko kelontong, atau percepatan dengan ladam dan memakai dompet ladam (termasuk pembelian dalam aplikasi yang bersifat opsional), dan saat Anda sendiri mengirim email masukan kepada kami.</p>
 <h2>2. Informasi yang disimpan di perangkat Anda</h2>
-<p>Progres (peternakan, hewan, tanaman, barang) dan pengaturan Anda (suara, getar, bahasa) hanya disimpan di penyimpanan khusus aplikasi di perangkat Anda. Nama panggilan, persetujuan ikut peringkat, dan nomor instalasi acak yang dipakai peringkat online juga disimpan di sana. Pengembang tidak dapat menerima atau melihat data ini. Menghapus aplikasi atau menghapus data aplikasi di pengaturan perangkat akan menghapus semuanya. Jika pencadangan Android aktif, sistem operasi dapat menyertakan data ini dalam cadangan akun Google milik Anda sendiri.</p>
+<p>Progres (peternakan, hewan, tanaman, barang) dan pengaturan Anda (suara, getar, bahasa) hanya disimpan di penyimpanan khusus aplikasi di perangkat Anda. Nama panggilan dan persetujuan ikut peringkat yang dipakai peringkat online, serta nomor instalasi acak yang dipakai peringkat online dan dompet ladam, juga disimpan di sana. Pengembang tidak dapat menerima atau melihat data ini. Menghapus aplikasi atau menghapus data aplikasi di pengaturan perangkat akan menghapus semuanya. Jika pencadangan Android aktif, sistem operasi dapat menyertakan data ini dalam cadangan akun Google milik Anda sendiri.</p>
 <h2>3. Peringkat festival online (opsional)</h2>
 <p>Peringkat festival mingguan bersifat opsional. Sebelum Anda memilih nama panggilan di layar peringkat dan mengetuk &quot;Setuju dan ikut peringkat&quot;, Game tidak mengirim apa pun ke server. Setelah setuju pun, skor hanya dikirim saat Anda mengetuk untuk mengirimnya.</p>
 <p>Yang dikirim: nama panggilan pilihan Anda (2–12 karakter), skor lomba festival Anda, minggu, wilayah, dan jenis tanaman, serta nomor instalasi acak (UUID yang dibuat di perangkat Anda saat pertama kali dibutuhkan). Server juga mencatat waktu skor diterima. Nomor instalasi ini bukan ID iklan maupun ID perangkat Android; nomor ini hanya dipakai untuk mengelompokkan skor dari perangkat yang sama dan menandai posisi Anda di tabel. Nomor ini juga dikirim saat tabel dimuat agar posisi Anda bisa disorot. Nama, email, lokasi, dan kontak Anda tidak pernah dikirim.</p>
 <p>Penyimpanan dan visibilitas: data dikirim terenkripsi melalui HTTPS dan disimpan di proyek Supabase yang dikelola pengembang untuk game-gamenya (basis data cloud dari Supabase, Inc.). Server dapat berada di luar negara Anda. Pemain lain hanya melihat nama panggilan, skor, dan peringkat di tabel minggu, wilayah, dan jenis tanaman yang sama; nomor instalasi tidak pernah ditampilkan. Karena nama panggilan dapat dilihat orang lain, jangan gunakan nama asli atau info kontak. Supabase dapat menyimpan catatan permintaan seperti alamat IP untuk menjalankan dan mengamankan layanan; pengembang tidak menggunakannya untuk apa pun selain menjalankan peringkat. Kebijakan privasi Supabase: <a href="https://supabase.com/privacy">https://supabase.com/privacy</a></p>
 <p>Berhenti, penyimpanan, dan penghapusan: ketuk &quot;Berhenti ikut peringkat&quot; di layar peringkat, maka Game berhenti mengirim apa pun dan tidak lagi memuat tabel. Skor yang sudah dikirim disimpan selama layanan peringkat berjalan dan tidak dihapus otomatis. Untuk meminta penghapusan, kirim email ke <a href="mailto:mkideabox@gmail.com">mkideabox@gmail.com</a> dengan menyebutkan nama panggilan yang dipakai dan perkiraan tanggal Anda ikut (serta wilayah dan jenis tanaman jika ingat). Nomor instalasi tidak ditampilkan di Game, jadi kami mencari catatan Anda berdasarkan nama panggilan, memeriksanya, lalu menghapus nama panggilan beserta skornya.</p>
 <p>Laporan: jika kamu melaporkan nama pemain lain di papan peringkat, nomor instalasimu, nama yang dilaporkan, dan catatan pemain itu disimpan di server. Nama itu langsung disembunyikan di perangkatmu, dan bila tiga pemain berbeda melaporkan nama yang sama, nama itu disembunyikan untuk semua orang (pemiliknya tetap melihatnya). Mengganti nama membatalkan penyembunyian. Laporan hanya dipakai untuk mengelola nama yang tidak pantas, dan penghapusannya dapat diminta dengan cara yang sama seperti catatan peringkat.</p>
-<h2>4. Mengirim masukan</h2>
+<h2>4. Dompet ladam, kotak surat, dan pembelian dalam aplikasi</h2>
+<p>Kapan Game terhubung: ladam dan tiket percepat, item berbayar di Game, disimpan di server dompet yang dikelola pengembang. Dengan begitu saldo tidak bisa diubah dengan mengedit file simpanan, dan hadiah serta pembelian diterapkan tepat satu kali. Game hanya terhubung ke server ini saat Anda membuka kotak surat, toko kelontong, &quot;Selesaikan&quot; dengan ladam, atau tiket percepat; sebelum itu tidak ada yang dikirim. Jika koneksi terputus saat ladam sedang dipakai, Game hanya memeriksa ulang hasil satu permintaan itu saat dibuka berikutnya.</p>
+<p>Yang disimpan di server:</p>
+<ul>
+<li>Nomor instalasi acak (UUID): nomor yang sama dengan yang dipakai peringkat online, dibuat di perangkat Anda saat pertama kali dibutuhkan. Ini bukan ID iklan maupun ID perangkat Android.</li>
+<li>Saldo: ladam, tiket percepat per jenis, tukang kayu tambahan dan meja riset kedua yang dibeli dengan ladam, serta rangkaian hadiah harian dan tanggal hadiah terakhir.</li>
+<li>Catatan transaksi: setiap kali ladam atau tiket percepat diterima, dibeli, atau dipakai (jenis, jumlah, nomor permintaan, hasil, waktu). Catatan ini juga mencegah satu permintaan diproses dua kali.</li>
+<li>Kotak surat: surat untuk Anda (hadiah harian, hadiah dari pengembang, ladam harian Pas Peternakan), waktu diambil, dan waktu kedaluwarsa.</li>
+<li>Catatan pembelian (hanya jika Anda membeli): nomor pesanan Google Play, produk, harga dan mata uang, toko, apakah pembelian uji coba, waktu pembelian dan pengembalian dana, serta ladam dan tiket percepat yang ditambahkan.</li>
+<li>Catatan panggilan: nomor instalasi dan waktu setiap panggilan, untuk membatasi panggilan per menit dan mencegah penyalahgunaan; dihapus setelah sekitar 10 menit.</li>
+</ul>
+<p>Waktu pembangunan dan peningkatan dihitung dengan waktu server dari balasan dompet dan waktu yang berlalu di perangkat Anda. Jam perangkat Anda tidak dikirim. Nama, email, lokasi, dan kontak Anda tidak pernah dikirim.</p>
+<p>Pembelian dalam aplikasi: produk yang dijual adalah paket ladam, Paket Perintis (hanya bisa dibeli sekali; ladam dan tiket percepat), dan Pas Peternakan (300 ladam langsung, lalu 130 per hari lewat surat selama 30 hari; tidak diperpanjang otomatis). Pembayaran diproses oleh Google Play. RevenueCat, Inc. memeriksa bahwa pembelian itu sah lalu memberi tahu server dompet, yang kemudian menambahkan ladam. RevenueCat hanya dimulai saat Anda membuka toko kelontong dan memakai nomor instalasi Anda sebagai ID pengguna. Data pembayaran seperti kartu atau rekening bank diproses oleh Google Play dan tidak pernah sampai ke pengembang, dan pengembang juga tidak menerima nama atau alamat email Anda dari Google Play.</p>
+<p>Pasang ulang: progres peternakan hanya disimpan di perangkat Anda. Menghapus aplikasi atau menghapus data aplikasi juga menghapus nomor instalasi, dan untuk saat ini tidak ada cara lain untuk terhubung kembali ke dompet di server (termasuk ladam yang tersisa di dalamnya). Jika ini terjadi pada ladam yang Anda beli, hubungi kami dengan nomor pesanan.</p>
+<p>Tujuan: menyimpan dan memakai saldo ladam dan tiket percepat; memberikan hadiah harian, hadiah dari pengembang, dan ladam Pas Peternakan; mencegah penambahan ganda, pemotongan ganda, dan penyalahgunaan; memastikan dan menambahkan pembelian; memproses pengembalian dana; menanggapi pertanyaan dan sengketa; menyimpan catatan transaksi yang diwajibkan hukum.</p>
+<p>Masa simpan:</p>
+<ul>
+<li>Dompet (saldo, kotak surat): disimpan selama Anda memakainya dan dihapus 3 tahun setelah terakhir dipakai, atau segera bila Anda memintanya.</li>
+<li>Catatan transaksi, pembelian, dan pengembalian dana: 5 tahun sejak transaksi, karena undang-undang Korea tentang perlindungan konsumen dalam perdagangan elektronik mewajibkan penyimpanan catatan kontrak, pembatalan, pembayaran, dan penyerahan barang. Setelah dompet dihapus, catatan ini disimpan terpisah dari data lain dan dihapus saat masanya habis.</li>
+<li>Catatan panggilan: sekitar 10 menit.</li>
+</ul>
+<p>Penyedia layanan:</p>
+<ul>
+<li>Supabase, Inc. (perusahaan AS): menjalankan server dompet (database dan fungsi). Data disimpan di region Seoul, Republik Korea.</li>
+<li>RevenueCat, Inc. (AS): memastikan pembelian dalam aplikasi dan meneruskan pemberitahuan pembelian serta pengembalian dana.</li>
+<li>Google LLC (AS dan lainnya): pembayaran dan pengembalian dana Google Play.</li>
+</ul>
+<p>Transfer ke luar negeri (RevenueCat): saat Anda membuka toko kelontong, nomor instalasi Anda dikirim terenkripsi melalui HTTPS ke RevenueCat, Inc. (AS, <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a>) untuk memuat daftar produk, dan saat membeli, detail pembelian (produk, nomor pesanan, token pembelian, harga, waktu) juga dikirim. Bersamanya dapat ikut terkirim informasi teknis yang dibutuhkan SDK-nya agar berfungsi, seperti versi aplikasi dan negara toko. Tujuannya memastikan pembelian dan memproses pengembalian dana, dan data disimpan selama masa simpan catatan pembelian di atas. Jika Anda tidak menginginkannya, jangan buka toko kelontong; kotak surat, percepatan dengan ladam, dan bagian lain Game tetap berjalan sama.</p>
+<p>Semua pengiriman dienkripsi dengan HTTPS. Pengembang tidak menjual informasi ini dan tidak memakainya untuk iklan. Kebijakan privasi: Supabase <a href="https://supabase.com/privacy">https://supabase.com/privacy</a> · RevenueCat <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a> · Google <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+<h2>5. Pembayaran, pengembalian dana, dan pembatalan</h2>
+<ul>
+<li>Pembelian dalam aplikasi bersifat opsional. Semua wilayah dan bangunan bisa dinikmati tanpa membayar, dan ladam juga datang gratis sebagai hadiah harian di kotak surat.</li>
+<li>Kami tidak menjual item yang hasilnya bergantung pada peluang (undian atau kotak acak). Setiap produk memiliki isi dan jumlah yang tetap dan tercantum.</li>
+<li>Pembayaran diproses oleh Google Play sesuai aturannya tentang metode pembayaran, tanda terima, dan harga. Pas Peternakan adalah item 30 hari yang tidak diperpanjang otomatis.</li>
+<li>Pengguna di Republik Korea: Anda dapat membatalkan pembelian ladam dan tiket percepat yang belum dipakai dalam 7 hari setelah pembelian. Ajukan lewat riwayat pesanan Google Play (<a href="https://play.google.com/store/account/orderhistory">https://play.google.com/store/account/orderhistory</a>) atau kirim email ke <a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a> dengan nomor pesanan Google Play (diawali GPA.). Ladam dan tiket percepat yang sudah dipakai serta ladam yang diterima gratis sebagai hadiah tidak termasuk. Jika Anda baru memakai sebagian paket atau Pas Peternakan, hubungi kami dan kami akan menanganinya sesuai hukum.</li>
+<li>Jika pembelian dikembalikan dananya, ladam dari pembelian itu dikurangi dari saldo, dan untuk Pas Peternakan surat harian yang belum tiba dibatalkan. Jika sudah terpakai, saldo menjadi nol; pembangunan dan peningkatan yang sudah selesai tidak dibatalkan.</li>
+<li>Pengguna di negara lain tetap memiliki hak sesuai kebijakan pengembalian dana Google Play dan hukum perlindungan konsumen di negara tempat tinggalnya.</li>
+</ul>
+<h2>6. Mengirim masukan</h2>
 <p>Mengetuk &quot;Kirim masukan ke pengembang&quot; di menu Gramofon akan membuka aplikasi email Anda dengan alamat kotak masukan kami (<a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a>) sebagai penerima. Untuk membantu kami menelusuri masalah, versi dan nomor build game, model perangkat, serta versi sistem operasi sudah tertulis di bawah pesan Anda, dan Anda dapat memeriksa atau menghapusnya sebelum mengirim. Game tidak pernah mengirim email sendiri: kami hanya menerima pesan dan alamat email Anda jika Anda mengetuk kirim di aplikasi email. Masukan hanya digunakan untuk membalas, menelusuri masalah, dan meningkatkan Game; masukan dihapus setelah tidak diperlukan lagi, atau segera jika Anda memintanya.</p>
-<h2>5. Yang tidak kami kumpulkan</h2>
-<p>Game tidak memiliki iklan, pembelian dalam aplikasi, alat analitik, maupun laporan error. Game tidak mengakses lokasi, kontak, foto, kamera, atau mikrofon Anda, dan tidak menggunakan ID iklan. Pengembang tidak menjual informasi Anda dan tidak membagikannya kepada pihak ketiga untuk tujuan iklan.</p>
-<h2>6. Privasi anak</h2>
+<h2>7. Yang tidak kami kumpulkan</h2>
+<p>Game tidak memiliki iklan, alat analitik, maupun laporan error. Data pembayaran (kartu atau bank) diproses oleh Google Play dan tidak pernah sampai ke pengembang. Game tidak mengakses lokasi, kontak, foto, kamera, atau mikrofon Anda, dan tidak menggunakan ID iklan. Pengembang tidak menjual informasi Anda dan tidak membagikannya kepada pihak ketiga untuk tujuan iklan.</p>
+<h2>8. Privasi anak</h2>
 <p>Game ini tidak ditujukan untuk anak di bawah 13 tahun. Game tidak menanyakan usia atau nama, dan peringkat online hanya dapat diikuti setelah pemain memilih nama panggilan dan menyetujuinya. Orang tua dapat mencegah anak ikut peringkat, atau meminta penghapusan catatan dengan cara di atas. Jika Anda yakin informasi anak telah sampai kepada kami, kirim email ke alamat di bawah ini; setelah diperiksa, kami akan menghapusnya.</p>
-<h2>7. Hak Anda dan penghapusan data</h2>
+<p>Pembelian dalam aplikasi memakai metode pembayaran akun Google Play. Orang tua dapat memblokir pembelian dengan persetujuan pembelian Google Play (kontrol orang tua). Di Republik Korea, pembelian oleh anak di bawah umur tanpa persetujuan wali sah dapat dibatalkan oleh anak itu atau walinya; kirim email ke <a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a> dengan nomor pesanan.</p>
+<h2>9. Hak Anda dan penghapusan data</h2>
 <p>Anda dapat menghapus data di perangkat kapan saja dengan menghapus aplikasi atau menghapus data aplikasi di pengaturan perangkat. Untuk melihat, memperbaiki, atau menghapus catatan peringkat online atau email masukan yang Anda kirim, hubungi <a href="mailto:mkideabox@gmail.com">mkideabox@gmail.com</a>. Kami akan segera menanganinya.</p>
-<h2>8. Kontak</h2>
+<p>Untuk melihat atau menghapus dompet ladam Anda, kirim email ke <a href="mailto:mkideabox.feedback@gmail.com">mkideabox.feedback@gmail.com</a>. Jika pernah membeli, sertakan nomor pesanan Google Play (diawali GPA.) agar kami dapat menemukan dompet yang terkait dengan pembelian itu. Dompet tanpa pembelian hanya disimpan dengan nomor instalasi acak, tanpa nama atau kontak, dan Game tidak menampilkan nomor itu, sehingga untuk saat ini kami tidak bisa memastikan lewat email dompet mana yang milik Anda; dompet seperti ini dihapus 3 tahun setelah terakhir dipakai. Menghapus dompet akan menghilangkan sisa ladam dan tiket percepat secara permanen tanpa pengembalian dana. Catatan transaksi dan pembelian dihapus setelah masa simpan di bagian 4 berakhir.</p>
+<h2>10. Kontak</h2>
 <p>Pengembang: MK Ideabox · Email: <a href="mailto:mkideabox@gmail.com">mkideabox@gmail.com</a></p>
-<h2>9. Perubahan</h2>
+<h2>11. Perubahan</h2>
 <p>Jika kebijakan ini berubah, versi terbaru akan dipublikasikan di halaman ini dengan tanggal berlaku yang baru.</p>
 </section>
 </body>
