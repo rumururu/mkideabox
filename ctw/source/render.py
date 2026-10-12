@@ -22,10 +22,10 @@ HERE = Path(__file__).resolve().parent
 OUT_DIR = HERE.parent
 
 APP_NAME = '세계 정복 (Conquer the World)'
-PACKAGE = 'com.newpl.ctw'
+PACKAGE = 'com.mkideabox.ctw'
 DEVELOPER = 'mkideabox'
 EMAIL = 'mkideabox.feedback@gmail.com'
-EFFECTIVE_DATE = '2026-10-11'
+EFFECTIVE_DATE = '2026-10-12'
 PUBLIC_URL = 'https://rumururu.github.io/mkideabox/ctw/privacy.html'
 LANGS = ['ko', 'en', 'ja', 'zh', 'es', 'fr', 'de', 'pt', 'ru', 'it']
 HTML_LANG = {'zh': 'zh-Hans'}  # <section lang> 값이 언어 코드와 다른 경우
