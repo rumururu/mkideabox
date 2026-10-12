@@ -6,15 +6,19 @@
     "sections": [
       [
         "요약",
-        "우주 개척단(이하 \"게임\")은 회원가입이 없고 이름·이메일·전화번호 같은 개인을 식별하는 정보를 수집하지 않습니다. 게임 진행 데이터는 기기 안에만 저장됩니다. 외부로 정보가 나가는 경우는 인앱 결제 처리(RevenueCat), 광고(Google AdMob), 사용자가 직접 보내는 피드백 메일, 그리고 사용자가 직접 켠 경우의 주간 순위표(무작위 설치 ID·자동 생성 별명·주간 점수)뿐입니다."
+        "우주 개척단(이하 \"게임\")은 회원가입이 없고 이름·이메일·전화번호 같은 개인을 식별하는 정보를 수집하지 않습니다. 게임 진행 데이터는 기기 안에 저장되고, 젬과 결제 기록은 위조와 분실을 막기 위해 서버의 젬 지갑에 보관합니다. 외부로 정보가 나가는 경우는 젬 지갑(무작위 설치 ID·젬 기록), 인앱 결제 처리(RevenueCat), 광고(Google AdMob), 사용자가 직접 보내는 피드백 메일, 그리고 사용자가 직접 켠 경우의 주간 순위표(무작위 설치 ID·자동 생성 별명·주간 점수)뿐입니다."
       ],
       [
         "기기에 저장하는 정보",
-        "진행 상황, 보유 재화(크레딧·광석·젬), 구매한 상품과 결제 거래 번호, 설정(언어·소리·알림)을 기기 안에 저장합니다. 개발자는 이 데이터를 받지 않습니다. Android 기기의 백업 설정이 켜져 있으면 운영체제가 이 데이터를 사용자 Google 계정 백업에 포함할 수 있습니다."
+        "진행 상황, 크레딧·광석, 꾸미기, 설정(언어·소리·알림)과 젬 잔액의 사본을 기기 안에 저장합니다. 개발자는 이 데이터를 받지 않습니다. Android 기기의 백업 설정이 켜져 있으면 운영체제가 이 데이터를 사용자 Google 계정 백업에 포함할 수 있습니다."
       ],
       [
         "인앱 결제",
-        "결제는 Google Play 또는 Apple App Store가 처리하며 결제 수단 정보는 개발자에게 전달되지 않습니다. 구매 확인(영수증 검증)과 구매 복원을 위해 RevenueCat, Inc.를 사용합니다. RevenueCat은 기기에서 만든 익명 사용자 ID, 구매 내역(상품, 거래 번호, 시각, 가격), 기기·앱 정보(운영체제, 앱 버전, 국가)를 처리합니다. 이 정보로 사용자 개인을 식별하지 않습니다. RevenueCat 개인정보처리방침: https://www.revenuecat.com/privacy"
+        "결제는 Google Play 또는 Apple App Store가 처리하며 결제 수단 정보는 개발자에게 전달되지 않습니다. 구매 확인(영수증 검증)과 구매 복원을 위해 RevenueCat, Inc.를 사용합니다. RevenueCat은 기기에서 만든 무작위 설치 ID(광고 ID·기기 ID가 아님)를 사용자 ID로 사용하고, 구매 내역(상품, 거래 번호, 시각, 가격), 기기·앱 정보(운영체제, 앱 버전, 국가)를 처리합니다. 구매가 확인되면 RevenueCat이 게임 서버에 알리고, 서버가 젬 지갑에 지급합니다. 이 정보로 사용자 개인을 식별하지 않습니다. RevenueCat 개인정보처리방침: https://www.revenuecat.com/privacy"
+      ],
+      [
+        "젬 지갑",
+        "젬은 기기가 아니라 서버의 젬 지갑에 보관합니다. 기기를 조작해 젬을 늘리거나 결제 없이 유료 상품을 받는 것을 막고, 결제 지급·환불·구매 복원을 처리하기 위해서입니다. 서버에는 기기에서 처음 만든 무작위 설치 ID(광고 ID·기기 ID가 아님), 젬 잔액, 젬을 얻고 쓴 기록(종류·양·날짜·시각), 결제 기록(상품, 거래 번호, 가격, 통화, 스토어, 시각), 스타터 팩·함대 사령관 패스 보유 여부를 저장합니다. 이름이나 사용자가 입력한 글자는 보내지 않습니다. 젬을 쓸 때는 인터넷 연결이 필요합니다. 서버는 Supabase, Inc.의 서비스(서울 리전)를 사용하며, 남용을 막기 위해 요청 횟수를 제한합니다. 구매를 복원하면 같은 스토어 계정으로 결제했던 이전 설치의 젬 지갑이 이 설치로 옮겨집니다. 기록은 게임을 이용하는 동안 보관합니다."
       ],
       [
         "광고",
@@ -38,7 +42,7 @@
       ],
       [
         "데이터 삭제",
-        "게임 설정 → \"모든 데이터 초기화\"로 기기에 저장된 데이터를 언제든 지울 수 있고, 앱을 삭제해도 모두 지워집니다. 결제 처리용 익명 기록(RevenueCat)의 삭제를 원하면 아래 메일로 요청해 주세요. 주간 순위표에 참여했다면 \"모든 데이터 초기화\" 때 서버의 순위표 기록(설치 ID·별명·점수)도 함께 삭제됩니다. 앱을 먼저 삭제했다면 아래 메일로 삭제를 요청할 수 있으며, 참여하지 않은 주의 기록은 순위에 보이지 않습니다."
+        "게임 설정 → \"모든 데이터 초기화\"로 기기에 저장된 데이터를 언제든 지울 수 있고, 앱을 삭제해도 기기의 데이터는 모두 지워집니다. 초기화하면 서버의 젬 잔액도 0이 되며, 스타터 팩·함대 사령관 패스 보유 기록과 결제 기록은 구매 복원을 위해 남습니다. 젬 지갑 기록이나 RevenueCat의 결제 기록 삭제를 원하면 아래 메일로 요청해 주세요(스토어 영수증의 주문 번호를 알려 주시면 해당 기록을 찾을 수 있습니다). 삭제하면 남은 젬과 구매 복원도 사라집니다. 주간 순위표에 참여했다면 \"모든 데이터 초기화\" 때 서버의 순위표 기록(설치 ID·별명·점수)도 함께 삭제됩니다. 앱을 먼저 삭제했다면 아래 메일로 삭제를 요청할 수 있으며, 참여하지 않은 주의 기록은 순위에 보이지 않습니다."
       ],
       [
         "문의",
@@ -57,15 +61,19 @@
     "sections": [
       [
         "Summary",
-        "Star Settlers (the \"Game\") has no sign-up and does not collect information that identifies you, such as your name, email or phone number. Game progress is stored only on your device. Information leaves your device only for in-app purchase processing (RevenueCat), advertising (Google AdMob), feedback emails you choose to send, and the optional weekly leaderboard (a random install ID, a generated nickname and a weekly score) if you turn it on."
+        "Star Settlers (the \"Game\") has no sign-up and does not collect information that identifies you, such as your name, email or phone number. Game progress is stored on your device; gems and purchase records are kept in a gem wallet on our server so they cannot be forged or lost. Information leaves your device only for the gem wallet (a random install ID and gem records), in-app purchase processing (RevenueCat), advertising (Google AdMob), feedback emails you choose to send, and the optional weekly leaderboard (a random install ID, a generated nickname and a weekly score) if you turn it on."
       ],
       [
         "Information stored on your device",
-        "Progress, currencies (credits, ore, gems), purchased items and purchase transaction IDs, and settings (language, sound, notifications) are stored on your device. The developer does not receive this data. If Android backup is enabled on your device, the operating system may include it in your Google account backup."
+        "Progress, credits and ore, cosmetics, settings (language, sound, notifications) and a copy of your gem balance are stored on your device. The developer does not receive this data. If Android backup is enabled on your device, the operating system may include it in your Google account backup."
       ],
       [
         "In-app purchases",
-        "Payments are processed by Google Play or the Apple App Store; your payment details are never shared with the developer. To verify receipts and restore purchases we use RevenueCat, Inc., which processes an anonymous user ID generated on your device, purchase history (product, transaction ID, time, price) and device/app information (operating system, app version, country). This information is not used to identify you. RevenueCat privacy policy: https://www.revenuecat.com/privacy"
+        "Payments are processed by Google Play or the Apple App Store; your payment details are never shared with the developer. To verify receipts and restore purchases we use RevenueCat, Inc. RevenueCat uses a random install ID generated on your device (not an advertising or device ID) as the user ID and processes purchase history (product, transaction ID, time, price) and device/app information (operating system, app version, country). When a purchase is confirmed, RevenueCat notifies the game server, which credits your gem wallet. This information is not used to identify you. RevenueCat privacy policy: https://www.revenuecat.com/privacy"
+      ],
+      [
+        "Gem wallet",
+        "Gems are kept in a gem wallet on our server, not on your device. This stops gems from being increased by tampering with the device or paid items from being obtained without paying, and lets us credit purchases, handle refunds and restore purchases. The server stores a random install ID generated on your device (not an advertising or device ID), your gem balance, records of gems earned and spent (type, amount, date and time), purchase records (product, transaction ID, price, currency, store, time) and whether you own the Starter Pack and the Fleet Commander Pass. No names and nothing you type are sent. Spending gems requires an internet connection. The server runs on Supabase, Inc. (Seoul region), and the number of requests is limited to prevent abuse. When you restore purchases, the gem wallet of an earlier install that paid with the same store account moves to this install. Records are kept while you use the Game."
       ],
       [
         "Advertising",
@@ -89,7 +97,7 @@
       ],
       [
         "Deleting your data",
-        "Use Settings → \"Reset All Data\" to delete everything stored on your device at any time; uninstalling the app also deletes it. To request deletion of the anonymous purchase records held by RevenueCat, email us at the address below. If you joined the weekly leaderboard, \"Reset All Data\" also deletes your leaderboard record (install ID, nickname, scores) on the server. If you already uninstalled the app, you can request deletion by email at the address below."
+        "Use Settings → \"Reset All Data\" to delete everything stored on your device at any time; uninstalling the app also deletes the data on your device. A reset also sets your gem balance on the server to 0; the records of your Starter Pack, Fleet Commander Pass and purchases stay so they can be restored. To request deletion of your gem wallet records or the purchase records held by RevenueCat, email us at the address below (the order number on your store receipt lets us find them). Deleting them also removes any remaining gems and the ability to restore purchases. If you joined the weekly leaderboard, \"Reset All Data\" also deletes your leaderboard record (install ID, nickname, scores) on the server. If you already uninstalled the app, you can request deletion by email at the address below."
       ],
       [
         "Contact",
@@ -108,15 +116,19 @@
     "sections": [
       [
         "概要",
-        "Star Settlers(以下「本ゲーム」)には会員登録がなく、氏名・メールアドレス・電話番号など個人を識別する情報を収集しません。ゲームの進行データは端末内にのみ保存されます。情報が端末の外に送られるのは、アプリ内課金の処理(RevenueCat)、広告(Google AdMob)、ユーザーが自ら送信するフィードバックメール、およびユーザーが自らオンにした場合の週間ランキング(ランダムなインストールID・自動生成のニックネーム・週間スコア)に限られます。"
+        "Star Settlers(以下「本ゲーム」)には会員登録がなく、氏名・メールアドレス・電話番号など個人を識別する情報を収集しません。ゲームの進行データは端末内に保存し、ジェムと購入記録は改ざんや紛失を防ぐためサーバーのジェムウォレットに保管します。情報が端末の外に送られるのは、ジェムウォレット(ランダムなインストールID・ジェムの記録)、アプリ内課金の処理(RevenueCat)、広告(Google AdMob)、ユーザーが自ら送信するフィードバックメール、およびユーザーが自らオンにした場合の週間ランキング(ランダムなインストールID・自動生成のニックネーム・週間スコア)に限られます。"
       ],
       [
         "端末に保存される情報",
-        "進行状況、所持通貨(クレジット・鉱石・ジェム)、購入したアイテムと購入の取引ID、設定(言語・サウンド・通知)を端末内に保存します。開発者はこのデータを受け取りません。Android端末でバックアップ設定が有効な場合、OSがこのデータをユーザーのGoogleアカウントのバックアップに含めることがあります。"
+        "進行状況、クレジット・鉱石、着せ替え、設定(言語・サウンド・通知)とジェム残高の写しを端末内に保存します。開発者はこのデータを受け取りません。Android端末でバックアップ設定が有効な場合、OSがこのデータをユーザーのGoogleアカウントのバックアップに含めることがあります。"
       ],
       [
         "アプリ内課金",
-        "支払いはGoogle PlayまたはApple App Storeが処理し、支払い方法の情報が開発者に渡ることはありません。購入の確認(レシート検証)と購入の復元のためにRevenueCat, Inc.を利用しています。RevenueCatは、端末で生成された匿名のユーザーID、購入履歴(商品、取引ID、日時、価格)、端末・アプリ情報(OS、アプリのバージョン、国)を処理します。これらの情報でユーザー個人を識別することはありません。RevenueCatのプライバシーポリシー:https://www.revenuecat.com/privacy"
+        "支払いはGoogle PlayまたはApple App Storeが処理し、支払い方法の情報が開発者に渡ることはありません。購入の確認(レシート検証)と購入の復元のためにRevenueCat, Inc.を利用しています。RevenueCatは端末で生成したランダムなインストールID(広告IDや端末IDではありません)をユーザーIDとして使用し、購入履歴(商品、取引ID、日時、価格)、端末・アプリ情報(OS、アプリのバージョン、国)を処理します。購入が確認されるとRevenueCatがゲームサーバーに通知し、サーバーがジェムウォレットに付与します。これらの情報でユーザー個人を識別することはありません。RevenueCatのプライバシーポリシー:https://www.revenuecat.com/privacy"
+      ],
+      [
+        "ジェムウォレット",
+        "ジェムは端末ではなくサーバーのジェムウォレットに保管します。端末の改ざんでジェムを増やしたり、支払いなしで有料アイテムを受け取ったりすることを防ぎ、購入の付与・返金・購入の復元を処理するためです。サーバーには、端末で最初に生成したランダムなインストールID(広告IDや端末IDではありません)、ジェム残高、ジェムの獲得・使用記録(種類・量・日時)、購入記録(商品、取引ID、価格、通貨、ストア、日時)、スターターパックと艦隊司令官パスの保有状況を保存します。氏名やユーザーが入力した文字は送信しません。ジェムを使うにはインターネット接続が必要です。サーバーはSupabase, Inc.のサービス(ソウルリージョン)を使用し、不正利用防止のためリクエスト回数を制限しています。購入を復元すると、同じストアアカウントで支払った以前のインストールのジェムウォレットがこのインストールに移ります。記録は本ゲームをご利用の間保管します。"
       ],
       [
         "広告",
@@ -140,7 +152,7 @@
       ],
       [
         "データの削除",
-        "「設定」→「すべてのデータをリセット」で、端末に保存されたデータをいつでも削除できます。アプリをアンインストールした場合もすべて削除されます。RevenueCatが保持する匿名の購入記録の削除をご希望の場合は、下記のメールアドレスまでご連絡ください。週間ランキングに参加していた場合は、「すべてのデータをリセット」でサーバー上のランキング記録(インストールID・ニックネーム・スコア)も削除されます。先にアプリを削除した場合は、下記のメールアドレスで削除を依頼できます。"
+        "「設定」→「すべてのデータをリセット」で、端末に保存されたデータをいつでも削除できます。アプリをアンインストールした場合も端末のデータはすべて削除されます。リセットするとサーバーのジェム残高も0になり、スターターパック・艦隊司令官パスの保有記録と購入記録は購入の復元のために残ります。ジェムウォレットの記録やRevenueCatの購入記録の削除をご希望の場合は、下記のメールアドレスまでご連絡ください(ストアのレシートの注文番号をお知らせいただくと該当する記録を特定できます)。削除すると残りのジェムと購入の復元もできなくなります。週間ランキングに参加していた場合は、「すべてのデータをリセット」でサーバー上のランキング記録(インストールID・ニックネーム・スコア)も削除されます。先にアプリを削除した場合は、下記のメールアドレスで削除を依頼できます。"
       ],
       [
         "お問い合わせ",
@@ -159,15 +171,19 @@
     "sections": [
       [
         "摘要",
-        "Star Settlers(以下简称“本游戏”)无需注册,不收集姓名、电子邮箱、电话号码等可识别您身份的信息。游戏进度仅保存在您的设备上。仅在以下情况下信息会离开您的设备:应用内购买处理(RevenueCat)、广告(Google AdMob),您主动发送的反馈邮件,以及在您主动开启时的每周排行榜(随机安装 ID、自动生成的昵称和每周分数)。"
+        "Star Settlers(以下简称“本游戏”)无需注册,不收集姓名、电子邮箱、电话号码等可识别您身份的信息。游戏进度保存在您的设备上;宝石和购买记录保存在我们服务器上的宝石钱包中,以防伪造和丢失。信息仅在以下情况离开您的设备:宝石钱包(随机安装 ID 和宝石记录)、应用内购买处理(RevenueCat)、广告(Google AdMob)、您主动发送的反馈邮件,以及您主动开启的每周排行榜(随机安装 ID、自动生成的昵称和每周分数)。"
       ],
       [
         "保存在您设备上的信息",
-        "游戏进度、货币(信用点、矿石、宝石)、已购买的商品及购买交易编号,以及设置(语言、声音、通知)均保存在您的设备上。开发者不会收到这些数据。如果您的 Android 设备开启了备份,操作系统可能会将这些数据包含在您的 Google 账号备份中。"
+        "进度、信用点和矿石、装扮、设置(语言、声音、通知)以及宝石余额的副本保存在您的设备上。开发者不会收到这些数据。如果您的 Android 设备开启了备份,操作系统可能会将这些数据包含在您的 Google 帐号备份中。"
       ],
       [
         "应用内购买",
-        "付款由 Google Play 或 Apple App Store 处理,您的支付信息不会提供给开发者。为验证收据和恢复购买,我们使用 RevenueCat, Inc.。RevenueCat 会处理在您设备上生成的匿名用户 ID、购买记录(商品、交易编号、时间、价格)以及设备/应用信息(操作系统、应用版本、国家/地区)。这些信息不会被用于识别您的身份。RevenueCat 隐私政策:https://www.revenuecat.com/privacy"
+        "付款由 Google Play 或 Apple App Store 处理,您的支付信息不会提供给开发者。我们使用 RevenueCat, Inc. 验证收据和恢复购买。RevenueCat 以您设备上生成的随机安装 ID(不是广告 ID 或设备 ID)作为用户 ID,并处理购买记录(商品、交易编号、时间、价格)以及设备和应用信息(操作系统、应用版本、国家/地区)。购买确认后,RevenueCat 会通知游戏服务器,由服务器发放到您的宝石钱包。这些信息不会用于识别您的身份。RevenueCat 隐私政策:https://www.revenuecat.com/privacy"
+      ],
+      [
+        "宝石钱包",
+        "宝石保存在我们服务器上的宝石钱包中,而不是您的设备上。这样可以防止通过篡改设备增加宝石或不付款获得付费商品,并用于发放购买、处理退款和恢复购买。服务器保存:您设备上首次生成的随机安装 ID(不是广告 ID 或设备 ID)、宝石余额、获得和使用宝石的记录(类型、数量、日期和时间)、购买记录(商品、交易编号、价格、币种、商店、时间),以及是否拥有新手礼包和舰队指挥官通行证。不会发送姓名或您输入的任何文字。使用宝石需要连接互联网。服务器使用 Supabase, Inc. 的服务(首尔区域),并限制请求次数以防滥用。恢复购买时,用同一商店帐号付款的旧安装的宝石钱包会转移到当前安装。记录在您使用本游戏期间保留。"
       ],
       [
         "广告",
@@ -191,7 +207,7 @@
       ],
       [
         "删除您的数据",
-        "您可以随时通过“设置”→“重置所有数据”删除保存在设备上的全部数据;卸载应用也会将其删除。如需删除 RevenueCat 保存的匿名购买记录,请发送邮件至下方地址提出请求。如果参加过每周排行榜,“重置所有数据”时也会删除服务器上的排行榜记录(安装 ID、昵称、分数)。如果已先卸载应用,可通过下方邮箱申请删除。"
+        "您可以随时通过“设置”→“重置所有数据”删除设备上保存的全部数据;卸载应用也会删除设备上的数据。重置还会将服务器上的宝石余额清零;新手礼包、舰队指挥官通行证的拥有记录和购买记录会保留,以便恢复购买。如需删除宝石钱包记录或 RevenueCat 保存的购买记录,请发送邮件至下方地址(提供商店收据上的订单号即可找到相应记录)。删除后,剩余宝石和恢复购买的功能也将一并失去。如果您参加了每周排行榜,“重置所有数据”还会同时删除服务器上的排行榜记录(安装 ID、昵称、分数)。如果您已先卸载应用,可以通过下方邮箱申请删除。"
       ],
       [
         "联系方式",
@@ -210,15 +226,19 @@
     "sections": [
       [
         "Resumen",
-        "Star Settlers (el \"Juego\") no requiere registro y no recopila información que te identifique, como tu nombre, correo electrónico o número de teléfono. El progreso del juego se guarda únicamente en tu dispositivo. La información solo sale de tu dispositivo para procesar compras dentro de la app (RevenueCat), para la publicidad (Google AdMob), en los correos de comentarios que decidas enviar y, si lo activas, en el ranking semanal opcional (un ID de instalación aleatorio, un apodo generado y una puntuación semanal)."
+        "Star Settlers (el \"Juego\") no requiere registro y no recopila información que te identifique, como tu nombre, correo electrónico o número de teléfono. El progreso del juego se guarda en tu dispositivo; las gemas y los registros de compra se guardan en un monedero de gemas en nuestro servidor para que no se puedan falsificar ni perder. La información solo sale de tu dispositivo para el monedero de gemas (un ID de instalación aleatorio y los registros de gemas), el procesamiento de compras dentro de la app (RevenueCat), la publicidad (Google AdMob), los correos de comentarios que decidas enviar y el ranking semanal opcional (un ID de instalación aleatorio, un apodo generado y una puntuación semanal) si lo activas."
       ],
       [
         "Información almacenada en tu dispositivo",
-        "El progreso, las monedas (créditos, mineral, gemas), los artículos comprados y los ID de transacción de las compras, y los ajustes (idioma, sonido, notificaciones) se guardan en tu dispositivo. El desarrollador no recibe estos datos. Si la copia de seguridad de Android está activada en tu dispositivo, el sistema operativo puede incluirlos en la copia de seguridad de tu cuenta de Google."
+        "El progreso, los créditos y el mineral, los cosméticos, los ajustes (idioma, sonido, notificaciones) y una copia de tu saldo de gemas se guardan en tu dispositivo. El desarrollador no recibe estos datos. Si la copia de seguridad de Android está activada en tu dispositivo, el sistema operativo puede incluirlos en la copia de seguridad de tu cuenta de Google."
       ],
       [
         "Compras dentro de la app",
-        "Los pagos los procesa Google Play o Apple App Store; tus datos de pago nunca se comparten con el desarrollador. Para verificar los recibos y restaurar compras utilizamos RevenueCat, Inc., que procesa un ID de usuario anónimo generado en tu dispositivo, el historial de compras (producto, ID de transacción, hora, precio) e información del dispositivo y de la app (sistema operativo, versión de la app, país). Esta información no se utiliza para identificarte. Política de privacidad de RevenueCat: https://www.revenuecat.com/privacy"
+        "Los pagos los procesa Google Play o la App Store de Apple; tus datos de pago nunca se comparten con el desarrollador. Para verificar recibos y restaurar compras usamos RevenueCat, Inc. RevenueCat usa como ID de usuario un ID de instalación aleatorio generado en tu dispositivo (no es un ID de publicidad ni de dispositivo) y procesa el historial de compras (producto, ID de transacción, hora, precio) e información del dispositivo y la app (sistema operativo, versión de la app, país). Cuando se confirma una compra, RevenueCat avisa al servidor del juego, que la abona en tu monedero de gemas. Esta información no se usa para identificarte. Política de privacidad de RevenueCat: https://www.revenuecat.com/privacy"
+      ],
+      [
+        "Monedero de gemas",
+        "Las gemas se guardan en un monedero de gemas en nuestro servidor, no en tu dispositivo. Así se evita que se aumenten manipulando el dispositivo o que se obtengan artículos de pago sin pagar, y podemos abonar compras, gestionar reembolsos y restaurar compras. El servidor guarda un ID de instalación aleatorio generado en tu dispositivo (no es un ID de publicidad ni de dispositivo), tu saldo de gemas, los registros de gemas obtenidas y gastadas (tipo, cantidad, fecha y hora), los registros de compra (producto, ID de transacción, precio, moneda, tienda, hora) y si tienes el Pack de inicio y el Pase de Comandante de Flota. No se envían nombres ni nada de lo que escribas. Para gastar gemas se necesita conexión a internet. El servidor funciona con Supabase, Inc. (región de Seúl) y el número de solicitudes está limitado para evitar abusos. Al restaurar compras, el monedero de gemas de una instalación anterior que pagó con la misma cuenta de la tienda pasa a esta instalación. Los registros se conservan mientras uses el Juego."
       ],
       [
         "Publicidad",
@@ -242,7 +262,7 @@
       ],
       [
         "Eliminación de tus datos",
-        "Usa \"Ajustes\" → \"Borrar todos los datos\" para eliminar en cualquier momento todo lo almacenado en tu dispositivo; desinstalar la app también lo elimina. Para solicitar la eliminación de los registros de compra anónimos que conserva RevenueCat, escríbenos a la dirección indicada abajo. Si te uniste al ranking semanal, «Borrar todos los datos» también elimina tu registro del ranking (ID de instalación, apodo, puntuaciones) en el servidor. Si ya desinstalaste la app, puedes pedir el borrado por correo a la dirección indicada abajo."
+        "Usa \"Ajustes\" → \"Borrar todos los datos\" para borrar en cualquier momento todo lo guardado en tu dispositivo; desinstalar la app también borra los datos del dispositivo. Borrar los datos también deja en 0 tu saldo de gemas en el servidor; los registros de tu Pack de inicio, Pase de Comandante de Flota y compras se conservan para poder restaurarlos. Para solicitar la eliminación de los registros de tu monedero de gemas o de los registros de compra que guarda RevenueCat, escríbenos a la dirección de abajo (el número de pedido de tu recibo de la tienda nos permite encontrarlos). Al eliminarlos también se pierden las gemas restantes y la posibilidad de restaurar compras. Si participaste en el ranking semanal, \"Borrar todos los datos\" también elimina tu registro del ranking (ID de instalación, apodo, puntuaciones) en el servidor. Si ya desinstalaste la app, puedes solicitar la eliminación por correo a la dirección de abajo."
       ],
       [
         "Contacto",
@@ -261,15 +281,19 @@
     "sections": [
       [
         "Résumé",
-        "Star Settlers (le « Jeu ») ne nécessite aucune inscription et ne collecte aucune information permettant de vous identifier, comme votre nom, votre adresse e-mail ou votre numéro de téléphone. La progression du jeu est enregistrée uniquement sur votre appareil. Des informations ne quittent votre appareil que pour le traitement des achats intégrés (RevenueCat), la publicité (Google AdMob), les e-mails de commentaires que vous choisissez d'envoyer et, si vous l'activez, le classement hebdomadaire facultatif (un identifiant d'installation aléatoire, un pseudo généré et un score hebdomadaire)."
+        "Star Settlers (le « Jeu ») ne nécessite aucune inscription et ne collecte aucune information permettant de vous identifier, comme votre nom, votre e-mail ou votre numéro de téléphone. La progression est enregistrée sur votre appareil ; les gemmes et les achats sont conservés dans un portefeuille de gemmes sur notre serveur afin qu'ils ne puissent être ni falsifiés ni perdus. Des informations ne quittent votre appareil que pour le portefeuille de gemmes (un identifiant d'installation aléatoire et l'historique des gemmes), le traitement des achats intégrés (RevenueCat), la publicité (Google AdMob), les e-mails de commentaires que vous choisissez d'envoyer et le classement hebdomadaire facultatif (un identifiant d'installation aléatoire, un pseudo généré et un score hebdomadaire) si vous l'activez."
       ],
       [
         "Informations enregistrées sur votre appareil",
-        "La progression, les monnaies (crédits, minerai, gemmes), les articles achetés et les identifiants de transaction des achats, ainsi que les réglages (langue, son, notifications) sont enregistrés sur votre appareil. Le développeur ne reçoit pas ces données. Si la sauvegarde Android est activée sur votre appareil, le système d'exploitation peut les inclure dans la sauvegarde de votre compte Google."
+        "La progression, les crédits et le minerai, les cosmétiques, les réglages (langue, son, notifications) et une copie de votre solde de gemmes sont enregistrés sur votre appareil. Le développeur ne reçoit pas ces données. Si la sauvegarde Android est activée sur votre appareil, le système d'exploitation peut les inclure dans la sauvegarde de votre compte Google."
       ],
       [
         "Achats intégrés",
-        "Les paiements sont traités par Google Play ou l'Apple App Store ; vos informations de paiement ne sont jamais communiquées au développeur. Pour vérifier les reçus et restaurer les achats, nous utilisons RevenueCat, Inc., qui traite un identifiant utilisateur anonyme généré sur votre appareil, l'historique des achats (produit, identifiant de transaction, heure, prix) et des informations sur l'appareil et l'application (système d'exploitation, version de l'application, pays). Ces informations ne sont pas utilisées pour vous identifier. Politique de confidentialité de RevenueCat : https://www.revenuecat.com/privacy"
+        "Les paiements sont traités par Google Play ou l'App Store d'Apple ; vos informations de paiement ne sont jamais communiquées au développeur. Pour vérifier les reçus et restaurer les achats, nous utilisons RevenueCat, Inc. RevenueCat utilise comme identifiant d'utilisateur un identifiant d'installation aléatoire créé sur votre appareil (ni identifiant publicitaire ni identifiant d'appareil) et traite l'historique d'achats (produit, identifiant de transaction, heure, prix) et des informations sur l'appareil et l'app (système d'exploitation, version de l'app, pays). Quand un achat est confirmé, RevenueCat prévient le serveur du jeu, qui le crédite sur votre portefeuille de gemmes. Ces informations ne servent pas à vous identifier. Politique de confidentialité de RevenueCat : https://www.revenuecat.com/privacy"
+      ],
+      [
+        "Portefeuille de gemmes",
+        "Les gemmes sont conservées dans un portefeuille de gemmes sur notre serveur, et non sur votre appareil. Cela empêche d'augmenter les gemmes en modifiant l'appareil ou d'obtenir des articles payants sans payer, et nous permet de créditer les achats, de traiter les remboursements et de restaurer les achats. Le serveur enregistre un identifiant d'installation aléatoire créé sur votre appareil (ni identifiant publicitaire ni identifiant d'appareil), votre solde de gemmes, l'historique des gemmes gagnées et dépensées (type, quantité, date et heure), les achats (produit, identifiant de transaction, prix, devise, boutique, heure) et si vous possédez le Pack de départ et le Pass Commandant. Aucun nom ni rien de ce que vous saisissez n'est envoyé. Dépenser des gemmes nécessite une connexion Internet. Le serveur fonctionne sur Supabase, Inc. (région de Séoul) et le nombre de requêtes est limité pour éviter les abus. Lorsque vous restaurez vos achats, le portefeuille de gemmes d'une installation précédente ayant payé avec le même compte de boutique est transféré vers cette installation. Les données sont conservées tant que vous utilisez le Jeu."
       ],
       [
         "Publicité",
@@ -293,7 +317,7 @@
       ],
       [
         "Suppression de vos données",
-        "Utilisez « Paramètres » → « Réinitialiser toutes les données » pour supprimer à tout moment tout ce qui est enregistré sur votre appareil ; la désinstallation de l'application le supprime également. Pour demander la suppression des enregistrements d'achat anonymes conservés par RevenueCat, écrivez-nous à l'adresse ci-dessous. Si vous avez rejoint le classement hebdomadaire, « Réinitialiser toutes les données » supprime aussi votre entrée du classement (identifiant, pseudo, scores) sur le serveur. Si vous avez déjà désinstallé l'application, vous pouvez demander la suppression par e-mail à l'adresse ci-dessous."
+        "Utilisez « Paramètres » → « Réinitialiser toutes les données » pour effacer à tout moment tout ce qui est enregistré sur votre appareil ; désinstaller l'app efface aussi les données de l'appareil. Une réinitialisation met aussi votre solde de gemmes à 0 sur le serveur ; les traces de votre Pack de départ, de votre Pass Commandant et de vos achats sont conservées pour pouvoir les restaurer. Pour demander la suppression de l'historique de votre portefeuille de gemmes ou des achats conservés par RevenueCat, écrivez-nous à l'adresse ci-dessous (le numéro de commande figurant sur votre reçu de la boutique nous permet de les retrouver). Leur suppression fait aussi perdre les gemmes restantes et la possibilité de restaurer les achats. Si vous avez participé au classement hebdomadaire, « Réinitialiser toutes les données » supprime aussi votre fiche de classement (identifiant d'installation, pseudo, scores) sur le serveur. Si vous avez déjà désinstallé l'app, vous pouvez demander la suppression par e-mail à l'adresse ci-dessous."
       ],
       [
         "Contact",
@@ -312,15 +336,19 @@
     "sections": [
       [
         "Zusammenfassung",
-        "Star Settlers (das „Spiel“) erfordert keine Registrierung und erhebt keine Informationen, die dich identifizieren, wie deinen Namen, deine E-Mail-Adresse oder Telefonnummer. Der Spielfortschritt wird ausschließlich auf deinem Gerät gespeichert. Informationen verlassen dein Gerät nur für die Abwicklung von In-App-Käufen (RevenueCat), für Werbung (Google AdMob), in Feedback-E-Mails, die du selbst sendest, und – wenn du sie einschaltest – für die freiwillige Wochen-Rangliste (eine zufällige Installations-ID, ein erzeugter Spitzname und eine Wochenpunktzahl)."
+        "Star Settlers (das „Spiel“) erfordert keine Registrierung und erhebt keine Informationen, die dich identifizieren, wie Name, E-Mail-Adresse oder Telefonnummer. Der Spielfortschritt wird auf deinem Gerät gespeichert; Edelsteine und Kaufdaten liegen in einer Edelstein-Geldbörse auf unserem Server, damit sie weder gefälscht werden noch verloren gehen. Informationen verlassen dein Gerät nur für die Edelstein-Geldbörse (eine zufällige Installations-ID und Edelstein-Buchungen), die Abwicklung von In-App-Käufen (RevenueCat), Werbung (Google AdMob), Feedback-E-Mails, die du selbst sendest, und die optionale Wochen-Rangliste (eine zufällige Installations-ID, ein generierter Spitzname und eine Wochenpunktzahl), wenn du sie einschaltest."
       ],
       [
         "Auf deinem Gerät gespeicherte Informationen",
-        "Fortschritt, Währungen (Credits, Erz, Edelsteine), gekaufte Artikel und Transaktions-IDs der Käufe sowie Einstellungen (Sprache, Ton, Benachrichtigungen) werden auf deinem Gerät gespeichert. Der Entwickler erhält diese Daten nicht. Wenn auf deinem Gerät die Android-Sicherung aktiviert ist, kann das Betriebssystem sie in die Sicherung deines Google-Kontos aufnehmen."
+        "Fortschritt, Credits und Erz, Kosmetik, Einstellungen (Sprache, Ton, Benachrichtigungen) und eine Kopie deines Edelsteinguthabens werden auf deinem Gerät gespeichert. Der Entwickler erhält diese Daten nicht. Wenn auf deinem Android-Gerät die Sicherung aktiviert ist, kann das Betriebssystem sie in die Sicherung deines Google-Kontos aufnehmen."
       ],
       [
         "In-App-Käufe",
-        "Zahlungen werden von Google Play oder dem Apple App Store abgewickelt; deine Zahlungsdaten werden niemals an den Entwickler weitergegeben. Zur Prüfung von Kaufbelegen und zur Wiederherstellung von Käufen nutzen wir RevenueCat, Inc. RevenueCat verarbeitet eine auf deinem Gerät erzeugte anonyme Nutzer-ID, den Kaufverlauf (Produkt, Transaktions-ID, Zeitpunkt, Preis) sowie Geräte- und App-Informationen (Betriebssystem, App-Version, Land). Diese Informationen werden nicht verwendet, um dich zu identifizieren. Datenschutzerklärung von RevenueCat: https://www.revenuecat.com/privacy"
+        "Zahlungen werden von Google Play oder dem Apple App Store abgewickelt; deine Zahlungsdaten werden nie an den Entwickler weitergegeben. Zur Prüfung von Belegen und zur Wiederherstellung von Käufen nutzen wir RevenueCat, Inc. RevenueCat verwendet eine auf deinem Gerät erzeugte zufällige Installations-ID (keine Werbe- oder Geräte-ID) als Nutzer-ID und verarbeitet den Kaufverlauf (Produkt, Transaktions-ID, Zeitpunkt, Preis) sowie Geräte- und App-Informationen (Betriebssystem, App-Version, Land). Sobald ein Kauf bestätigt ist, benachrichtigt RevenueCat den Spielserver, der ihn deiner Edelstein-Geldbörse gutschreibt. Diese Informationen werden nicht verwendet, um dich zu identifizieren. Datenschutzerklärung von RevenueCat: https://www.revenuecat.com/privacy"
+      ],
+      [
+        "Edelstein-Geldbörse",
+        "Edelsteine werden in einer Edelstein-Geldbörse auf unserem Server aufbewahrt, nicht auf deinem Gerät. So können Edelsteine nicht durch Manipulation des Geräts vermehrt und kostenpflichtige Inhalte nicht ohne Bezahlung erlangt werden, und wir können Käufe gutschreiben, Erstattungen bearbeiten und Käufe wiederherstellen. Der Server speichert eine auf deinem Gerät erzeugte zufällige Installations-ID (keine Werbe- oder Geräte-ID), dein Edelsteinguthaben, Buchungen über erhaltene und ausgegebene Edelsteine (Art, Menge, Datum und Uhrzeit), Kaufdaten (Produkt, Transaktions-ID, Preis, Währung, Store, Zeitpunkt) und ob du das Starterpaket und den Kommandanten-Pass besitzt. Es werden keine Namen und nichts, was du eintippst, gesendet. Zum Ausgeben von Edelsteinen ist eine Internetverbindung nötig. Der Server läuft bei Supabase, Inc. (Region Seoul); die Anzahl der Anfragen ist begrenzt, um Missbrauch zu verhindern. Wenn du Käufe wiederherstellst, zieht die Edelstein-Geldbörse einer früheren Installation, die mit demselben Store-Konto bezahlt hat, auf diese Installation um. Die Daten werden aufbewahrt, solange du das Spiel nutzt."
       ],
       [
         "Werbung",
@@ -344,7 +372,7 @@
       ],
       [
         "Löschen deiner Daten",
-        "Unter „Einstellungen“ → „Alle Daten zurücksetzen“ kannst du jederzeit alles löschen, was auf deinem Gerät gespeichert ist; auch das Deinstallieren der App löscht es. Um die Löschung der von RevenueCat gespeicherten anonymen Kaufdaten zu beantragen, schreib uns eine E-Mail an die unten stehende Adresse. Wenn du bei der Wochen-Rangliste mitgemacht hast, löscht „Alle Daten zurücksetzen“ auch deinen Ranglisten-Eintrag (Installations-ID, Spitzname, Punkte) auf dem Server. Wenn du die App bereits deinstalliert hast, kannst du die Löschung per E-Mail an die unten stehende Adresse beantragen."
+        "Unter „Einstellungen“ → „Alle Daten zurücksetzen“ kannst du jederzeit alles löschen, was auf deinem Gerät gespeichert ist; beim Deinstallieren der App werden die Daten auf dem Gerät ebenfalls gelöscht. Beim Zurücksetzen wird auch dein Edelsteinguthaben auf dem Server auf 0 gesetzt; die Einträge zu Starterpaket, Kommandanten-Pass und Käufen bleiben erhalten, damit sie wiederhergestellt werden können. Wenn du die Löschung deiner Edelstein-Geldbörse oder der bei RevenueCat gespeicherten Kaufdaten wünschst, schreib uns an die unten stehende Adresse (mit der Bestellnummer auf deinem Store-Beleg finden wir sie). Mit der Löschung gehen auch verbleibende Edelsteine und die Möglichkeit der Wiederherstellung verloren. Wenn du an der Wochen-Rangliste teilgenommen hast, löscht „Alle Daten zurücksetzen“ auch deinen Ranglisteneintrag (Installations-ID, Spitzname, Punktzahlen) auf dem Server. Wenn du die App bereits deinstalliert hast, kannst du die Löschung per E-Mail an die unten stehende Adresse beantragen."
       ],
       [
         "Kontakt",
@@ -363,15 +391,19 @@
     "sections": [
       [
         "Resumo",
-        "Star Settlers (o \"Jogo\") não exige cadastro e não coleta informações que identifiquem você, como nome, e-mail ou número de telefone. O progresso do jogo é armazenado apenas no seu dispositivo. As informações só saem do seu dispositivo para o processamento de compras no aplicativo (RevenueCat), para publicidade (Google AdMob), nos e-mails de feedback que você decidir enviar e, se você ativar, no ranking semanal opcional (um ID de instalação aleatório, um apelido gerado e uma pontuação semanal)."
+        "Star Settlers (o \"Jogo\") não exige cadastro e não coleta informações que identifiquem você, como nome, e-mail ou telefone. O progresso do jogo fica no seu dispositivo; as gemas e os registros de compra ficam em uma carteira de gemas no nosso servidor, para que não possam ser falsificados nem perdidos. As informações só saem do seu dispositivo para a carteira de gemas (um ID de instalação aleatório e os registros de gemas), o processamento de compras no aplicativo (RevenueCat), a publicidade (Google AdMob), os e-mails de feedback que você decidir enviar e o ranking semanal opcional (um ID de instalação aleatório, um apelido gerado e uma pontuação semanal), se você ativá-lo."
       ],
       [
         "Informações armazenadas no seu dispositivo",
-        "O progresso, as moedas (créditos, minério, gemas), os itens comprados e os IDs de transação das compras, além das configurações (idioma, som, notificações), são armazenados no seu dispositivo. O desenvolvedor não recebe esses dados. Se o backup do Android estiver ativado no seu dispositivo, o sistema operacional poderá incluí-los no backup da sua conta Google."
+        "O progresso, os créditos e o minério, os cosméticos, as configurações (idioma, som, notificações) e uma cópia do seu saldo de gemas são armazenados no seu dispositivo. O desenvolvedor não recebe esses dados. Se o backup do Android estiver ativado no seu dispositivo, o sistema operacional pode incluí-los no backup da sua conta Google."
       ],
       [
         "Compras no aplicativo",
-        "Os pagamentos são processados pelo Google Play ou pela Apple App Store; seus dados de pagamento nunca são compartilhados com o desenvolvedor. Para verificar recibos e restaurar compras, usamos a RevenueCat, Inc., que processa um ID de usuário anônimo gerado no seu dispositivo, o histórico de compras (produto, ID da transação, horário, preço) e informações do dispositivo e do aplicativo (sistema operacional, versão do aplicativo, país). Essas informações não são usadas para identificar você. Política de privacidade da RevenueCat: https://www.revenuecat.com/privacy"
+        "Os pagamentos são processados pelo Google Play ou pela App Store da Apple; seus dados de pagamento nunca são compartilhados com o desenvolvedor. Para verificar recibos e restaurar compras usamos a RevenueCat, Inc. A RevenueCat usa como ID de usuário um ID de instalação aleatório gerado no seu dispositivo (não é um ID de publicidade nem de dispositivo) e processa o histórico de compras (produto, ID da transação, horário, preço) e informações do dispositivo e do aplicativo (sistema operacional, versão do app, país). Quando uma compra é confirmada, a RevenueCat avisa o servidor do jogo, que credita a sua carteira de gemas. Essas informações não são usadas para identificar você. Política de privacidade da RevenueCat: https://www.revenuecat.com/privacy"
+      ],
+      [
+        "Carteira de gemas",
+        "As gemas ficam em uma carteira de gemas no nosso servidor, não no seu dispositivo. Isso impede que gemas sejam aumentadas adulterando o dispositivo ou que itens pagos sejam obtidos sem pagar, e permite creditar compras, tratar reembolsos e restaurar compras. O servidor guarda um ID de instalação aleatório gerado no seu dispositivo (não é um ID de publicidade nem de dispositivo), o seu saldo de gemas, os registros de gemas ganhas e gastas (tipo, quantidade, data e hora), os registros de compra (produto, ID da transação, preço, moeda, loja, horário) e se você tem o Pacote Inicial e o Passe de Comandante da Frota. Nenhum nome nem nada que você digite é enviado. Para gastar gemas é preciso conexão com a internet. O servidor usa a Supabase, Inc. (região de Seul) e o número de solicitações é limitado para evitar abusos. Ao restaurar compras, a carteira de gemas de uma instalação anterior que pagou com a mesma conta da loja passa para esta instalação. Os registros são mantidos enquanto você usar o Jogo."
       ],
       [
         "Publicidade",
@@ -395,7 +427,7 @@
       ],
       [
         "Exclusão dos seus dados",
-        "Use \"Configurações\" → \"Apagar todos os dados\" para excluir a qualquer momento tudo o que está armazenado no seu dispositivo; desinstalar o aplicativo também exclui esses dados. Para solicitar a exclusão dos registros anônimos de compra mantidos pela RevenueCat, envie um e-mail para o endereço abaixo. Se você participou do ranking semanal, \"Apagar todos os dados\" também exclui seu registro no ranking (ID de instalação, apelido, pontuações) no servidor. Se você já desinstalou o app, pode pedir a exclusão por e-mail no endereço abaixo."
+        "Use \"Configurações\" → \"Apagar todos os dados\" para apagar a qualquer momento tudo o que está armazenado no seu dispositivo; desinstalar o app também apaga os dados do dispositivo. Apagar os dados também zera o seu saldo de gemas no servidor; os registros do Pacote Inicial, do Passe de Comandante da Frota e das compras são mantidos para que possam ser restaurados. Para solicitar a exclusão dos registros da sua carteira de gemas ou dos registros de compra mantidos pela RevenueCat, envie um e-mail para o endereço abaixo (o número do pedido no recibo da loja nos permite encontrá-los). Ao excluí-los, você também perde as gemas restantes e a possibilidade de restaurar compras. Se você participou do ranking semanal, \"Apagar todos os dados\" também exclui o seu registro no ranking (ID de instalação, apelido, pontuações) no servidor. Se você já desinstalou o app, pode solicitar a exclusão por e-mail no endereço abaixo."
       ],
       [
         "Contato",
@@ -414,15 +446,19 @@
     "sections": [
       [
         "Кратко",
-        "Star Settlers (далее — «Игра») не требует регистрации и не собирает сведения, позволяющие установить вашу личность, такие как имя, адрес электронной почты или номер телефона. Игровой прогресс хранится только на вашем устройстве. Информация покидает ваше устройство только при обработке встроенных покупок (RevenueCat), для рекламы (Google AdMob), в отзывах по электронной почте, которые вы решите отправить, и — если вы его включите — для необязательного недельного рейтинга (случайный ID установки, сгенерированное прозвище и очки за неделю)."
+        "Star Settlers (далее — «Игра») не требует регистрации и не собирает сведения, по которым можно вас опознать, например имя, адрес электронной почты или номер телефона. Прогресс игры хранится на вашем устройстве; кристаллы и записи о покупках хранятся в кошельке кристаллов на нашем сервере, чтобы их нельзя было подделать или потерять. Информация покидает ваше устройство только для кошелька кристаллов (случайный идентификатор установки и записи о кристаллах), обработки встроенных покупок (RevenueCat), рекламы (Google AdMob), отзывов, которые вы сами отправляете по почте, и необязательного недельного рейтинга (случайный идентификатор установки, сгенерированный ник и недельный счёт), если вы его включите."
       ],
       [
         "Информация, хранящаяся на вашем устройстве",
-        "Прогресс, валюты (кредиты, руда, самоцветы), купленные товары и идентификаторы транзакций покупок, а также настройки (язык, звук, уведомления) хранятся на вашем устройстве. Разработчик не получает эти данные. Если на вашем устройстве включено резервное копирование Android, операционная система может включить их в резервную копию вашего аккаунта Google."
+        "Прогресс, кредиты и руда, косметика, настройки (язык, звук, уведомления) и копия баланса кристаллов хранятся на вашем устройстве. Разработчик не получает эти данные. Если на устройстве Android включено резервное копирование, операционная система может включить их в резервную копию вашего аккаунта Google."
       ],
       [
         "Встроенные покупки",
-        "Платежи обрабатываются Google Play или Apple App Store; ваши платёжные данные никогда не передаются разработчику. Для проверки чеков и восстановления покупок мы используем RevenueCat, Inc., которая обрабатывает анонимный идентификатор пользователя, созданный на вашем устройстве, историю покупок (товар, идентификатор транзакции, время, цена) и сведения об устройстве и приложении (операционная система, версия приложения, страна). Эта информация не используется для установления вашей личности. Политика конфиденциальности RevenueCat: https://www.revenuecat.com/privacy"
+        "Платежи обрабатывают Google Play или Apple App Store; платёжные данные никогда не передаются разработчику. Для проверки чеков и восстановления покупок мы используем RevenueCat, Inc. RevenueCat использует в качестве идентификатора пользователя случайный идентификатор установки, созданный на вашем устройстве (это не рекламный идентификатор и не идентификатор устройства), и обрабатывает историю покупок (товар, номер транзакции, время, цена) и сведения об устройстве и приложении (операционная система, версия приложения, страна). Когда покупка подтверждена, RevenueCat сообщает игровому серверу, и сервер зачисляет её в ваш кошелёк кристаллов. Эти сведения не используются для установления вашей личности. Политика конфиденциальности RevenueCat: https://www.revenuecat.com/privacy"
+      ],
+      [
+        "Кошелёк кристаллов",
+        "Кристаллы хранятся в кошельке кристаллов на нашем сервере, а не на вашем устройстве. Это не позволяет увеличить их, изменив данные на устройстве, или получить платные товары без оплаты, а также позволяет зачислять покупки, обрабатывать возвраты и восстанавливать покупки. На сервере хранятся случайный идентификатор установки, созданный на вашем устройстве (это не рекламный идентификатор и не идентификатор устройства), баланс кристаллов, записи о полученных и потраченных кристаллах (вид, количество, дата и время), записи о покупках (товар, номер транзакции, цена, валюта, магазин, время), а также наличие стартового набора и пропуска командира. Имена и любой введённый вами текст не отправляются. Чтобы тратить кристаллы, нужно подключение к интернету. Сервер работает на Supabase, Inc. (регион Сеул), число запросов ограничено для защиты от злоупотреблений. При восстановлении покупок кошелёк кристаллов прежней установки, оплаченной с того же аккаунта магазина, переносится на эту установку. Записи хранятся, пока вы пользуетесь Игрой."
       ],
       [
         "Реклама",
@@ -446,7 +482,7 @@
       ],
       [
         "Удаление ваших данных",
-        "Используйте «Настройки» → «Сбросить все данные», чтобы в любой момент удалить всё, что хранится на вашем устройстве; удаление приложения также удаляет эти данные. Чтобы запросить удаление анонимных записей о покупках, хранящихся у RevenueCat, напишите нам по адресу ниже. Если вы участвовали в недельном рейтинге, «Сбросить все данные» также удаляет вашу запись в рейтинге (ID установки, прозвище, очки) на сервере. Если приложение уже удалено, удаление можно запросить по электронной почте по адресу ниже."
+        "Используйте «Настройки» → «Сбросить все данные», чтобы в любой момент удалить всё, что хранится на устройстве; при удалении приложения данные на устройстве тоже удаляются. Сброс также обнуляет баланс кристаллов на сервере; записи о стартовом наборе, пропуске командира и покупках сохраняются, чтобы их можно было восстановить. Чтобы запросить удаление записей кошелька кристаллов или записей о покупках у RevenueCat, напишите нам по адресу ниже (по номеру заказа из чека магазина мы сможем их найти). После удаления пропадут и оставшиеся кристаллы, и возможность восстановить покупки. Если вы участвовали в недельном рейтинге, «Сбросить все данные» также удаляет вашу запись в рейтинге (идентификатор установки, ник, очки) на сервере. Если вы уже удалили приложение, можно запросить удаление по электронной почте по адресу ниже."
       ],
       [
         "Контакты",
@@ -465,15 +501,19 @@
     "sections": [
       [
         "Ringkasan",
-        "Star Settlers (\"Game\") tidak memerlukan pendaftaran dan tidak mengumpulkan informasi yang mengidentifikasi Anda, seperti nama, email, atau nomor telepon. Progres game hanya disimpan di perangkat Anda. Informasi hanya keluar dari perangkat Anda untuk pemrosesan pembelian dalam aplikasi (RevenueCat), iklan (Google AdMob), email masukan yang Anda pilih untuk dikirim, dan — jika Anda menyalakannya — papan peringkat mingguan opsional (ID instalasi acak, nama panggilan buatan game, dan skor mingguan)."
+        "Star Settlers (\"Game\") tidak memerlukan pendaftaran dan tidak mengumpulkan informasi yang mengidentifikasi Anda, seperti nama, email, atau nomor telepon. Progres game disimpan di perangkat Anda; permata dan catatan pembelian disimpan di dompet permata pada server kami agar tidak bisa dipalsukan atau hilang. Informasi hanya keluar dari perangkat Anda untuk dompet permata (ID instalasi acak dan catatan permata), pemrosesan pembelian dalam aplikasi (RevenueCat), iklan (Google AdMob), email masukan yang Anda kirim sendiri, dan papan peringkat mingguan opsional (ID instalasi acak, nama panggilan buatan, dan skor mingguan) jika Anda mengaktifkannya."
       ],
       [
         "Informasi yang disimpan di perangkat Anda",
-        "Progres, mata uang (kredit, bijih, permata), item yang dibeli dan ID transaksi pembelian, serta pengaturan (bahasa, suara, notifikasi) disimpan di perangkat Anda. Pengembang tidak menerima data ini. Jika pencadangan Android diaktifkan di perangkat Anda, sistem operasi dapat menyertakannya dalam cadangan akun Google Anda."
+        "Progres, kredit dan bijih, kosmetik, pengaturan (bahasa, suara, notifikasi), dan salinan saldo permata Anda disimpan di perangkat Anda. Pengembang tidak menerima data ini. Jika pencadangan Android aktif di perangkat Anda, sistem operasi dapat menyertakannya dalam cadangan akun Google Anda."
       ],
       [
         "Pembelian dalam aplikasi",
-        "Pembayaran diproses oleh Google Play atau Apple App Store; detail pembayaran Anda tidak pernah dibagikan kepada pengembang. Untuk memverifikasi tanda terima dan memulihkan pembelian, kami menggunakan RevenueCat, Inc., yang memproses ID pengguna anonim yang dibuat di perangkat Anda, riwayat pembelian (produk, ID transaksi, waktu, harga), serta informasi perangkat/aplikasi (sistem operasi, versi aplikasi, negara). Informasi ini tidak digunakan untuk mengidentifikasi Anda. Kebijakan privasi RevenueCat: https://www.revenuecat.com/privacy"
+        "Pembayaran diproses oleh Google Play atau Apple App Store; detail pembayaran Anda tidak pernah dibagikan kepada pengembang. Untuk memverifikasi tanda terima dan memulihkan pembelian, kami menggunakan RevenueCat, Inc. RevenueCat memakai ID instalasi acak yang dibuat di perangkat Anda (bukan ID iklan atau ID perangkat) sebagai ID pengguna dan memproses riwayat pembelian (produk, ID transaksi, waktu, harga) serta informasi perangkat dan aplikasi (sistem operasi, versi aplikasi, negara). Setelah pembelian dikonfirmasi, RevenueCat memberi tahu server game, lalu server menambahkannya ke dompet permata Anda. Informasi ini tidak digunakan untuk mengidentifikasi Anda. Kebijakan privasi RevenueCat: https://www.revenuecat.com/privacy"
+      ],
+      [
+        "Dompet permata",
+        "Permata disimpan di dompet permata pada server kami, bukan di perangkat Anda. Ini mencegah permata ditambah dengan mengubah data perangkat atau item berbayar didapat tanpa membayar, serta memungkinkan kami menambahkan pembelian, menangani pengembalian dana, dan memulihkan pembelian. Server menyimpan ID instalasi acak yang dibuat di perangkat Anda (bukan ID iklan atau ID perangkat), saldo permata, catatan permata yang didapat dan dipakai (jenis, jumlah, tanggal dan waktu), catatan pembelian (produk, ID transaksi, harga, mata uang, toko, waktu), serta apakah Anda memiliki Paket Pemula dan Pass Komandan. Nama atau teks apa pun yang Anda ketik tidak dikirim. Memakai permata memerlukan koneksi internet. Server menggunakan layanan Supabase, Inc. (wilayah Seoul), dan jumlah permintaan dibatasi untuk mencegah penyalahgunaan. Saat Anda memulihkan pembelian, dompet permata dari instalasi sebelumnya yang membayar dengan akun toko yang sama dipindahkan ke instalasi ini. Catatan disimpan selama Anda menggunakan Game."
       ],
       [
         "Iklan",
@@ -497,7 +537,7 @@
       ],
       [
         "Menghapus data Anda",
-        "Gunakan \"Pengaturan\" → \"Reset Semua Data\" untuk menghapus semua yang tersimpan di perangkat Anda kapan saja; menghapus instalasi aplikasi juga akan menghapusnya. Untuk meminta penghapusan catatan pembelian anonim yang disimpan oleh RevenueCat, kirim email kepada kami di alamat di bawah ini. Jika Anda ikut papan peringkat mingguan, \"Reset Semua Data\" juga menghapus catatan peringkat Anda (ID instalasi, nama panggilan, skor) di server. Jika aplikasi sudah dihapus, Anda bisa meminta penghapusan lewat email ke alamat di bawah ini."
+        "Gunakan \"Pengaturan\" → \"Reset Semua Data\" untuk menghapus semua yang tersimpan di perangkat kapan saja; mencopot aplikasi juga menghapus data di perangkat. Reset juga membuat saldo permata Anda di server menjadi 0; catatan Paket Pemula, Pass Komandan, dan pembelian tetap disimpan agar dapat dipulihkan. Untuk meminta penghapusan catatan dompet permata atau catatan pembelian yang disimpan RevenueCat, kirim email ke alamat di bawah (nomor pesanan pada tanda terima toko membantu kami menemukannya). Jika dihapus, sisa permata dan kemampuan memulihkan pembelian juga hilang. Jika Anda ikut papan peringkat mingguan, \"Reset Semua Data\" juga menghapus catatan peringkat Anda (ID instalasi, nama panggilan, skor) di server. Jika Anda sudah mencopot aplikasi, Anda dapat meminta penghapusan melalui email ke alamat di bawah."
       ],
       [
         "Kontak",
