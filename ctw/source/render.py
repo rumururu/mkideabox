@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""세계 정복(Conquer the World) 개인정보처리방침 렌더러.
+"""천년 항로(Thousand-Year Voyage, 구 이름 세계 정복) 개인정보처리방침 렌더러.
 
 정본은 같은 폴더의 content.json 이다 (10개 언어, 언어별 {name, title, effective, sections}).
   - name: 언어 이름 (상단 nav 링크와 섹션 h1 꼬리에 쓰임)
@@ -21,7 +21,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 OUT_DIR = HERE.parent
 
-APP_NAME = '세계 정복 (Conquer the World)'
+APP_NAME = '천년 항로 (Thousand-Year Voyage)'
 PACKAGE = 'com.mkideabox.ctw'
 DEVELOPER = 'mkideabox'
 EMAIL = 'mkideabox.feedback@gmail.com'
@@ -104,7 +104,7 @@ def render_html(content: dict) -> str:
 
 
 def render_md(lang: dict, game_doc: bool) -> str:
-    out = [f'# {lang["title"]} (세계 정복)', '']
+    out = [f'# {lang["title"]} (천년 항로)', '']
     if game_doc:
         out += [f'- {effective(lang)}',
                 f'- 게시 URL: {PUBLIC_URL} (10개 언어, 원본: `~/VSCodeProject/mkideabox/ctw/source/content.json`)']
