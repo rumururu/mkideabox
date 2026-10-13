@@ -6,7 +6,7 @@
     "sections": [
       [
         "요약",
-        "우주 개척단(이하 \"게임\")은 회원가입이 없고 이름·이메일·전화번호 같은 개인을 식별하는 정보를 수집하지 않습니다. 게임 진행 데이터는 기기 안에 저장되고, 젬과 결제 기록은 위조와 분실을 막기 위해 서버의 젬 지갑에 보관합니다. 외부로 정보가 나가는 경우는 젬 지갑(무작위 설치 ID·젬 기록), 인앱 결제 처리(RevenueCat), 광고(Google AdMob), 사용자가 직접 보내는 피드백 메일, 그리고 사용자가 직접 켠 경우의 주간 순위표(무작위 설치 ID·자동 생성 별명·주간 점수)뿐입니다."
+        "우주 개척단(이하 \"게임\")은 회원가입이 없고 이름·이메일·전화번호 같은 개인을 식별하는 정보를 수집하지 않습니다. 게임 진행 데이터는 기기 안에 저장되고, 젬과 결제 기록은 위조와 분실을 막기 위해 서버의 젬 지갑에 보관합니다. 외부로 정보가 나가는 경우는 젬 지갑(무작위 설치 ID·젬 기록), 인앱 결제 처리(RevenueCat), 광고(Google AdMob), 사용자가 직접 보내는 피드백 메일, 그리고 사용자가 직접 켠 경우의 주간 순위표(무작위 설치 ID·자동 생성 별명·주간 점수)뿐입니다. 사용자가 클라우드 백업을 켜면 진행 데이터가 사용자의 Google Play 게임즈 또는 iCloud 계정에 저장됩니다(개발자 서버가 아님)."
       ],
       [
         "기기에 저장하는 정보",
@@ -19,6 +19,10 @@
       [
         "젬 지갑",
         "젬은 기기가 아니라 서버의 젬 지갑에 보관합니다. 기기를 조작해 젬을 늘리거나 결제 없이 유료 상품을 받는 것을 막고, 결제 지급·환불·구매 복원을 처리하기 위해서입니다. 서버에는 기기에서 처음 만든 무작위 설치 ID(광고 ID·기기 ID가 아님), 젬 잔액, 젬을 얻고 쓴 기록(종류·양·날짜·시각), 결제 기록(상품, 거래 번호, 가격, 통화, 스토어, 시각), 스타터 팩·함대 사령관 패스 보유 여부를 저장합니다. 이름이나 사용자가 입력한 글자는 보내지 않습니다. 젬을 쓸 때는 인터넷 연결이 필요합니다. 서버는 Supabase, Inc.의 서비스(서울 리전)를 사용하며, 남용을 막기 위해 요청 횟수를 제한합니다. 구매를 복원하면 같은 스토어 계정으로 결제했던 이전 설치의 젬 지갑이 이 설치로 옮겨집니다. 기록은 게임을 이용하는 동안 보관합니다."
+      ],
+      [
+        "클라우드 백업",
+        "클라우드 백업은 선택 기능이며 기본은 꺼져 있습니다. 사용자가 설정에서 직접 Google Play 게임즈(Android) 또는 Game Center(iOS) 계정을 연결하고 백업하거나 복원할 때만 동작합니다. 백업에는 게임 진행 데이터, 설정, 그리고 젬 지갑을 다시 찾기 위한 무작위 설치 ID가 들어가며, 사용자의 Google Play 게임즈 저장 게임 또는 Apple iCloud(Game Center 저장 게임)에 저장됩니다. 개발자 서버에는 저장하지 않고 개발자는 이 백업을 볼 수 없습니다. 계정을 연결하면 게임은 플랫폼이 알려 주는 플레이어 이름만 화면에 표시합니다. 복원하면 이 기기의 진행이 백업으로 바뀌고 젬 지갑과 구매도 백업한 설치의 것으로 바뀝니다. 백업은 Google Play 게임즈 또는 iCloud 설정에서 지울 수 있습니다. 각 플랫폼의 처리는 Google 개인정보처리방침(https://policies.google.com/privacy)과 Apple 개인정보 처리방침(https://www.apple.com/legal/privacy/)을 따릅니다."
       ],
       [
         "광고",
@@ -61,7 +65,7 @@
     "sections": [
       [
         "Summary",
-        "Star Settlers (the \"Game\") has no sign-up and does not collect information that identifies you, such as your name, email or phone number. Game progress is stored on your device; gems and purchase records are kept in a gem wallet on our server so they cannot be forged or lost. Information leaves your device only for the gem wallet (a random install ID and gem records), in-app purchase processing (RevenueCat), advertising (Google AdMob), feedback emails you choose to send, and the optional weekly leaderboard (a random install ID, a generated nickname and a weekly score) if you turn it on."
+        "Star Settlers (the \"Game\") has no sign-up and does not collect information that identifies you, such as your name, email or phone number. Game progress is stored on your device; gems and purchase records are kept in a gem wallet on our server so they cannot be forged or lost. Information leaves your device only for the gem wallet (a random install ID and gem records), in-app purchase processing (RevenueCat), advertising (Google AdMob), feedback emails you choose to send, and the optional weekly leaderboard (a random install ID, a generated nickname and a weekly score) if you turn it on. If you turn on cloud backup, your progress is stored in your own Google Play Games or iCloud account (not on the developer's server)."
       ],
       [
         "Information stored on your device",
@@ -74,6 +78,10 @@
       [
         "Gem wallet",
         "Gems are kept in a gem wallet on our server, not on your device. This stops gems from being increased by tampering with the device or paid items from being obtained without paying, and lets us credit purchases, handle refunds and restore purchases. The server stores a random install ID generated on your device (not an advertising or device ID), your gem balance, records of gems earned and spent (type, amount, date and time), purchase records (product, transaction ID, price, currency, store, time) and whether you own the Starter Pack and the Fleet Commander Pass. No names and nothing you type are sent. Spending gems requires an internet connection. The server runs on Supabase, Inc. (Seoul region), and the number of requests is limited to prevent abuse. When you restore purchases, the gem wallet of an earlier install that paid with the same store account moves to this install. Records are kept while you use the Game."
+      ],
+      [
+        "Cloud backup",
+        "Cloud backup is optional and off by default. It works only when you connect your Google Play Games (Android) or Game Center (iOS) account in Settings and choose to back up or restore. A backup contains your game progress, your settings, and the random install ID used to find your gem wallet again, and it is stored in your Google Play Games saved games or in Apple iCloud (Game Center saved games). It is not stored on the developer's server, and the developer cannot see it. When you connect an account, the game only shows the player name the platform provides. Restoring replaces the progress on this device with the backup, and your gem wallet and purchases switch to those of the backed-up install. You can delete the backup in your Google Play Games or iCloud settings. Each platform handles the data under the Google Privacy Policy (https://policies.google.com/privacy) and the Apple Privacy Policy (https://www.apple.com/legal/privacy/)."
       ],
       [
         "Advertising",
@@ -116,7 +124,7 @@
     "sections": [
       [
         "概要",
-        "Star Settlers(以下「本ゲーム」)には会員登録がなく、氏名・メールアドレス・電話番号など個人を識別する情報を収集しません。ゲームの進行データは端末内に保存し、ジェムと購入記録は改ざんや紛失を防ぐためサーバーのジェムウォレットに保管します。情報が端末の外に送られるのは、ジェムウォレット(ランダムなインストールID・ジェムの記録)、アプリ内課金の処理(RevenueCat)、広告(Google AdMob)、ユーザーが自ら送信するフィードバックメール、およびユーザーが自らオンにした場合の週間ランキング(ランダムなインストールID・自動生成のニックネーム・週間スコア)に限られます。"
+        "Star Settlers(以下「本ゲーム」)には会員登録がなく、氏名・メールアドレス・電話番号など個人を識別する情報を収集しません。ゲームの進行データは端末内に保存し、ジェムと購入記録は改ざんや紛失を防ぐためサーバーのジェムウォレットに保管します。情報が端末の外に送られるのは、ジェムウォレット(ランダムなインストールID・ジェムの記録)、アプリ内課金の処理(RevenueCat)、広告(Google AdMob)、ユーザーが自ら送信するフィードバックメール、およびユーザーが自らオンにした場合の週間ランキング(ランダムなインストールID・自動生成のニックネーム・週間スコア)に限られます。 クラウドバックアップをオンにすると、進行データはユーザー自身の Google Play ゲームまたは iCloud アカウントに保存されます（開発者のサーバーではありません）。"
       ],
       [
         "端末に保存される情報",
@@ -129,6 +137,10 @@
       [
         "ジェムウォレット",
         "ジェムは端末ではなくサーバーのジェムウォレットに保管します。端末の改ざんでジェムを増やしたり、支払いなしで有料アイテムを受け取ったりすることを防ぎ、購入の付与・返金・購入の復元を処理するためです。サーバーには、端末で最初に生成したランダムなインストールID(広告IDや端末IDではありません)、ジェム残高、ジェムの獲得・使用記録(種類・量・日時)、購入記録(商品、取引ID、価格、通貨、ストア、日時)、スターターパックと艦隊司令官パスの保有状況を保存します。氏名やユーザーが入力した文字は送信しません。ジェムを使うにはインターネット接続が必要です。サーバーはSupabase, Inc.のサービス(ソウルリージョン)を使用し、不正利用防止のためリクエスト回数を制限しています。購入を復元すると、同じストアアカウントで支払った以前のインストールのジェムウォレットがこのインストールに移ります。記録は本ゲームをご利用の間保管します。"
+      ],
+      [
+        "クラウドバックアップ",
+        "クラウドバックアップは任意の機能で、初期設定ではオフです。ユーザーが設定で Google Play ゲーム（Android）または Game Center（iOS）のアカウントを連携し、バックアップや復元を行った場合にのみ動作します。バックアップにはゲームの進行データ、設定、ジェムウォレットを再び見つけるためのランダムなインストールIDが含まれ、ユーザーの Google Play ゲームのセーブデータまたは Apple iCloud（Game Center のセーブデータ）に保存されます。開発者のサーバーには保存されず、開発者がバックアップを見ることはできません。アカウントを連携すると、ゲームはプラットフォームが提供するプレイヤー名のみを表示します。復元すると、この端末の進行状況はバックアップに置き換わり、ジェムウォレットと購入済みアイテムもバックアップ元のインストールのものになります。バックアップは Google Play ゲームまたは iCloud の設定から削除できます。各プラットフォームでの取り扱いは Google プライバシーポリシー（https://policies.google.com/privacy）および Apple プライバシーポリシー（https://www.apple.com/legal/privacy/）に従います。"
       ],
       [
         "広告",
@@ -171,7 +183,7 @@
     "sections": [
       [
         "摘要",
-        "Star Settlers(以下简称“本游戏”)无需注册,不收集姓名、电子邮箱、电话号码等可识别您身份的信息。游戏进度保存在您的设备上;宝石和购买记录保存在我们服务器上的宝石钱包中,以防伪造和丢失。信息仅在以下情况离开您的设备:宝石钱包(随机安装 ID 和宝石记录)、应用内购买处理(RevenueCat)、广告(Google AdMob)、您主动发送的反馈邮件,以及您主动开启的每周排行榜(随机安装 ID、自动生成的昵称和每周分数)。"
+        "Star Settlers(以下简称“本游戏”)无需注册,不收集姓名、电子邮箱、电话号码等可识别您身份的信息。游戏进度保存在您的设备上;宝石和购买记录保存在我们服务器上的宝石钱包中,以防伪造和丢失。信息仅在以下情况离开您的设备:宝石钱包(随机安装 ID 和宝石记录)、应用内购买处理(RevenueCat)、广告(Google AdMob)、您主动发送的反馈邮件,以及您主动开启的每周排行榜(随机安装 ID、自动生成的昵称和每周分数)。 如果开启云备份，进度会保存在用户自己的 Google Play 游戏或 iCloud 账号中（而非开发者的服务器）。"
       ],
       [
         "保存在您设备上的信息",
@@ -184,6 +196,10 @@
       [
         "宝石钱包",
         "宝石保存在我们服务器上的宝石钱包中,而不是您的设备上。这样可以防止通过篡改设备增加宝石或不付款获得付费商品,并用于发放购买、处理退款和恢复购买。服务器保存:您设备上首次生成的随机安装 ID(不是广告 ID 或设备 ID)、宝石余额、获得和使用宝石的记录(类型、数量、日期和时间)、购买记录(商品、交易编号、价格、币种、商店、时间),以及是否拥有新手礼包和舰队指挥官通行证。不会发送姓名或您输入的任何文字。使用宝石需要连接互联网。服务器使用 Supabase, Inc. 的服务(首尔区域),并限制请求次数以防滥用。恢复购买时,用同一商店帐号付款的旧安装的宝石钱包会转移到当前安装。记录在您使用本游戏期间保留。"
+      ],
+      [
+        "云备份",
+        "云备份是可选功能，默认关闭。只有当用户在设置中自行连接 Google Play 游戏（Android）或 Game Center（iOS）账号并进行备份或恢复时才会运行。备份包含游戏进度、设置，以及用于重新找回宝石钱包的随机安装 ID，保存在用户的 Google Play 游戏存档或 Apple iCloud（Game Center 存档）中。备份不会保存在开发者的服务器上，开发者也无法查看。连接账号后，游戏只显示平台提供的玩家名称。恢复时，此设备上的进度会被备份替换，宝石钱包和已购商品也会变为备份所属安装的内容。可以在 Google Play 游戏或 iCloud 设置中删除备份。各平台对数据的处理遵循 Google 隐私权政策（https://policies.google.com/privacy）和 Apple 隐私政策（https://www.apple.com/legal/privacy/）。"
       ],
       [
         "广告",
@@ -226,7 +242,7 @@
     "sections": [
       [
         "Resumen",
-        "Star Settlers (el \"Juego\") no requiere registro y no recopila información que te identifique, como tu nombre, correo electrónico o número de teléfono. El progreso del juego se guarda en tu dispositivo; las gemas y los registros de compra se guardan en un monedero de gemas en nuestro servidor para que no se puedan falsificar ni perder. La información solo sale de tu dispositivo para el monedero de gemas (un ID de instalación aleatorio y los registros de gemas), el procesamiento de compras dentro de la app (RevenueCat), la publicidad (Google AdMob), los correos de comentarios que decidas enviar y el ranking semanal opcional (un ID de instalación aleatorio, un apodo generado y una puntuación semanal) si lo activas."
+        "Star Settlers (el \"Juego\") no requiere registro y no recopila información que te identifique, como tu nombre, correo electrónico o número de teléfono. El progreso del juego se guarda en tu dispositivo; las gemas y los registros de compra se guardan en un monedero de gemas en nuestro servidor para que no se puedan falsificar ni perder. La información solo sale de tu dispositivo para el monedero de gemas (un ID de instalación aleatorio y los registros de gemas), el procesamiento de compras dentro de la app (RevenueCat), la publicidad (Google AdMob), los correos de comentarios que decidas enviar y el ranking semanal opcional (un ID de instalación aleatorio, un apodo generado y una puntuación semanal) si lo activas. Si activas la copia en la nube, tu progreso se guarda en tu propia cuenta de Google Play Juegos o iCloud (no en el servidor del desarrollador)."
       ],
       [
         "Información almacenada en tu dispositivo",
@@ -239,6 +255,10 @@
       [
         "Monedero de gemas",
         "Las gemas se guardan en un monedero de gemas en nuestro servidor, no en tu dispositivo. Así se evita que se aumenten manipulando el dispositivo o que se obtengan artículos de pago sin pagar, y podemos abonar compras, gestionar reembolsos y restaurar compras. El servidor guarda un ID de instalación aleatorio generado en tu dispositivo (no es un ID de publicidad ni de dispositivo), tu saldo de gemas, los registros de gemas obtenidas y gastadas (tipo, cantidad, fecha y hora), los registros de compra (producto, ID de transacción, precio, moneda, tienda, hora) y si tienes el Pack de inicio y el Pase de Comandante de Flota. No se envían nombres ni nada de lo que escribas. Para gastar gemas se necesita conexión a internet. El servidor funciona con Supabase, Inc. (región de Seúl) y el número de solicitudes está limitado para evitar abusos. Al restaurar compras, el monedero de gemas de una instalación anterior que pagó con la misma cuenta de la tienda pasa a esta instalación. Los registros se conservan mientras uses el Juego."
+      ],
+      [
+        "Copia en la nube",
+        "La copia en la nube es opcional y está desactivada de forma predeterminada. Solo funciona cuando conectas tu cuenta de Google Play Juegos (Android) o Game Center (iOS) en Ajustes y eliges guardar o restaurar una copia. La copia contiene tu progreso, tus ajustes y el ID de instalación aleatorio que sirve para volver a encontrar tu monedero de gemas, y se guarda en las partidas guardadas de Google Play Juegos o en Apple iCloud (partidas guardadas de Game Center). No se guarda en el servidor del desarrollador y el desarrollador no puede verla. Al conectar una cuenta, el juego solo muestra el nombre de jugador que proporciona la plataforma. Al restaurar, el progreso de este dispositivo se reemplaza por la copia, y tu monedero de gemas y tus compras pasan a ser los de la instalación copiada. Puedes borrar la copia en los ajustes de Google Play Juegos o de iCloud. Cada plataforma trata los datos según la Política de Privacidad de Google (https://policies.google.com/privacy) y la Política de Privacidad de Apple (https://www.apple.com/legal/privacy/)."
       ],
       [
         "Publicidad",
@@ -281,7 +301,7 @@
     "sections": [
       [
         "Résumé",
-        "Star Settlers (le « Jeu ») ne nécessite aucune inscription et ne collecte aucune information permettant de vous identifier, comme votre nom, votre e-mail ou votre numéro de téléphone. La progression est enregistrée sur votre appareil ; les gemmes et les achats sont conservés dans un portefeuille de gemmes sur notre serveur afin qu'ils ne puissent être ni falsifiés ni perdus. Des informations ne quittent votre appareil que pour le portefeuille de gemmes (un identifiant d'installation aléatoire et l'historique des gemmes), le traitement des achats intégrés (RevenueCat), la publicité (Google AdMob), les e-mails de commentaires que vous choisissez d'envoyer et le classement hebdomadaire facultatif (un identifiant d'installation aléatoire, un pseudo généré et un score hebdomadaire) si vous l'activez."
+        "Star Settlers (le « Jeu ») ne nécessite aucune inscription et ne collecte aucune information permettant de vous identifier, comme votre nom, votre e-mail ou votre numéro de téléphone. La progression est enregistrée sur votre appareil ; les gemmes et les achats sont conservés dans un portefeuille de gemmes sur notre serveur afin qu'ils ne puissent être ni falsifiés ni perdus. Des informations ne quittent votre appareil que pour le portefeuille de gemmes (un identifiant d'installation aléatoire et l'historique des gemmes), le traitement des achats intégrés (RevenueCat), la publicité (Google AdMob), les e-mails de commentaires que vous choisissez d'envoyer et le classement hebdomadaire facultatif (un identifiant d'installation aléatoire, un pseudo généré et un score hebdomadaire) si vous l'activez. Si vous activez la sauvegarde cloud, votre progression est enregistrée dans votre propre compte Google Play Jeux ou iCloud (et non sur le serveur du développeur)."
       ],
       [
         "Informations enregistrées sur votre appareil",
@@ -294,6 +314,10 @@
       [
         "Portefeuille de gemmes",
         "Les gemmes sont conservées dans un portefeuille de gemmes sur notre serveur, et non sur votre appareil. Cela empêche d'augmenter les gemmes en modifiant l'appareil ou d'obtenir des articles payants sans payer, et nous permet de créditer les achats, de traiter les remboursements et de restaurer les achats. Le serveur enregistre un identifiant d'installation aléatoire créé sur votre appareil (ni identifiant publicitaire ni identifiant d'appareil), votre solde de gemmes, l'historique des gemmes gagnées et dépensées (type, quantité, date et heure), les achats (produit, identifiant de transaction, prix, devise, boutique, heure) et si vous possédez le Pack de départ et le Pass Commandant. Aucun nom ni rien de ce que vous saisissez n'est envoyé. Dépenser des gemmes nécessite une connexion Internet. Le serveur fonctionne sur Supabase, Inc. (région de Séoul) et le nombre de requêtes est limité pour éviter les abus. Lorsque vous restaurez vos achats, le portefeuille de gemmes d'une installation précédente ayant payé avec le même compte de boutique est transféré vers cette installation. Les données sont conservées tant que vous utilisez le Jeu."
+      ],
+      [
+        "Sauvegarde cloud",
+        "La sauvegarde cloud est facultative et désactivée par défaut. Elle ne fonctionne que si vous connectez votre compte Google Play Jeux (Android) ou Game Center (iOS) dans les paramètres et choisissez de sauvegarder ou de restaurer. Une sauvegarde contient votre progression, vos paramètres et l'identifiant d'installation aléatoire qui permet de retrouver votre portefeuille de gemmes ; elle est enregistrée dans les jeux sauvegardés de Google Play Jeux ou dans Apple iCloud (jeux sauvegardés Game Center). Elle n'est pas stockée sur le serveur du développeur, qui ne peut pas la consulter. Lorsque vous connectez un compte, le jeu affiche uniquement le nom de joueur fourni par la plateforme. La restauration remplace la progression de cet appareil par la sauvegarde, et votre portefeuille de gemmes et vos achats deviennent ceux de l'installation sauvegardée. Vous pouvez supprimer la sauvegarde dans les paramètres de Google Play Jeux ou d'iCloud. Chaque plateforme traite les données conformément aux Règles de confidentialité de Google (https://policies.google.com/privacy) et à la Politique de confidentialité d'Apple (https://www.apple.com/legal/privacy/)."
       ],
       [
         "Publicité",
@@ -336,7 +360,7 @@
     "sections": [
       [
         "Zusammenfassung",
-        "Star Settlers (das „Spiel“) erfordert keine Registrierung und erhebt keine Informationen, die dich identifizieren, wie Name, E-Mail-Adresse oder Telefonnummer. Der Spielfortschritt wird auf deinem Gerät gespeichert; Edelsteine und Kaufdaten liegen in einer Edelstein-Geldbörse auf unserem Server, damit sie weder gefälscht werden noch verloren gehen. Informationen verlassen dein Gerät nur für die Edelstein-Geldbörse (eine zufällige Installations-ID und Edelstein-Buchungen), die Abwicklung von In-App-Käufen (RevenueCat), Werbung (Google AdMob), Feedback-E-Mails, die du selbst sendest, und die optionale Wochen-Rangliste (eine zufällige Installations-ID, ein generierter Spitzname und eine Wochenpunktzahl), wenn du sie einschaltest."
+        "Star Settlers (das „Spiel“) erfordert keine Registrierung und erhebt keine Informationen, die dich identifizieren, wie Name, E-Mail-Adresse oder Telefonnummer. Der Spielfortschritt wird auf deinem Gerät gespeichert; Edelsteine und Kaufdaten liegen in einer Edelstein-Geldbörse auf unserem Server, damit sie weder gefälscht werden noch verloren gehen. Informationen verlassen dein Gerät nur für die Edelstein-Geldbörse (eine zufällige Installations-ID und Edelstein-Buchungen), die Abwicklung von In-App-Käufen (RevenueCat), Werbung (Google AdMob), Feedback-E-Mails, die du selbst sendest, und die optionale Wochen-Rangliste (eine zufällige Installations-ID, ein generierter Spitzname und eine Wochenpunktzahl), wenn du sie einschaltest. Wenn du das Cloud-Backup nutzt, wird dein Fortschritt in deinem eigenen Google-Play-Spiele- oder iCloud-Konto gespeichert (nicht auf dem Server des Entwicklers)."
       ],
       [
         "Auf deinem Gerät gespeicherte Informationen",
@@ -349,6 +373,10 @@
       [
         "Edelstein-Geldbörse",
         "Edelsteine werden in einer Edelstein-Geldbörse auf unserem Server aufbewahrt, nicht auf deinem Gerät. So können Edelsteine nicht durch Manipulation des Geräts vermehrt und kostenpflichtige Inhalte nicht ohne Bezahlung erlangt werden, und wir können Käufe gutschreiben, Erstattungen bearbeiten und Käufe wiederherstellen. Der Server speichert eine auf deinem Gerät erzeugte zufällige Installations-ID (keine Werbe- oder Geräte-ID), dein Edelsteinguthaben, Buchungen über erhaltene und ausgegebene Edelsteine (Art, Menge, Datum und Uhrzeit), Kaufdaten (Produkt, Transaktions-ID, Preis, Währung, Store, Zeitpunkt) und ob du das Starterpaket und den Kommandanten-Pass besitzt. Es werden keine Namen und nichts, was du eintippst, gesendet. Zum Ausgeben von Edelsteinen ist eine Internetverbindung nötig. Der Server läuft bei Supabase, Inc. (Region Seoul); die Anzahl der Anfragen ist begrenzt, um Missbrauch zu verhindern. Wenn du Käufe wiederherstellst, zieht die Edelstein-Geldbörse einer früheren Installation, die mit demselben Store-Konto bezahlt hat, auf diese Installation um. Die Daten werden aufbewahrt, solange du das Spiel nutzt."
+      ],
+      [
+        "Cloud-Backup",
+        "Das Cloud-Backup ist optional und standardmäßig ausgeschaltet. Es funktioniert nur, wenn du in den Einstellungen dein Google-Play-Spiele-Konto (Android) oder Game-Center-Konto (iOS) verbindest und eine Sicherung erstellst oder wiederherstellst. Eine Sicherung enthält deinen Spielfortschritt, deine Einstellungen und die zufällige Installations-ID, mit der deine Juwelen-Geldbörse wiedergefunden wird. Sie wird in deinen gespeicherten Spielen bei Google Play Spiele oder in Apple iCloud (gespeicherte Game-Center-Spiele) abgelegt. Sie wird nicht auf dem Server des Entwicklers gespeichert, und der Entwickler kann sie nicht einsehen. Wenn du ein Konto verbindest, zeigt das Spiel nur den von der Plattform bereitgestellten Spielernamen an. Bei einer Wiederherstellung wird der Fortschritt auf diesem Gerät durch die Sicherung ersetzt, und Juwelen-Geldbörse und Käufe wechseln zu denen der gesicherten Installation. Du kannst die Sicherung in den Einstellungen von Google Play Spiele oder iCloud löschen. Jede Plattform verarbeitet die Daten gemäß der Datenschutzerklärung von Google (https://policies.google.com/privacy) bzw. der Datenschutzrichtlinie von Apple (https://www.apple.com/legal/privacy/)."
       ],
       [
         "Werbung",
@@ -391,7 +419,7 @@
     "sections": [
       [
         "Resumo",
-        "Star Settlers (o \"Jogo\") não exige cadastro e não coleta informações que identifiquem você, como nome, e-mail ou telefone. O progresso do jogo fica no seu dispositivo; as gemas e os registros de compra ficam em uma carteira de gemas no nosso servidor, para que não possam ser falsificados nem perdidos. As informações só saem do seu dispositivo para a carteira de gemas (um ID de instalação aleatório e os registros de gemas), o processamento de compras no aplicativo (RevenueCat), a publicidade (Google AdMob), os e-mails de feedback que você decidir enviar e o ranking semanal opcional (um ID de instalação aleatório, um apelido gerado e uma pontuação semanal), se você ativá-lo."
+        "Star Settlers (o \"Jogo\") não exige cadastro e não coleta informações que identifiquem você, como nome, e-mail ou telefone. O progresso do jogo fica no seu dispositivo; as gemas e os registros de compra ficam em uma carteira de gemas no nosso servidor, para que não possam ser falsificados nem perdidos. As informações só saem do seu dispositivo para a carteira de gemas (um ID de instalação aleatório e os registros de gemas), o processamento de compras no aplicativo (RevenueCat), a publicidade (Google AdMob), os e-mails de feedback que você decidir enviar e o ranking semanal opcional (um ID de instalação aleatório, um apelido gerado e uma pontuação semanal), se você ativá-lo. Se você ativar o backup na nuvem, seu progresso é guardado na sua própria conta do Google Play Games ou do iCloud (não no servidor do desenvolvedor)."
       ],
       [
         "Informações armazenadas no seu dispositivo",
@@ -404,6 +432,10 @@
       [
         "Carteira de gemas",
         "As gemas ficam em uma carteira de gemas no nosso servidor, não no seu dispositivo. Isso impede que gemas sejam aumentadas adulterando o dispositivo ou que itens pagos sejam obtidos sem pagar, e permite creditar compras, tratar reembolsos e restaurar compras. O servidor guarda um ID de instalação aleatório gerado no seu dispositivo (não é um ID de publicidade nem de dispositivo), o seu saldo de gemas, os registros de gemas ganhas e gastas (tipo, quantidade, data e hora), os registros de compra (produto, ID da transação, preço, moeda, loja, horário) e se você tem o Pacote Inicial e o Passe de Comandante da Frota. Nenhum nome nem nada que você digite é enviado. Para gastar gemas é preciso conexão com a internet. O servidor usa a Supabase, Inc. (região de Seul) e o número de solicitações é limitado para evitar abusos. Ao restaurar compras, a carteira de gemas de uma instalação anterior que pagou com a mesma conta da loja passa para esta instalação. Os registros são mantidos enquanto você usar o Jogo."
+      ],
+      [
+        "Backup na nuvem",
+        "O backup na nuvem é opcional e fica desativado por padrão. Ele só funciona quando você conecta sua conta do Google Play Games (Android) ou do Game Center (iOS) nas Configurações e escolhe fazer backup ou restaurar. O backup contém seu progresso, suas configurações e o ID de instalação aleatório usado para reencontrar sua carteira de gemas, e é guardado nos jogos salvos do Google Play Games ou no Apple iCloud (jogos salvos do Game Center). Ele não é armazenado no servidor do desenvolvedor, e o desenvolvedor não pode vê-lo. Ao conectar uma conta, o jogo mostra apenas o nome de jogador fornecido pela plataforma. Ao restaurar, o progresso deste aparelho é substituído pelo backup, e sua carteira de gemas e suas compras passam a ser as da instalação do backup. Você pode excluir o backup nas configurações do Google Play Games ou do iCloud. Cada plataforma trata os dados conforme a Política de Privacidade do Google (https://policies.google.com/privacy) e a Política de Privacidade da Apple (https://www.apple.com/legal/privacy/)."
       ],
       [
         "Publicidade",
@@ -446,7 +478,7 @@
     "sections": [
       [
         "Кратко",
-        "Star Settlers (далее — «Игра») не требует регистрации и не собирает сведения, по которым можно вас опознать, например имя, адрес электронной почты или номер телефона. Прогресс игры хранится на вашем устройстве; кристаллы и записи о покупках хранятся в кошельке кристаллов на нашем сервере, чтобы их нельзя было подделать или потерять. Информация покидает ваше устройство только для кошелька кристаллов (случайный идентификатор установки и записи о кристаллах), обработки встроенных покупок (RevenueCat), рекламы (Google AdMob), отзывов, которые вы сами отправляете по почте, и необязательного недельного рейтинга (случайный идентификатор установки, сгенерированный ник и недельный счёт), если вы его включите."
+        "Star Settlers (далее — «Игра») не требует регистрации и не собирает сведения, по которым можно вас опознать, например имя, адрес электронной почты или номер телефона. Прогресс игры хранится на вашем устройстве; кристаллы и записи о покупках хранятся в кошельке кристаллов на нашем сервере, чтобы их нельзя было подделать или потерять. Информация покидает ваше устройство только для кошелька кристаллов (случайный идентификатор установки и записи о кристаллах), обработки встроенных покупок (RevenueCat), рекламы (Google AdMob), отзывов, которые вы сами отправляете по почте, и необязательного недельного рейтинга (случайный идентификатор установки, сгенерированный ник и недельный счёт), если вы его включите. Если вы включите облачную копию, прогресс сохраняется в вашем собственном аккаунте Google Play Игр или iCloud (а не на сервере разработчика)."
       ],
       [
         "Информация, хранящаяся на вашем устройстве",
@@ -459,6 +491,10 @@
       [
         "Кошелёк кристаллов",
         "Кристаллы хранятся в кошельке кристаллов на нашем сервере, а не на вашем устройстве. Это не позволяет увеличить их, изменив данные на устройстве, или получить платные товары без оплаты, а также позволяет зачислять покупки, обрабатывать возвраты и восстанавливать покупки. На сервере хранятся случайный идентификатор установки, созданный на вашем устройстве (это не рекламный идентификатор и не идентификатор устройства), баланс кристаллов, записи о полученных и потраченных кристаллах (вид, количество, дата и время), записи о покупках (товар, номер транзакции, цена, валюта, магазин, время), а также наличие стартового набора и пропуска командира. Имена и любой введённый вами текст не отправляются. Чтобы тратить кристаллы, нужно подключение к интернету. Сервер работает на Supabase, Inc. (регион Сеул), число запросов ограничено для защиты от злоупотреблений. При восстановлении покупок кошелёк кристаллов прежней установки, оплаченной с того же аккаунта магазина, переносится на эту установку. Записи хранятся, пока вы пользуетесь Игрой."
+      ],
+      [
+        "Облачная копия",
+        "Облачная копия — необязательная функция, по умолчанию она выключена. Она работает только если вы сами подключите аккаунт Google Play Игр (Android) или Game Center (iOS) в настройках и сохраните или восстановите копию. Копия содержит игровой прогресс, настройки и случайный идентификатор установки, по которому снова находится ваш кошелёк кристаллов, и хранится в сохранённых играх Google Play Игр или в Apple iCloud (сохранённые игры Game Center). Она не хранится на сервере разработчика, и разработчик не может её просматривать. При подключении аккаунта игра показывает только имя игрока, которое передаёт платформа. При восстановлении прогресс на этом устройстве заменяется копией, а кошелёк кристаллов и покупки становятся такими же, как у сохранённой установки. Копию можно удалить в настройках Google Play Игр или iCloud. Каждая платформа обрабатывает данные в соответствии с Политикой конфиденциальности Google (https://policies.google.com/privacy) и Политикой конфиденциальности Apple (https://www.apple.com/legal/privacy/)."
       ],
       [
         "Реклама",
@@ -501,7 +537,7 @@
     "sections": [
       [
         "Ringkasan",
-        "Star Settlers (\"Game\") tidak memerlukan pendaftaran dan tidak mengumpulkan informasi yang mengidentifikasi Anda, seperti nama, email, atau nomor telepon. Progres game disimpan di perangkat Anda; permata dan catatan pembelian disimpan di dompet permata pada server kami agar tidak bisa dipalsukan atau hilang. Informasi hanya keluar dari perangkat Anda untuk dompet permata (ID instalasi acak dan catatan permata), pemrosesan pembelian dalam aplikasi (RevenueCat), iklan (Google AdMob), email masukan yang Anda kirim sendiri, dan papan peringkat mingguan opsional (ID instalasi acak, nama panggilan buatan, dan skor mingguan) jika Anda mengaktifkannya."
+        "Star Settlers (\"Game\") tidak memerlukan pendaftaran dan tidak mengumpulkan informasi yang mengidentifikasi Anda, seperti nama, email, atau nomor telepon. Progres game disimpan di perangkat Anda; permata dan catatan pembelian disimpan di dompet permata pada server kami agar tidak bisa dipalsukan atau hilang. Informasi hanya keluar dari perangkat Anda untuk dompet permata (ID instalasi acak dan catatan permata), pemrosesan pembelian dalam aplikasi (RevenueCat), iklan (Google AdMob), email masukan yang Anda kirim sendiri, dan papan peringkat mingguan opsional (ID instalasi acak, nama panggilan buatan, dan skor mingguan) jika Anda mengaktifkannya. Jika kamu mengaktifkan cadangan cloud, progresmu disimpan di akun Google Play Game atau iCloud milikmu sendiri (bukan di server pengembang)."
       ],
       [
         "Informasi yang disimpan di perangkat Anda",
@@ -514,6 +550,10 @@
       [
         "Dompet permata",
         "Permata disimpan di dompet permata pada server kami, bukan di perangkat Anda. Ini mencegah permata ditambah dengan mengubah data perangkat atau item berbayar didapat tanpa membayar, serta memungkinkan kami menambahkan pembelian, menangani pengembalian dana, dan memulihkan pembelian. Server menyimpan ID instalasi acak yang dibuat di perangkat Anda (bukan ID iklan atau ID perangkat), saldo permata, catatan permata yang didapat dan dipakai (jenis, jumlah, tanggal dan waktu), catatan pembelian (produk, ID transaksi, harga, mata uang, toko, waktu), serta apakah Anda memiliki Paket Pemula dan Pass Komandan. Nama atau teks apa pun yang Anda ketik tidak dikirim. Memakai permata memerlukan koneksi internet. Server menggunakan layanan Supabase, Inc. (wilayah Seoul), dan jumlah permintaan dibatasi untuk mencegah penyalahgunaan. Saat Anda memulihkan pembelian, dompet permata dari instalasi sebelumnya yang membayar dengan akun toko yang sama dipindahkan ke instalasi ini. Catatan disimpan selama Anda menggunakan Game."
+      ],
+      [
+        "Cadangan cloud",
+        "Cadangan cloud bersifat opsional dan nonaktif secara bawaan. Fitur ini hanya berjalan jika kamu menghubungkan akun Google Play Game (Android) atau Game Center (iOS) di Pengaturan dan memilih untuk mencadangkan atau memulihkan. Cadangan berisi progres permainan, pengaturan, dan ID instalasi acak yang dipakai untuk menemukan kembali dompet permatamu, dan disimpan di game tersimpan Google Play Game atau di Apple iCloud (game tersimpan Game Center). Cadangan tidak disimpan di server pengembang dan pengembang tidak dapat melihatnya. Saat kamu menghubungkan akun, game hanya menampilkan nama pemain yang diberikan platform. Saat dipulihkan, progres di perangkat ini diganti dengan cadangan, dan dompet permata serta pembelianmu menjadi milik instalasi yang dicadangkan. Kamu dapat menghapus cadangan di pengaturan Google Play Game atau iCloud. Setiap platform memproses data sesuai Kebijakan Privasi Google (https://policies.google.com/privacy) dan Kebijakan Privasi Apple (https://www.apple.com/legal/privacy/)."
       ],
       [
         "Iklan",
