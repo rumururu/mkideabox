@@ -1,0 +1,432 @@
+{
+  "ko": {
+    "name": "한국어",
+    "title": "개인정보처리방침",
+    "effective": "시행일",
+    "sections": [
+      [
+        "요약",
+        "무림유랑기(이하 \"게임\")는 회원가입이나 로그인이 없고, 개발자가 운영하는 서버도, 분석 도구·오류 보고 도구도 없습니다. 게임 진행 상황과 설정은 기기 안에만 저장되며 개발자는 이를 받거나 볼 수 없습니다. 정보가 기기 밖으로 나가는 경우는 세 가지입니다. 첫째, 게임은 옥 상점에서 고를 수 있는 보상형 광고를 Google AdMob으로 보여 주며, 이를 위해 Google이 광고 ID 같은 기기 정보를 처리합니다. 둘째, 상점에서 선택형 인앱 상품을 사면 Google Play 또는 Apple App Store가 결제를 처리합니다. 셋째, 플레이어가 직접 문의 메일을 보내면 그 메일을 받습니다. 결제하거나 광고를 보지 않아도 게임 전체를 즐길 수 있습니다."
+      ],
+      [
+        "기기에 저장하는 정보",
+        "저장된 게임(주인공·동료·지도·사건 같은 진행 상황), 언어·소리·진동 설정, 산 상품의 보유 여부와 옥 잔액을 기기 안의 앱 전용 저장 공간에 저장합니다. 앱을 삭제하거나 설정의 '저장 지우기' 또는 기기 설정에서 앱 데이터를 지우면 모두 삭제됩니다. 기기 백업(Android의 Google 계정 백업, iOS의 iCloud 백업)이 켜져 있으면 운영체제가 이 데이터를 사용자 본인의 백업에 포함할 수 있습니다. 광고 동의 선택(유럽경제지역·영국·스위스)은 Google의 동의 도구가 기기 안에 저장합니다."
+      ],
+      [
+        "광고 (Google AdMob)",
+        "옥 상점의 '광고 보고 옥 받기'를 누르면 Google AdMob의 보상형 광고를 보여 줍니다. 광고를 보여 주고 효과를 재기 위해 Google이 광고 ID(Android 광고 ID, iOS IDFA — 추적을 허용한 경우에만), 기기·운영체제 정보, IP 주소로 추정한 대략적인 위치, 광고를 보거나 누른 기록, 성능·오류 진단 정보를 처리할 수 있습니다. 이 정보는 Google의 개인정보처리방침(https://policies.google.com/privacy)과 파트너 사이트 정책(https://policies.google.com/technologies/partner-sites)에 따라 처리되며 개발자는 개별 사용자의 정보를 받지 않습니다.\n\n유럽경제지역·영국·스위스에서는 처음 실행할 때 Google의 동의 창이 뜨고, 설정 화면의 '광고 개인정보 옵션'에서 언제든 다시 고를 수 있습니다. iOS에서는 추적 허용 여부를 묻는 시스템 창이 뜨며, 허용하지 않아도 맞춤이 아닌 광고로 보상을 받을 수 있습니다. Android에서는 기기 설정 > Google > 광고에서 광고 ID를 재설정하거나 삭제할 수 있습니다. 게임은 만 13세 미만 아동을 대상으로 하지 않으며 광고 콘텐츠 등급을 청소년(T) 이하로 제한합니다."
+      ],
+      [
+        "인앱 구매 (선택)",
+        "옥 묶음과 시작 꾸러미 같은 선택형 상품은 Google Play 결제 또는 Apple의 App Store 결제로 처리됩니다. 결제 수단과 청구 정보는 Google 또는 Apple이 처리하며 개발자는 받지 않습니다. 게임은 구매가 완료되었다는 결과(상품 ID와 거래 정보)를 기기에서 확인한 뒤 상품을 지급하고, 산 상품의 보유 여부를 기기 안에 저장합니다. 구매 내역과 환불은 Google Play 또는 App Store의 정책을 따릅니다."
+      ],
+      [
+        "알림",
+        "게임은 기기 안에서 예약 알림을 보낼 수 있습니다. 알림은 기기 안에서만 만들어지며 서버로 아무것도 보내지 않습니다. 기기 설정에서 언제든 끌 수 있습니다."
+      ],
+      [
+        "문의 메일",
+        "설정의 문의하기로 메일을 보내면 보낸 이메일 주소와 메일 내용(사용자가 적은 내용, 앱 버전·기기 모델·운영체제 버전)을 받습니다. 이 정보는 답변과 문제 해결에만 쓰며, 처리가 끝난 뒤 1년이 지나면 지웁니다."
+      ],
+      [
+        "정보의 국외 이전",
+        "광고와 결제를 위해 위 정보가 Google LLC(미국) 또는 Apple Inc.(미국)로 전송·처리될 수 있습니다. 전송은 광고를 보거나 결제할 때 인터넷을 통해 이루어지며, 각 회사의 개인정보처리방침에 따라 보관됩니다."
+      ],
+      [
+        "사용자의 권리와 삭제",
+        "게임 데이터는 기기 안에만 있으므로 앱을 삭제하거나 설정의 '저장 지우기'로 언제든 삭제할 수 있습니다. 광고 관련 정보는 위 '광고' 항목의 방법으로 재설정하거나 동의를 철회할 수 있습니다. 개발자에게 보낸 문의 메일의 삭제를 원하면 아래 이메일로 요청해 주세요."
+      ],
+      [
+        "방침의 변경과 연락처",
+        "이 방침이 바뀌면 이 페이지에 새 시행일과 함께 올립니다. 개인정보 관련 문의: mkideabox.feedback@gmail.com (개발자 mkideabox, 대한민국)"
+      ]
+    ]
+  },
+  "en": {
+    "name": "English",
+    "title": "Privacy Policy",
+    "effective": "Effective date",
+    "sections": [
+      [
+        "Summary",
+        "Murim Wanderer (the \"Game\") has no sign-up or login, no developer-run server, and no analytics or crash-reporting tools. Your progress and settings are stored only on your device, and the developer cannot receive or see them. Information leaves your device in three cases. First, the Game shows optional rewarded ads from Google AdMob in the jade shop, for which Google processes device information such as the advertising ID. Second, if you buy an optional in-app item, Google Play or the Apple App Store processes the payment. Third, if you choose to email us, we receive that email. You can enjoy the whole Game without paying or watching ads."
+      ],
+      [
+        "Information stored on your device",
+        "Your saved game (hero, companions, map, events and other progress), language, sound and vibration settings, and which items you own and your jade balance are stored in the app's private storage on your device. Uninstalling the app, using 'Erase save' in Settings, or clearing the app's data in your device settings deletes all of it. If device backup is on (Google account backup on Android, iCloud backup on iOS), the operating system may include this data in your own backup. Your ad consent choice (EEA, UK, Switzerland) is stored on the device by Google's consent tool."
+      ],
+      [
+        "Advertising (Google AdMob)",
+        "When you tap 'Watch an ad for jade' in the jade shop, the Game shows a rewarded ad from Google AdMob. To serve and measure ads, Google may process the advertising ID (Android advertising ID; iOS IDFA only if you allow tracking), device and OS information, approximate location inferred from your IP address, ad views and clicks, and performance and diagnostic data. This is handled under Google's Privacy Policy (https://policies.google.com/privacy) and partner-sites policy (https://policies.google.com/technologies/partner-sites); the developer does not receive information about individual users.\n\nIn the EEA, the UK and Switzerland, Google's consent form appears on first launch, and you can change your choice at any time with 'Ad privacy options' in Settings. On iOS a system prompt asks whether to allow tracking; if you decline you still get the reward with non-personalized ads. On Android you can reset or delete your advertising ID in Settings > Google > Ads. The Game is not directed at children under 13 and limits ad content to the Teen (T) rating or below."
+      ],
+      [
+        "In-app purchases (optional)",
+        "Optional items such as jade bundles and the starter pack are processed by Google Play Billing or Apple's App Store. Payment and billing details are handled by Google or Apple and are never received by the developer. The Game confirms the completed purchase (product ID and transaction details) on the device, grants the item, and stores which items you own on the device. Purchase history and refunds follow Google Play or App Store policies."
+      ],
+      [
+        "Notifications",
+        "The Game may schedule local notifications on your device. They are created on the device and nothing is sent to a server. You can turn them off in your device settings at any time."
+      ],
+      [
+        "Support email",
+        "If you email us from Contact in Settings, we receive your email address and the message (what you wrote, plus app version, device model and OS version). We use it only to reply and fix problems, and delete it one year after the matter is closed."
+      ],
+      [
+        "International transfer",
+        "For ads and payments, the information above may be transferred to and processed by Google LLC (USA) or Apple Inc. (USA). Transfers happen over the internet when you watch an ad or make a purchase, and the data is kept under each company's privacy policy."
+      ],
+      [
+        "Your rights and deletion",
+        "Game data exists only on your device, so you can delete it at any time by uninstalling the app or using 'Erase save' in Settings. Ad-related data can be reset, or consent withdrawn, as described under Advertising. To have a support email you sent us deleted, write to the address below."
+      ],
+      [
+        "Changes and contact",
+        "If this policy changes, we will post it on this page with a new effective date. Privacy questions: mkideabox.feedback@gmail.com (developer mkideabox, Republic of Korea)"
+      ]
+    ]
+  },
+  "ja": {
+    "name": "日本語",
+    "title": "プライバシーポリシー",
+    "effective": "施行日",
+    "sections": [
+      [
+        "概要",
+        "武林流浪記（以下「本ゲーム」）には会員登録やログインがなく、開発者が運営するサーバーや、分析・クラッシュレポートのツールもありません。進行状況と設定は端末の中だけに保存され、開発者が受け取ったり見たりすることはできません。情報が端末の外に出るのは次の三つの場合です。第一に、翡翠ショップで選べるリワード広告を Google AdMob で表示するため、Google が広告 ID などの端末情報を処理します。第二に、ショップで任意のアプリ内アイテムを購入すると、Google Play または Apple App Store が決済を処理します。第三に、プレイヤーが自らお問い合わせメールを送った場合、そのメールを受け取ります。課金や広告視聴をしなくても、ゲームのすべてを楽しめます。"
+      ],
+      [
+        "端末に保存する情報",
+        "セーブデータ（主人公・仲間・地図・出来事などの進行状況）、言語・サウンド・振動の設定、購入したアイテムの所持状況と翡翠の残高を、端末内のアプリ専用領域に保存します。アプリを削除するか、設定の「セーブを消す」、または端末の設定でアプリのデータを消去すると、すべて削除されます。端末のバックアップ（Android の Google アカウントのバックアップ、iOS の iCloud バックアップ）が有効な場合、OS がこのデータをご本人のバックアップに含めることがあります。広告の同意の選択（EEA・英国・スイス）は Google の同意ツールが端末内に保存します。"
+      ],
+      [
+        "広告（Google AdMob）",
+        "翡翠ショップの「広告を見て翡翠をもらう」を押すと、Google AdMob のリワード広告を表示します。広告の配信と効果測定のため、Google は広告 ID（Android の広告 ID、iOS の IDFA はトラッキングを許可した場合のみ）、端末・OS の情報、IP アドレスから推定したおおよその位置、広告の表示・タップの記録、パフォーマンス・診断情報を処理することがあります。これらは Google のプライバシーポリシー（https://policies.google.com/privacy）とパートナーサイトのポリシー（https://policies.google.com/technologies/partner-sites）に従って扱われ、開発者が個々のユーザーの情報を受け取ることはありません。\n\nEEA・英国・スイスでは初回起動時に Google の同意画面が表示され、設定の「広告のプライバシー設定」からいつでも選び直せます。iOS ではトラッキングを許可するかを尋ねるシステム画面が表示され、許可しなくてもパーソナライズされていない広告で報酬を受け取れます。Android では 端末の設定 > Google > 広告 で広告 ID をリセットまたは削除できます。本ゲームは13歳未満の子どもを対象としておらず、広告コンテンツのレーティングをティーン（T）以下に制限しています。"
+      ],
+      [
+        "アプリ内購入（任意）",
+        "翡翠のセットやスターターパックなどの任意のアイテムは、Google Play の決済または Apple の App Store の決済で処理されます。支払い方法や請求情報は Google または Apple が扱い、開発者は受け取りません。本ゲームは購入完了の結果（商品 ID と取引情報）を端末で確認してアイテムを付与し、所持状況を端末内に保存します。購入履歴や返金は Google Play または App Store のポリシーに従います。"
+      ],
+      [
+        "通知",
+        "本ゲームは端末内で予約通知を送ることがあります。通知は端末の中だけで作られ、サーバーには何も送りません。端末の設定でいつでもオフにできます。"
+      ],
+      [
+        "お問い合わせメール",
+        "設定のお問い合わせからメールを送ると、送信元のメールアドレスとメールの内容（ご記入内容、アプリのバージョン・端末の機種・OS のバージョン）を受け取ります。この情報は返信と問題解決にのみ使い、対応完了から1年後に削除します。"
+      ],
+      [
+        "情報の国外移転",
+        "広告と決済のため、上記の情報が Google LLC（米国）または Apple Inc.（米国）に送信・処理されることがあります。送信は広告の視聴や購入の際にインターネットを通じて行われ、各社のプライバシーポリシーに従って保管されます。"
+      ],
+      [
+        "利用者の権利と削除",
+        "ゲームデータは端末の中にしかないため、アプリの削除や設定の「セーブを消す」でいつでも削除できます。広告に関する情報は「広告」の項の方法でリセットしたり同意を撤回したりできます。開発者に送ったお問い合わせメールの削除をご希望の場合は、下記のメールアドレスまでご連絡ください。"
+      ],
+      [
+        "ポリシーの変更と連絡先",
+        "このポリシーを変更した場合は、新しい施行日とともにこのページに掲載します。プライバシーに関するお問い合わせ：mkideabox.feedback@gmail.com（開発者 mkideabox、大韓民国）"
+      ]
+    ]
+  },
+  "zh": {
+    "name": "简体中文",
+    "title": "隐私政策",
+    "effective": "生效日期",
+    "sections": [
+      [
+        "概要",
+        "武林游侠记（以下称“本游戏”）没有注册或登录，没有开发者运营的服务器，也没有分析或崩溃报告工具。游戏进度和设置只保存在你的设备中，开发者无法接收或查看。信息只在以下三种情况下离开设备：第一，本游戏在玉石商店中通过 Google AdMob 展示可选的激励广告，为此 Google 会处理广告 ID 等设备信息；第二，在商店购买可选的应用内物品时，由 Google Play 或 Apple App Store 处理付款；第三，玩家主动发送咨询邮件时，我们会收到该邮件。不付费、不看广告也可以体验完整的游戏。"
+      ],
+      [
+        "保存在设备上的信息",
+        "存档（主角、同伴、地图、事件等进度）、语言、声音和振动设置，以及已购物品的拥有情况和玉石余额，保存在设备内应用专用的存储空间中。卸载应用、在设置中使用“删除存档”或在设备设置中清除应用数据，都会将其全部删除。如果开启了设备备份（Android 的 Google 账号备份、iOS 的 iCloud 备份），操作系统可能会把这些数据包含在你本人的备份中。广告同意选择（欧洲经济区、英国、瑞士）由 Google 的同意工具保存在设备中。"
+      ],
+      [
+        "广告（Google AdMob）",
+        "在玉石商店点击“看广告领玉石”时，本游戏会展示 Google AdMob 的激励广告。为投放和衡量广告，Google 可能会处理广告 ID（Android 广告 ID；iOS 的 IDFA 仅在你允许跟踪时）、设备和操作系统信息、根据 IP 地址推断的大致位置、广告的展示和点击记录以及性能和诊断信息。这些信息依照 Google 隐私权政策（https://policies.google.com/privacy）和合作伙伴网站政策（https://policies.google.com/technologies/partner-sites）处理，开发者不会收到个别用户的信息。\n\n在欧洲经济区、英国和瑞士，首次启动时会显示 Google 的同意窗口，你可以随时在设置的“广告隐私选项”中重新选择。在 iOS 上会弹出询问是否允许跟踪的系统窗口，即使不允许，也可以通过非个性化广告获得奖励。在 Android 上，可以在 设备设置 > Google > 广告 中重置或删除广告 ID。本游戏不以 13 岁以下儿童为对象，并将广告内容分级限制在青少年（T）及以下。"
+      ],
+      [
+        "应用内购买（可选）",
+        "玉石礼包、新手礼包等可选物品通过 Google Play 结算或 Apple App Store 结算处理。付款方式和账单信息由 Google 或 Apple 处理，开发者不会收到。本游戏在设备上确认购买完成的结果（商品 ID 和交易信息）后发放物品，并在设备中保存拥有情况。购买记录和退款遵循 Google Play 或 App Store 的政策。"
+      ],
+      [
+        "通知",
+        "本游戏可能在设备内发送预约通知。通知只在设备内生成，不会向服务器发送任何内容。你可以随时在设备设置中关闭。"
+      ],
+      [
+        "咨询邮件",
+        "通过设置中的“联系我们”发送邮件时，我们会收到你的邮箱地址和邮件内容（你填写的内容以及应用版本、设备型号和系统版本）。这些信息仅用于回复和解决问题，并在处理完成一年后删除。"
+      ],
+      [
+        "信息的跨境传输",
+        "为了广告和付款，上述信息可能会被传输给 Google LLC（美国）或 Apple Inc.（美国）并由其处理。传输在你观看广告或购买时通过互联网进行，并依照各公司的隐私政策保存。"
+      ],
+      [
+        "你的权利与删除",
+        "游戏数据只存在于你的设备中，你可以随时通过卸载应用或在设置中使用“删除存档”来删除。广告相关信息可以按“广告”一节所述的方法重置或撤回同意。如需删除你发给开发者的咨询邮件，请发邮件至下方地址。"
+      ],
+      [
+        "政策变更与联系方式",
+        "如本政策有变更，我们会在本页面公布并注明新的生效日期。隐私相关咨询：mkideabox.feedback@gmail.com（开发者 mkideabox，大韩民国）"
+      ]
+    ]
+  },
+  "de": {
+    "name": "Deutsch",
+    "title": "Datenschutzerklärung",
+    "effective": "Gültig ab",
+    "sections": [
+      [
+        "Zusammenfassung",
+        "Murim Wanderer (das „Spiel“) hat keine Registrierung oder Anmeldung, keinen vom Entwickler betriebenen Server und keine Analyse- oder Absturzberichts-Tools. Spielstand und Einstellungen werden nur auf deinem Gerät gespeichert; der Entwickler kann sie weder empfangen noch einsehen. Informationen verlassen dein Gerät nur in drei Fällen: Erstens zeigt das Spiel im Jade-Laden optionale Belohnungsanzeigen von Google AdMob, wofür Google Geräteinformationen wie die Werbe-ID verarbeitet. Zweitens verarbeitet Google Play oder der Apple App Store die Zahlung, wenn du einen optionalen In-App-Artikel kaufst. Drittens erhalten wir deine E-Mail, wenn du uns von dir aus schreibst. Du kannst das gesamte Spiel ohne Zahlung und ohne Werbung genießen."
+      ],
+      [
+        "Auf dem Gerät gespeicherte Daten",
+        "Dein Spielstand (Held, Gefährten, Karte, Ereignisse und weiterer Fortschritt), Sprach-, Ton- und Vibrationseinstellungen sowie deine gekauften Artikel und dein Jade-Guthaben werden im privaten Speicher der App auf deinem Gerät abgelegt. Durch Deinstallieren der App, „Spielstand löschen“ in den Einstellungen oder Löschen der App-Daten in den Geräteeinstellungen wird alles entfernt. Ist eine Gerätesicherung aktiv (Google-Konto-Sicherung unter Android, iCloud-Backup unter iOS), kann das Betriebssystem diese Daten in deine eigene Sicherung aufnehmen. Deine Werbe-Einwilligung (EWR, Vereinigtes Königreich, Schweiz) speichert Googles Einwilligungstool auf dem Gerät."
+      ],
+      [
+        "Werbung (Google AdMob)",
+        "Wenn du im Jade-Laden „Werbung für Jade ansehen“ tippst, zeigt das Spiel eine Belohnungsanzeige von Google AdMob. Für Auslieferung und Messung der Werbung kann Google die Werbe-ID (Android-Werbe-ID; iOS-IDFA nur, wenn du Tracking erlaubst), Geräte- und Betriebssysteminformationen, aus der IP-Adresse abgeleiteten ungefähren Standort, Anzeigen- und Klickdaten sowie Leistungs- und Diagnosedaten verarbeiten. Dies geschieht gemäß Googles Datenschutzerklärung (https://policies.google.com/privacy) und Richtlinie für Partnerwebsites (https://policies.google.com/technologies/partner-sites); der Entwickler erhält keine Daten einzelner Nutzer.\n\nIm EWR, im Vereinigten Königreich und in der Schweiz erscheint beim ersten Start Googles Einwilligungsformular; deine Wahl kannst du jederzeit unter „Werbe-Datenschutzoptionen“ in den Einstellungen ändern. Unter iOS fragt ein Systemdialog, ob Tracking erlaubt ist; lehnst du ab, erhältst du die Belohnung trotzdem mit nicht personalisierter Werbung. Unter Android kannst du die Werbe-ID unter Einstellungen > Google > Werbung zurücksetzen oder löschen. Das Spiel richtet sich nicht an Kinder unter 13 Jahren und begrenzt Werbeinhalte auf die Einstufung „Teen (T)“ oder darunter."
+      ],
+      [
+        "In-App-Käufe (optional)",
+        "Optionale Artikel wie Jade-Pakete und das Startpaket werden über Google Play Billing oder Apples App Store abgewickelt. Zahlungs- und Rechnungsdaten verarbeiten Google bzw. Apple; der Entwickler erhält sie nie. Das Spiel bestätigt den abgeschlossenen Kauf (Produkt-ID und Transaktionsdaten) auf dem Gerät, schreibt den Artikel gut und speichert deine Artikel auf dem Gerät. Kaufhistorie und Erstattungen richten sich nach den Richtlinien von Google Play bzw. dem App Store."
+      ],
+      [
+        "Benachrichtigungen",
+        "Das Spiel kann lokale Benachrichtigungen auf deinem Gerät planen. Sie entstehen auf dem Gerät; es wird nichts an einen Server gesendet. Du kannst sie jederzeit in den Geräteeinstellungen ausschalten."
+      ],
+      [
+        "Support-E-Mail",
+        "Wenn du uns über „Kontakt“ in den Einstellungen schreibst, erhalten wir deine E-Mail-Adresse und die Nachricht (deinen Text sowie App-Version, Gerätemodell und Betriebssystemversion). Wir nutzen sie nur zur Antwort und Fehlerbehebung und löschen sie ein Jahr nach Abschluss des Anliegens."
+      ],
+      [
+        "Übermittlung ins Ausland",
+        "Für Werbung und Zahlungen können die oben genannten Daten an Google LLC (USA) oder Apple Inc. (USA) übermittelt und dort verarbeitet werden. Die Übermittlung erfolgt über das Internet, wenn du Werbung ansiehst oder etwas kaufst, und die Daten werden nach den Datenschutzrichtlinien des jeweiligen Unternehmens aufbewahrt."
+      ],
+      [
+        "Deine Rechte und Löschung",
+        "Spieldaten gibt es nur auf deinem Gerät; du kannst sie jederzeit durch Deinstallieren der App oder „Spielstand löschen“ in den Einstellungen löschen. Werbebezogene Daten kannst du wie unter „Werbung“ beschrieben zurücksetzen oder deine Einwilligung widerrufen. Möchtest du eine an uns gesendete Support-E-Mail löschen lassen, schreib an die unten genannte Adresse."
+      ],
+      [
+        "Änderungen und Kontakt",
+        "Ändert sich diese Erklärung, veröffentlichen wir sie auf dieser Seite mit neuem Gültigkeitsdatum. Datenschutzfragen: mkideabox.feedback@gmail.com (Entwickler mkideabox, Republik Korea)"
+      ]
+    ]
+  },
+  "fr": {
+    "name": "Français",
+    "title": "Politique de confidentialité",
+    "effective": "Date d'entrée en vigueur",
+    "sections": [
+      [
+        "Résumé",
+        "Murim Wanderer (le « Jeu ») n'a ni inscription ni connexion, aucun serveur exploité par le développeur et aucun outil d'analyse ou de rapport de plantage. Votre progression et vos réglages sont enregistrés uniquement sur votre appareil ; le développeur ne peut ni les recevoir ni les consulter. Des informations quittent votre appareil dans trois cas seulement. D'abord, le Jeu affiche dans la boutique de jade des publicités avec récompense facultatives de Google AdMob, pour lesquelles Google traite des informations de l'appareil comme l'identifiant publicitaire. Ensuite, si vous achetez un article intégré facultatif, Google Play ou l'App Store d'Apple traite le paiement. Enfin, si vous nous écrivez de vous-même, nous recevons votre e-mail. Vous pouvez profiter de tout le Jeu sans payer ni regarder de publicité."
+      ],
+      [
+        "Informations stockées sur l'appareil",
+        "Votre sauvegarde (héros, compagnons, carte, événements et autres progrès), vos réglages de langue, de son et de vibration, ainsi que les articles que vous possédez et votre solde de jade sont stockés dans l'espace privé de l'application sur votre appareil. Désinstaller l'application, utiliser « Effacer la sauvegarde » dans les réglages ou effacer les données de l'application dans les réglages de l'appareil supprime tout. Si la sauvegarde de l'appareil est activée (sauvegarde du compte Google sur Android, sauvegarde iCloud sur iOS), le système peut inclure ces données dans votre propre sauvegarde. Votre choix de consentement publicitaire (EEE, Royaume-Uni, Suisse) est stocké sur l'appareil par l'outil de consentement de Google."
+      ],
+      [
+        "Publicité (Google AdMob)",
+        "Lorsque vous touchez « Regarder une pub pour du jade » dans la boutique, le Jeu affiche une publicité avec récompense de Google AdMob. Pour diffuser et mesurer les publicités, Google peut traiter l'identifiant publicitaire (identifiant publicitaire Android ; IDFA sur iOS uniquement si vous autorisez le suivi), des informations sur l'appareil et le système, une localisation approximative déduite de l'adresse IP, les affichages et clics publicitaires ainsi que des données de performance et de diagnostic. Ce traitement relève de la politique de confidentialité de Google (https://policies.google.com/privacy) et de sa politique relative aux sites partenaires (https://policies.google.com/technologies/partner-sites) ; le développeur ne reçoit aucune information sur les utilisateurs individuels.\n\nDans l'EEE, au Royaume-Uni et en Suisse, le formulaire de consentement de Google s'affiche au premier lancement, et vous pouvez modifier votre choix à tout moment via « Options de confidentialité des annonces » dans les réglages. Sur iOS, une fenêtre système demande si vous autorisez le suivi ; si vous refusez, vous recevez quand même la récompense avec des publicités non personnalisées. Sur Android, vous pouvez réinitialiser ou supprimer votre identifiant publicitaire dans Paramètres > Google > Annonces. Le Jeu ne s'adresse pas aux enfants de moins de 13 ans et limite le contenu publicitaire à la classification Adolescents (T) ou inférieure."
+      ],
+      [
+        "Achats intégrés (facultatifs)",
+        "Les articles facultatifs comme les lots de jade et le pack de départ sont traités par Google Play Billing ou l'App Store d'Apple. Les informations de paiement et de facturation sont gérées par Google ou Apple et ne sont jamais reçues par le développeur. Le Jeu confirme l'achat terminé (identifiant du produit et informations de transaction) sur l'appareil, accorde l'article et enregistre les articles que vous possédez sur l'appareil. L'historique des achats et les remboursements suivent les règles de Google Play ou de l'App Store."
+      ],
+      [
+        "Notifications",
+        "Le Jeu peut programmer des notifications locales sur votre appareil. Elles sont créées sur l'appareil et rien n'est envoyé à un serveur. Vous pouvez les désactiver à tout moment dans les réglages de l'appareil."
+      ],
+      [
+        "E-mail d'assistance",
+        "Si vous nous écrivez via « Contact » dans les réglages, nous recevons votre adresse e-mail et le message (ce que vous avez écrit, ainsi que la version de l'application, le modèle de l'appareil et la version du système). Nous l'utilisons uniquement pour répondre et résoudre les problèmes, et le supprimons un an après la clôture de la demande."
+      ],
+      [
+        "Transfert international",
+        "Pour la publicité et les paiements, les informations ci-dessus peuvent être transférées à Google LLC (États-Unis) ou Apple Inc. (États-Unis) et traitées par ces sociétés. Les transferts ont lieu par Internet lorsque vous regardez une publicité ou effectuez un achat, et les données sont conservées selon la politique de confidentialité de chaque société."
+      ],
+      [
+        "Vos droits et la suppression",
+        "Les données du jeu n'existent que sur votre appareil : vous pouvez les supprimer à tout moment en désinstallant l'application ou en utilisant « Effacer la sauvegarde » dans les réglages. Les données liées à la publicité peuvent être réinitialisées, ou le consentement retiré, comme indiqué dans la section Publicité. Pour faire supprimer un e-mail d'assistance que vous nous avez envoyé, écrivez à l'adresse ci-dessous."
+      ],
+      [
+        "Modifications et contact",
+        "Si cette politique change, nous la publierons sur cette page avec une nouvelle date d'entrée en vigueur. Questions de confidentialité : mkideabox.feedback@gmail.com (développeur mkideabox, République de Corée)"
+      ]
+    ]
+  },
+  "es": {
+    "name": "Español",
+    "title": "Política de privacidad",
+    "effective": "Fecha de entrada en vigor",
+    "sections": [
+      [
+        "Resumen",
+        "Murim Wanderer (el «Juego») no tiene registro ni inicio de sesión, ni servidor gestionado por el desarrollador, ni herramientas de análisis o de informes de fallos. Tu progreso y tus ajustes se guardan solo en tu dispositivo y el desarrollador no puede recibirlos ni verlos. La información sale de tu dispositivo solo en tres casos. Primero, el Juego muestra en la tienda de jade anuncios con recompensa opcionales de Google AdMob, para lo cual Google procesa información del dispositivo como el ID de publicidad. Segundo, si compras un artículo opcional dentro de la app, Google Play o el App Store de Apple procesan el pago. Tercero, si decides escribirnos, recibimos ese correo. Puedes disfrutar de todo el Juego sin pagar ni ver anuncios."
+      ],
+      [
+        "Información guardada en el dispositivo",
+        "Tu partida guardada (héroe, compañeros, mapa, sucesos y demás progreso), los ajustes de idioma, sonido y vibración, y los artículos que posees y tu saldo de jade se guardan en el almacenamiento privado de la app en tu dispositivo. Desinstalar la app, usar «Borrar partida» en Ajustes o borrar los datos de la app en los ajustes del dispositivo lo elimina todo. Si la copia de seguridad del dispositivo está activada (copia de la cuenta de Google en Android, copia de iCloud en iOS), el sistema puede incluir estos datos en tu propia copia. Tu elección de consentimiento publicitario (EEE, Reino Unido, Suiza) la guarda en el dispositivo la herramienta de consentimiento de Google."
+      ],
+      [
+        "Publicidad (Google AdMob)",
+        "Cuando tocas «Ver un anuncio por jade» en la tienda, el Juego muestra un anuncio con recompensa de Google AdMob. Para servir y medir anuncios, Google puede procesar el ID de publicidad (ID de publicidad de Android; IDFA de iOS solo si permites el seguimiento), información del dispositivo y del sistema, la ubicación aproximada deducida de la dirección IP, las visualizaciones y clics de anuncios y datos de rendimiento y diagnóstico. Esto se rige por la Política de privacidad de Google (https://policies.google.com/privacy) y su política de sitios asociados (https://policies.google.com/technologies/partner-sites); el desarrollador no recibe información de usuarios concretos.\n\nEn el EEE, el Reino Unido y Suiza, el formulario de consentimiento de Google aparece en el primer inicio y puedes cambiar tu elección en cualquier momento con «Opciones de privacidad de anuncios» en Ajustes. En iOS, una ventana del sistema pregunta si permites el seguimiento; si no lo permites, igualmente recibes la recompensa con anuncios no personalizados. En Android puedes restablecer o eliminar tu ID de publicidad en Ajustes > Google > Anuncios. El Juego no está dirigido a menores de 13 años y limita el contenido de los anuncios a la clasificación Adolescentes (T) o inferior."
+      ],
+      [
+        "Compras dentro de la app (opcionales)",
+        "Los artículos opcionales, como los lotes de jade y el pack de inicio, se procesan mediante Google Play Billing o el App Store de Apple. Los datos de pago y facturación los gestiona Google o Apple y el desarrollador nunca los recibe. El Juego confirma la compra completada (ID del producto y datos de la transacción) en el dispositivo, entrega el artículo y guarda en el dispositivo los artículos que posees. El historial de compras y los reembolsos siguen las políticas de Google Play o del App Store."
+      ],
+      [
+        "Notificaciones",
+        "El Juego puede programar notificaciones locales en tu dispositivo. Se crean en el dispositivo y no se envía nada a ningún servidor. Puedes desactivarlas en cualquier momento en los ajustes del dispositivo."
+      ],
+      [
+        "Correo de soporte",
+        "Si nos escribes desde «Contacto» en Ajustes, recibimos tu dirección de correo y el mensaje (lo que escribiste, junto con la versión de la app, el modelo del dispositivo y la versión del sistema). Lo usamos solo para responder y resolver problemas, y lo borramos un año después de cerrar el asunto."
+      ],
+      [
+        "Transferencia internacional",
+        "Para la publicidad y los pagos, la información anterior puede transferirse a Google LLC (EE. UU.) o Apple Inc. (EE. UU.) y ser procesada por ellas. Las transferencias se realizan por internet cuando ves un anuncio o haces una compra, y los datos se conservan según la política de privacidad de cada empresa."
+      ],
+      [
+        "Tus derechos y la eliminación",
+        "Los datos del juego solo existen en tu dispositivo, así que puedes eliminarlos en cualquier momento desinstalando la app o usando «Borrar partida» en Ajustes. Los datos relacionados con la publicidad pueden restablecerse, o retirarse el consentimiento, como se describe en Publicidad. Para que eliminemos un correo de soporte que nos enviaste, escribe a la dirección de abajo."
+      ],
+      [
+        "Cambios y contacto",
+        "Si esta política cambia, la publicaremos en esta página con una nueva fecha de entrada en vigor. Consultas de privacidad: mkideabox.feedback@gmail.com (desarrollador mkideabox, República de Corea)"
+      ]
+    ]
+  },
+  "pt": {
+    "name": "Português",
+    "title": "Política de Privacidade",
+    "effective": "Data de vigência",
+    "sections": [
+      [
+        "Resumo",
+        "Murim Wanderer (o \"Jogo\") não tem cadastro nem login, nem servidor operado pelo desenvolvedor, nem ferramentas de análise ou de relatório de falhas. Seu progresso e suas configurações ficam salvos apenas no seu dispositivo, e o desenvolvedor não pode recebê-los nem vê-los. As informações saem do seu dispositivo em apenas três casos. Primeiro, o Jogo exibe na loja de jade anúncios com recompensa opcionais do Google AdMob, para os quais o Google processa informações do dispositivo, como o ID de publicidade. Segundo, se você comprar um item opcional no app, o Google Play ou a App Store da Apple processa o pagamento. Terceiro, se você nos enviar um e-mail por conta própria, nós o recebemos. Você pode aproveitar o Jogo inteiro sem pagar nem assistir a anúncios."
+      ],
+      [
+        "Informações salvas no dispositivo",
+        "Seu jogo salvo (herói, companheiros, mapa, eventos e demais progresso), as configurações de idioma, som e vibração, e os itens que você possui e seu saldo de jade são guardados no armazenamento privado do app no seu dispositivo. Desinstalar o app, usar \"Apagar progresso\" nas Configurações ou limpar os dados do app nas configurações do dispositivo apaga tudo. Se o backup do dispositivo estiver ativado (backup da conta Google no Android, backup do iCloud no iOS), o sistema pode incluir esses dados no seu próprio backup. Sua escolha de consentimento de anúncios (EEE, Reino Unido, Suíça) é salva no dispositivo pela ferramenta de consentimento do Google."
+      ],
+      [
+        "Publicidade (Google AdMob)",
+        "Quando você toca em \"Assistir a um anúncio por jade\" na loja, o Jogo exibe um anúncio com recompensa do Google AdMob. Para exibir e medir anúncios, o Google pode processar o ID de publicidade (ID de publicidade do Android; IDFA do iOS somente se você permitir o rastreamento), informações do dispositivo e do sistema, localização aproximada inferida do endereço IP, visualizações e cliques em anúncios e dados de desempenho e diagnóstico. Isso segue a Política de Privacidade do Google (https://policies.google.com/privacy) e a política de sites parceiros (https://policies.google.com/technologies/partner-sites); o desenvolvedor não recebe informações de usuários individuais.\n\nNo EEE, no Reino Unido e na Suíça, o formulário de consentimento do Google aparece na primeira abertura, e você pode mudar sua escolha a qualquer momento em \"Opções de privacidade de anúncios\" nas Configurações. No iOS, uma janela do sistema pergunta se você permite o rastreamento; se recusar, ainda recebe a recompensa com anúncios não personalizados. No Android, você pode redefinir ou excluir seu ID de publicidade em Configurações > Google > Anúncios. O Jogo não é direcionado a crianças menores de 13 anos e limita o conteúdo dos anúncios à classificação Adolescente (T) ou inferior."
+      ],
+      [
+        "Compras no app (opcionais)",
+        "Itens opcionais, como pacotes de jade e o pacote inicial, são processados pelo faturamento do Google Play ou pela App Store da Apple. Os dados de pagamento e cobrança são tratados pelo Google ou pela Apple e nunca chegam ao desenvolvedor. O Jogo confirma a compra concluída (ID do produto e dados da transação) no dispositivo, entrega o item e salva no dispositivo os itens que você possui. O histórico de compras e os reembolsos seguem as políticas do Google Play ou da App Store."
+      ],
+      [
+        "Notificações",
+        "O Jogo pode agendar notificações locais no seu dispositivo. Elas são criadas no dispositivo e nada é enviado a um servidor. Você pode desativá-las a qualquer momento nas configurações do dispositivo."
+      ],
+      [
+        "E-mail de suporte",
+        "Se você nos escrever pelo \"Contato\" nas Configurações, recebemos seu endereço de e-mail e a mensagem (o que você escreveu, além da versão do app, modelo do dispositivo e versão do sistema). Usamos essas informações apenas para responder e resolver problemas e as apagamos um ano após o encerramento do assunto."
+      ],
+      [
+        "Transferência internacional",
+        "Para publicidade e pagamentos, as informações acima podem ser transferidas e processadas pela Google LLC (EUA) ou pela Apple Inc. (EUA). As transferências ocorrem pela internet quando você assiste a um anúncio ou faz uma compra, e os dados são mantidos conforme a política de privacidade de cada empresa."
+      ],
+      [
+        "Seus direitos e exclusão",
+        "Os dados do jogo existem apenas no seu dispositivo, então você pode apagá-los a qualquer momento desinstalando o app ou usando \"Apagar progresso\" nas Configurações. Os dados relacionados a anúncios podem ser redefinidos, ou o consentimento retirado, como descrito em Publicidade. Para que excluamos um e-mail de suporte que você nos enviou, escreva para o endereço abaixo."
+      ],
+      [
+        "Alterações e contato",
+        "Se esta política mudar, ela será publicada nesta página com uma nova data de vigência. Dúvidas sobre privacidade: mkideabox.feedback@gmail.com (desenvolvedor mkideabox, República da Coreia)"
+      ]
+    ]
+  },
+  "ru": {
+    "name": "Русский",
+    "title": "Политика конфиденциальности",
+    "effective": "Дата вступления в силу",
+    "sections": [
+      [
+        "Кратко",
+        "В Murim Wanderer («Игра») нет регистрации и входа, нет сервера разработчика и нет инструментов аналитики или отчётов о сбоях. Прогресс и настройки хранятся только на вашем устройстве; разработчик не может их получить или увидеть. Данные покидают устройство только в трёх случаях. Во-первых, в лавке нефрита Игра показывает необязательную рекламу с наградой от Google AdMob, для чего Google обрабатывает данные устройства, например рекламный идентификатор. Во-вторых, при покупке необязательного товара в приложении платёж обрабатывает Google Play или Apple App Store. В-третьих, если вы сами напишете нам письмо, мы его получим. Всю Игру можно пройти без оплаты и без просмотра рекламы."
+      ],
+      [
+        "Данные на устройстве",
+        "Сохранение (герой, спутники, карта, события и другой прогресс), настройки языка, звука и вибрации, а также купленные товары и баланс нефрита хранятся в закрытом хранилище приложения на вашем устройстве. Удаление приложения, «Стереть сохранение» в настройках или очистка данных приложения в настройках устройства удаляет всё. Если включено резервное копирование устройства (резервная копия аккаунта Google на Android, iCloud на iOS), система может включить эти данные в вашу собственную копию. Ваш выбор согласия на рекламу (ЕЭЗ, Великобритания, Швейцария) хранит на устройстве инструмент согласия Google."
+      ],
+      [
+        "Реклама (Google AdMob)",
+        "Когда вы нажимаете «Посмотреть рекламу за нефрит» в лавке, Игра показывает рекламу с наградой от Google AdMob. Для показа и оценки рекламы Google может обрабатывать рекламный идентификатор (рекламный ID Android; IDFA на iOS — только если вы разрешили отслеживание), сведения об устройстве и системе, примерное местоположение по IP-адресу, показы и нажатия рекламы, а также данные о производительности и диагностике. Это регулируется Политикой конфиденциальности Google (https://policies.google.com/privacy) и правилами для сайтов-партнёров (https://policies.google.com/technologies/partner-sites); разработчик не получает данных об отдельных пользователях.\n\nВ ЕЭЗ, Великобритании и Швейцарии при первом запуске появляется форма согласия Google, а изменить выбор можно в любое время через «Настройки конфиденциальности рекламы» в настройках. На iOS системное окно спрашивает, разрешить ли отслеживание; если отказаться, награда всё равно выдаётся с неперсонализированной рекламой. На Android рекламный ID можно сбросить или удалить в разделе Настройки > Google > Реклама. Игра не предназначена для детей младше 13 лет и ограничивает рекламу рейтингом «Подросткам (T)» или ниже."
+      ],
+      [
+        "Покупки в приложении (по желанию)",
+        "Необязательные товары, например наборы нефрита и стартовый набор, оплачиваются через Google Play Billing или App Store от Apple. Платёжные данные обрабатывают Google или Apple, разработчик их никогда не получает. Игра подтверждает завершённую покупку (ID товара и данные транзакции) на устройстве, выдаёт товар и сохраняет купленное на устройстве. История покупок и возвраты регулируются правилами Google Play или App Store."
+      ],
+      [
+        "Уведомления",
+        "Игра может планировать локальные уведомления на вашем устройстве. Они создаются на устройстве, на сервер ничего не отправляется. Отключить их можно в любое время в настройках устройства."
+      ],
+      [
+        "Письма в поддержку",
+        "Если вы напишете нам через «Связаться» в настройках, мы получим ваш адрес электронной почты и письмо (ваш текст, а также версию приложения, модель устройства и версию системы). Мы используем их только для ответа и решения проблемы и удаляем через год после закрытия обращения."
+      ],
+      [
+        "Передача за рубеж",
+        "Для рекламы и платежей указанные данные могут передаваться и обрабатываться Google LLC (США) или Apple Inc. (США). Передача происходит через интернет при просмотре рекламы или покупке, а данные хранятся согласно политике конфиденциальности каждой компании."
+      ],
+      [
+        "Ваши права и удаление",
+        "Данные игры есть только на вашем устройстве, поэтому их можно удалить в любое время, удалив приложение или выбрав «Стереть сохранение» в настройках. Данные, связанные с рекламой, можно сбросить или отозвать согласие, как описано в разделе «Реклама». Чтобы мы удалили отправленное вами письмо в поддержку, напишите на адрес ниже."
+      ],
+      [
+        "Изменения и контакты",
+        "Если политика изменится, мы опубликуем её на этой странице с новой датой вступления в силу. Вопросы о конфиденциальности: mkideabox.feedback@gmail.com (разработчик mkideabox, Республика Корея)"
+      ]
+    ]
+  },
+  "id": {
+    "name": "Bahasa Indonesia",
+    "title": "Kebijakan Privasi",
+    "effective": "Tanggal berlaku",
+    "sections": [
+      [
+        "Ringkasan",
+        "Murim Wanderer (\"Game\") tidak memiliki pendaftaran atau login, tidak ada server yang dijalankan pengembang, dan tidak ada alat analitik atau laporan kerusakan. Progres dan pengaturanmu hanya disimpan di perangkatmu, dan pengembang tidak dapat menerima atau melihatnya. Informasi hanya keluar dari perangkatmu dalam tiga hal. Pertama, Game menampilkan iklan berhadiah opsional dari Google AdMob di toko giok, yang untuk itu Google memproses informasi perangkat seperti ID iklan. Kedua, jika kamu membeli item opsional dalam aplikasi, Google Play atau Apple App Store yang memproses pembayarannya. Ketiga, jika kamu mengirim email kepada kami, kami menerima email itu. Kamu bisa menikmati seluruh Game tanpa membayar atau menonton iklan."
+      ],
+      [
+        "Informasi yang disimpan di perangkat",
+        "Data simpanan (pahlawan, rekan, peta, peristiwa, dan progres lainnya), pengaturan bahasa, suara, dan getaran, serta item yang kamu miliki dan saldo giok disimpan di penyimpanan pribadi aplikasi di perangkatmu. Menghapus aplikasi, memakai \"Hapus simpanan\" di Pengaturan, atau menghapus data aplikasi di pengaturan perangkat akan menghapus semuanya. Jika pencadangan perangkat aktif (cadangan akun Google di Android, cadangan iCloud di iOS), sistem dapat memasukkan data ini ke cadanganmu sendiri. Pilihan persetujuan iklanmu (EEA, Inggris, Swiss) disimpan di perangkat oleh alat persetujuan Google."
+      ],
+      [
+        "Iklan (Google AdMob)",
+        "Saat kamu mengetuk \"Tonton iklan untuk giok\" di toko, Game menampilkan iklan berhadiah dari Google AdMob. Untuk menayangkan dan mengukur iklan, Google dapat memproses ID iklan (ID iklan Android; IDFA iOS hanya jika kamu mengizinkan pelacakan), informasi perangkat dan sistem operasi, perkiraan lokasi dari alamat IP, tayangan dan klik iklan, serta data performa dan diagnostik. Hal ini mengikuti Kebijakan Privasi Google (https://policies.google.com/privacy) dan kebijakan situs mitra (https://policies.google.com/technologies/partner-sites); pengembang tidak menerima informasi tentang pengguna perorangan.\n\nDi EEA, Inggris, dan Swiss, formulir persetujuan Google muncul saat pertama kali dibuka, dan kamu bisa mengubah pilihan kapan saja lewat \"Opsi privasi iklan\" di Pengaturan. Di iOS, jendela sistem menanyakan apakah kamu mengizinkan pelacakan; jika tidak, kamu tetap mendapat hadiah dengan iklan yang tidak dipersonalisasi. Di Android, kamu bisa mengatur ulang atau menghapus ID iklan di Setelan > Google > Iklan. Game tidak ditujukan untuk anak di bawah 13 tahun dan membatasi konten iklan pada rating Remaja (T) atau di bawahnya."
+      ],
+      [
+        "Pembelian dalam aplikasi (opsional)",
+        "Item opsional seperti paket giok dan paket pemula diproses melalui Google Play Billing atau App Store dari Apple. Data pembayaran dan tagihan ditangani Google atau Apple dan tidak pernah diterima pengembang. Game mengonfirmasi pembelian yang selesai (ID produk dan data transaksi) di perangkat, memberikan item, dan menyimpan item yang kamu miliki di perangkat. Riwayat pembelian dan pengembalian dana mengikuti kebijakan Google Play atau App Store."
+      ],
+      [
+        "Notifikasi",
+        "Game dapat menjadwalkan notifikasi lokal di perangkatmu. Notifikasi dibuat di perangkat dan tidak ada yang dikirim ke server. Kamu bisa mematikannya kapan saja di pengaturan perangkat."
+      ],
+      [
+        "Email dukungan",
+        "Jika kamu mengirim email melalui \"Hubungi kami\" di Pengaturan, kami menerima alamat email dan pesanmu (isi yang kamu tulis, serta versi aplikasi, model perangkat, dan versi sistem). Kami hanya menggunakannya untuk membalas dan menyelesaikan masalah, lalu menghapusnya satu tahun setelah urusan selesai."
+      ],
+      [
+        "Transfer internasional",
+        "Untuk iklan dan pembayaran, informasi di atas dapat ditransfer ke dan diproses oleh Google LLC (AS) atau Apple Inc. (AS). Transfer terjadi melalui internet saat kamu menonton iklan atau membeli sesuatu, dan data disimpan sesuai kebijakan privasi masing-masing perusahaan."
+      ],
+      [
+        "Hak dan penghapusan",
+        "Data game hanya ada di perangkatmu, jadi kamu bisa menghapusnya kapan saja dengan menghapus aplikasi atau memakai \"Hapus simpanan\" di Pengaturan. Data terkait iklan dapat diatur ulang, atau persetujuan ditarik, seperti dijelaskan di bagian Iklan. Untuk meminta kami menghapus email dukungan yang kamu kirim, tulis ke alamat di bawah."
+      ],
+      [
+        "Perubahan dan kontak",
+        "Jika kebijakan ini berubah, kami akan memuatnya di halaman ini dengan tanggal berlaku baru. Pertanyaan privasi: mkideabox.feedback@gmail.com (pengembang mkideabox, Republik Korea)"
+      ]
+    ]
+  }
+}
