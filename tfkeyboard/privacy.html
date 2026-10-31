@@ -47,7 +47,7 @@
 <p class="meta">
   투명 플로팅 키보드 (Floating Keyboard) &middot; <code>com.mkideabox.tfkeyboard</code><br>
   개발자 mkideabox &middot; 문의 <a href="mailto:mkideabox@gmail.com">mkideabox@gmail.com</a><br>
-  시행일 / Effective date: 2026-10-11
+  시행일 / Effective date: 2026-10-31
 </p>
 
 <nav><a href="#ko">한국어</a><a href="#en">English</a></nav>
@@ -92,10 +92,15 @@
   <tr><td>클립보드 기록 (프리미엄)</td><td>복사한 텍스트 최대 20개</td><td>21개째가 들어오면 가장 오래된 항목이 밀려남</td><td>항목 길게 눌러 개별 삭제 또는 앱 삭제</td></tr>
   <tr><td>자주 쓰는 단어 (단어 자동완성)</td><td>자판 언어별 단어와 사용 횟수, 언어당 최대 5,000개</td><td>넘치면 오래 안 쓴 단어부터 밀려남</td><td>설정의 "배운 단어 모두 지우기" 또는 앱 삭제</td></tr>
   <tr><td>프리미엄 보유 여부</td><td>참/거짓 값 1개</td><td>앱 삭제 시까지</td><td>앱 삭제</td></tr>
+  <tr><td>앱 멈춤 기록 (오류 추적)</td><td>키보드나 앱 화면이 2초 넘게 멈춘 순간의 앱 코드 위치(클래스·함수 이름), 시각, 앱 버전, 멈춘 시간. 입력한 글자는 들어가지 않음</td><td>최대 8건, 넘치면 오래된 것부터 밀려남</td><td>앱 삭제 또는 앱 데이터 삭제</td></tr>
 </table>
 <p>
   저장 위치는 안드로이드가 앱마다 격리해 주는 전용 영역(<code>SharedPreferences</code>,
   <code>MODE_PRIVATE</code>)이며, 다른 앱은 이 값을 읽을 수 없습니다.
+</p>
+<p>
+  앱 멈춤 기록은 외부로 자동 전송되지 않습니다. 앱의 &ldquo;피드백 보내기&rdquo;로 메일을 쓸 때만 최근 30일 안의 기록 최대 3건이
+  메일 본문에 미리 채워지며, 보내기 전에 내용을 확인하고 지울 수 있습니다. 이 기록은 안드로이드 백업에도 포함되지 않습니다.
 </p>
 
 <h2>4. 클립보드 접근</h2>
@@ -231,10 +236,15 @@
   <tr><td>Clipboard history (premium)</td><td>Up to 20 copied text entries</td><td>Oldest entry drops when a 21st arrives</td><td>Long-press an entry, or uninstall</td></tr>
   <tr><td>Frequently used words (word suggestions)</td><td>Words and use counts per keyboard language, up to 5,000 per language</td><td>Least-used words drop when the limit is exceeded</td><td>"Forget learned words" in Settings, or uninstall</td></tr>
   <tr><td>Premium ownership</td><td>A single true/false value</td><td>Until uninstall</td><td>Uninstall the app</td></tr>
+  <tr><td>App freeze log (error tracking)</td><td>Where in the app's code (class and function names) the keyboard or app screen was stuck for more than 2 seconds, with the time, app version and how long it lasted. Nothing you type is included</td><td>Up to 8 entries; the oldest is dropped first</td><td>Uninstall the app or clear its data</td></tr>
 </table>
 <p>
   Storage uses Android's per-app private area (<code>SharedPreferences</code>,
   <code>MODE_PRIVATE</code>). Other apps cannot read it.
+</p>
+<p>
+  The app freeze log is never sent automatically. Only when you write to us with &ldquo;Send feedback&rdquo; are up to 3 entries
+  from the last 30 days pre-filled in the email body, and you can review or delete them before sending. It is not included in Android backups.
 </p>
 
 <h2>4. Clipboard access</h2>
