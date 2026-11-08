@@ -2,7 +2,7 @@
 
 MemoryFit (FSRS-based memory training app)
 
-Last updated: September 27, 2026
+Last updated: November 8, 2026
 
 ## 1. Information We Collect
 
@@ -12,6 +12,8 @@ Last updated: September 27, 2026
 
 - Study data, including decks, card content, review records, and learning statistics.
 
+- Device sync data, only when a Premium subscriber uses sync: deck information, card content and study state, and review records stored on the server. Note text and media files imported from Anki are not uploaded.
+
 - Contacts information, such as names and phone numbers, only when you choose to create a contacts deck.
 
 - Camera images or user-selected images, only when you choose to create image cards.
@@ -20,7 +22,7 @@ Last updated: September 27, 2026
 
 - For AI features: content you enter or import, text extracted from PDFs, web pages, or videos, generation options, image prompts, and technical logs needed to process requests.
 
-- Purchase and credit usage records, such as product IDs, transaction identifiers, and credit usage history.
+- Purchase, subscription, and credit usage records, such as product IDs, transaction identifiers, subscription status and expiry time, and credit usage history.
 
 - Crash and diagnostic information, such as error details and time, app version, device model, and operating system. App versions with error reporting enabled may send this information to Sentry.
 
@@ -39,6 +41,8 @@ Last updated: September 27, 2026
 - To provide learning statistics and progress tracking.
 
 - To process credit purchases, credit usage, refunds, and abuse prevention.
+
+- To check Premium subscription status and grant AI credits when a subscription renews.
 
 - To improve app functionality, analyze errors, maintain security, and prevent misuse.
 
@@ -72,6 +76,8 @@ Usage analytics events are temporarily stored on your device when an account ide
 
 - Study data: retained until app deletion, account deletion, or your deletion request.
 
+- Device sync data: retained until account deletion or your deletion request. Items you delete while syncing leave only a deletion marker so other devices can remove them, and these markers are deleted with your account. Subscription status records are also deleted with your account.
+
 - Contacts information: processed on device and not sent to MemoryFit servers.
 
 - Camera images: processed for the selected feature and not sent to Google Gemini API unless you separately enter or send them through an AI feature.
@@ -94,17 +100,17 @@ Data shared: user-entered or imported study content, extracted text from PDFs, w
 
 Purpose: automatic study card generation and educational image generation.
 
-- Google Play Billing / Apple In-App Purchase / RevenueCat, when processing and validating credit purchases.  
+- Google Play Billing / Apple In-App Purchase / RevenueCat, when processing and validating credit and subscription purchases.  
 
 Data shared: purchased product ID, transaction identifier, app user identifier, and information needed for purchase validation. On iOS, RevenueCat requests include the identifier for vendor (IDFV) and app user identifier.  
 
-Purpose: payment processing, purchase restoration, credit fulfillment, and refund handling.
+Purpose: payment processing, purchase restoration, subscription status and renewal handling, credit fulfillment, and refund handling.
 
 Except as described above or as required by law, MemoryFit does not provide personal information to third parties.
 
 ## 6. Service Providers and International Processing
 
-- Supabase Inc. (United States): database hosting, authentication, server-side functions, and storage and processing of usage analytics events linked to an account identifier.  
+- Supabase Inc. (United States): database hosting, authentication, server-side functions, device sync data storage, and storage and processing of usage analytics events linked to an account identifier.  
 
 Contact: [supabase.com/contact](https://supabase.com/contact)
 
@@ -165,6 +171,8 @@ Email: mkideabox@gmail.com
 Phone: +82-10-4732-7825
 
 ## 13. Changes
+
+- November 8, 2026: Added device sync data storage, subscription status processing, and retention for the Premium subscription (device sync and monthly AI credits).
 
 - September 27, 2026: Added details about account-linked usage analytics, including anonymous accounts, batch transfer, retention, and records that may remain after account deletion.
 
