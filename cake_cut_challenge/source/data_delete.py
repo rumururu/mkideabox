@@ -36,6 +36,7 @@ T = {
    'Data yang dihapus: ID instalasi acak, nama bergambar, serta skor harian dengan jenis kue. Catatan pembatasan permintaan memang terhapus otomatis setelah satu menit. Tidak ada data yang disimpan. Foto tidak pernah dikirim ke server.',
    'Jika Anda sudah menghapus aplikasi, kirim email ke {e} berisi nama bergambar (misalnya 🍰 #4821) dan tanggal Anda mengirim skor. Kami menghapusnya dalam 7 hari setelah memeriksa.'),
 }
+AD = {'ko': ' 광고 관련 데이터는 Google이 처리하며, 기기 설정에서 광고 ID를 재설정·삭제하거나(Android) 추적 허용을 끄면(iOS) 맞춤 광고를 막을 수 있습니다.', 'en': ' Ad-related data is handled by Google; you can block personalized ads by resetting or deleting the advertising ID in your device settings (Android) or turning off tracking (iOS).', 'ja': ' 広告関連のデータはGoogleが処理します。端末の設定で広告IDをリセット・削除する（Android）か、トラッキングをオフにする（iOS）ことでパーソナライズ広告を止められます。', 'zh': ' 广告相关数据由 Google 处理；你可以在设备设置中重置或删除广告 ID（Android），或关闭跟踪（iOS），以阻止个性化广告。', 'zh_Hant': ' 廣告相關資料由 Google 處理；你可以在裝置設定中重設或刪除廣告 ID（Android），或關閉追蹤（iOS），以停止個人化廣告。', 'es': ' Los datos relacionados con anuncios los trata Google; puedes bloquear los anuncios personalizados restableciendo o eliminando el ID de publicidad en los ajustes del dispositivo (Android) o desactivando el seguimiento (iOS).', 'fr': " Les données publicitaires sont traitées par Google ; tu peux bloquer les annonces personnalisées en réinitialisant ou supprimant l'identifiant publicitaire dans les réglages de l'appareil (Android) ou en désactivant le suivi (iOS).", 'de': ' Werbebezogene Daten verarbeitet Google; personalisierte Werbung kannst du verhindern, indem du die Werbe-ID in den Geräteeinstellungen zurücksetzt oder löschst (Android) oder Tracking ausschaltest (iOS).', 'pt': ' Os dados de anúncios são tratados pelo Google; você pode bloquear anúncios personalizados redefinindo ou excluindo o ID de publicidade nas configurações do aparelho (Android) ou desativando o rastreamento (iOS).', 'id': ' Data terkait iklan diproses oleh Google; Anda dapat memblokir iklan yang dipersonalisasi dengan mengatur ulang atau menghapus ID iklan di pengaturan perangkat (Android) atau mematikan pelacakan (iOS).'}
 HL = {'zh': 'zh-Hans', 'zh_Hant': 'zh-Hant'}
 nav = ''.join(f'<a href="#{c}">{html.escape(v[0])}</a>' for c, v in T.items())
 out = ['<!DOCTYPE html>', '<html lang="ko">', '<head>', '<meta charset="UTF-8">',
@@ -48,7 +49,7 @@ for c, (name, title, steps, what, mail) in T.items():
     out.append(f'<section id="{c}" lang="{HL.get(c, c)}">')
     out.append(f'<h1>{html.escape(title)} &middot; {html.escape(name)}</h1>')
     out.append('<ol>' + ''.join(f'<li>{html.escape(s)}</li>' for s in steps) + '</ol>')
-    out.append(f'<p>{html.escape(what)}</p>')
+    out.append(f'<p>{html.escape(what)}{html.escape(AD.get(c, ""))}</p>')
     out.append('<p>' + html.escape(mail).replace('{e}', f'<a href="mailto:{EMAIL}">{EMAIL}</a>') + '</p>')
     out.append('</section>')
 out += ['</body>', '</html>']
