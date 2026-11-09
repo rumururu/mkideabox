@@ -1,0 +1,472 @@
+{
+  "ko": {
+    "name": "한국어",
+    "title": "개인정보처리방침",
+    "effective": "시행일",
+    "sections": [
+      [
+        "요약",
+        "케이크 판정단(이하 \"앱\")은 회원가입이 없고 이름·이메일·전화번호 같은 개인을 식별하는 정보를 수집하지 않습니다. 케이크 사진은 기기 안에서만 처리하며 서버로 보내지 않습니다. 기기 밖으로 정보가 나가는 경우는 두 가지뿐입니다. (1) 사용자가 동의하고 직접 올린 '오늘의 케이크' 순위 기록(무작위 설치 ID·그림 별명·점수), (2) 사용자가 직접 고른 앱으로 점수 카드를 공유할 때."
+      ],
+      [
+        "사진과 카메라",
+        "카메라와 사진 보관함은 케이크 사진을 찍거나 고를 때만 사용합니다. 사진, 테두리·칼선·토핑 표시, 채점은 모두 기기 안에서 처리하며 개발자 서버나 제3자에게 보내지 않습니다. 앱은 사진을 따로 보관하지 않고 화면을 닫으면 메모리에서 지웁니다. 운영체제가 사진을 고르는 과정에서 만든 임시 파일은 앱 캐시에 남을 수 있으며 앱을 삭제하면 함께 지워집니다."
+      ],
+      [
+        "공유와 저장",
+        "'공유하기'를 누르면 점수 카드 이미지(케이크 사진과 점수 포함)를 만들어 운영체제의 공유 화면으로 넘깁니다. 어느 앱(인스타그램, 메신저 등)으로 보낼지는 사용자가 고르며, 개발자는 공유한 내용을 받지 않습니다. 받는 앱에서의 처리는 그 앱의 개인정보처리방침을 따릅니다. 공유 화면에서 '이미지 저장'을 고르면 사진 앱에 저장하며, 이때만 사진 추가 권한을 요청합니다."
+      ],
+      [
+        "기기에 저장하는 정보",
+        "순위에 쓰는 무작위 설치 ID, 그림 별명, 순위 참여 동의 여부를 기기 안에 저장합니다. 대결 모드에서 입력한 참가자 이름은 대결하는 동안 기기 메모리에만 있으며 저장하거나 보내지 않습니다."
+      ],
+      [
+        "오늘의 케이크 순위",
+        "순위는 선택 기능입니다. 처음 '순위에 올리기'를 누를 때 동의를 묻고, 동의한 경우에만 정보를 보냅니다. 보내는 정보는 앱이 처음 만든 무작위 설치 ID(광고 ID·기기 ID가 아님), 그림 별명(디저트 그림 번호와 4자리 숫자, 예: 🍰 #4821), 날짜, 케이크 종류, 점수뿐입니다. 사진, 칼선, 이름, 사용자가 입력한 글자는 보내지 않으며 채팅 기능도 없습니다. 다른 사용자에게는 그림 별명, 점수, 순위만 보입니다. 서버는 Supabase, Inc.의 서비스(서울 리전)를 사용하며 순위 표시와 남용 방지(요청 횟수 제한)에만 씁니다. 요청 횟수 제한용 기록은 1분 뒤 지워지고, 순위 기록은 사용자가 지울 때까지 보관합니다. Supabase 개인정보처리방침: https://supabase.com/privacy"
+      ],
+      [
+        "데이터 삭제",
+        "순위 화면의 '내 순위 기록 지우기'를 누르면 서버의 순위 기록(설치 ID·그림 별명·점수)이 바로 지워지고 참여 동의도 취소됩니다. 앱을 삭제하면 기기에 저장된 정보가 모두 지워집니다. 앱을 먼저 삭제했다면 그림 별명과 순위에 올린 날짜를 아래 메일로 알려 주세요. 확인 후 삭제합니다."
+      ],
+      [
+        "광고·결제·분석",
+        "현재 버전은 광고, 인앱 결제, 분석·추적 도구를 사용하지 않습니다. 이런 기능을 추가하면 먼저 이 방침을 고치고 시행일을 바꿉니다."
+      ],
+      [
+        "아동의 개인정보",
+        "앱은 13세 미만 아동을 대상으로 하지 않으며 13세 미만 아동의 개인정보를 알면서 수집하지 않습니다. 순위 별명은 정해진 그림과 숫자로만 만들어지며 자유 입력이나 채팅은 없습니다. 아동이 정보를 제공했다고 생각되면 mkideabox.feedback@gmail.com 로 알려 주세요. 확인 후 삭제합니다."
+      ],
+      [
+        "연락처",
+        "개발자: mkideabox · 이메일: mkideabox.feedback@gmail.com"
+      ],
+      [
+        "변경",
+        "이 방침이 바뀌면 이 페이지에 새 시행일과 함께 게시합니다."
+      ]
+    ]
+  },
+  "en": {
+    "name": "English",
+    "title": "Privacy Policy",
+    "effective": "Effective date",
+    "sections": [
+      [
+        "Summary",
+        "Cake Cut Challenge (the \"app\") has no sign-up and does not collect information that identifies you, such as your name, email or phone number. Cake photos are processed only on your device and are never sent to a server. Information leaves your device in only two cases: (1) \"Today's cake\" ranking records you choose to post after agreeing (a random install ID, a picture name and your score), and (2) when you share a score card to an app you pick."
+      ],
+      [
+        "Photos and camera",
+        "The camera and photo library are used only to take or pick a cake photo. The photo, the edge, cut and topping marks, and the scoring are all handled on your device and are never sent to the developer's server or to third parties. The app does not keep your photos; they are cleared from memory when you leave the screen. Temporary files the operating system creates while you pick a photo may stay in the app's cache and are removed when you delete the app."
+      ],
+      [
+        "Sharing and saving",
+        "When you tap \"Share\", the app creates a score card image (including the cake photo and score) and hands it to your operating system's share screen. You choose which app to send it to (Instagram, messengers, etc.); the developer does not receive what you share. The receiving app's privacy policy applies there. If you choose \"Save Image\" on the share screen, the image is saved to your Photos, and only then does the app ask for permission to add photos."
+      ],
+      [
+        "Information stored on your device",
+        "The app stores a random install ID for the rankings, your picture name, and whether you agreed to join the rankings on your device. Player names typed in Battle mode stay in memory only during the battle; they are not saved or sent."
+      ],
+      [
+        "Today's cake rankings",
+        "The rankings are optional. The first time you tap \"Post to rankings\", the app asks for your consent and sends information only if you agree. It sends only a random install ID created by the app (not an advertising ID or device ID), a picture name (a dessert picture number and 4 digits, for example 🍰 #4821), the date, the cake type and your score. Photos, cuts, names and anything you type are never sent, and there is no chat. Other users see only the picture name, score and rank. The server runs on Supabase, Inc. (Seoul region) and is used only to show the rankings and prevent abuse (rate limits). Rate-limit records are deleted after one minute; ranking records are kept until you delete them. Supabase privacy policy: https://supabase.com/privacy"
+      ],
+      [
+        "Deleting your data",
+        "Tap \"Delete my ranking data\" on the rankings screen to delete your ranking records (install ID, picture name, scores) from the server right away; this also withdraws your consent. Deleting the app removes all information stored on your device. If you already deleted the app, email us your picture name and the dates you posted at the address below, and we will delete the records after checking."
+      ],
+      [
+        "Ads, payments and analytics",
+        "The current version uses no ads, no in-app purchases and no analytics or tracking tools. If we add any of these, we will update this policy and its effective date first."
+      ],
+      [
+        "Children's privacy",
+        "The app is not directed to children under 13, and we do not knowingly collect personal information from children under 13. Ranking names are made only from fixed pictures and numbers; there is no free text or chat. If you believe a child has provided information, contact mkideabox.feedback@gmail.com and we will delete it after checking."
+      ],
+      [
+        "Contact",
+        "Developer: mkideabox · Email: mkideabox.feedback@gmail.com"
+      ],
+      [
+        "Changes",
+        "If this policy changes, the new version will be posted on this page with a new effective date."
+      ]
+    ]
+  },
+  "ja": {
+    "name": "日本語",
+    "title": "プライバシーポリシー",
+    "effective": "施行日",
+    "sections": [
+      [
+        "概要",
+        "ケーキ判定団（以下「本アプリ」）には会員登録がなく、氏名・メールアドレス・電話番号など個人を特定する情報を収集しません。ケーキの写真は端末内だけで処理し、サーバーには送りません。情報が端末の外に出るのは次の2つの場合だけです。(1) ユーザーが同意して自分で登録した「今日のケーキ」ランキングの記録（ランダムなインストールID・絵の名前・スコア）、(2) ユーザーが選んだアプリでスコアカードを共有するとき。"
+      ],
+      [
+        "写真とカメラ",
+        "カメラと写真ライブラリは、ケーキの写真を撮る・選ぶときだけ使います。写真、縁・切れ目・トッピングの印、採点はすべて端末内で処理し、開発者のサーバーや第三者には送りません。本アプリは写真を保存せず、画面を閉じるとメモリから消去します。写真を選ぶ際にOSが作った一時ファイルはアプリのキャッシュに残ることがあり、アプリを削除すると一緒に消えます。"
+      ],
+      [
+        "共有と保存",
+        "「シェア」を押すと、スコアカード画像（ケーキの写真とスコアを含む）を作成し、OSの共有画面に渡します。送り先のアプリ（Instagram、メッセンジャーなど）はユーザーが選び、開発者は共有された内容を受け取りません。送り先のアプリでの取り扱いは、そのアプリのプライバシーポリシーに従います。共有画面で「画像を保存」を選ぶと写真アプリに保存し、そのときだけ写真の追加の許可を求めます。"
+      ],
+      [
+        "端末に保存する情報",
+        "ランキング用のランダムなインストールID、絵の名前、ランキング参加への同意の有無を端末内に保存します。対決モードで入力したプレイヤー名は対決中だけ端末のメモリにあり、保存も送信もしません。"
+      ],
+      [
+        "今日のケーキ ランキング",
+        "ランキングは任意の機能です。初めて「ランキングに登録」を押したときに同意を求め、同意した場合だけ情報を送ります。送る情報は、本アプリが最初に作ったランダムなインストールID（広告IDや端末IDではありません）、絵の名前（デザートの絵の番号と4桁の数字。例: 🍰 #4821）、日付、ケーキの種類、スコアだけです。写真、切れ目、名前、ユーザーが入力した文字は送らず、チャット機能もありません。他のユーザーに見えるのは絵の名前、スコア、順位だけです。サーバーはSupabase, Inc.のサービス（ソウルリージョン）を使い、ランキングの表示と不正防止（リクエスト回数の制限）だけに使います。回数制限用の記録は1分後に消え、ランキングの記録はユーザーが削除するまで保管します。Supabaseのプライバシーポリシー: https://supabase.com/privacy"
+      ],
+      [
+        "データの削除",
+        "ランキング画面の「ランキング記録を削除」を押すと、サーバーのランキング記録（インストールID・絵の名前・スコア）がすぐに削除され、参加の同意も取り消されます。アプリを削除すると端末に保存された情報はすべて消えます。先にアプリを削除した場合は、絵の名前と登録した日付を下記のメールでお知らせください。確認のうえ削除します。"
+      ],
+      [
+        "広告・課金・分析",
+        "現在のバージョンは広告、アプリ内課金、分析・トラッキングツールを使っていません。これらを追加する場合は、先に本ポリシーと施行日を更新します。"
+      ],
+      [
+        "子どもの個人情報",
+        "本アプリは13歳未満の子どもを対象としておらず、13歳未満の子どもの個人情報を故意に収集しません。ランキングの名前は決められた絵と数字だけで作られ、自由入力やチャットはありません。子どもが情報を提供したと思われる場合は mkideabox.feedback@gmail.com までご連絡ください。確認のうえ削除します。"
+      ],
+      [
+        "お問い合わせ",
+        "開発者: mkideabox · メール: mkideabox.feedback@gmail.com"
+      ],
+      [
+        "変更",
+        "本ポリシーを変更する場合は、新しい施行日とともにこのページに掲載します。"
+      ]
+    ]
+  },
+  "zh": {
+    "name": "简体中文",
+    "title": "隐私政策",
+    "effective": "生效日期",
+    "sections": [
+      [
+        "概要",
+        "蛋糕裁判团（以下称“本应用”）无需注册，不收集姓名、电子邮箱、电话号码等可识别个人身份的信息。蛋糕照片只在设备上处理，不会发送到服务器。信息离开设备只有两种情况：(1) 用户同意后自己上传的“今日蛋糕”排行记录（随机安装ID、图案名字、分数）；(2) 用户把评分卡分享到自己选择的应用时。"
+      ],
+      [
+        "照片与相机",
+        "相机和相册仅在拍摄或选择蛋糕照片时使用。照片、边缘·切线·配料标记以及评分都在设备上处理，不会发送到开发者的服务器或第三方。本应用不单独保存照片，离开页面后即从内存中清除。系统在选择照片过程中生成的临时文件可能留在应用缓存中，删除应用时会一并清除。"
+      ],
+      [
+        "分享与保存",
+        "点击“分享”时，本应用会生成评分卡图片（包含蛋糕照片和分数）并交给系统的分享界面。发送到哪个应用（Instagram、聊天软件等）由用户选择，开发者不会收到分享的内容。接收方应用如何处理，以该应用的隐私政策为准。在分享界面选择“存储图像”时会保存到相册，仅在此时请求添加照片的权限。"
+      ],
+      [
+        "保存在设备上的信息",
+        "本应用在设备上保存用于排行榜的随机安装ID、图案名字以及是否同意参加排行榜。对决模式中输入的玩家名字只在对决期间保存在设备内存中，不会存储或发送。"
+      ],
+      [
+        "今日蛋糕排行榜",
+        "排行榜为可选功能。第一次点击“上传到排行榜”时会征求同意，只有在同意后才发送信息。发送的信息仅包括：本应用首次生成的随机安装ID（不是广告ID或设备ID）、图案名字（甜点图案编号加4位数字，例如 🍰 #4821）、日期、蛋糕种类和分数。不会发送照片、切线、名字或用户输入的文字，也没有聊天功能。其他用户只能看到图案名字、分数和名次。服务器使用 Supabase, Inc. 的服务（首尔区域），仅用于显示排行榜和防止滥用（限制请求次数）。限制请求次数的记录在1分钟后删除，排行记录保存到用户删除为止。Supabase 隐私政策：https://supabase.com/privacy"
+      ],
+      [
+        "删除数据",
+        "在排行榜页面点击“删除我的排行记录”，服务器上的排行记录（安装ID、图案名字、分数）会立即删除，参加同意也会撤销。删除应用后，设备上保存的信息会全部清除。如果已先删除应用，请把图案名字和上传日期发送到下方邮箱，我们核实后删除。"
+      ],
+      [
+        "广告、付费与分析",
+        "当前版本不使用广告、应用内购买以及分析或追踪工具。如果加入这些功能，我们会先更新本政策和生效日期。"
+      ],
+      [
+        "儿童隐私",
+        "本应用不以13岁以下儿童为对象，也不会故意收集13岁以下儿童的个人信息。排行榜名字只由固定的图案和数字组成，没有自由输入或聊天。如认为儿童提供了信息，请联系 mkideabox.feedback@gmail.com，我们核实后删除。"
+      ],
+      [
+        "联系方式",
+        "开发者：mkideabox · 邮箱：mkideabox.feedback@gmail.com"
+      ],
+      [
+        "变更",
+        "本政策如有变更，将在本页面发布新版本并注明新的生效日期。"
+      ]
+    ]
+  },
+  "zh_Hant": {
+    "name": "繁體中文",
+    "title": "隱私權政策",
+    "effective": "生效日期",
+    "sections": [
+      [
+        "摘要",
+        "蛋糕裁判團（以下稱「本應用程式」）無需註冊，不蒐集姓名、電子郵件、電話號碼等可識別個人身分的資訊。蛋糕照片只在裝置上處理，不會傳送到伺服器。資訊離開裝置只有兩種情況：(1) 使用者同意後自行上傳的「今日蛋糕」排行紀錄（隨機安裝ID、圖案名字、分數）；(2) 使用者把評分卡分享到自己選擇的應用程式時。"
+      ],
+      [
+        "照片與相機",
+        "相機和相簿只在拍攝或選擇蛋糕照片時使用。照片、邊緣・切線・配料標記以及評分都在裝置上處理，不會傳送到開發者的伺服器或第三方。本應用程式不另外保存照片，離開畫面後即從記憶體中清除。系統在選擇照片過程中產生的暫存檔可能留在應用程式快取中，刪除應用程式時會一併清除。"
+      ],
+      [
+        "分享與儲存",
+        "點選「分享」時，本應用程式會產生評分卡圖片（包含蛋糕照片和分數）並交給系統的分享畫面。要傳到哪個應用程式（Instagram、通訊軟體等）由使用者選擇，開發者不會收到分享的內容。接收方應用程式如何處理，以該應用程式的隱私權政策為準。在分享畫面選擇「儲存影像」時會存到照片，只有這時才要求加入照片的權限。"
+      ],
+      [
+        "儲存在裝置上的資訊",
+        "本應用程式在裝置上儲存排行榜用的隨機安裝ID、圖案名字，以及是否同意參加排行榜。對決模式中輸入的玩家名字只在對決期間存在裝置記憶體中，不會儲存或傳送。"
+      ],
+      [
+        "今日蛋糕排行榜",
+        "排行榜為選用功能。第一次點選「上傳到排行榜」時會徵求同意，只有同意後才傳送資訊。傳送的資訊只有：本應用程式首次產生的隨機安裝ID（不是廣告ID或裝置ID）、圖案名字（甜點圖案編號加4位數字，例如 🍰 #4821）、日期、蛋糕種類和分數。不會傳送照片、切線、名字或使用者輸入的文字，也沒有聊天功能。其他使用者只看得到圖案名字、分數和名次。伺服器使用 Supabase, Inc. 的服務（首爾區域），只用於顯示排行榜和防止濫用（限制請求次數）。限制請求次數的紀錄1分鐘後刪除，排行紀錄保存到使用者刪除為止。Supabase 隱私權政策：https://supabase.com/privacy"
+      ],
+      [
+        "刪除資料",
+        "在排行榜畫面點選「刪除我的排行紀錄」，伺服器上的排行紀錄（安裝ID、圖案名字、分數）會立即刪除，參加同意也會撤銷。刪除應用程式後，裝置上儲存的資訊會全部清除。如果已先刪除應用程式，請把圖案名字和上傳日期寄到下方電子郵件，我們確認後刪除。"
+      ],
+      [
+        "廣告、付費與分析",
+        "目前版本不使用廣告、應用程式內購買以及分析或追蹤工具。如果加入這些功能，我們會先更新本政策和生效日期。"
+      ],
+      [
+        "兒童隱私",
+        "本應用程式不以未滿13歲的兒童為對象，也不會故意蒐集未滿13歲兒童的個人資訊。排行榜名字只由固定的圖案和數字組成，沒有自由輸入或聊天。如認為兒童提供了資訊，請聯絡 mkideabox.feedback@gmail.com，我們確認後刪除。"
+      ],
+      [
+        "聯絡方式",
+        "開發者：mkideabox · 電子郵件：mkideabox.feedback@gmail.com"
+      ],
+      [
+        "變更",
+        "本政策如有變更，將在本頁面公布新版本並註明新的生效日期。"
+      ]
+    ]
+  },
+  "es": {
+    "name": "Español",
+    "title": "Política de privacidad",
+    "effective": "Fecha de entrada en vigor",
+    "sections": [
+      [
+        "Resumen",
+        "Cake Cut Challenge (la \"app\") no requiere registro y no recopila información que te identifique, como tu nombre, correo o teléfono. Las fotos de pasteles se procesan solo en tu dispositivo y nunca se envían a un servidor. La información sale de tu dispositivo solo en dos casos: (1) los registros del ranking \"Pastel del día\" que decides subir después de aceptar (un ID de instalación aleatorio, un nombre con dibujo y tu puntuación), y (2) cuando compartes una tarjeta de puntuación con la app que elijas."
+      ],
+      [
+        "Fotos y cámara",
+        "La cámara y la galería se usan solo para tomar o elegir la foto de un pastel. La foto, las marcas de borde, cortes y toppings, y la puntuación se procesan en tu dispositivo y nunca se envían al servidor del desarrollador ni a terceros. La app no guarda tus fotos; se borran de la memoria al salir de la pantalla. Los archivos temporales que crea el sistema al elegir una foto pueden quedar en la caché de la app y se eliminan al borrar la app."
+      ],
+      [
+        "Compartir y guardar",
+        "Al tocar \"Compartir\", la app crea una imagen de la tarjeta de puntuación (con la foto del pastel y la puntuación) y la pasa a la pantalla de compartir del sistema. Tú eliges a qué app enviarla (Instagram, mensajería, etc.); el desarrollador no recibe lo que compartes. En la app que lo recibe se aplica su propia política de privacidad. Si eliges \"Guardar imagen\", se guarda en Fotos y solo entonces la app pide permiso para añadir fotos."
+      ],
+      [
+        "Información guardada en tu dispositivo",
+        "La app guarda en tu dispositivo un ID de instalación aleatorio para el ranking, tu nombre con dibujo y si aceptaste participar en el ranking. Los nombres de jugadores escritos en el modo Duelo solo están en la memoria durante el duelo; no se guardan ni se envían."
+      ],
+      [
+        "Ranking del Pastel del día",
+        "El ranking es opcional. La primera vez que tocas \"Subir al ranking\", la app te pide consentimiento y solo envía información si aceptas. Envía únicamente un ID de instalación aleatorio creado por la app (no es un ID de publicidad ni del dispositivo), un nombre con dibujo (un número de dibujo de postre y 4 dígitos, por ejemplo 🍰 #4821), la fecha, el tipo de pastel y tu puntuación. Nunca se envían fotos, cortes, nombres ni nada que escribas, y no hay chat. Los demás usuarios solo ven el nombre con dibujo, la puntuación y el puesto. El servidor funciona en Supabase, Inc. (región de Seúl) y se usa solo para mostrar el ranking y evitar abusos (límite de solicitudes). Los registros del límite de solicitudes se borran al minuto; los del ranking se guardan hasta que los borres. Política de privacidad de Supabase: https://supabase.com/privacy"
+      ],
+      [
+        "Borrar tus datos",
+        "Toca \"Borrar mis datos del ranking\" en la pantalla del ranking para borrar al instante tus registros del servidor (ID de instalación, nombre con dibujo, puntuaciones); también retira tu consentimiento. Al borrar la app se elimina toda la información guardada en tu dispositivo. Si ya borraste la app, escríbenos al correo de abajo con tu nombre con dibujo y las fechas en que subiste puntuaciones; los borraremos tras comprobarlo."
+      ],
+      [
+        "Publicidad, pagos y análisis",
+        "La versión actual no usa publicidad, compras dentro de la app ni herramientas de análisis o seguimiento. Si añadimos alguna, primero actualizaremos esta política y su fecha de entrada en vigor."
+      ],
+      [
+        "Privacidad de los niños",
+        "La app no está dirigida a menores de 13 años y no recopilamos a sabiendas información personal de menores de 13 años. Los nombres del ranking se forman solo con dibujos y números fijos; no hay texto libre ni chat. Si crees que un menor ha proporcionado información, escribe a mkideabox.feedback@gmail.com y la borraremos tras comprobarlo."
+      ],
+      [
+        "Contacto",
+        "Desarrollador: mkideabox · Correo: mkideabox.feedback@gmail.com"
+      ],
+      [
+        "Cambios",
+        "Si esta política cambia, publicaremos la nueva versión en esta página con una nueva fecha de entrada en vigor."
+      ]
+    ]
+  },
+  "fr": {
+    "name": "Français",
+    "title": "Politique de confidentialité",
+    "effective": "Date d'entrée en vigueur",
+    "sections": [
+      [
+        "Résumé",
+        "Cake Cut Challenge (l'« app ») ne nécessite aucune inscription et ne collecte aucune information permettant de t'identifier, comme ton nom, ton e-mail ou ton numéro de téléphone. Les photos de gâteaux sont traitées uniquement sur ton appareil et ne sont jamais envoyées à un serveur. Des informations quittent ton appareil dans deux cas seulement : (1) les scores du classement « Gâteau du jour » que tu choisis de publier après avoir accepté (un identifiant d'installation aléatoire, un nom illustré et ton score), et (2) quand tu partages une carte de score avec l'app de ton choix."
+      ],
+      [
+        "Photos et appareil photo",
+        "L'appareil photo et la galerie servent uniquement à prendre ou choisir la photo d'un gâteau. La photo, les marques de bord, de coupes et de garnitures ainsi que la notation sont traitées sur ton appareil et ne sont jamais envoyées au serveur du développeur ni à des tiers. L'app ne conserve pas tes photos ; elles sont effacées de la mémoire quand tu quittes l'écran. Les fichiers temporaires créés par le système lors du choix d'une photo peuvent rester dans le cache de l'app et sont supprimés avec l'app."
+      ],
+      [
+        "Partage et enregistrement",
+        "Quand tu touches « Partager », l'app crée une image de la carte de score (avec la photo du gâteau et le score) et la transmet à l'écran de partage du système. Tu choisis l'app destinataire (Instagram, messageries, etc.) ; le développeur ne reçoit pas ce que tu partages. La politique de confidentialité de l'app destinataire s'applique. Si tu choisis « Enregistrer l'image », elle est enregistrée dans Photos, et c'est seulement à ce moment que l'app demande l'autorisation d'ajouter des photos."
+      ],
+      [
+        "Informations enregistrées sur ton appareil",
+        "L'app enregistre sur ton appareil un identifiant d'installation aléatoire pour le classement, ton nom illustré et ton choix de participer au classement. Les noms des joueurs saisis en mode Duel restent en mémoire uniquement pendant le duel ; ils ne sont ni enregistrés ni envoyés."
+      ],
+      [
+        "Classement du Gâteau du jour",
+        "Le classement est facultatif. La première fois que tu touches « Publier au classement », l'app te demande ton accord et n'envoie des informations que si tu acceptes. Elle envoie uniquement un identifiant d'installation aléatoire créé par l'app (ni identifiant publicitaire ni identifiant de l'appareil), un nom illustré (un numéro de dessin de dessert et 4 chiffres, par exemple 🍰 #4821), la date, le type de gâteau et ton score. Aucune photo, aucune coupe, aucun nom ni texte saisi n'est envoyé, et il n'y a pas de chat. Les autres utilisateurs ne voient que le nom illustré, le score et le rang. Le serveur fonctionne sur Supabase, Inc. (région de Séoul) et sert uniquement à afficher le classement et à éviter les abus (limitation des requêtes). Les traces de limitation sont supprimées au bout d'une minute ; les scores du classement sont conservés jusqu'à ce que tu les supprimes. Politique de confidentialité de Supabase : https://supabase.com/privacy"
+      ],
+      [
+        "Suppression des données",
+        "Touche « Supprimer mes données de classement » sur l'écran du classement pour supprimer immédiatement tes données du serveur (identifiant d'installation, nom illustré, scores) ; ton accord est aussi retiré. Supprimer l'app efface toutes les informations enregistrées sur ton appareil. Si tu as déjà supprimé l'app, envoie-nous ton nom illustré et les dates de publication à l'adresse ci-dessous ; nous supprimerons les données après vérification."
+      ],
+      [
+        "Publicité, paiements et statistiques",
+        "La version actuelle n'utilise ni publicité, ni achats intégrés, ni outils de statistiques ou de suivi. Si nous en ajoutons, nous mettrons d'abord à jour cette politique et sa date d'entrée en vigueur."
+      ],
+      [
+        "Confidentialité des enfants",
+        "L'app ne s'adresse pas aux enfants de moins de 13 ans et nous ne collectons pas sciemment d'informations personnelles d'enfants de moins de 13 ans. Les noms du classement sont formés uniquement de dessins et de chiffres fixes ; il n'y a ni texte libre ni chat. Si tu penses qu'un enfant a fourni des informations, écris à mkideabox.feedback@gmail.com et nous les supprimerons après vérification."
+      ],
+      [
+        "Contact",
+        "Développeur : mkideabox · E-mail : mkideabox.feedback@gmail.com"
+      ],
+      [
+        "Modifications",
+        "Si cette politique change, la nouvelle version sera publiée sur cette page avec une nouvelle date d'entrée en vigueur."
+      ]
+    ]
+  },
+  "de": {
+    "name": "Deutsch",
+    "title": "Datenschutzerklärung",
+    "effective": "Gültig ab",
+    "sections": [
+      [
+        "Zusammenfassung",
+        "Cake Cut Challenge (die „App“) hat keine Registrierung und erhebt keine Daten, die dich identifizieren, etwa Name, E-Mail oder Telefonnummer. Kuchenfotos werden nur auf deinem Gerät verarbeitet und nie an einen Server gesendet. Daten verlassen dein Gerät nur in zwei Fällen: (1) Einträge in der Rangliste „Kuchen des Tages“, die du nach deiner Zustimmung selbst einreichst (eine zufällige Installations-ID, ein Bildname und deine Punktzahl), und (2) wenn du eine Punktekarte an eine App deiner Wahl teilst."
+      ],
+      [
+        "Fotos und Kamera",
+        "Kamera und Fotomediathek werden nur verwendet, um ein Kuchenfoto aufzunehmen oder auszuwählen. Foto, Rand-, Schnitt- und Topping-Markierungen sowie die Bewertung werden auf deinem Gerät verarbeitet und nie an den Server des Entwicklers oder an Dritte gesendet. Die App speichert deine Fotos nicht; sie werden beim Verlassen des Bildschirms aus dem Speicher gelöscht. Temporäre Dateien, die das Betriebssystem bei der Fotoauswahl anlegt, können im App-Cache bleiben und werden beim Löschen der App entfernt."
+      ],
+      [
+        "Teilen und Speichern",
+        "Wenn du „Teilen“ tippst, erstellt die App ein Bild der Punktekarte (mit Kuchenfoto und Punktzahl) und übergibt es an den Teilen-Dialog des Betriebssystems. Du wählst die Ziel-App (Instagram, Messenger usw.); der Entwickler erhält nicht, was du teilst. Dort gilt die Datenschutzerklärung der empfangenden App. Wählst du „Bild sichern“, wird es in Fotos gespeichert, und nur dann fragt die App nach der Berechtigung, Fotos hinzuzufügen."
+      ],
+      [
+        "Auf deinem Gerät gespeicherte Daten",
+        "Die App speichert auf deinem Gerät eine zufällige Installations-ID für die Rangliste, deinen Bildnamen und ob du der Ranglisten-Teilnahme zugestimmt hast. Im Duell-Modus eingegebene Spielernamen sind nur während des Duells im Arbeitsspeicher; sie werden weder gespeichert noch gesendet."
+      ],
+      [
+        "Rangliste „Kuchen des Tages“",
+        "Die Rangliste ist freiwillig. Beim ersten Tippen auf „In die Rangliste“ fragt die App nach deiner Zustimmung und sendet nur dann Daten, wenn du zustimmst. Gesendet werden nur eine von der App erzeugte zufällige Installations-ID (keine Werbe-ID oder Geräte-ID), ein Bildname (eine Dessertbild-Nummer und 4 Ziffern, z. B. 🍰 #4821), das Datum, die Kuchensorte und deine Punktzahl. Fotos, Schnitte, Namen und eingegebener Text werden nie gesendet, und es gibt keinen Chat. Andere Nutzer sehen nur Bildname, Punktzahl und Platz. Der Server läuft bei Supabase, Inc. (Region Seoul) und dient nur der Anzeige der Rangliste und der Missbrauchsvermeidung (Anfragebegrenzung). Einträge für die Anfragebegrenzung werden nach einer Minute gelöscht; Ranglisteneinträge werden aufbewahrt, bis du sie löschst. Datenschutzerklärung von Supabase: https://supabase.com/privacy"
+      ],
+      [
+        "Löschen deiner Daten",
+        "Tippe im Ranglisten-Bildschirm auf „Meine Ranglistendaten löschen“, um deine Einträge (Installations-ID, Bildname, Punktzahlen) sofort vom Server zu löschen; damit wird auch deine Zustimmung widerrufen. Beim Löschen der App werden alle auf dem Gerät gespeicherten Daten entfernt. Hast du die App bereits gelöscht, schreib uns deinen Bildnamen und die Tage, an denen du Punkte eingereicht hast, an die unten stehende Adresse; wir löschen die Einträge nach Prüfung."
+      ],
+      [
+        "Werbung, Zahlungen und Analyse",
+        "Die aktuelle Version verwendet keine Werbung, keine In-App-Käufe und keine Analyse- oder Tracking-Tools. Fügen wir so etwas hinzu, aktualisieren wir zuerst diese Erklärung und ihr Gültigkeitsdatum."
+      ],
+      [
+        "Datenschutz für Kinder",
+        "Die App richtet sich nicht an Kinder unter 13 Jahren, und wir erheben nicht wissentlich personenbezogene Daten von Kindern unter 13. Ranglistennamen bestehen nur aus festen Bildern und Zahlen; es gibt keine freie Texteingabe und keinen Chat. Wenn du glaubst, dass ein Kind Daten übermittelt hat, schreib an mkideabox.feedback@gmail.com; wir löschen sie nach Prüfung."
+      ],
+      [
+        "Kontakt",
+        "Entwickler: mkideabox · E-Mail: mkideabox.feedback@gmail.com"
+      ],
+      [
+        "Änderungen",
+        "Ändert sich diese Erklärung, veröffentlichen wir die neue Fassung auf dieser Seite mit neuem Gültigkeitsdatum."
+      ]
+    ]
+  },
+  "pt": {
+    "name": "Português",
+    "title": "Política de privacidade",
+    "effective": "Data de vigência",
+    "sections": [
+      [
+        "Resumo",
+        "O Cake Cut Challenge (o \"app\") não tem cadastro e não coleta informações que identifiquem você, como nome, e-mail ou telefone. As fotos de bolo são processadas só no seu aparelho e nunca são enviadas a um servidor. Informações saem do seu aparelho em apenas dois casos: (1) registros do ranking \"Bolo do dia\" que você decide enviar depois de concordar (um ID de instalação aleatório, um nome com desenho e sua pontuação) e (2) quando você compartilha um cartão de pontuação com o app que escolher."
+      ],
+      [
+        "Fotos e câmera",
+        "A câmera e a galeria são usadas só para tirar ou escolher a foto de um bolo. A foto, as marcações de borda, cortes e confeitos e a pontuação são processadas no seu aparelho e nunca enviadas ao servidor do desenvolvedor nem a terceiros. O app não guarda suas fotos; elas são apagadas da memória quando você sai da tela. Arquivos temporários criados pelo sistema ao escolher uma foto podem ficar no cache do app e são removidos quando você apaga o app."
+      ],
+      [
+        "Compartilhar e salvar",
+        "Ao tocar em \"Compartilhar\", o app cria uma imagem do cartão de pontuação (com a foto do bolo e a pontuação) e a entrega à tela de compartilhamento do sistema. Você escolhe para qual app enviar (Instagram, mensageiros etc.); o desenvolvedor não recebe o que você compartilha. Lá vale a política de privacidade do app que recebe. Se você escolher \"Salvar imagem\", ela vai para Fotos, e só então o app pede permissão para adicionar fotos."
+      ],
+      [
+        "Informações salvas no seu aparelho",
+        "O app salva no seu aparelho um ID de instalação aleatório para o ranking, seu nome com desenho e se você concordou em participar do ranking. Os nomes dos jogadores digitados no modo Duelo ficam só na memória durante o duelo; não são salvos nem enviados."
+      ],
+      [
+        "Ranking do Bolo do dia",
+        "O ranking é opcional. Na primeira vez que você toca em \"Enviar ao ranking\", o app pede seu consentimento e só envia informações se você concordar. Envia apenas um ID de instalação aleatório criado pelo app (não é ID de publicidade nem do aparelho), um nome com desenho (um número de desenho de sobremesa e 4 dígitos, por exemplo 🍰 #4821), a data, o tipo de bolo e sua pontuação. Fotos, cortes, nomes e qualquer texto digitado nunca são enviados, e não há chat. Outros usuários veem só o nome com desenho, a pontuação e a posição. O servidor roda na Supabase, Inc. (região de Seul) e é usado só para mostrar o ranking e evitar abusos (limite de solicitações). Os registros do limite de solicitações são apagados após um minuto; os do ranking ficam guardados até você apagá-los. Política de privacidade da Supabase: https://supabase.com/privacy"
+      ],
+      [
+        "Apagar seus dados",
+        "Toque em \"Apagar meus dados do ranking\" na tela do ranking para apagar na hora seus registros do servidor (ID de instalação, nome com desenho, pontuações); isso também retira seu consentimento. Apagar o app remove todas as informações salvas no aparelho. Se você já apagou o app, envie para o e-mail abaixo seu nome com desenho e as datas em que enviou pontuações; apagaremos após conferir."
+      ],
+      [
+        "Anúncios, pagamentos e análises",
+        "A versão atual não usa anúncios, compras no app nem ferramentas de análise ou rastreamento. Se adicionarmos algo assim, primeiro atualizaremos esta política e sua data de vigência."
+      ],
+      [
+        "Privacidade de crianças",
+        "O app não é direcionado a menores de 13 anos e não coletamos intencionalmente informações pessoais de menores de 13 anos. Os nomes do ranking são formados só por desenhos e números fixos; não há texto livre nem chat. Se você acha que uma criança forneceu informações, escreva para mkideabox.feedback@gmail.com e apagaremos após conferir."
+      ],
+      [
+        "Contato",
+        "Desenvolvedor: mkideabox · E-mail: mkideabox.feedback@gmail.com"
+      ],
+      [
+        "Alterações",
+        "Se esta política mudar, a nova versão será publicada nesta página com uma nova data de vigência."
+      ]
+    ]
+  },
+  "id": {
+    "name": "Bahasa Indonesia",
+    "title": "Kebijakan Privasi",
+    "effective": "Tanggal berlaku",
+    "sections": [
+      [
+        "Ringkasan",
+        "Cake Cut Challenge (\"aplikasi\") tidak memerlukan pendaftaran dan tidak mengumpulkan informasi yang mengidentifikasi Anda, seperti nama, email, atau nomor telepon. Foto kue hanya diproses di perangkat Anda dan tidak pernah dikirim ke server. Informasi keluar dari perangkat Anda hanya dalam dua hal: (1) catatan peringkat \"Kue hari ini\" yang Anda kirim sendiri setelah menyetujui (ID instalasi acak, nama bergambar, dan skor), dan (2) saat Anda membagikan kartu skor ke aplikasi pilihan Anda."
+      ],
+      [
+        "Foto dan kamera",
+        "Kamera dan galeri foto hanya dipakai untuk memotret atau memilih foto kue. Foto, tanda tepi, potongan, dan topping, serta penilaian semuanya diproses di perangkat Anda dan tidak pernah dikirim ke server pengembang atau pihak ketiga. Aplikasi tidak menyimpan foto Anda; foto dihapus dari memori saat Anda keluar dari layar. File sementara yang dibuat sistem saat memilih foto dapat tersisa di cache aplikasi dan terhapus saat aplikasi dihapus."
+      ],
+      [
+        "Berbagi dan menyimpan",
+        "Saat Anda mengetuk \"Bagikan\", aplikasi membuat gambar kartu skor (berisi foto kue dan skor) lalu menyerahkannya ke layar berbagi sistem. Anda memilih aplikasi tujuan (Instagram, aplikasi pesan, dll.); pengembang tidak menerima apa yang Anda bagikan. Di aplikasi penerima berlaku kebijakan privasi aplikasi tersebut. Jika Anda memilih \"Simpan Gambar\", gambar disimpan ke Foto, dan hanya saat itu aplikasi meminta izin menambahkan foto."
+      ],
+      [
+        "Informasi yang disimpan di perangkat",
+        "Aplikasi menyimpan di perangkat Anda ID instalasi acak untuk peringkat, nama bergambar Anda, dan apakah Anda setuju ikut peringkat. Nama pemain yang diketik di mode Duel hanya ada di memori selama duel; tidak disimpan atau dikirim."
+      ],
+      [
+        "Peringkat Kue hari ini",
+        "Peringkat bersifat opsional. Saat pertama kali Anda mengetuk \"Kirim ke peringkat\", aplikasi meminta persetujuan dan hanya mengirim informasi jika Anda setuju. Yang dikirim hanya ID instalasi acak buatan aplikasi (bukan ID iklan atau ID perangkat), nama bergambar (nomor gambar makanan penutup dan 4 angka, misalnya 🍰 #4821), tanggal, jenis kue, dan skor Anda. Foto, potongan, nama, dan teks yang Anda ketik tidak pernah dikirim, dan tidak ada fitur obrolan. Pengguna lain hanya melihat nama bergambar, skor, dan peringkat. Server berjalan di Supabase, Inc. (wilayah Seoul) dan hanya dipakai untuk menampilkan peringkat dan mencegah penyalahgunaan (pembatasan permintaan). Catatan pembatasan permintaan dihapus setelah satu menit; catatan peringkat disimpan sampai Anda menghapusnya. Kebijakan privasi Supabase: https://supabase.com/privacy"
+      ],
+      [
+        "Menghapus data Anda",
+        "Ketuk \"Hapus data peringkatku\" di layar peringkat untuk langsung menghapus catatan Anda dari server (ID instalasi, nama bergambar, skor); persetujuan Anda juga dicabut. Menghapus aplikasi menghapus semua informasi yang tersimpan di perangkat. Jika Anda sudah menghapus aplikasi, kirim email ke alamat di bawah berisi nama bergambar dan tanggal Anda mengirim skor; kami akan menghapusnya setelah memeriksa."
+      ],
+      [
+        "Iklan, pembayaran, dan analitik",
+        "Versi saat ini tidak memakai iklan, pembelian dalam aplikasi, maupun alat analitik atau pelacakan. Jika kami menambahkannya, kami akan memperbarui kebijakan ini dan tanggal berlakunya lebih dulu."
+      ],
+      [
+        "Privasi anak",
+        "Aplikasi ini tidak ditujukan untuk anak di bawah 13 tahun, dan kami tidak dengan sengaja mengumpulkan informasi pribadi anak di bawah 13 tahun. Nama peringkat hanya dibuat dari gambar dan angka yang sudah ditentukan; tidak ada teks bebas atau obrolan. Jika Anda yakin seorang anak telah memberikan informasi, hubungi mkideabox.feedback@gmail.com dan kami akan menghapusnya setelah memeriksa."
+      ],
+      [
+        "Kontak",
+        "Pengembang: mkideabox · Email: mkideabox.feedback@gmail.com"
+      ],
+      [
+        "Perubahan",
+        "Jika kebijakan ini berubah, versi baru akan diterbitkan di halaman ini dengan tanggal berlaku yang baru."
+      ]
+    ]
+  }
+}
