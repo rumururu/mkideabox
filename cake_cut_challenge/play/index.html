@@ -1,50 +1,8 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <base href="/mkideabox/cake_cut_challenge/play/">
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Cake Cut Challenge · 케이크 판정단</title>
-  <meta name="description" content="How fair was your cut? Slice today's cake and beat your friend's score. 케이크를 공평하게 잘랐는지 점수로 겨뤄 보세요.">
-  <meta name="theme-color" content="#FDDEE8">
-  <!-- 링크 미리보기 (카톡·인스타·메신저) -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Cake Cut Challenge · 케이크 판정단">
-  <meta property="og:description" content="Can you cut fairer? Slice today's cake. 너도 잘라 봐!">
-  <meta property="og:image" content="https://rumururu.github.io/mkideabox/cake_cut_challenge/play/og.png">
-  <meta property="og:url" content="https://rumururu.github.io/mkideabox/cake_cut_challenge/play/">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="apple-mobile-web-app-title" content="Cake Cut">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-  <link rel="icon" type="image/png" href="favicon.png"/>
-  <link rel="manifest" href="manifest.json">
-  <style>
-    /* Flutter가 뜨기 전 몇 초 동안 보이는 화면 (빈 흰 화면 대신) */
-    html, body { margin: 0; height: 100%; background: #FDDEE8; }
-    #splash { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif; color: #2B1A14; }
-    #splash img { width: 120px; height: 120px; border-radius: 28px; border: 3px solid #2B1A14; }
-    #splash p { margin: 16px 0 0; font-size: 18px; font-weight: 700; }
-    #splash .dot { width: 10px; height: 10px; border-radius: 50%; background: #D6246E; margin-top: 18px; animation: pulse 1s infinite alternate; }
-    @keyframes pulse { from { opacity: .25; transform: scale(.8); } to { opacity: 1; transform: scale(1.2); } }
-    @media (prefers-reduced-motion: reduce) { #splash .dot { animation: none; } }
-  </style>
-</head>
-<body>
-  <div id="splash" aria-label="Loading">
-    <img src="icons/Icon-192.png" alt="">
-    <p>Cake Cut Challenge</p>
-    <div class="dot"></div>
-  </div>
-  <script>
-    // 첫 프레임이 그려지면 로딩 화면을 치운다
-    window.addEventListener('flutter-first-frame', function () {
-      var s = document.getElementById('splash'); if (s) s.remove();
-    });
-  </script>
-  <script src="flutter_bootstrap.js" async></script>
-</body>
-</html>
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cake Cut Challenge · 케이크 판정단</title>
+<meta property="og:title" content="Cake Cut Challenge · 케이크 판정단">
+<meta property="og:description" content="🎄 나만의 칼질로 케이크를 잘라 봐! Cut the cake your way and earn a title.">
+<meta property="og:image" content="https://cake.mkideabox.com/og.png">
+<link rel="canonical" href="https://cake.mkideabox.com/">
+<script>location.replace('https://cake.mkideabox.com/' + location.search + location.hash);</script>
+</head><body><a href="https://cake.mkideabox.com/">cake.mkideabox.com</a></body></html>
